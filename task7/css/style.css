@@ -1,4 +1,4 @@
-*{
+﻿*{
 	margin: 0;
 	padding: 0;
 }
@@ -14,6 +14,9 @@ a{
 }
 li{
 	list-style-type: none;
+}
+.continer{
+	min-width: 1260px;
 }
 .nav{
 	height: 60px;
@@ -106,12 +109,20 @@ li{
 	float: left;
 	width: 25%;
 	text-align: center;
+	/*border-right: 2px solid #767777;
+    box-sizing: border-box;*/
+}
+.ad div{
+	border-right: 2px solid #767777;
+    box-sizing: border-box;
+}
+.ad .nonB{
+	border-right: none;
 }
 .ad li p{
-	width: 155px;
-	padding-left: 130px;
+	width: 50%;
+	margin: 0 auto;
 	padding-top: 25px;
-	border-left: 2px solid #767777;
 	color: #767777;
 	font-family: "黑体";
 	font-size: 14px;
@@ -246,9 +257,10 @@ li{
 	background: url("../img/banner_show.jpg") no-repeat;
 	float: left;
 	height:569px;
-	width: 847px;
+	width: 66.6%;
 	text-align: center;
 	color: #fff;
+	background-size: cover;
 }
 .ban_title{
 	margin-top: 130px;
@@ -266,10 +278,10 @@ li{
 }
 .banner_show_right{
 	
-	width: 360px;
+	width: 26%;
 	height: 569px;
 	float: left;
-	margin-left: 80px;
+	margin-left: 6%;
 }
 .right_title{
 	margin-top: 160px;
@@ -317,7 +329,7 @@ li{
 }
 .more_left{
 	
-	width: 430px;
+	width: 33.3%;
 	height: 521px;
 	float: left;
 	background-color: #e74f4d;
@@ -331,6 +343,10 @@ li{
 	height: 2px;
 	background-color: #fff;
 	margin: 20px auto;
+	transition: all 0.5s ease;
+}
+.more_left_cont:hover .hr1{
+	width: 80px;
 }
 .hr2{
 	background-color: #abaaaa;
@@ -349,7 +365,7 @@ li{
 
 }
 .more_mid{
-	width: 416px;
+	width: 33.3%;
 	height: 521px;
 	float: left;
 }
@@ -362,7 +378,7 @@ li{
 	color: #000;
 }
 .more_right{
-	width: 430px;
+	width: 33.3%;
 	height: 521px;
 	float: left;
 	background: url("../img/more.jpg") no-repeat;
