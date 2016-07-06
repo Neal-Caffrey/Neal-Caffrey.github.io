@@ -1,96 +1,169 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>主页</title>
-    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css"> -->
+	<title>刘克鹏主页</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 	<link rel="stylesheet" type="text/css"  href="stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.pagepiling.css" />
+  <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="index-js/jquery.pagepiling.js"></script>
 </head>
 <body>
-    <div class="main-wrapper"> <!--添加背景图片容器-->
-    <header>
+
+    <div class="main-wrapper" id="pagepiling"> <!--添加背景图片容器-->
+    <header class="section">
     	<nav>
     		<div class="logo"><a href="#">刘克鹏</a></div>
     		<ul>    		
     			<li><a href="#" class="active">首页</a></li>
-    			<li><a href="#">内容</a></li>
-    			<li><a href="#">建议</a></li>
-    			<li><a href="#">联系</a></li>
+    			<li><a href="#" class="tips">随笔</a></li>
+    			<li><a href="#" class="tips">关于</a></li>
+    			<li><a href="#" class="tips">联系</a></li>
 
     		</ul>
     	</nav>
-    	<div id="banner">
+    	<div id="banner"  >
     		<div class="inner">
+          <img src="index-img/logo.jpg">
     			<hr>
     			<h1>刘克鹏</h1>
     			<hr>
     			<p class="sub-heading">
-    				这是一个未完成的个人主页，目前做IFE任务展示</p>
-    			<button><a href="#IFE_show">去看看</a></button>
-                <div class="more">更多</div>
+    				不安于现状 不甘于平庸</p>
+            <p class="sub-heading">前端开发实习生</p>
+            <p class="sub-mail">liukepeng1994@163.com</p>
+    			<button id="btn"><a>了解我</a></button>
+                
     		</div>
     	</div>
     </header>
 	
-	<div class="content">
-       <section class="purple" id='IFE_show'>
+	<!-- <div class="content"> -->
+      <section class="about section" id="aboutMe">
         <div class="wrapper">
-           <div class="heading-wrapper">
-               <h2>百度前端技术学院</h2>
-               <div class="hr"></div>
-               <div class="sub-heading">这是我在2016年春季百度前端技术学院各阶段任务完成情况展示
-               </div>
-           </div>
-            <div class="card-group clearfix">
-               <div class="card">
-                   <h3>阶段一</h3>
-                   <P><a href="task6/index.html">任务六：通过HTML及CSS模拟报纸排版</a></P>
-                   <P><a href="task7/index.html">任务七：实现常见的技术产品官网的页面架构及样式布局</a></P>
-                   <P><a href="task8/index.html">任务八：响应式网格（栅格化）布局</a></P>
-                   <P><a href="task9/index.html">任务九：使用HTML/CSS实现一个复杂页面</a></P>
-                   <P><a href="task10/index.html">任务十：Flexbox 布局练习</a></P>
+          <h1 class="wrap-title">关于我</h1>
+          <div class="hr1"></div>
+          <div class="about-content">
+            <p>22岁</p>
+            <p>北京信息科技大学</p>
+            <div class="about-content-me">
+            <p>大三学生，非常喜爱设计简洁，优美的网站。
+            2015年8月开始接触到Web前端，学习了HTML,CSS相关技术，仿佛打开了新世界大门，之后陆续学习了JavaScript和jQuery等技术，接触到一些框架，之前迷茫的我找到了方向，决定为此继续奋斗！</p>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="skill section" >
+        <div class="wrapper">
+          <h1 class="wrap-title">相关技能</h1>
+          <div class="hr1"></div>
+          <div class="skill-content">
+            <div class="skill-show">
+              <div class="show-part"><div>HTML</div></div>
+              <div class="show-part"><div>CSS</div></div>
+              <div class="show-part"><div>JavaScript</div></div>
+              <div class="show-part"><div>jQuery</div></div>
+            </div>
+            <div class="skill-text">
+              <p>深刻理解Web标准，能熟练的运用HTML,CSS编写页面</p>
+              <p>熟悉JavaScript和jQuery，正在继续学习。</p>
+              <p>对前端技术兴趣浓厚</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="demo section">
+        <div class="wrapper">
+          <h1 class="wrap-title">我的作品</h1>
+          <div class="hr1"></div>
+          
+           <div class="card-group clearfix">
+               <div class="card">                 
+                   <P><a href="task7/index.html" target="_blank">常见的公司网站1<br/>
+                    新世界</a></P>
+                   
                </div> 
                <div class="card">
-                   <h3>阶段二</h3>
-                   <P><a href="task13/index.html">任务十三：零基础JavaScript编码（一）</a></P>
-                   <P><a href="task14/index.html">任务十四：零基础JavaScript编码（二）</a></P>
-                   <P><a href="task15/index.html">任务十五：零基础JavaScript编码（三）</a></P>
-                   <P><a href="task16/index.html">任务十六：零基础JavaScript编码（四）</a></P>
-                   <P><a href="task17/index.html">任务十七：零基础JavaScript编码（五）</a></P>
-                   <P><a href="task18/index.html">任务十八：基础JavaScript练习（一）</a></P>
-                   <P><a href="task19/index.html">任务十九：基础JavaScript练习（二）</a></P>
-                    <P><a href="task20/index.html">任务二十：基础JavaScript练习（三）</a></P>
-
+              
+                   <P><a href="task9/index.html" target="_blank">常见的公司网站2<br/>
+                    Caffrey
+                   </a></P>
+                
                </div> 
                 <div class="card">
-                   <h3>阶段三</h3>
-                   <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </P>
+                     <P><a href="imooc/index.html" target="_blank">常见的公司网站3<br/>
+                    慕课网</a></P>
                </div> 
                <div class="card">
-                   <h3>阶段四</h3>
-                   <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </P>
+                     <P><a href="jQuery-message/message.html" target="_blank">基于jQuery的<br/>留言板</a></P>
                </div> 
            </div>
-           
+            <div class="demo-text"><p>这里是一部分demo，了解更多请点击<a href="https://github.com/Neal-Caffrey" target="_blank">&nbsp;这里</a></p>
+           </div>
         </div>
-       </section>
-	</div>
-	<footer>
-     <ul class="share-group">
-         <li><i class="icon-facebook-sign">items</i>&nbsp;</li>
-         <li><i class="icon-twitter">items</i>&nbsp;</li>
-         <li><i class="icon-comments">items</i>&nbsp;</li>
-         <li><i class="icon-pinterest">items</i>&nbsp;</li>
-     </ul>
+        <footer>
+          <ul class="share-group">
+            <li><a href="http://www.qq.com" target="_blank"><img src="index-img/qq.jpg"></a></li>
+            <li><a href="http://www.sina.com.cn/" target="_blank"><img src="index-img/weibo.jpg"></a></li>
+            <li><a href="http://www.twitter.com" target="_blank"><img src="index-img/twitter.jpg"></a></li>
+            <li><a href="http://www.baidu.com" target="_blank"><img src="index-img/net.jpg"></a></li>
+          </ul>
     
-     <div class="coppy">
-         @刘克鹏-2016
-     </div>
-    </footer>
+          <div class="coppy">
+          <p>Copyright&copy;2016 刘克鹏</p>
+          </div>
+        </footer>
+       </section>
 
 	</div>
+	<!-- </div> -->
+  <script type="text/javascript">
+  $(function(){
+  var tips=$(".tips");
+  tips.bind("click",function(){
+    alert("网站正在建设中，谢谢访问！")
+  })
+  })
+//   $(document).ready(function() {
+//     $('#pagepiling').pagepiling();
+// });
+  $(document).ready(function() {
+    $('#pagepiling').pagepiling({
+        menu: null,
+        verticalCentered: true,
+        sectionsColor: ["#F2F2F2","#D8E4E8","#B5D6E2"," #93BFCA"],
+        anchors: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: true,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['首页', '关于我', '相关技能', '我的作品']
+        },
+        normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+    });
+    var btn=$("#btn");
+    btn.bind("click",function(){
+      $.fn.pagepiling.moveTo('2');
+    })
+    
+});
+  </script>
 </body>
 </html>

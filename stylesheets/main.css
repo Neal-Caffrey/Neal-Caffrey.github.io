@@ -1,16 +1,31 @@
-﻿.clearfix:after /*清除浮动*/
+.clearfix:after /*清除浮动*/
 {
 	content: '';
 	display: block;
 	clear: both;
 }
+
 a{
 	text-decoration: none;
 }
+h3{
+	font-size: 24px;
+}
+
+ p
+{
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: "微软雅黑";
+}
 nav
 {
-background: #323232;
-height: 55px;
+	background: #323232;
+	height: 55px;
+	font-family: "微软雅黑";
+	/*position: fixed;
+	width: 100%;*/
+	z-index: 100;
 }
 ul
 {
@@ -70,7 +85,15 @@ nav ul li a:link,a:visited
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-	top: 160px;
+	top: 60px;
+}
+#banner .inner img
+{
+	border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ccc;
+    margin-bottom: 15px;
 }
 #banner .inner h1
 {
@@ -87,32 +110,109 @@ button
 #banner button
 {
 	background: #009ACD;
+	margin-top: 10px;
 }
 #banner button a{
 	display: block;
     height: 40px;
     width: 80px;
     line-height: 40px;
+    color:  #FCFCFC;
 }
 #banner button:hover{
 	opacity: 0.8;
 }
-#banner .inner .more 
-{
-	margin-top: 240px;
-	color: #636363;
-}
+
 .sub-heading
 {
-	margin: 30px;
-	line-height: 30px;
+	margin-top: 20px;
+	line-height: 20px;
 	color: #636363;
 	font-size: 18px;
 }
+.sub-mail{
+	font-size: 16px;
+	color: #797878;
+}
+.sub-mail:hover{
+	color: #69BFE8;
+}
 .wrapper
-{
-	max-width: 1080px;
+{	max-width: 1080px;
 	margin: 0 auto;
+}
+/*关于我部分*/
+.about{
+	background: #D8E4E8;
+	height: 700px;
+	overflow: hidden;
+}
+.wrap-title{
+	text-align: center;
+	color: #3C4945;
+	margin-top: 90px;
+}
+.wrapper .hr1{
+	width: 32px;
+	height: 2px;
+	background-color: #708E85;
+	transition: all 0.5s ease;
+	margin: -15px auto;
+}
+.wrapper:hover .hr1{
+	width: 150px;
+}
+.about-content{
+	margin-top: 100px;
+	text-align: center;
+	color: #3C4945;
+	font-family: "微软雅黑";
+}
+.about-content-me{
+	margin: 60px auto;
+	width: 500px;
+	text-align: left;
+	line-height: 30px;
+	
+}
+/*技能展示部分*/
+.skill{
+	background-color: #B5D6E2;
+	height: 700px;
+	overflow: hidden;
+	text-align: center;
+}
+.skill-content{
+	margin-top: 100px;
+}
+.skill-show .show-part{
+	display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #39ADB2;
+    color: #fff;
+    transform: rotate(45deg);
+    margin: 20px;
+}
+.skill-show :hover.show-part {
+	transition: all 0.8s ease;
+	transform: rotate(405deg);
+}
+
+.skill-show .show-part div{
+	position: relative;
+	top: 28px;
+	transform: rotate(-45deg);
+	font-weight: bold;
+}
+
+.skill-text{
+	margin-top: 70px;
+
+}
+.skill-text p{
+	font-size: 16px;
+	opacity: 0.9;
 }
 .wrapper .sub-heading
 {
@@ -124,66 +224,44 @@ button
 	height: 1px;
 	margin: 20px auto;
 }
-
-.wrapper h2
+/*demo部分*/
+.demo
 {
-	color: #3C4945;
-}
-h3{
-	font-size: 24px;
-}
-
- p
-{
-	font-size: 18px;
-	letter-spacing: 1px;
-}
-.purple
-{
-	padding: 80px;
+	overflow: hidden;
 	background: #93BFCA;
 	color:#fff;
+	height: 700px;
 }
-.purple .heading-wrapper
-{
+.demo-text{
+	margin:20px auto;
+	color: #D8D5D5;
 	text-align: center;
 }
-.purple .hr 
-{
-	background: #6194A6;
-	width: 60%;
-	margin:22px auto ;
+.demo-text a{
+	font-weight: bold;
+	color: #E5E6E6;
+}
+.card-group{
+	margin-top: 50px;
+	margin-bottom: 70px;
 }
 .card
 {
 	float: left;
-	width: 50%;
-	height: 300px;
-	overflow-y: auto;
+	width: 25%;
+	height: 200px;
 	padding: 0 30px 20px 30px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	/*border: 1px solid white;*/
+	text-align: center;
+	
 }
-.card::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  border-radius: 10px;
-  background-color: #F5F5F5;
-}
-
-.card::-webkit-scrollbar
-{
-  width: 12px;
-  background-color: #93BFCA;
-}
-
-.card::-webkit-scrollbar-thumb
-{
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: #93BFCA;
+.card p{
+	margin-top: 80px;
+	border: 1px solid #ccc;
+	font-size: 16px;
 }
 .card p a{
 	color: #fff;
@@ -193,7 +271,7 @@ h3{
 }
 .card:first-child/*背景颜色渐变*/
 {
-	background: rgba(128,128,128,0.04);
+	background: rgba(128,128,128,0.06);
 }
 .card:nth-child(2)
 {
@@ -207,11 +285,13 @@ h3{
 {
 	background: rgba(128,128,128,0.16);
 }
+.card:hover{
+	background: rgba(128,128,128,0.2);
+}
 footer
 {
-	background: #959898;
+	background-color: #32353e;
 	color: #fff;
-	min-height: 25px;
 	text-align: center;
 	margin: 0 auto;
 	padding: 15px;
@@ -227,7 +307,11 @@ ul.share-group
 	display: inline-block;
 	padding: 10px;
 }
-.coppy
+.share-group li:hover{
+	opacity: 0.6;
+}
+.coppy p
 {
 	padding: 10px;
+	font-size: 13px;
 }
