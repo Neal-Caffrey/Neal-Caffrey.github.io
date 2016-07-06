@@ -150,7 +150,7 @@ button
 .wrap-title{
 	text-align: center;
 	color: #3C4945;
-	margin-top: 90px;
+	margin-top: 70px;
 }
 .wrapper .hr1{
 	width: 32px;
@@ -295,6 +295,9 @@ footer
 	text-align: center;
 	margin: 0 auto;
 	padding: 15px;
+        position: absolute;
+	width: 100%;
+        bottom: 0;
 }
 ul.share-group
 {
