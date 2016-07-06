@@ -26,6 +26,11 @@ nav
 	/*position: fixed;
 	width: 100%;*/
 	z-index: 100;
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+
 }
 ul
 {
@@ -85,7 +90,7 @@ nav ul li a:link,a:visited
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-	top: 60px;
+	top: 100px;
 }
 #banner .inner img
 {
@@ -271,22 +276,22 @@ button
 }
 .card:first-child/*背景颜色渐变*/
 {
-	background: rgba(128,128,128,0.06);
+	background: rgba(128,128,128,0.3);
 }
 .card:nth-child(2)
 {
-	background: rgba(128,128,128,0.08);
+	background: rgba(128,128,128,0.1);
 }
 .card:nth-child(3)
 {
-	background: rgba(128,128,128,0.12);
+	background: rgba(128,128,128,0.3);
 }
 .card:nth-child(4)
 {
-	background: rgba(128,128,128,0.16);
+	background: rgba(128,128,128,0.1);
 }
 .card:hover{
-	background: rgba(128,128,128,0.2);
+	background: rgba(128,128,128,0.5);
 }
 footer
 {
