@@ -1,4 +1,4 @@
-.clearfix:after /*清除浮动*/
+﻿.clearfix:after /*清除浮动*/
 {
 	content: '';
 	display: block;
@@ -299,7 +299,6 @@ footer
 ul.share-group
 {
 	display: block;
-	width: 1080px;
 	margin: 0 auto;
 }
 .share-group li
@@ -314,4 +313,5 @@ ul.share-group
 {
 	padding: 10px;
 	font-size: 13px;
+	text-indent: 40px;
 }
