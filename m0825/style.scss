@@ -1,0 +1,89 @@
+.main-wrapper{
+	max-width: 750px;
+	margin: 0 auto;
+	background:url("images/bgl.png") repeat;
+	.top{
+		width: 750px;
+		height: 835px;
+	}
+}
+.top{
+	position: relative;
+	.head-pic{
+		width:750px;
+		height: 720px;
+		background: url("images/bg.png")no-repeat;
+	}
+	.guider{
+		height: 286px;
+		width: 687px;
+		background: url("images/border.png") no-repeat;
+		background-position: 0px 40px;
+	    position: relative;
+	    bottom: 185px;
+	    left: 30px;
+		img{
+		position: absolute;
+	    bottom: 48px;
+	    left: 50%;
+	    margin-left: -322px;
+		}
+		.who{
+			display: inline-block;
+			/* width: 175px;
+			height: 55px; */
+			width:191px;
+			height: 70px;
+			text-align: center;
+			padding-left: 5px;
+			font-size: 30px;
+			font-weight: bold;
+			color:#000;
+			position: absolute;
+			bottom: -25px;
+			left: 50%;
+			margin-left: -95px;
+			background:url("images/who_btn.png") no-repeat;
+			/* background-color: #ffe536;
+		    border: 2px solid #000;
+		    border-radius: 7px;
+		    box-shadow: -3px -3px 20px inset; */
+		}
+	}
+}
+.user-input{
+	text-align: center;
+	input{
+		display: block;
+		width: 585px;
+		height: 80px;
+		border: 2px solid #000;
+	    border-radius: 50px;
+	    font-size: 32px;
+	    text-align: center;
+	}
+	.num{
+		margin: 40px auto;
+	    background-color: #fff;
+	}
+	.coupon{
+		background-color:#ffe536;
+		margin: 15px auto;
+		font-weight: bold;
+	}
+	p{
+		font-size: 22px;
+		a{
+			color: #4f4f4f;
+			vertical-align: middle;
+		}
+		.icon-rule{
+			display:inline-block;
+			width: 22px;
+			height: 22px;
+			background: url("images/icon-rule.png") no-repeat;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+	}
+}
