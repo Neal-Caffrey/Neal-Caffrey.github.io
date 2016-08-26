@@ -1,46 +1,66 @@
 .main-wrapper {
-  max-width: 750px;
+  width: 7.5rem;
   margin: 0 auto;
   background: url("images/bgl.png") repeat; }
   .main-wrapper .top {
-    width: 750px;
-    height: 835px; }
+    width: 100%;
+    height: 8.35rem; }
 
 .top {
   position: relative; }
   .top .head-pic {
-    width: 750px;
-    height: 720px;
-    background: url("images/bg.png"); }
+    width: 100%;
+    height: 7.2rem;
+    background: url("images/bg.png") no-repeat center;
+    background-size: cover; }
   .top .guider {
-    height: 286px;
-    width: 687px;
+    height: 2.86rem;
+    width: 6.87rem;
     background: url("images/border.png") no-repeat;
-    background-position: 0px 40px;
+    background-position: 0px 0.4rem;
+    background-size: contain;
     position: relative;
-    bottom: 185px;
-    left: 30px; }
-    .top .guider img {
+    bottom: 1.85rem;
+    left: 0.3rem; }
+    .top .guider .guider-box {
+      width: 5.9rem;
+      height: 2.95rem;
       position: absolute;
-      bottom: 48px;
+      bottom: 0.48rem;
       left: 50%;
-      margin-left: -322px; }
+      margin-left: -3.22rem; }
+    .top .guider .no1 {
+      background: url("images/guide1.png") no-repeat center;
+      background-size: inherit; }
+    .top .guider .no2 {
+      background: url("images/guide2.png") no-repeat center;
+      background-size: inherit;
+      display: none; }
+    .top .guider .no3 {
+      background: url("images/guide3.png") no-repeat center;
+      background-size: inherit;
+      display: none; }
+    .top .guider .no4 {
+      background: url("images/guide4.png") no-repeat center;
+      background-size: inherit;
+      display: none; }
     .top .guider .who {
       display: inline-block;
       /* width: 175px;
       height: 55px; */
-      width: 191px;
-      height: 70px;
+      width: 1.91rem;
+      height: 0.7rem;
       text-align: center;
-      padding-left: 5px;
-      font-size: 30px;
+      padding-left: 0.05rem;
+      font-size: 0.3rem;
       font-weight: bold;
       color: #000;
       position: absolute;
-      bottom: -25px;
+      bottom: -0.25rem;
       left: 50%;
-      margin-left: -95px;
-      background: url("images/who_btn.png") no-repeat;
+      margin-left: -0.95rem;
+      background: url("images/who_btn.png") no-repeat center;
+      background-size: cover;
       	/* background-color: #ffe536;
           border: 2px solid #000;
           border-radius: 7px;
@@ -50,30 +70,283 @@
   text-align: center; }
   .user-input input {
     display: block;
-    width: 585px;
-    height: 80px;
-    border: 2px solid #000;
-    border-radius: 50px;
-    font-size: 32px;
+    width: 5.85rem;
+    height: 0.8rem;
+    border: 0.02rem solid #000;
+    border-radius: 0.5rem;
+    font-size: 0.32rem;
     text-align: center; }
   .user-input .num {
-    margin: 40px auto;
+    margin: 0.4rem auto;
     background-color: #fff; }
   .user-input .coupon {
     background-color: #ffe536;
-    margin: 15px auto;
+    margin: 0.15rem auto;
     font-weight: bold; }
   .user-input p {
-    font-size: 22px; }
+    font-size: 0.22rem; }
     .user-input p a {
       color: #4f4f4f;
       vertical-align: middle; }
-    .user-input p span {
+    .user-input p .icon-rule {
       display: inline-block;
-      width: 22px;
-      height: 22px;
-      background: url("images/icon-rule.png") no-repeat;
-      margin-left: 10px;
+      width: 0.22rem;
+      height: 0.22rem;
+      background: url(images/icon-rule.png) no-repeat center;
+      margin-left: 0.1rem;
+      background-size: cover;
       vertical-align: middle; }
+
+.c-title {
+  width: 3.15rem;
+  height: 0.86rem;
+  background: url("images/hot-sale.png") no-repeat center;
+  background-size: contain;
+  margin: 0 auto; }
+
+.sku-banner {
+  margin-top: 0.4rem; }
+  .sku-banner .banner-wrap {
+    width: 6.88rem;
+    height: 3.32rem;
+    background: url("images/banner.png") no-repeat center;
+    background-size: cover;
+    border: 0.02rem solid #000;
+    border-radius: 0.17rem;
+    margin: 0.2rem auto;
+    position: relative;
+    overflow: hidden; }
+    .sku-banner .banner-wrap .goods-detail {
+      width: 100%;
+      height: 0.93rem;
+      padding: 0.2rem;
+      padding-bottom: none;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0; }
+      .sku-banner .banner-wrap .goods-detail p {
+        font-size: 0.28rem; }
+    .sku-banner .banner-wrap .btn-prev, .sku-banner .banner-wrap .btn-next {
+      width: 0.6rem;
+      height: 0.6rem;
+      border: 0.02rem solid #afb3ca;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.6rem;
+      cursor: pointer; }
+    .sku-banner .banner-wrap .btn-prev {
+      left: 0.1rem;
+      background: url("images/pre.png") no-repeat center; }
+    .sku-banner .banner-wrap .btn-next {
+      right: 0.1rem;
+      background: url("images/next.png") no-repeat center; }
+    .sku-banner .banner-wrap .price-wrap {
+      position: absolute;
+      width: 1.7rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      text-align: center;
+      padding-left: 0.15rem;
+      background: url("images/top_btn.png") no-repeat;
+      background-size: contain;
+      top: 0.25rem;
+      right: 0;
+      font-size: 0.26rem;
+      color: #000; }
+      .sku-banner .banner-wrap .price-wrap span {
+        font-size: 0.16rem;
+        color: #423a11; }
+    .sku-banner .banner-wrap ul {
+      position: absolute;
+      left: 50%;
+      margin-left: -0.44rem;
+      bottom: 1rem; }
+      .sku-banner .banner-wrap ul li {
+        float: left;
+        margin: 0 0.05rem; }
+        .sku-banner .banner-wrap ul li span {
+          display: inline-block;
+          width: 0.08rem;
+          height: 0.08rem;
+          border-radius: 50%;
+          background-color: #a5918a;
+          opacity: 0.8; }
+        .sku-banner .banner-wrap ul li span.active {
+          opacity: 1;
+          background-color: #ffffff; }
+
+.service {
+  margin-top: 0.4rem; }
+  .service .c-title {
+    background: url("images/service.png") no-repeat center;
+    background-size: contain; }
+  .service .service-con {
+    margin-top: 0.15rem; }
+    .service .service-con ul {
+      border: 0.02rem solid #000;
+      border-radius: 0.17rem;
+      width: 6.9rem;
+      height: 0.8rem;
+      overflow: hidden;
+      line-height: 0.8rem;
+      background-color: #f7f7f5;
+      margin: 0 auto; }
+      .service .service-con ul li {
+        float: left;
+        width: 33.3%;
+        height: 100%;
+        font-size: 0.34rem;
+        text-align: center; }
+        .service .service-con ul li.active {
+          background-color: #ffe536; }
+          .service .service-con ul li.active a {
+            color: #000; }
+        .service .service-con ul li a {
+          color: #7b7b7a;
+          display: block; }
+    .service .service-con .service-detail {
+      width: 5.8rem;
+      height: 1.9rem;
+      margin: 0 auto; }
+    .service .service-con .jsj {
+      background: url("images/jsj.png") no-repeat center;
+      background-size: cover; }
+    .service .service-con .dc {
+      background: url("images/dc.png") no-repeat center;
+      background-size: cover;
+      display: none; }
+    .service .service-con .bc {
+      background: url("images/bc.png") no-repeat center;
+      background-size: cover;
+      display: none; }
+
+.res-list {
+  width: 100%;
+  border: 0.02rem solid #000;
+  border-radius: 0.17rem;
+  background-color: #fff;
+  margin-top: 0.25rem; }
+  .res-list .main-list li {
+    height: 2.43rem;
+    padding: 0.3rem 0.2rem;
+    position: relative;
+    border-bottom: 0.01rem solid #cccccc; }
+    .res-list .main-list li a {
+      display: block;
+      overflow: hidden; }
+      .res-list .main-list li a .img-wrap {
+        width: 2.45rem;
+        height: 1.85rem;
+        float: left;
+        margin-right: 0.2rem;
+        background: url("images/view.png") no-repeat center;
+        background-size: cover; }
+      .res-list .main-list li a .cen-wrap .cen-title {
+        font-size: 0.28rem;
+        color: #000; }
+      .res-list .main-list li a .cen-wrap .price {
+        background: url("images/price.png") no-repeat center;
+        background-size: cover;
+        font-size: 0.33rem;
+        width: 2.5rem;
+        height: 0.7rem;
+        position: absolute;
+        bottom: 0.3rem;
+        right: 0.2rem;
+        color: #000;
+        text-align: center; }
+        .res-list .main-list li a .cen-wrap .price span {
+          font-size: 0.15rem;
+          margin-left: 0.05rem; }
+        .res-list .main-list li a .cen-wrap .price p {
+          font-size: 0.15rem; }
+  .res-list .more {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    position: relative;
+    padding-left: 0.2rem;
+    padding-right: 0.3rem; }
+    .res-list .more a {
+      color: #b2b2b2;
+      font-size: 0.32rem;
+      float: left;
+      line-height: 0.9rem; }
+    .res-list .more .dot {
+      position: absolute;
+      right: 0.4rem;
+      float: right;
+      vertical-align: middle;
+      line-height: 0.9rem;
+      font-size: 0; }
+      .res-list .more .dot span {
+        display: inline-block;
+        height: 0.15rem;
+        width: 0.15rem;
+        background-color: #b2b2b2;
+        margin: 0 0.05rem;
+        border-radius: 50%;
+        vertical-align: middle;
+        line-height: 0.9rem; }
+
+.u-define .class-z {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 3rem;
+  color: #46befc;
+  font-size: 0.15rem; }
+  .u-define .class-z .icon-z {
+    display: block;
+    padding: 0 0.04rem;
+    white-space: nowrap;
+    width: 0.65rem;
+    height: 0.28rem;
+    margin-bottom: 0.1rem;
+    color: #fff;
+    background-color: #46befc;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.28rem;
+    box-sizing: content-box; }
+
+.main-wrapper .foot {
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem; }
+  .main-wrapper .foot .foot-top {
+    width: 100%;
+    height: 0.77rem;
+    background: url("images/foot.png") no-repeat center;
+    background-size: cover; }
+  .main-wrapper .foot .foot-con {
+    margin: 0 auto;
+    padding-top: 0.2rem;
+    font-size: 0.22rem;
+    background-color: #fff;
+    color: #aeaeae;
+    text-align: center; }
+.main-wrapper .btn-aside {
+  position: fixed;
+  right: 0.3rem;
+  bottom: 0.3rem; }
+  .main-wrapper .btn-aside button {
+    display: block;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: #ffe536; }
+  .main-wrapper .btn-aside .light {
+    margin-bottom: 0.35rem; }
+    .main-wrapper .btn-aside .light span {
+      width: 0.52rem;
+      height: 0.52rem;
+      background: url("images/light.png") no-repeat center;
+      background-size: cover;
+      display: inline-block; }
+  .main-wrapper .btn-aside .backTop span {
+    width: 0.52rem;
+    height: 0.52rem;
+    background: url("images/top.png") no-repeat center;
+    background-size: cover;
+    display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

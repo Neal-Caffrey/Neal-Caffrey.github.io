@@ -9,16 +9,34 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<link rel="stylesheet" type="text/css" href="base.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	 <script>
+
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    };
+
+            // Abort if browser does not support addEventListener
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    
+	</script>
 </head>
 <body>	
 	<div class="main-wrapper">
 		<div class="top">
 			<div class="head-pic"></div>
 			<div class="guider">
-			<img src="images/guide1.png" alt="司导展示">
-			<img src="images/guide2.png" alt="司导展示" style="display:none;">
-			<img src="images/guide3.png" alt="司导展示" style="display:none;">
-			<img src="images/guide4.png" alt="司导展示" style="display:none;">
+				<div class="guider-box no1"></div>
+				<div class="guider-box no2"></div>
+				<div class="guider-box no3"></div>
+				<div class="guider-box no4"></div>
 			<input class="who" type="button" value="他们是谁？">
 			</div>
 		</div>
@@ -27,6 +45,178 @@
 			<input type="button" value="点击领取优惠券" class="coupon">
 			<p><a href="#">优惠卷使用规则</a><span class="icon-rule"></span></p>
 		</div>
-	</div>
+		<div class="sku-banner">
+			<div class="c-title"></div>
+			<div class="banner-wrap">
+				<div class="price-wrap">
+					￥1,320 <span>起/人</span>
+				</div>
+				<div class="btn-prev"></div>
+				<div class="btn-next"></div>
+				<ul>
+					<li><a href="#"><span class="active"></span></a></li>
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+				</ul>
+				<div class="goods-detail">
+					<p>[东京]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+				</div>
+			</div>
+		</div>
+		<div class="service">
+			<div class="c-title"></div>
+			<div class="service-con">
+				<ul>
+					<li class="active"><a href="javascript:void(0)">接送机</a></li>
+					<li><a href="javascript:void(0)">单次接送</a></li>
+					<li><a href="javascript:void(0)">包车游</a></li>
+				</ul>
+				<div class="service-detail jsj"></div>
+				<div class="service-detail dc"></div>
+				<div class="service-detail bc"></div>
+			</div>
+		</div>
+		<div class="res-list" style="display:none;">
+			<ul class="main-list">  
+			    <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
+         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
+         		         	</dl> -->
+         		         	 <div class="price">
+         		         	 	￥25<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>
+         		     <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
+         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
+         		         	</dl> -->
+         		         	 <div class="price">
+         		         	 	￥230<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>
+         		     <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
+         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
+         		         	</dl> -->
+         		         	 <div class="price">
+         		         	 	￥45<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>            
+         		 </ul> 
+         		 <div class="more">
+         		 	<a href="#">查看更多</a>
+         		 	<div class="dot">
+         		 		<span></span>
+         		 		<span></span>
+         		 		<span></span>
+         		 	</div>
+         		 </div>
+        </div>
+        <div class="res-list u-define">
+			<ul class="main-list">  
+			    <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	<div class="class-z">
+         		         		<span class="icon-z">超自由</span>
+         		         		<p>行程随心定</p>
+         		         	</div>
+         		         	 <div class="price" style="line-height: 0.7rem;">
+         		         	 	按天报价</div>
+	     		         </div>
+     		         </a>    
+         		     </li>
+         		     <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
+         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
+         		         	</dl> -->
+         		         	 <div class="price">
+         		         	 	￥230<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>
+         		     <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
+         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
+         		         	</dl> -->
+         		         	 <div class="price">
+         		         	 	￥45<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>            
+         		 </ul> 
+         		 <div class="more">
+         		 	<a href="#">查看更多</a>
+         		 	<div class="dot">
+         		 		<span></span>
+         		 		<span></span>
+         		 		<span></span>
+         		 	</div>
+         		 </div>
+        </div>
+		<div class="foot">
+			<div class="foot-top"></div>
+			<div class="foot-con">
+				<p>本活动最终解释权归皇包车所有</p>
+				<p>版权所有：北京纯粹旅行有限公司</p>
+				<p>客服热线：400-610-0066</p>
+			</div>
+		</div>
+		<div class="btn-aside">
+			<button class="light">
+				<span></span>
+			</button>
+			<button class="backTop"><span></span></button>
+		</div>
+     </div>
 </body>
 </html>
