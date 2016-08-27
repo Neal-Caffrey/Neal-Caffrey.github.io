@@ -28,7 +28,8 @@
     
 	</script>
 </head>
-<body>	
+<body>
+ <div class="wrapper">	
 	<div class="main-wrapper">
 		<div class="top">
 			<div class="head-pic"></div>
@@ -78,7 +79,7 @@
 				<div class="service-detail bc"></div>
 			</div>
 		</div>
-		<div class="res-list" style="display:none;">
+		<div class="res-list">
 			<ul class="main-list">  
 			    <li>     
 		             <a href="#" target="_blank">            
@@ -141,7 +142,7 @@
          		 	</div>
          		 </div>
         </div>
-        <div class="res-list u-define">
+        <div class="res-list u-define" style="display:none;">
 			<ul class="main-list">  
 			    <li>     
 		             <a href="#" target="_blank">            
@@ -158,41 +159,43 @@
          		         	 	按天报价</div>
 	     		         </div>
      		         </a>    
-         		     </li>
-         		     <li>     
+         		</li>
+         		<li>     
 		             <a href="#" target="_blank">            
 		             	<div class="img-wrap"> 
 		             		   
          		         </div>
          		         <div class="cen-wrap"> 
          		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
-         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
-         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
-         		         	</dl> -->
+         		         	<div class="class-s">
+         		         		<span class="icon-s">超身心</span>
+         		         		<p>按固定线路游玩</p>
+         		         	</div>
          		         	 <div class="price">
          		         	 	￥230<span>起/人</span>
          		         	    <p>按经济车型满员计算</p>
          		         	 </div>
 	     		         </div>
      		         </a>    
-         		     </li>
-         		     <li>     
+         		</li>
+         		<li>     
 		             <a href="#" target="_blank">            
 		             	<div class="img-wrap"> 
 		             		   
          		         </div>
          		         <div class="cen-wrap"> 
          		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
-         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
-         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
-         		         	</dl> -->
+         		         	<div class="class-z">
+         		         		<span class="icon-z">超自由</span>
+         		         		<p>固定线路可调整行程</p>
+         		         	</div>
          		         	 <div class="price">
          		         	 	￥45<span>起/人</span>
          		         	    <p>按经济车型满员计算</p>
          		         	 </div>
 	     		         </div>
      		         </a>    
-         		     </li>            
+         		</li>            
          		 </ul> 
          		 <div class="more">
          		 	<a href="#">查看更多</a>
@@ -217,6 +220,155 @@
 			</button>
 			<button class="backTop"><span></span></button>
 		</div>
-     </div>
+		<!-- 弹窗 -->
+		<div class="popup-guide popup">
+			<div class="popup-top">
+				<button class="btn-close"></button>
+			</div>
+			<div class="popup-inner">
+				<div class="img-wrap"></div>
+				<div class="inner-text">
+					<h3><i class="icon-car"></i>全球100000名华人司导带你玩</h3>
+					<p>他们是司机 </p>
+					<p>驾车带你畅游世界，为你的完全保驾护航</p>
+					<p>他们是导游</p>
+					<p>徜徉在每一处风景，为你做深度讲解</p>
+					<p>他们是行程管家</p>
+					<p>帮你办理入住、机场退税,为你提供最舒心的服务</p>
+					<p>他们是行程规划师</p>
+					<p>手握方向盘，为你设计最合理的旅行线路</p>
+					<p>他们是当地人</p>
+					<p>更是会中文的中国人</p>
+				</div>
+				<input type="button" value="我知道啦" class="btn-know">
+			</div>
+		</div>
+		<div class="popup-guide popup-had popup">
+			<div class="popup-top">
+				<button class="btn-close" style="right:-0.5rem;"></button>
+			</div>
+			<div class="popup-inner">
+				<div class="inner-text">
+					<p style="color: #000;
+				font-size: 0.29rem;">您已领取过红包啦，去App里“我的” 页面查看吧！ </p>
+				</div>
+				<input type="button" value="我知道啦" class="btn-know">
+			</div>
+		</div>
+		<div class="popup-guide popup-had popup">
+			<div class="popup-top">
+				<button class="btn-close" style="right:-0.5rem;"></button>
+			</div>
+			<div class="popup-inner">
+				<div class="inner-text">
+					<p style="color: #000;
+				font-size: 0.29rem;">啊哦，手慢了！小包子正在努力补充 优惠券库存！ </p>
+				</div>
+				<input type="button" value="我知道啦" class="btn-know">
+			</div>
+		</div>
+		<div class="popup-guide popup-had popup">
+			<div class="popup-top">
+				<button class="btn-close" style="right:-0.5rem;"></button>
+			</div>
+			<div class="popup-inner">
+				<div class="inner-text">
+					<p style="color: #000;
+				font-size: 0.29rem;">本次活动已经结束了哦......
+					</p>
+				</div>
+				<input type="button" value="我知道啦" class="btn-know">
+			</div>
+		</div>
+		<div class="popup-rules popup">
+			<div class="popup-top">
+				<button class="btn-close" style="bottom:0.7rem;"></button>
+			</div>
+			<div class="popup-inner">
+				<div class="rule-title"></div>
+				<div class="inner-text">
+					<ol>
+						<li><p> 同一个皇包车账号、同一台设备、同一个手机号以及同一个支付账号仅可领取一次，此优惠券仅限皇包车APP下单时使用；</p></li>
+						<li><p> 每单仅可使用一张优惠卷，一张优惠卷不可拆分多次使用；</p></li>
+						<li><p>优惠卷不可兑换现金、不可开发票、不可找零，且不能与其他优惠同享（打折商品不支持使用优惠卷）；</p></li>
+						<li><p>退款金额超过优惠卷抵扣金额，优惠卷可退还；退款金额低于优惠卷抵扣金额，优惠卷不可拆分、不可退还；</p></li>
+						<li><p>如果用户对优惠卷使用规则或在使用皇包车下单和/或在相关服务过程中有任何疑问或需要任何帮助，请及时与皇包车客服联系，联系电话：400-610-0066；</p>
+</li>
+						<li><p>优惠卷最终解释权归北京纯粹旅行有限公司（品牌名称：皇包车）所有；</p></li>
+						<li><p>活动时间：截止至2016年12月31日。</p></li>
+					</ol>
+					
+					
+					
+					
+										
+					
+				</div>
+			</div>
+		</div>
+		<div class="red-envelope popup">
+			<div class="popup-top">
+				<button class="btn-close"></button>
+			</div>
+			<div class="popup-inner">
+				<div class="btn-wrap clearfix">
+					<input type="button" class="use-btn" value="立即使用">
+					<input type="button" class="share-btn" value="分享好友">
+				</div>	
+				<div class="money">
+					<div class="money-inner">
+					<div class="tips">
+						<div class="line" style="left:0.1rem;"></div>
+						<p>红包已存入账户，请在【我的】页面查看</p>
+						<div class="line" style="right:0.1rem;"></div>
+					</div>
+					<div class="card-wrap">
+						<div class="card-all clearfix">
+							<div class="price fl">
+								<sub>￥</sub><span>100</span>
+							</div>
+							<div class="price-con fl">
+								<ul class="clearfix">
+									<li class="all">全品类</li>
+								</ul>
+								<p>下单立减100元</p>
+							</div>
+						</div>
+						<div class="card-all">
+							<div class="price fl">
+								<sub>￥</sub><span>100</span>
+							</div>
+							<div class="price-con fl">
+								<ul class="clearfix">
+									<li class="jsj">接送机</li>
+									<li class="bc">包车游</li>
+									<li class="dc">单次接送</li>
+								</ul>
+								<p>下单立减130元</p>
+							</div>
+						</div>
+						<div class="card-all">
+							<div class="price fl">
+								<sub>￥</sub><span>100</span>
+							</div>
+							<div class="price-con fl">
+								<ul class="clearfix">
+									<li class="jsj">接送机</li>
+									<li class="bc">包车游</li>
+									<li class="line-bc">线路包车</li>
+								</ul>
+								<p>下单立减130元</p>
+							</div>
+						</div>
+					</div>
+					<div class="lace"></div>
+				</div>
+			<p class="foot-text">红包可抵扣在线支付时的订单金额（最低支付1元）</p>
+			</div>
+			</div>
+			
+		</div>
+     </div> 
+ </div>
 </body>
 </html>

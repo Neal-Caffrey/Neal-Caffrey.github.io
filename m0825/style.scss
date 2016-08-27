@@ -1,4 +1,17 @@
+.clearfix:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
 .main-wrapper{
+	font-family: "MicroSoft YaHei";
 	width: 7.5rem;
 	margin: 0 auto;
 	background:url("images/bgl.png") repeat;
@@ -94,6 +107,7 @@
 		background-color:#ffe536;
 		margin: 0.15rem auto;
 		font-weight: bold;
+	    box-shadow: -0rem -0.04rem 0rem #9c8802 inset;
 	}
 	p{
 		font-size: 0.22rem;
@@ -291,7 +305,7 @@
 					background:url("images/price.png")no-repeat center;
 					background-size: cover;
 					font-size: 0.33rem;
-				    width: 2.5rem;
+				    width: 2.3rem;
 				    height: 0.7rem;
 					position: absolute;
 					bottom: 0.3rem;
@@ -365,6 +379,14 @@
 			box-sizing: content-box; 
 		}
 	}
+	.class-s{
+		@extend .class-z;
+		color: #64d92a;
+		.icon-s{
+			@extend .icon-z;
+		background-color: #64d92a;
+		}
+	}
 }
 .main-wrapper{
 	.foot{
@@ -378,11 +400,12 @@
 		}
 		.foot-con{
 			margin: 0 auto;
-			padding-top: 0.2rem;
+			padding: 0.2rem 0;
 			font-size: 0.22rem;
 			background-color: #fff;
 			color: #aeaeae;
 			text-align: center;
+			line-height: 0.35rem;
 		}
 	}
 	.btn-aside{
@@ -416,4 +439,281 @@
 		}
 	}
 }
+.popup{
+	.popup-top{
+		margin-top: 0.6rem;
+		position: relative;
+		height: 0.67rem;
+		background-color: transparent;
+		.btn-close{
+			width: 0.67rem;
+			height: 0.67rem;
+			background: url("images/close1.png") no-repeat center;
+			background-size: cover;
+			position: absolute;
+			right: 0;
+			bottom: 0.2rem;
+		}
+	}
+	.btn-know{
+			display: block;
+			position: absolute;
+			bottom: -0.35rem;
+			left:50%;
+			margin-left: -1.4rem;
+			font-weight: bold;
+			width: 2.8rem;
+			height: 0.75rem;
+			font-size: 0.32rem;
+			text-align: center;
+			background-color: #ffe536;
+			color: #000;
+			border: 0.02rem solid #000;
+			border-radius: 0.15rem;
+			box-shadow: -0rem -0.05rem 0rem #9c8802 inset;
+		}
+}
+.popup-guide{
+	width: 6.3rem;
+	margin: 0 auto;
+	position: relative;
+	
+	.popup-inner{
+		background-color: #fff;
+	    border: 0.02rem solid #000;
+	    border-radius: 0.17rem;
+	    overflow: hidden;
+		.img-wrap{
+			width: 6.35rem;
+			height: 3.1rem;
+			background: url("images/dsc.png") no-repeat center;
+			background-size: cover;
+		}
+		.inner-text{
+			text-align: center;
+		    padding-bottom: 0.75rem;
+			h3{
+				font-size: 0.3rem;
+				color: #7451af;
+				margin: 0.3rem auto;
+				.icon-car{
+					width: 0.38rem;
+					height: 0.3rem;
+					position: relative;
+					right: 0.05rem;
+					top: 0.05rem;
+					display:inline-block;
+					background: url("images/car.png") no-repeat center;
+					background-size: cover;
+				}
+			}
+			p{
+				line-height: 0.4rem;
+			}
+			p:nth-child(odd){
+				font-size: 0.25rem;
+				color: #a3a3a3;
+			}
+			p:nth-child(even){
+				font-size: 0.3rem;
+				color: #000;
+			}
+			
+		}
+		
+	}
+}
+.popup-had{
+	width: 5.2rem;
+	.popup-inner{
+		height: 1.9rem;
+		padding:0.5rem 0.2rem;
+	}
 
+}
+.popup-rules{
+	width: 6.1rem;
+	margin: 0 auto;
+	position: relative;
+	.popup-inner{
+		background-color: #fff;
+	    border: 0.02rem solid #000;
+	    border-radius: 0.17rem;
+	    position: relative;
+	    .rule-title{
+			width: 3.85rem;
+			height: 0.97rem;
+			background: url("images/rules.png")no-repeat center;
+			background-size: cover;
+			position: absolute;
+			top: -0.6rem;
+			left: 50%;
+			margin-left: -1.925rem;
+	    }
+	    .inner-text{
+	    	margin: 0.7rem 0.4rem 0.5rem 0.7rem;
+	    	ol{
+	    		li{
+    			    list-style-type: decimal;
+	    			font-size: 0.26rem;
+	    		}
+	    		
+	    	}
+	    	p{
+	    		font-size: 0.26rem;
+	    		color: #555452;
+	    		line-height: 0.4rem;
+	    	}
+	    }
+	}
+}
+.red-envelope{
+	width: 6.92rem;
+	margin: 0 auto;
+	.popup-inner{
+		width: 6.92rem;
+		height: 10.2rem;
+		background: url("images/red-bg.png")no-repeat center;
+		background-size: cover;
+	    position: relative;
+	    .btn-wrap{
+	    	position: relative;
+	    	top:1.7rem;
+	    	width: 6.3rem;
+	    	margin: 0 auto;
+	    	input{
+	    		width: 2.65rem;
+	    		height: 0.92rem;
+	    		border: 0.02rem solid #000;
+			    border-radius: 0.17rem;
+			    background-color: #ffe536;
+			    font-size: 0.34rem;
+		        font-weight: bold;
+	    	}
+	    	.use-btn{
+	    		float: left;
+	    	}
+	    	.share-btn{
+	    		float: right;
+	    	}
+	    }
+	    .money{
+	    	width: 6.3rem;
+	    	height: 6.65rem;
+    	    position: absolute;
+		    bottom: 0.5rem;
+		    left: 0.3rem;
+	    	background: #faefb9;
+    	    border: 0.01rem solid #000;
+	    	.money-inner{
+	    		height:6.2rem;
+	    		width: 100%;
+	    		overflow-y: auto;
+	    	}
+	    	.tips{
+	    		text-align: center;
+			    width: 5.8rem;
+			    margin: 0.4rem auto;
+			    position: relative;
+			    height: 0.3rem;
+	    		p{
+	    			font-size: 0.25rem;
+	    			color: #020202;
+	    		}
+	    		.line{
+	    			width: 0.45rem;
+	    			height: 0.01rem;
+	    			background: #020202;
+    			    position: absolute;
+				    top: 0.15rem;
+	    		}
+	    	}
+	    	.card-wrap{
+	    		// max-height: 5.2rem;	
+	    		// overflow-y: auto;
+	    		.card-all{
+	    			width: 5.8rem;
+	    			height: 1.6rem;
+	    			margin: 0 auto;
+	    			background:url("images/bg3.png")no-repeat center;
+	    			background-size: cover;
+    			    margin-bottom: 0.35rem;
+	    			.price{
+	    				width:1.95rem;
+	    				text-align: center;
+	    				font-weight: bold;
+	    				height: 100%;
+	    				sub{
+	    					bottom: 0.05rem;
+						    color: #ee3c30;
+						    font-size: 25%;
+	    				}
+	    				span{
+	    					font-size: 0.5rem;
+	    					color: #ee3c30;
+	    					
+	    				}
+	    			}
+
+	    		}
+	    	}
+	    }
+	}
+}
+.card-all{
+	.price-con{
+	    margin: 0.4rem 0.2rem;
+		ul{
+			li{
+				float: left;
+				margin-right: 0.2rem;
+				font-size: 0.22rem;
+				padding: 0rem 0.05rem;
+			    height: 0.35rem;
+		        line-height: 0.35rem;
+			    border-radius: 0.05rem;
+			}
+			.all{
+				color: #146aba;
+				border: 0.01rem solid #146aba;
+			}
+			.jsj{
+				color: #4a8f01;
+				border: 0.01rem solid #4a8f01;
+			}
+			.bc{
+				color: #8203bd;
+				border: 0.01rem solid #8203bd;
+			}
+			.dc{
+				color: #f1d23f;
+				border: 0.01rem solid #f1d23f;
+			}
+			.line-bc{
+				color: #f08a2f;
+				border: 0.01rem solid #f08a2f;
+			}
+		}
+		p{
+			font-size: 0.3rem;
+			margin-top: 0.15rem;
+
+		}
+	}
+}
+.lace{
+	position: absolute;
+	width: 6.31rem;
+	height:0.11rem;
+	background: url("images/lace.png") no-repeat center;
+	background-size: cover;
+	bottom: -0.01rem;
+}
+.popup-inner{
+	.foot-text{
+		font-size: 0.18rem;
+		color: #fff;
+		text-align: center;
+		margin-top: 8.9rem;
+	}
+}

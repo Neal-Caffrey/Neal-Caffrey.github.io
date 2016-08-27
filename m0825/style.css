@@ -1,4 +1,16 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
 .main-wrapper {
+  font-family: "MicroSoft YaHei";
   width: 7.5rem;
   margin: 0 auto;
   background: url("images/bgl.png") repeat; }
@@ -82,7 +94,8 @@
   .user-input .coupon {
     background-color: #ffe536;
     margin: 0.15rem auto;
-    font-weight: bold; }
+    font-weight: bold;
+    box-shadow: -0rem -0.04rem 0rem #9c8802 inset; }
   .user-input p {
     font-size: 0.22rem; }
     .user-input p a {
@@ -249,7 +262,7 @@
         background: url("images/price.png") no-repeat center;
         background-size: cover;
         font-size: 0.33rem;
-        width: 2.5rem;
+        width: 2.3rem;
         height: 0.7rem;
         position: absolute;
         bottom: 0.3rem;
@@ -289,13 +302,13 @@
         vertical-align: middle;
         line-height: 0.9rem; }
 
-.u-define .class-z {
+.u-define .class-z, .u-define .class-s {
   position: absolute;
   bottom: 0.3rem;
   left: 3rem;
   color: #46befc;
   font-size: 0.15rem; }
-  .u-define .class-z .icon-z {
+  .u-define .class-z .icon-z, .u-define .class-s .icon-z, .u-define .class-s .icon-s {
     display: block;
     padding: 0 0.04rem;
     white-space: nowrap;
@@ -308,6 +321,10 @@
     text-align: center;
     line-height: 0.28rem;
     box-sizing: content-box; }
+.u-define .class-s {
+  color: #64d92a; }
+  .u-define .class-s .icon-s {
+    background-color: #64d92a; }
 
 .main-wrapper .foot {
   margin-top: 0.4rem;
@@ -319,11 +336,12 @@
     background-size: cover; }
   .main-wrapper .foot .foot-con {
     margin: 0 auto;
-    padding-top: 0.2rem;
+    padding: 0.2rem 0;
     font-size: 0.22rem;
     background-color: #fff;
     color: #aeaeae;
-    text-align: center; }
+    text-align: center;
+    line-height: 0.35rem; }
 .main-wrapper .btn-aside {
   position: fixed;
   right: 0.3rem;
@@ -348,5 +366,224 @@
     background: url("images/top.png") no-repeat center;
     background-size: cover;
     display: inline-block; }
+
+.popup .popup-top {
+  margin-top: 0.6rem;
+  position: relative;
+  height: 0.67rem;
+  background-color: transparent; }
+  .popup .popup-top .btn-close {
+    width: 0.67rem;
+    height: 0.67rem;
+    background: url("images/close1.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0.2rem; }
+.popup .btn-know {
+  display: block;
+  position: absolute;
+  bottom: -0.35rem;
+  left: 50%;
+  margin-left: -1.4rem;
+  font-weight: bold;
+  width: 2.8rem;
+  height: 0.75rem;
+  font-size: 0.32rem;
+  text-align: center;
+  background-color: #ffe536;
+  color: #000;
+  border: 0.02rem solid #000;
+  border-radius: 0.15rem;
+  box-shadow: -0rem -0.05rem 0rem #9c8802 inset; }
+
+.popup-guide {
+  width: 6.3rem;
+  margin: 0 auto;
+  position: relative; }
+  .popup-guide .popup-inner {
+    background-color: #fff;
+    border: 0.02rem solid #000;
+    border-radius: 0.17rem;
+    overflow: hidden; }
+    .popup-guide .popup-inner .img-wrap {
+      width: 6.35rem;
+      height: 3.1rem;
+      background: url("images/dsc.png") no-repeat center;
+      background-size: cover; }
+    .popup-guide .popup-inner .inner-text {
+      text-align: center;
+      padding-bottom: 0.75rem; }
+      .popup-guide .popup-inner .inner-text h3 {
+        font-size: 0.3rem;
+        color: #7451af;
+        margin: 0.3rem auto; }
+        .popup-guide .popup-inner .inner-text h3 .icon-car {
+          width: 0.38rem;
+          height: 0.3rem;
+          position: relative;
+          right: 0.05rem;
+          top: 0.05rem;
+          display: inline-block;
+          background: url("images/car.png") no-repeat center;
+          background-size: cover; }
+      .popup-guide .popup-inner .inner-text p {
+        line-height: 0.4rem; }
+      .popup-guide .popup-inner .inner-text p:nth-child(odd) {
+        font-size: 0.25rem;
+        color: #a3a3a3; }
+      .popup-guide .popup-inner .inner-text p:nth-child(even) {
+        font-size: 0.3rem;
+        color: #000; }
+
+.popup-had {
+  width: 5.2rem; }
+  .popup-had .popup-inner {
+    height: 1.9rem;
+    padding: 0.5rem 0.2rem; }
+
+.popup-rules {
+  width: 6.1rem;
+  margin: 0 auto;
+  position: relative; }
+  .popup-rules .popup-inner {
+    background-color: #fff;
+    border: 0.02rem solid #000;
+    border-radius: 0.17rem;
+    position: relative; }
+    .popup-rules .popup-inner .rule-title {
+      width: 3.85rem;
+      height: 0.97rem;
+      background: url("images/rules.png") no-repeat center;
+      background-size: cover;
+      position: absolute;
+      top: -0.6rem;
+      left: 50%;
+      margin-left: -1.925rem; }
+    .popup-rules .popup-inner .inner-text {
+      margin: 0.7rem 0.4rem 0.5rem 0.7rem; }
+      .popup-rules .popup-inner .inner-text ol li {
+        list-style-type: decimal;
+        font-size: 0.26rem; }
+      .popup-rules .popup-inner .inner-text p {
+        font-size: 0.26rem;
+        color: #555452;
+        line-height: 0.4rem; }
+
+.red-envelope {
+  width: 6.92rem;
+  margin: 0 auto; }
+  .red-envelope .popup-inner {
+    width: 6.92rem;
+    height: 10.2rem;
+    background: url("images/red-bg.png") no-repeat center;
+    background-size: cover;
+    position: relative; }
+    .red-envelope .popup-inner .btn-wrap {
+      position: relative;
+      top: 1.7rem;
+      width: 6.3rem;
+      margin: 0 auto; }
+      .red-envelope .popup-inner .btn-wrap input {
+        width: 2.65rem;
+        height: 0.92rem;
+        border: 0.02rem solid #000;
+        border-radius: 0.17rem;
+        background-color: #ffe536;
+        font-size: 0.34rem;
+        font-weight: bold; }
+      .red-envelope .popup-inner .btn-wrap .use-btn {
+        float: left; }
+      .red-envelope .popup-inner .btn-wrap .share-btn {
+        float: right; }
+    .red-envelope .popup-inner .money {
+      width: 6.3rem;
+      height: 6.65rem;
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.3rem;
+      background: #faefb9;
+      border: 0.01rem solid #000; }
+      .red-envelope .popup-inner .money .money-inner {
+        height: 6.2rem;
+        width: 100%;
+        overflow-y: auto; }
+      .red-envelope .popup-inner .money .tips {
+        text-align: center;
+        width: 5.8rem;
+        margin: 0.4rem auto;
+        position: relative;
+        height: 0.3rem; }
+        .red-envelope .popup-inner .money .tips p {
+          font-size: 0.25rem;
+          color: #020202; }
+        .red-envelope .popup-inner .money .tips .line {
+          width: 0.45rem;
+          height: 0.01rem;
+          background: #020202;
+          position: absolute;
+          top: 0.15rem; }
+      .red-envelope .popup-inner .money .card-wrap .card-all {
+        width: 5.8rem;
+        height: 1.6rem;
+        margin: 0 auto;
+        background: url("images/bg3.png") no-repeat center;
+        background-size: cover;
+        margin-bottom: 0.35rem; }
+        .red-envelope .popup-inner .money .card-wrap .card-all .price {
+          width: 1.95rem;
+          text-align: center;
+          font-weight: bold;
+          height: 100%; }
+          .red-envelope .popup-inner .money .card-wrap .card-all .price sub {
+            bottom: 0.05rem;
+            color: #ee3c30;
+            font-size: 25%; }
+          .red-envelope .popup-inner .money .card-wrap .card-all .price span {
+            font-size: 0.5rem;
+            color: #ee3c30; }
+
+.card-all .price-con {
+  margin: 0.4rem 0.2rem; }
+  .card-all .price-con ul li {
+    float: left;
+    margin-right: 0.2rem;
+    font-size: 0.22rem;
+    padding: 0rem 0.05rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    border-radius: 0.05rem; }
+  .card-all .price-con ul .all {
+    color: #146aba;
+    border: 0.01rem solid #146aba; }
+  .card-all .price-con ul .jsj {
+    color: #4a8f01;
+    border: 0.01rem solid #4a8f01; }
+  .card-all .price-con ul .bc {
+    color: #8203bd;
+    border: 0.01rem solid #8203bd; }
+  .card-all .price-con ul .dc {
+    color: #f1d23f;
+    border: 0.01rem solid #f1d23f; }
+  .card-all .price-con ul .line-bc {
+    color: #f08a2f;
+    border: 0.01rem solid #f08a2f; }
+  .card-all .price-con p {
+    font-size: 0.3rem;
+    margin-top: 0.15rem; }
+
+.lace {
+  position: absolute;
+  width: 6.31rem;
+  height: 0.11rem;
+  background: url("images/lace.png") no-repeat center;
+  background-size: cover;
+  bottom: -0.01rem; }
+
+.popup-inner .foot-text {
+  font-size: 0.18rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 8.9rem; }
 
 /*# sourceMappingURL=style.css.map */
