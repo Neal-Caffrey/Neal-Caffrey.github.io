@@ -9,8 +9,27 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<link rel="stylesheet" type="text/css" href="base.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<style type="text/css">
+		#guide,.popup-rules, .red-envelope, .popup-had{
+			position: fixed;
+		    top: 10%;
+		    left: 50%;
+		    margin-left: -3.15rem;
+		    z-index: 200;
+		    display: none;
+		}
+		.popup-rules{
+			margin-left: -3.05rem;
+		}
+		.red-envelope{
+			margin-left: -3.46rem;
+		}
+		.popup-had{
+			margin-left: -2.6rem;
+		}
+	</style>
 	 <script>
-
         (function (doc, win) {
             var docEl = doc.documentElement,
                     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -27,8 +46,93 @@
         })(document, window);
     
 	</script>
+	<script>
+		$(function(){
+			var who=$("#who"),
+				mask=$("#mask"),
+				know=$(".btn-know"),
+				close=$(".btn-close"),
+				rules=$(".icon-rule"),
+				popupRules=$("#popup-rules"),
+				redEnvelope=$("#red-envelope"),
+				coupon=$("#coupon"),
+				phnoeNum=$("#phnoeNum"),
+				guide=$("#guide");
+				
+
+			who.on('click',function(){
+				mask.show();
+				guide.show();
+			})
+			
+			rules.on('click',function(){
+				mask.show();
+				popupRules.show();
+			})
+
+			coupon.on('click',function(){
+				var telPhone=phnoeNum.val();
+				if(checkPhone(phnoeNum,telPhone)){
+					mask.show();
+					redEnvelope.show();
+				}
+				
+			})
+
+			know.on("click",function(){
+				mask.hide();
+				guide.hide();
+			})
+
+			close.on("click",function(){
+				mask.hide();
+				guide.hide();
+				popupRules.hide();
+				redEnvelope.hide();
+			})
+
+	var checkPhone=function(input,num){
+				if(!num){
+					alert("请输入手机号！");
+					input.focus();
+					return false;
+				}else if(!num.match(/^(((13[0-9]{1})|159|153)+\d{8})$/)){
+					alert("手机号格式不正确！");
+					input.focus();
+					return false;
+				}else{
+					alert("您的手机号是："+num);
+					return true;
+				}
+			}
+
+			var backTop=$(".backTop");
+			$(window).scroll(function(){
+				if($(window).scrollTop()>300)
+					backTop.show();
+				else
+					backTop.hide();
+			})
+			backTop.click(function(){
+				$('html, body').animate({scrollTop: 0},500)
+			});
+
+			var $serviceTab=$("#serviceTab").find("li");
+			var $dataIdW=$("#serviceTab").find(".service-detail");
+			var $mainList=$(".res-list");
+
+			$serviceTab.on("click",function(event){
+				$(this).addClass('active').siblings('li').removeClass('active');
+				var index=$serviceTab.index(this);
+				$dataIdW.eq(index).show().siblings('.service-detail').hide();
+				$mainList.eq(index).show().siblings('.res-list').hide();
+			})
+
+		})
+	</script>
 </head>
 <body>
+	<div class="mask" id="mask"></div>
  <div class="wrapper">	
 	<div class="main-wrapper">
 		<div class="top">
@@ -38,12 +142,12 @@
 				<div class="guider-box no2"></div>
 				<div class="guider-box no3"></div>
 				<div class="guider-box no4"></div>
-			<input class="who" type="button" value="他们是谁？">
+			<input class="who" id="who" type="button" value="他们是谁？">
 			</div>
 		</div>
 		<div class="user-input">
-			<input type="tel" class="num" placeholder="请输入手机号">
-			<input type="button" value="点击领取优惠券" class="coupon">
+			<input type="tel" class="num" id="phnoeNum" placeholder="请输入手机号">
+			<input type="button" value="点击领取优惠券" class="coupon" id="coupon">
 			<p><a href="#">优惠卷使用规则</a><span class="icon-rule"></span></p>
 		</div>
 		<div class="sku-banner">
@@ -68,15 +172,15 @@
 		</div>
 		<div class="service">
 			<div class="c-title"></div>
-			<div class="service-con">
+			<div class="service-con" id="serviceTab">
 				<ul>
-					<li class="active"><a href="javascript:void(0)">接送机</a></li>
-					<li><a href="javascript:void(0)">单次接送</a></li>
-					<li><a href="javascript:void(0)">包车游</a></li>
+					<li class="active" tab-id="1"><a href="javascript:void(0)">接送机</a></li>
+					<li tab-id="2"><a href="javascript:void(0)">单次接送</a></li>
+					<li tab-id="3"><a href="javascript:void(0)">包车游</a></li>
 				</ul>
-				<div class="service-detail jsj"></div>
-				<div class="service-detail dc"></div>
-				<div class="service-detail bc"></div>
+				<div class="service-detail jsj" data-id="1"></div>
+				<div class="service-detail dc" data-id="2"></div>
+				<div class="service-detail bc" data-id="3"></div>
 			</div>
 		</div>
 		<div class="res-list">
@@ -88,9 +192,7 @@
          		         </div>
          		         <div class="cen-wrap"> 
          		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
-         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
-         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
-         		         	</dl> -->
+         		         
          		         	 <div class="price">
          		         	 	￥25<span>起/人</span>
          		         	    <p>按经济车型满员计算</p>
@@ -105,9 +207,7 @@
          		         </div>
          		         <div class="cen-wrap"> 
          		         	<p class="cen-title">【韩国】首尔金浦/仁川/釜山机场 中文接机送机</p>
-         		         	<!-- <dl class="opt-type opt-type-f">                                <dt>超省心</dt>
-         		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
-         		         	</dl> -->
+         		         
          		         	 <div class="price">
          		         	 	￥230<span>起/人</span>
          		         	    <p>按经济车型满员计算</p>
@@ -126,7 +226,64 @@
          		         	<dd><b class="ico-13"></b>按固定线路游玩</dd>
          		         	</dl> -->
          		         	 <div class="price">
-         		         	 	￥45<span>起/人</span>
+         		         	 	￥100<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>            
+         		 </ul> 
+         		 <div class="more">
+         		 	<a href="#">查看更多</a>
+         		 	<div class="dot">
+         		 		<span></span>
+         		 		<span></span>
+         		 		<span></span>
+         		 	</div>
+         		 </div>
+        </div>
+        <div class="res-list" style="display:none">
+			<ul class="main-list">  
+			    <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【日本】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	
+         		         	 <div class="price">
+         		         	 	￥50<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>
+         		     <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【日本】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	
+         		         	 <div class="price">
+         		         	 	￥20<span>起/人</span>
+         		         	    <p>按经济车型满员计算</p>
+         		         	 </div>
+	     		         </div>
+     		         </a>    
+         		     </li>
+         		     <li>     
+		             <a href="#" target="_blank">            
+		             	<div class="img-wrap"> 
+		             		   
+         		         </div>
+         		         <div class="cen-wrap"> 
+         		         	<p class="cen-title">【日本】首尔金浦/仁川/釜山机场 中文接机送机</p>
+         		         	
+         		         	 <div class="price">
+         		         	 	￥150<span>起/人</span>
          		         	    <p>按经济车型满员计算</p>
          		         	 </div>
 	     		         </div>
@@ -190,13 +347,14 @@
          		         		<p>固定线路可调整行程</p>
          		         	</div>
          		         	 <div class="price">
-         		         	 	￥45<span>起/人</span>
+         		         	 	￥10<span>起/人</span>
          		         	    <p>按经济车型满员计算</p>
          		         	 </div>
 	     		         </div>
      		         </a>    
          		</li>            
          		 </ul> 
+         		
          		 <div class="more">
          		 	<a href="#">查看更多</a>
          		 	<div class="dot">
@@ -215,13 +373,13 @@
 			</div>
 		</div>
 		<div class="btn-aside">
-			<button class="light">
+			<button class="light" style=display:none>
 				<span></span>
 			</button>
-			<button class="backTop"><span></span></button>
+			<button class="backTop" style="display:none"><span></span></button>
 		</div>
 		<!-- 弹窗 -->
-		<div class="popup-guide popup">
+		<div class="popup-guide popup" id="guide">
 			<div class="popup-top">
 				<button class="btn-close"></button>
 			</div>
@@ -243,7 +401,7 @@
 				<input type="button" value="我知道啦" class="btn-know">
 			</div>
 		</div>
-		<div class="popup-guide popup-had popup">
+		<div class="popup-guide popup-had popup" id="popup-done">
 			<div class="popup-top">
 				<button class="btn-close" style="right:-0.5rem;"></button>
 			</div>
@@ -255,7 +413,7 @@
 				<input type="button" value="我知道啦" class="btn-know">
 			</div>
 		</div>
-		<div class="popup-guide popup-had popup">
+		<div class="popup-guide popup-had popup" id="popup-lack">
 			<div class="popup-top">
 				<button class="btn-close" style="right:-0.5rem;"></button>
 			</div>
@@ -267,7 +425,7 @@
 				<input type="button" value="我知道啦" class="btn-know">
 			</div>
 		</div>
-		<div class="popup-guide popup-had popup">
+		<div class="popup-guide popup-had popup" id="popup-finish">
 			<div class="popup-top">
 				<button class="btn-close" style="right:-0.5rem;"></button>
 			</div>
@@ -280,7 +438,7 @@
 				<input type="button" value="我知道啦" class="btn-know">
 			</div>
 		</div>
-		<div class="popup-rules popup">
+		<div class="popup-rules popup" id="popup-rules">
 			<div class="popup-top">
 				<button class="btn-close" style="bottom:0.7rem;"></button>
 			</div>
@@ -293,20 +451,14 @@
 						<li><p>优惠卷不可兑换现金、不可开发票、不可找零，且不能与其他优惠同享（打折商品不支持使用优惠卷）；</p></li>
 						<li><p>退款金额超过优惠卷抵扣金额，优惠卷可退还；退款金额低于优惠卷抵扣金额，优惠卷不可拆分、不可退还；</p></li>
 						<li><p>如果用户对优惠卷使用规则或在使用皇包车下单和/或在相关服务过程中有任何疑问或需要任何帮助，请及时与皇包车客服联系，联系电话：400-610-0066；</p>
-</li>
+						</li>
 						<li><p>优惠卷最终解释权归北京纯粹旅行有限公司（品牌名称：皇包车）所有；</p></li>
 						<li><p>活动时间：截止至2016年12月31日。</p></li>
 					</ol>
-					
-					
-					
-					
-										
-					
 				</div>
 			</div>
 		</div>
-		<div class="red-envelope popup">
+		<div class="red-envelope popup" id="red-envelope">
 			<div class="popup-top">
 				<button class="btn-close"></button>
 			</div>

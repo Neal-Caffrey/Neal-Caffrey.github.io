@@ -262,8 +262,8 @@
         background: url("images/price.png") no-repeat center;
         background-size: cover;
         font-size: 0.33rem;
-        width: 2.3rem;
-        height: 0.7rem;
+        width: 2.6rem;
+        height: 0.8rem;
         position: absolute;
         bottom: 0.3rem;
         right: 0.2rem;
@@ -531,7 +531,7 @@
         background-size: cover;
         margin-bottom: 0.35rem; }
         .red-envelope .popup-inner .money .card-wrap .card-all .price {
-          width: 1.95rem;
+          width: 1.9rem;
           text-align: center;
           font-weight: bold;
           height: 100%; }
@@ -544,15 +544,18 @@
             color: #ee3c30; }
 
 .card-all .price-con {
-  margin: 0.4rem 0.2rem; }
+  margin-top: 0.4rem;
+  margin-left: 0.2rem; }
   .card-all .price-con ul li {
     float: left;
     margin-right: 0.2rem;
     font-size: 0.22rem;
     padding: 0rem 0.05rem;
     height: 0.35rem;
-    line-height: 0.35rem;
+    line-height: 0.3rem;
     border-radius: 0.05rem; }
+    .card-all .price-con ul li:last-child {
+      margin-right: 0; }
   .card-all .price-con ul .all {
     color: #146aba;
     border: 0.01rem solid #146aba; }
@@ -584,6 +587,15 @@
   font-size: 0.18rem;
   color: #fff;
   text-align: center;
-  margin-top: 8.9rem; }
+  margin-top: 0.5rem; }
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
