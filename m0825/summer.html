@@ -13,7 +13,7 @@
 	<style type="text/css">
 		#guide,.popup-rules, .red-envelope, .popup-had{
 			position: fixed;
-		    top: 10%;
+		    top: 5%;
 		    left: 50%;
 		    margin-left: -3.15rem;
 		    z-index: 200;
@@ -52,7 +52,7 @@
 				mask=$("#mask"),
 				know=$(".btn-know"),
 				close=$(".btn-close"),
-				rules=$(".icon-rule"),
+				rules=$("#rulePopup"),
 				popupRules=$("#popup-rules"),
 				redEnvelope=$("#red-envelope"),
 				coupon=$("#coupon"),
@@ -128,6 +128,57 @@
 				$mainList.eq(index).show().siblings('.res-list').hide();
 			})
 
+
+			var index=1;
+			var mg=$(".guider-box");
+			var len=mg.length;
+			play(0);
+			function play(n){
+				mg.eq(n).fadeIn(500).siblings(".guider-box").fadeOut(400);
+			}
+			// setInterval(function(){
+			// 	play(index);
+			// 	index++;
+			// 	if(index==len){
+			// 		index=0;
+			// 	}
+			// },3000)
+
+			var bannerWrap=$(".banner-wrap");
+			var btnN=$(".btn-next"),
+				btnP=$(".btn-prev");
+			var m=0;
+			var circle=bannerWrap.find("ul li span");
+			autoPlay(0);
+			circle.eq(0).parent('li').find('span').removeClass('active').addClass('active');
+			function autoPlay(n){
+				bannerWrap.eq(n).fadeIn(400).siblings('.banner-wrap').fadeOut(100);
+			}
+			btnN.on("click",function(){
+				
+				m++;
+				autoPlay(m);
+				// if(m=0){
+				// 	n=m;
+				// }
+				// else if(m=1){
+				// 	n=6;
+				// }else if(m=2){
+				// 	n=13;
+				// }
+				// circle.eq(n).parent('li').find('span').removeClass('active').addClass('active');
+				if(m>=bannerWrap.length-1)
+					m=-1;
+			})
+			btnP.on("click",function(){
+				m--;
+				if(m<0)
+					m=bannerWrap.length-1;
+				autoPlay(m);
+				circle.eq(m).parent('li').find('span').removeClass('active').addClass('active');
+
+			})
+
 		})
 	</script>
 </head>
@@ -148,7 +199,7 @@
 		<div class="user-input">
 			<input type="tel" class="num" id="phnoeNum" placeholder="请输入手机号">
 			<input type="button" value="点击领取优惠券" class="coupon" id="coupon">
-			<p><a href="#">优惠卷使用规则</a><span class="icon-rule"></span></p>
+			<p id="rulePopup"><a href="#">优惠卷使用规则</a><span class="icon-rule"></span></p>
 		</div>
 		<div class="sku-banner">
 			<div class="c-title"></div>
@@ -159,14 +210,48 @@
 				<div class="btn-prev"></div>
 				<div class="btn-next"></div>
 				<ul>
-					<li><a href="#"><span class="active"></span></a></li>
-					<li><a href="#"><span></span></a></li>
-					<li><a href="#"><span></span></a></li>
-					<li><a href="#"><span></span></a></li>
-					<li><a href="#"><span></span></a></li>
+					<li><span ></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
 				</ul>
 				<div class="goods-detail">
 					<p>[东京]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+				</div>
+			</div>
+			<div class="banner-wrap" style="display:none">
+				<div class="price-wrap">
+					￥1,110 <span>起/人</span>
+				</div>
+				<div class="btn-prev"></div>
+				<div class="btn-next"></div>
+				<ul>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+				</ul>
+				<div class="goods-detail">
+					<p>[首尔]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+				</div>
+			</div>
+			<div class="banner-wrap" style="display:none">
+				<div class="price-wrap">
+					￥1,420 <span>起/人</span>
+				</div>
+				<div class="btn-prev"></div>
+				<div class="btn-next"></div>
+				<ul>
+					<li><span ></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+				</ul>
+				<div class="goods-detail">
+					<p>[中国]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
 				</div>
 			</div>
 		</div>
@@ -195,7 +280,7 @@
          		         
          		         	 <div class="price">
          		         	 	￥25<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	    <!-- <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
@@ -210,7 +295,7 @@
          		         
          		         	 <div class="price">
          		         	 	￥230<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	   <!--  <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
@@ -227,7 +312,7 @@
          		         	</dl> -->
          		         	 <div class="price">
          		         	 	￥100<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	    <!-- <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
@@ -254,7 +339,7 @@
          		         	
          		         	 <div class="price">
          		         	 	￥50<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	    <!-- <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
@@ -269,7 +354,7 @@
          		         	
          		         	 <div class="price">
          		         	 	￥20<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	    <!-- <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
@@ -284,7 +369,7 @@
          		         	
          		         	 <div class="price">
          		         	 	￥150<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	    <!-- <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
@@ -330,7 +415,7 @@
          		         	</div>
          		         	 <div class="price">
          		         	 	￥230<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	    <!-- <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
@@ -347,8 +432,8 @@
          		         		<p>固定线路可调整行程</p>
          		         	</div>
          		         	 <div class="price">
-         		         	 	￥10<span>起/人</span>
-         		         	    <p>按经济车型满员计算</p>
+         		         	 	￥456<span>起/人</span>
+         		         	    <!-- <p>按经济车型满员计算</p> -->
          		         	 </div>
 	     		         </div>
      		         </a>    
