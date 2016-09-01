@@ -574,7 +574,8 @@
             font-size: 25%; }
           .red-envelope .popup-inner .money .card-wrap .card-all .price span {
             font-size: 0.5rem;
-            color: #ee3c30; }
+            color: #ee3c30;
+            vertical-align: middle}
 
 .card-all .price-con {
   margin-top: 0.4rem;
