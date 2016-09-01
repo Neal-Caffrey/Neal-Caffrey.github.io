@@ -569,7 +569,7 @@
           font-weight: bold;
           height: 100%; }
           .red-envelope .popup-inner .money .card-wrap .card-all .price sub {
-            bottom: 0.05rem;
+            bottom: 5px;
             color: #ee3c30;
             font-size: 25%; }
           .red-envelope .popup-inner .money .card-wrap .card-all .price span {
