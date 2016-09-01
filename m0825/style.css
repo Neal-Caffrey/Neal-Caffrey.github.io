@@ -80,12 +80,13 @@
           box-shadow: -3px -3px 20px inset; */ }
 
 .user-input {
-  text-align: center; }
+  text-align: center;
+  font-size: 0; }
   .user-input input {
     display: block;
     width: 5.85rem;
     height: 0.8rem;
-    border: 0.02rem solid #000;
+    border: 1px solid #000;
     border-radius: 0.5rem;
     font-size: 0.32rem;
     text-align: center; }
@@ -124,17 +125,59 @@
 .sku-banner {
   margin-top: 0.4rem;
   height: 4.4rem;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  .sku-banner ul {
+    position: absolute;
+    left: 50%;
+    margin-left: -0.44rem;
+    bottom: 1rem;
+    z-index: 99; }
+    .sku-banner ul li {
+      float: left;
+      margin: 0 0.05rem; }
+      .sku-banner ul li span {
+        display: inline-block;
+        width: 0.15rem;
+        height: 0.15rem;
+        border-radius: 50%;
+        background-color: #a5918a;
+        opacity: 0.8; }
+      .sku-banner ul li span.active {
+        opacity: 1;
+        background-color: #ffffff; }
   .sku-banner .banner-wrap {
     width: 6.88rem;
     height: 3.32rem;
     background: url("images/banner.png") no-repeat center;
     background-size: cover;
-    border: 0.02rem solid #000;
+    border: 1px solid #000;
     border-radius: 0.17rem;
     margin: 0.2rem auto;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    /* ul{
+    	position: absolute;
+    	left: 50%;
+    	margin-left: -0.44rem;
+    	bottom: 1rem;
+    	li{
+    		float: left;
+    		margin: 0 0.05rem;
+    		span{
+    			display: inline-block;
+    			width: 0.15rem;
+    			height: 0.15rem;
+    			border-radius: 50%;
+    			background-color: #a5918a;
+    			opacity: 0.8;
+    		}
+    		span.active{
+    			opacity: 1;
+    			background-color:#ffffff;
+    		}
+    	}
+    } */ }
     .sku-banner .banner-wrap .goods-detail {
       width: 100%;
       height: 0.93rem;
@@ -148,7 +191,7 @@
     .sku-banner .banner-wrap .btn-prev, .sku-banner .banner-wrap .btn-next {
       width: 0.6rem;
       height: 0.6rem;
-      border: 0.02rem solid #afb3ca;
+      border: 1px solid #afb3ca;
       border-radius: 50%;
       position: absolute;
       top: 50%;
@@ -176,24 +219,6 @@
       .sku-banner .banner-wrap .price-wrap span {
         font-size: 0.16rem;
         color: #423a11; }
-    .sku-banner .banner-wrap ul {
-      position: absolute;
-      left: 50%;
-      margin-left: -0.44rem;
-      bottom: 1rem; }
-      .sku-banner .banner-wrap ul li {
-        float: left;
-        margin: 0 0.05rem; }
-        .sku-banner .banner-wrap ul li span {
-          display: inline-block;
-          width: 0.15rem;
-          height: 0.15rem;
-          border-radius: 50%;
-          background-color: #a5918a;
-          opacity: 0.8; }
-        .sku-banner .banner-wrap ul li span.active {
-          opacity: 1;
-          background-color: #ffffff; }
 
 .service {
   margin-top: 0.4rem; }
@@ -203,7 +228,7 @@
   .service .service-con {
     margin-top: 0.15rem; }
     .service .service-con ul {
-      border: 0.02rem solid #000;
+      border: 1px solid #000;
       border-radius: 0.17rem;
       width: 6.9rem;
       height: 0.8rem;
@@ -241,7 +266,7 @@
       display: none; }
 
 .res-list {
-  border: 0.02rem solid #000;
+  border: 1px solid #000;
   border-radius: 0.17rem;
   background-color: #fff;
   margin-top: 0.25rem; }
@@ -249,7 +274,7 @@
     height: 2.43rem;
     padding: 0.3rem 0.2rem;
     position: relative;
-    border-bottom: 0.01rem solid #cccccc; }
+    border-bottom: 1px solid #cccccc; }
     .res-list .main-list li a {
       display: block;
       overflow: hidden; }
@@ -399,7 +424,7 @@
   text-align: center;
   background-color: #ffe536;
   color: #000;
-  border: 0.02rem solid #000;
+  border: 1px solid #000;
   border-radius: 0.15rem;
   box-shadow: -0rem -0.05rem 0rem #9c8802 inset; }
 
@@ -409,7 +434,7 @@
   position: relative; }
   .popup-guide .popup-inner {
     background-color: #fff;
-    border: 0.02rem solid #000;
+    border: 1px solid #000;
     border-radius: 0.17rem;
     overflow: hidden; }
     .popup-guide .popup-inner .img-wrap {
@@ -454,7 +479,7 @@
   position: relative; }
   .popup-rules .popup-inner {
     background-color: #fff;
-    border: 0.02rem solid #000;
+    border: 1px solid #000;
     border-radius: 0.17rem;
     position: relative; }
     .popup-rules .popup-inner .rule-title {
@@ -493,7 +518,7 @@
       .red-envelope .popup-inner .btn-wrap input {
         width: 2.65rem;
         height: 0.92rem;
-        border: 0.02rem solid #000;
+        border: 1px solid #000;
         border-radius: 0.17rem;
         background-color: #ffe536;
         font-size: 0.34rem;
@@ -509,7 +534,7 @@
       bottom: 0.5rem;
       left: 0.3rem;
       background: #faefb9;
-      border: 0.01rem solid #000; }
+      border: 1px solid #000; }
       .red-envelope .popup-inner .money .money-inner {
         height: 6.2rem;
         width: 100%;
@@ -564,19 +589,19 @@
       margin-right: 0; }
   .card-all .price-con ul .all {
     color: #146aba;
-    border: 0.01rem solid #146aba; }
+    border: 1px solid #146aba; }
   .card-all .price-con ul .jsj {
     color: #4a8f01;
-    border: 0.01rem solid #4a8f01; }
+    border: 1px solid #4a8f01; }
   .card-all .price-con ul .bc {
     color: #8203bd;
-    border: 0.01rem solid #8203bd; }
+    border: 1px solid #8203bd; }
   .card-all .price-con ul .dc {
     color: #f1d23f;
-    border: 0.01rem solid #f1d23f; }
+    border: 1px solid #f1d23f; }
   .card-all .price-con ul .line-bc {
     color: #f08a2f;
-    border: 0.01rem solid #f08a2f; }
+    border: 1px solid #f08a2f; }
   .card-all .price-con p {
     font-size: 0.3rem;
     margin-top: 0.15rem; }

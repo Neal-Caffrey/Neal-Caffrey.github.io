@@ -13,7 +13,7 @@
 	<style type="text/css">
 		#guide,.popup-rules, .red-envelope, .popup-had{
 			position: fixed;
-		    top: 5%;
+		    top: 0;
 		    left: 50%;
 		    margin-left: -3.15rem;
 		    z-index: 200;
@@ -101,7 +101,6 @@
 					input.focus();
 					return false;
 				}else{
-					alert("您的手机号是："+num);
 					return true;
 				}
 			}
@@ -144,40 +143,48 @@
 			// 	}
 			// },3000)
 
-			var bannerWrap=$(".banner-wrap");
+			var bannerSku=$(".sku-banner");
+			var bannerWrap=$(".banner-wrap")
 			var btnN=$(".btn-next"),
 				btnP=$(".btn-prev");
 			var m=0;
-			var circle=bannerWrap.find("ul li span");
+			var circle=bannerSku.find("ul li span");
 			autoPlay(0);
-			circle.eq(0).parent('li').find('span').removeClass('active').addClass('active');
 			function autoPlay(n){
-				bannerWrap.eq(n).fadeIn(400).siblings('.banner-wrap').fadeOut(100);
+				bannerWrap.eq(n).fadeIn(1500).siblings('.banner-wrap').fadeOut(500);
 			}
+
 			btnN.on("click",function(){
-				
 				m++;
 				autoPlay(m);
-				// if(m=0){
-				// 	n=m;
-				// }
-				// else if(m=1){
-				// 	n=6;
-				// }else if(m=2){
-				// 	n=13;
-				// }
-				// circle.eq(n).parent('li').find('span').removeClass('active').addClass('active');
+				circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
 				if(m>=bannerWrap.length-1)
-					m=-1;
+				m= -1;
 			})
+
 			btnP.on("click",function(){
 				m--;
 				if(m<0)
-					m=bannerWrap.length-1;
+				m=bannerWrap.length-1;
 				autoPlay(m);
-				circle.eq(m).parent('li').find('span').removeClass('active').addClass('active');
-
+				circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
 			})
+			// var time=setInterval(showTime,2000)
+			// function showTime(){
+			// 	autoPlay(m);
+			// 	circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
+			// 	m++;
+			// 	if(m==bannerWrap.length){
+			// 		m=0;
+			// 	}	
+			// }
+
+			// bannerWrap.mouseover(function(){
+			// 	clearInterval(time);
+			// });
+			// bannerWrap.mouseout(function(){
+			// 	time=setInterval(showTime,2000);
+			// });
 
 		})
 	</script>
@@ -203,21 +210,21 @@
 		</div>
 		<div class="sku-banner">
 			<div class="c-title"></div>
-			<div class="banner-wrap">
-				<div class="price-wrap">
-					￥1,320 <span>起/人</span>
-				</div>
-				<div class="btn-prev"></div>
-				<div class="btn-next"></div>
-				<ul>
-					<li><span ></span></li>
+			<ul>
+					<li><span class="active"></span></li>
 					<li><span></span></li>
 					<li><span></span></li>
 					<li><span></span></li>
 					<li><span></span></li>
 				</ul>
+			<div class="banner-wrap" >
+				<div class="price-wrap">
+					￥1,320 <span>起/人</span>
+				</div>
+				<div class="btn-prev"></div>
+				<div class="btn-next"></div>
 				<div class="goods-detail">
-					<p>[东京]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+					<p>[第1页]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
 				</div>
 			</div>
 			<div class="banner-wrap" style="display:none">
@@ -226,15 +233,8 @@
 				</div>
 				<div class="btn-prev"></div>
 				<div class="btn-next"></div>
-				<ul>
-					<li><span></span></li>
-					<li><span></span></li>
-					<li><span></span></li>
-					<li><span></span></li>
-					<li><span></span></li>
-				</ul>
 				<div class="goods-detail">
-					<p>[首尔]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+					<p>[第2页]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
 				</div>
 			</div>
 			<div class="banner-wrap" style="display:none">
@@ -243,15 +243,35 @@
 				</div>
 				<div class="btn-prev"></div>
 				<div class="btn-next"></div>
-				<ul>
+				<!-- <ul>
 					<li><span ></span></li>
 					<li><span></span></li>
 					<li><span></span></li>
 					<li><span></span></li>
 					<li><span></span></li>
-				</ul>
+				</ul> -->
 				<div class="goods-detail">
-					<p>[中国]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+					<p>[第3页]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+				</div>
+			</div>
+			<div class="banner-wrap" style="display:none">
+				<div class="price-wrap">
+					￥1,110 <span>起/人</span>
+				</div>
+				<div class="btn-prev"></div>
+				<div class="btn-next"></div>
+				<div class="goods-detail">
+					<p>[第4页]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
+				</div>
+			</div>
+			<div class="banner-wrap" style="display:none">
+				<div class="price-wrap">
+					￥1,110 <span>起/人</span>
+				</div>
+				<div class="btn-prev"></div>
+				<div class="btn-next"></div>
+				<div class="goods-detail">
+					<p>[第5页]  亲子必游！乐高乐园+科学未来馆+汽车主题乐园 </p>
 				</div>
 			</div>
 		</div>
@@ -397,7 +417,7 @@
          		         		<span class="icon-z">超自由</span>
          		         		<p>行程随心定</p>
          		         	</div>
-         		         	 <div class="price" style="line-height: 0.7rem;">
+         		         	 <div class="price" style="line-height: 0.8rem;">
          		         	 	按天报价</div>
 	     		         </div>
      		         </a>    
