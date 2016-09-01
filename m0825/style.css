@@ -382,7 +382,9 @@
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 50%;
-    background-color: #ffe536; }
+    background-color: #ffe536; 
+    font-size: 0;
+  }
   .main-wrapper .btn-aside .light {
     margin-bottom: 0.35rem; }
     .main-wrapper .btn-aside .light span {
