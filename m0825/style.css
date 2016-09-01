@@ -614,7 +614,7 @@
   height: 0.11rem;
   background: url("images/lace.png") no-repeat center;
   background-size: cover;
-  bottom: -0.02rem; }
+  bottom: -1px; }
 
 .popup-inner .foot-text {
   font-size: 0.18rem;
