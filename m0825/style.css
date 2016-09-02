@@ -74,7 +74,7 @@
       margin-left: -0.95rem;
       background: url("images/who_btn.png") no-repeat center;
       background-size: cover;
-        /* background-color: #ffe536;
+      	/* background-color: #ffe536;
           border: 2px solid #000;
           border-radius: 7px;
           box-shadow: -3px -3px 20px inset; */ }
@@ -149,76 +149,47 @@
   .sku-banner .banner-wrap {
     width: 6.88rem;
     height: 3.32rem;
-    background: url("images/banner.png") no-repeat center;
-    background-size: cover;
     border: 1px solid #000;
     border-radius: 0.17rem;
     margin: 0.2rem auto;
     position: relative;
-    overflow: hidden;
-    /* ul{
-      position: absolute;
-      left: 50%;
-      margin-left: -0.44rem;
-      bottom: 1rem;
-      li{
-        float: left;
-        margin: 0 0.05rem;
-        span{
-          display: inline-block;
-          width: 0.15rem;
-          height: 0.15rem;
-          border-radius: 50%;
-          background-color: #a5918a;
-          opacity: 0.8;
-        }
-        span.active{
-          opacity: 1;
-          background-color:#ffffff;
-        }
-      }
-    } */ }
-    .sku-banner .banner-wrap .goods-detail {
-      width: 100%;
-      height: 0.93rem;
-      padding: 0.2rem;
-      padding-bottom: none;
-      background-color: #fff;
-      position: absolute;
-      bottom: 0; }
-      .sku-banner .banner-wrap .goods-detail p {
-        font-size: 0.28rem; }
-    .sku-banner .banner-wrap .btn-prev, .sku-banner .banner-wrap .btn-next {
-      width: 0.6rem;
-      height: 0.6rem;
-      border: 1px solid #afb3ca;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      margin-top: -0.6rem;
-      cursor: pointer; }
-    .sku-banner .banner-wrap .btn-prev {
-      left: 0.1rem;
-      background: url("images/pre.png") no-repeat center; }
-    .sku-banner .banner-wrap .btn-next {
-      right: 0.1rem;
-      background: url("images/next.png") no-repeat center; }
-    .sku-banner .banner-wrap .price-wrap {
-      position: absolute;
-      width: 2.3rem;
-      height: 0.5rem;
-      line-height: 0.5rem;
-      text-align: center;
-      padding-left: 0.15rem;
-      background: url("images/top_btn.png") no-repeat;
-      background-size: cover;
-      top: 0.25rem;
-      right: 0;
-      font-size: 0.26rem;
-      color: #000; }
-      .sku-banner .banner-wrap .price-wrap span {
-        font-size: 0.16rem;
-        color: #423a11; }
+    overflow: hidden; }
+    .sku-banner .banner-wrap a {
+      display: inline-block; }
+      .sku-banner .banner-wrap a .img-wraper {
+        overflow: hidden; }
+        .sku-banner .banner-wrap a .img-wraper img {
+          width: 6.88rem;
+          height: 3.32rem; }
+      .sku-banner .banner-wrap a .goods-detail {
+        width: 100%;
+        height: 0.93rem;
+        padding: 0.2rem;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0; }
+        .sku-banner .banner-wrap a .goods-detail p {
+          font-size: 0.28rem;
+          color: #000;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+      .sku-banner .banner-wrap a .price-wrap {
+        position: absolute;
+        width: 2.3rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        text-align: center;
+        padding-left: 0.15rem;
+        background: url("images/top_btn.png") no-repeat;
+        background-size: cover;
+        top: 0.25rem;
+        right: 0;
+        font-size: 0.26rem;
+        color: #000; }
+        .sku-banner .banner-wrap a .price-wrap span {
+          font-size: 0.16rem;
+          color: #423a11; }
 
 .service {
   margin-top: 0.4rem; }
@@ -284,6 +255,21 @@
         float: left;
         margin-right: 0.2rem;
         background: url("images/view.png") no-repeat center;
+        background-size: cover; }
+      .res-list .main-list li a .img2 {
+        background: url("images/view2.png") no-repeat center;
+        background-size: cover; }
+      .res-list .main-list li a .img3 {
+        background: url("images/view3.png") no-repeat center;
+        background-size: cover; }
+      .res-list .main-list li a .img4 {
+        background: url("images/view4.png") no-repeat center;
+        background-size: cover; }
+      .res-list .main-list li a .img5 {
+        background: url("https://static.huangbaoche.com/default/20160628/l_201606281129039261.png") no-repeat center;
+        background-size: cover; }
+      .res-list .main-list li a .img6 {
+        background: url("https://static.huangbaoche.com/default/20160713/l_201607131025352566.png") no-repeat center;
         background-size: cover; }
       .res-list .main-list li a .cen-wrap .cen-title {
         font-size: 0.28rem;
@@ -546,7 +532,7 @@
       background: #faefb9;
       border: 1px solid #000; }
       .red-envelope .popup-inner .money .money-inner {
-        height: 6.2rem;
+        height: 6.65rem;
         width: 100%;
         overflow-y: auto; }
       .red-envelope .popup-inner .money .tips {
@@ -560,75 +546,88 @@
           color: #020202; }
         .red-envelope .popup-inner .money .tips .line {
           width: 0.45rem;
-          height: 0.01rem;
+          height: 1px;
           background: #020202;
           position: absolute;
           top: 0.15rem; }
       .red-envelope .popup-inner .money .card-wrap .card-all {
-        width: 5.8rem;
-        height: 1.6rem;
+        width: 6.25rem;
+        height: 2.05rem;
         margin: 0 auto;
         background: url("images/bg3.png") no-repeat center;
         background-size: cover;
-        margin-bottom: 0.35rem; }
+        margin-bottom: 0.2rem;
+        position: relative;
+        overflow: hidden;
+        font-family: 'PingFang SC'; }
         .red-envelope .popup-inner .money .card-wrap .card-all .price {
-          width: 1.9rem;
+          width: 1.98rem;
           text-align: center;
           font-weight: bold;
-          height: 100%; }
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0; }
           .red-envelope .popup-inner .money .card-wrap .card-all .price sub {
-            bottom: 0.12rem;
+            bottom: 0.1rem;
             color: #ee3c30;
-            font-size: 25%; }
+            font-size: 25%;
+            font-family: 'PingFang SC Medium'; }
           .red-envelope .popup-inner .money .card-wrap .card-all .price span {
-            font-size: 0.5rem;
+            font-size: 0.6rem;
             color: #ee3c30;
-            vertical-align: middle; }
+            vertical-align: middle;
+            font-family: 'PingFang SC Medium'; }
+          .red-envelope .popup-inner .money .card-wrap .card-all .price p {
+            font-family: 'PingFang SC';
+            font-size: 0.3rem; }
 
 .card-all .price-con {
-  margin-top: 0.4rem;
-  margin-left: 0.2rem; }
+  margin-top: 0.3rem;
+  margin-left: 1.98rem; }
   .card-all .price-con ul li {
     float: left;
-    margin-right: 0.2rem;
+    margin-right: 0.3rem;
     font-size: 0.22rem;
-    padding: 0rem 0.05rem;
-    height: 0.35rem;
-    line-height: 0.3rem;
-    border-radius: 0.05rem; }
+    padding: 0.05rem 0.1rem;
+    margin-bottom: 0.15rem;
+    line-height: 0.35rem;
+    border-radius: 0.05rem;
+    text-align: center; }
     .card-all .price-con ul li:last-child {
       margin-right: 0; }
   .card-all .price-con ul .all {
-    color: #146aba;
-    border: 1px solid #146aba; }
-  .card-all .price-con ul .jsj {
-    color: #4a8f01;
-    border: 1px solid #4a8f01; }
-  .card-all .price-con ul .bc {
-    color: #8203bd;
-    border: 1px solid #8203bd; }
+    color: #0661b6;
+    border: 1px solid #0661b6; }
+  .card-all .price-con ul .jj {
+    color: #fed631;
+    border: 1px solid #fed631; }
+  .card-all .price-con ul .sj {
+    color: #fd644a;
+    border: 1px solid #fd644a; }
+  .card-all .price-con ul .day-bc {
+    color: #3406b6;
+    border: 1px solid #3406b6; }
   .card-all .price-con ul .dc {
-    color: #f1d23f;
-    border: 1px solid #f1d23f; }
+    color: #bc0fd0;
+    border: 1px solid #bc0fd0; }
   .card-all .price-con ul .line-bc {
-    color: #f08a2f;
-    border: 1px solid #f08a2f; }
+    color: #00ac0c;
+    border: 1px solid #00ac0c; }
   .card-all .price-con p {
-    font-size: 0.3rem;
-    margin-top: 0.15rem; }
-
-.lace {
-  position: absolute;
-  width: 6.31rem;
-  height: 0.11rem;
-  background: url("images/lace.png") no-repeat center;
-  background-size: cover;
-  bottom: -1px; }
+    font-size: 0.22rem;
+    line-height: 0.35rem;
+    color: #7e7d7d; }
+    .card-all .price-con p span {
+      color: #000; }
+  .card-all .price-con p:last-child {
+    font-size: 0.18rem; }
 
 .popup-inner .foot-text {
   font-size: 0.18rem;
   color: #fff;
   text-align: center;
-  margin-top: 0.53rem; }
+  margin-top: 1px;
+  white-space: nowrap; }
 
 /*# sourceMappingURL=style.css.map */
