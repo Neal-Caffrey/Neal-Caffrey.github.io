@@ -74,7 +74,7 @@
       margin-left: -0.95rem;
       background: url("images/who_btn.png") no-repeat center;
       background-size: cover;
-      	/* background-color: #ffe536;
+        /* background-color: #ffe536;
           border: 2px solid #000;
           border-radius: 7px;
           box-shadow: -3px -3px 20px inset; */ }
@@ -157,26 +157,26 @@
     position: relative;
     overflow: hidden;
     /* ul{
-    	position: absolute;
-    	left: 50%;
-    	margin-left: -0.44rem;
-    	bottom: 1rem;
-    	li{
-    		float: left;
-    		margin: 0 0.05rem;
-    		span{
-    			display: inline-block;
-    			width: 0.15rem;
-    			height: 0.15rem;
-    			border-radius: 50%;
-    			background-color: #a5918a;
-    			opacity: 0.8;
-    		}
-    		span.active{
-    			opacity: 1;
-    			background-color:#ffffff;
-    		}
-    	}
+      position: absolute;
+      left: 50%;
+      margin-left: -0.44rem;
+      bottom: 1rem;
+      li{
+        float: left;
+        margin: 0 0.05rem;
+        span{
+          display: inline-block;
+          width: 0.15rem;
+          height: 0.15rem;
+          border-radius: 50%;
+          background-color: #a5918a;
+          opacity: 0.8;
+        }
+        span.active{
+          opacity: 1;
+          background-color:#ffffff;
+        }
+      }
     } */ }
     .sku-banner .banner-wrap .goods-detail {
       width: 100%;
@@ -382,14 +382,8 @@
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 50%;
-<<<<<<< HEAD
     font-size: 0;
     background-color: #ffe536; }
-=======
-    background-color: #ffe536; 
-    font-size: 0;
-  }
->>>>>>> 86e348292e83de2755287e851fc8654151afad5a
   .main-wrapper .btn-aside .light {
     margin-bottom: 0.35rem; }
     .main-wrapper .btn-aside .light span {
@@ -589,11 +583,7 @@
           .red-envelope .popup-inner .money .card-wrap .card-all .price span {
             font-size: 0.5rem;
             color: #ee3c30;
-<<<<<<< HEAD
             vertical-align: middle; }
-=======
-            vertical-align: middle}
->>>>>>> 86e348292e83de2755287e851fc8654151afad5a
 
 .card-all .price-con {
   margin-top: 0.4rem;
