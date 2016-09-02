@@ -382,8 +382,14 @@
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 50%;
+<<<<<<< HEAD
     font-size: 0;
     background-color: #ffe536; }
+=======
+    background-color: #ffe536; 
+    font-size: 0;
+  }
+>>>>>>> 86e348292e83de2755287e851fc8654151afad5a
   .main-wrapper .btn-aside .light {
     margin-bottom: 0.35rem; }
     .main-wrapper .btn-aside .light span {
@@ -583,7 +589,11 @@
           .red-envelope .popup-inner .money .card-wrap .card-all .price span {
             font-size: 0.5rem;
             color: #ee3c30;
+<<<<<<< HEAD
             vertical-align: middle; }
+=======
+            vertical-align: middle}
+>>>>>>> 86e348292e83de2755287e851fc8654151afad5a
 
 .card-all .price-con {
   margin-top: 0.4rem;
