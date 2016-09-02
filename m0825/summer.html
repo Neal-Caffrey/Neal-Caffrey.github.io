@@ -10,25 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="base.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
-	<style type="text/css">
-		#guide,.popup-rules, .red-envelope, .popup-had{
-			position: fixed;
-		    top: 0;
-		    left: 50%;
-		    margin-left: -3.15rem;
-		    z-index: 200;
-		    display: none;
-		}
-		.popup-rules{
-			margin-left: -3.05rem;
-		}
-		.red-envelope{
-			margin-left: -3.46rem;
-		}
-		.popup-had{
-			margin-left: -2.6rem;
-		}
-	</style>
 	 <script>
         (function (doc, win) {
             var docEl = doc.documentElement,
@@ -71,11 +52,13 @@
 			})
 
 			coupon.on('click',function(){
-				var telPhone=phnoeNum.val();
-				if(checkPhone(phnoeNum,telPhone)){
-					mask.show();
-					redEnvelope.show();
-				}
+				// var telPhone=phnoeNum.val();
+				// if(checkPhone(phnoeNum,telPhone)){
+				// 	mask.show();
+				// 	redEnvelope.show();
+				// }
+				mask.show();
+				redEnvelope.show();
 				
 			})
 
@@ -190,7 +173,6 @@
 	</script>
 </head>
 <body>
-	<div class="mask" id="mask"></div>
  <div class="wrapper">	
 	<div class="main-wrapper">
 		<div class="top">
@@ -483,12 +465,11 @@
 			</button>
 			<button class="backTop" style="display:none"><span></span></button>
 		</div>
-		<!-- 弹窗 -->
-		<div class="popup-guide popup" id="guide">
-			<div class="popup-top">
+		<!-- 弹窗司导介绍 -->
+		<div class="popup-wrapper"style="display:none">
+			<div class="popup-guide" id="guide">
+				<div class="popup-inner">
 				<button class="btn-close"></button>
-			</div>
-			<div class="popup-inner">
 				<div class="img-wrap"></div>
 				<div class="inner-text">
 					<h3><i class="icon-car"></i>全球100000名华人司导带你玩</h3>
@@ -504,37 +485,40 @@
 					<p>更是会中文的中国人</p>
 				</div>
 				<input type="button" value="我知道啦" class="btn-know">
+				</div>
 			</div>
 		</div>
-		<div class="popup-guide popup-had popup" id="popup-done">
-			<div class="popup-top">
-				<button class="btn-close" style="right:-0.5rem;"></button>
-			</div>
-			<div class="popup-inner">
+		<!-- 弹窗领取过红包提示 -->
+		<div class="popup-wrapper"style="display:none">
+			<div class=" message" id="popup-done">
+				<div class="popup-inner">
+				<button class="btn-close"></button>
 				<div class="inner-text">
 					<p style="color: #000;
 				font-size: 0.29rem;">您已领取过红包啦，去App里“我的” 页面查看吧！ </p>
 				</div>
 				<input type="button" value="我知道啦" class="btn-know">
+				</div>
 			</div>
 		</div>
-		<div class="popup-guide popup-had popup" id="popup-lack">
-			<div class="popup-top">
-				<button class="btn-close" style="right:-0.5rem;"></button>
-			</div>
+		<!-- 弹窗优惠卷缺库存提示 -->
+		<div class="popup-wrapper"style="display:none">
+			<div class=" message" id="popup-lack">
 			<div class="popup-inner">
+				<button class="btn-close"></button>
 				<div class="inner-text">
 					<p style="color: #000;
 				font-size: 0.29rem;">啊哦，手慢了！小包子正在努力补充 优惠券库存！ </p>
 				</div>
 				<input type="button" value="我知道啦" class="btn-know">
 			</div>
-		</div>
-		<div class="popup-guide popup-had popup" id="popup-finish">
-			<div class="popup-top">
-				<button class="btn-close" style="right:-0.5rem;"></button>
 			</div>
+		</div>
+		<!-- 弹窗活动结束提示 -->
+		<div class="popup-wrapper"style="display:none">
+			<div class="message" id="popup-finish">
 			<div class="popup-inner">
+				<button class="btn-close"></button>
 				<div class="inner-text">
 					<p style="color: #000;
 				font-size: 0.29rem;">本次活动已经结束了哦......
@@ -542,14 +526,15 @@
 				</div>
 				<input type="button" value="我知道啦" class="btn-know">
 			</div>
-		</div>
-		<div class="popup-rules popup" id="popup-rules">
-			<div class="popup-top">
-				<button class="btn-close" style="bottom:0.7rem;"></button>
 			</div>
+		</div>
+		<!-- 弹窗优惠卷使用规则 -->
+		<div class="popup-wrapper" style="display:none">
+			<div class=" popup-rules" id="popup-rules">
 			<div class="popup-inner">
+				<button class="btn-close"></button>
 				<div class="rule-title"></div>
-				<div class="inner-text">
+				<div class="rule-text">
 					<ol>
 						<li><p> 同一个皇包车账号、同一台设备、同一个手机号以及同一个支付账号仅可领取一次，此优惠券仅限皇包车APP下单时使用；</p></li>
 						<li><p> 每单仅可使用一张优惠卷，一张优惠卷不可拆分多次使用；</p></li>
@@ -562,12 +547,13 @@
 					</ol>
 				</div>
 			</div>
-		</div>
-		<div class="red-envelope popup" id="red-envelope">
-			<div class="popup-top">
-				<button class="btn-close"></button>
 			</div>
+		</div>
+		<!-- 弹窗领取红包成功 -->
+		<div class="popup-wrapper" style="display:none">
+			<div class="red-envelope" id="red-envelope" >
 			<div class="popup-inner">
+				<button class="btn-close"></button>
 				<div class="btn-wrap clearfix">
 					<input type="button" class="use-btn" value="立即使用">
 					<input type="button" class="share-btn" value="分享好友">
@@ -580,7 +566,7 @@
 						<div class="line" style="right:0.1rem;"></div>
 					</div>
 					<div class="card-wrap">
-						<div class="card-all clearfix">
+						<div class="card-all">
 							<div class="price fl">
 								<sub>￥</sub><span>100</span>
 							</div>
@@ -618,15 +604,16 @@
 							</div>
 						</div>
 					</div>
-					<div style="position: absolute;
-    bottom: -0.01rem;"><div class="lace"></div></div>
 					
 				</div>
 			<p class="foot-text">红包可抵扣在线支付时的订单金额（最低支付1元）</p>
+			<div class="lace"></div>
 			</div>
 			</div>
 			
+			</div>
 		</div>
+		
      </div> 
  </div>
 </body>

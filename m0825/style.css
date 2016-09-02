@@ -382,6 +382,7 @@
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 50%;
+    font-size: 0;
     background-color: #ffe536; }
   .main-wrapper .btn-aside .light {
     margin-bottom: 0.35rem; }
@@ -398,44 +399,52 @@
     background-size: cover;
     display: inline-block; }
 
-.popup .popup-top {
-  margin-top: 0.6rem;
-  position: relative;
-  height: 0.67rem;
-  background-color: transparent; }
-  .popup .popup-top .btn-close {
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 100;
+  padding-top: 15%; }
+
+.popup-inner {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0.17rem; }
+  .popup-inner .btn-close {
     width: 0.67rem;
     height: 0.67rem;
     background: url("images/close1.png") no-repeat center;
     background-size: cover;
     position: absolute;
     right: 0;
-    bottom: 0.2rem; }
-.popup .btn-know {
-  display: block;
-  position: absolute;
-  bottom: -0.35rem;
-  left: 50%;
-  margin-left: -1.4rem;
-  font-weight: bold;
-  width: 2.8rem;
-  height: 0.75rem;
-  font-size: 0.32rem;
-  text-align: center;
-  background-color: #ffe536;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 0.15rem;
-  box-shadow: -0rem -0.05rem 0rem #9c8802 inset; }
+    top: -0.9rem; }
+  .popup-inner .btn-know {
+    display: block;
+    position: absolute;
+    bottom: -0.35rem;
+    left: 50%;
+    margin-left: -1.4rem;
+    font-weight: bold;
+    width: 2.8rem;
+    height: 0.75rem;
+    font-size: 0.32rem;
+    text-align: center;
+    background-color: #ffe536;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0.15rem;
+    box-shadow: -0rem -0.05rem 0rem #9c8802 inset; }
 
 .popup-guide {
   width: 6.3rem;
   margin: 0 auto;
   position: relative; }
   .popup-guide .popup-inner {
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 0.17rem;
     overflow: hidden; }
     .popup-guide .popup-inner .img-wrap {
       width: 6.35rem;
@@ -467,9 +476,11 @@
         font-size: 0.3rem;
         color: #000; }
 
-.popup-had {
-  width: 5.2rem; }
-  .popup-had .popup-inner {
+.message {
+  width: 5.2rem;
+  margin: 0 auto;
+  position: relative; }
+  .message .popup-inner {
     height: 1.9rem;
     padding: 0.5rem 0.2rem; }
 
@@ -478,10 +489,8 @@
   margin: 0 auto;
   position: relative; }
   .popup-rules .popup-inner {
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 0.17rem;
-    position: relative; }
+    position: relative;
+    overflow: visible; }
     .popup-rules .popup-inner .rule-title {
       width: 3.85rem;
       height: 0.97rem;
@@ -491,12 +500,12 @@
       top: -0.6rem;
       left: 50%;
       margin-left: -1.925rem; }
-    .popup-rules .popup-inner .inner-text {
+    .popup-rules .popup-inner .rule-text {
       margin: 0.7rem 0.4rem 0.5rem 0.7rem; }
-      .popup-rules .popup-inner .inner-text ol li {
+      .popup-rules .popup-inner .rule-text ol li {
         list-style-type: decimal;
         font-size: 0.26rem; }
-      .popup-rules .popup-inner .inner-text p {
+      .popup-rules .popup-inner .rule-text p {
         font-size: 0.26rem;
         color: #555452;
         line-height: 0.4rem; }
@@ -509,7 +518,8 @@
     height: 10.2rem;
     background: url("images/red-bg.png") no-repeat center;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    border: none; }
     .red-envelope .popup-inner .btn-wrap {
       position: relative;
       top: 1.7rem;
@@ -567,12 +577,13 @@
           font-weight: bold;
           height: 100%; }
           .red-envelope .popup-inner .money .card-wrap .card-all .price sub {
-            bottom: 0.05rem;
+            bottom: 0.12rem;
             color: #ee3c30;
             font-size: 25%; }
           .red-envelope .popup-inner .money .card-wrap .card-all .price span {
             font-size: 0.5rem;
-            color: #ee3c30; }
+            color: #ee3c30;
+            vertical-align: middle; }
 
 .card-all .price-con {
   margin-top: 0.4rem;
@@ -612,21 +623,12 @@
   height: 0.11rem;
   background: url("images/lace.png") no-repeat center;
   background-size: cover;
-  bottom: -0.01rem; }
+  bottom: -1px; }
 
 .popup-inner .foot-text {
   font-size: 0.18rem;
   color: #fff;
   text-align: center;
   margin-top: 0.53rem; }
-
-.mask {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  display: none; }
 
 /*# sourceMappingURL=style.css.map */
