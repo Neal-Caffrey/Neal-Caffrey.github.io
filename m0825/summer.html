@@ -28,148 +28,148 @@
     
 	</script>
 <script>
-	// 	$(function(){
-	// 		var who=$("#who"),
-	// 			mask=$("#mask"),
-	// 			know=$(".btn-know"),
-	// 			close=$(".btn-close"),
-	// 			rules=$("#rulePopup"),
-	// 			popupRules=$("#popup-rules"),
-	// 			redEnvelope=$("#red-envelope"),
-	// 			coupon=$("#coupon"),
-	// 			phnoeNum=$("#phnoeNum"),
-	// 			guide=$("#guide");
+		$(function(){
+			var who=$("#who"),
+				mask=$("#mask"),
+				know=$(".btn-know"),
+				close=$(".btn-close"),
+				rules=$("#rulePopup"),
+				popupRules=$("#popup-rules"),
+				redEnvelope=$("#red-envelope"),
+				coupon=$("#coupon"),
+				phnoeNum=$("#phnoeNum"),
+				guide=$("#guide");
 				
 
-	// 		who.on('click',function(){
-	// 			mask.show();
-	// 			guide.show();
-	// 		})
+			who.on('click',function(){
+				mask.show();
+				guide.show();
+			})
 			
-	// 		rules.on('click',function(){
-	// 			mask.show();
-	// 			popupRules.show();
-	// 		})
+			rules.on('click',function(){
+				mask.show();
+				popupRules.show();
+			})
 
-	// 		coupon.on('click',function(){
-	// 			// var telPhone=phnoeNum.val();
-	// 			// if(checkPhone(phnoeNum,telPhone)){
-	// 			// 	mask.show();
-	// 			// 	redEnvelope.show();
-	// 			// }
-	// 			mask.show();
-	// 			redEnvelope.show();
+			coupon.on('click',function(){
+				// var telPhone=phnoeNum.val();
+				// if(checkPhone(phnoeNum,telPhone)){
+				// 	mask.show();
+				// 	redEnvelope.show();
+				// }
+				mask.show();
+				redEnvelope.show();
 				
-	// 		})
+			})
 
-	// 		know.on("click",function(){
-	// 			mask.hide();
-	// 			guide.hide();
-	// 		})
+			know.on("click",function(){
+				mask.hide();
+				guide.hide();
+			})
 
-	// 		close.on("click",function(){
-	// 			mask.hide();
-	// 			guide.hide();
-	// 			popupRules.hide();
-	// 			redEnvelope.hide();
-	// 		})
+			close.on("click",function(){
+				mask.hide();
+				guide.hide();
+				popupRules.hide();
+				redEnvelope.hide();
+			})
 
-	// var checkPhone=function(input,num){
-	// 			if(!num){
-	// 				alert("请输入手机号！");
-	// 				input.focus();
-	// 				return false;
-	// 			}else if(!num.match(/^(((13[0-9]{1})|159|153)+\d{8})$/)){
-	// 				alert("手机号格式不正确！");
-	// 				input.focus();
-	// 				return false;
-	// 			}else{
-	// 				return true;
-	// 			}
-	// 		}
+	var checkPhone=function(input,num){
+				if(!num){
+					alert("请输入手机号！");
+					input.focus();
+					return false;
+				}else if(!num.match(/^(((13[0-9]{1})|159|153)+\d{8})$/)){
+					alert("手机号格式不正确！");
+					input.focus();
+					return false;
+				}else{
+					return true;
+				}
+			}
 
-	// 		var backTop=$(".backTop");
-	// 		$(window).scroll(function(){
-	// 			if($(window).scrollTop()>300)
-	// 				backTop.show();
-	// 			else
-	// 				backTop.hide();
-	// 		})
-	// 		backTop.click(function(){
-	// 			$('html, body').animate({scrollTop: 0},500)
-	// 		});
+			var backTop=$(".backTop");
+			$(window).scroll(function(){
+				if($(window).scrollTop()>300)
+					backTop.show();
+				else
+					backTop.hide();
+			})
+			backTop.click(function(){
+				$('html, body').animate({scrollTop: 0},500)
+			});
 
-	// 		var $serviceTab=$("#serviceTab").find("li");
-	// 		var $dataIdW=$("#serviceTab").find(".service-detail");
-	// 		var $mainList=$(".res-list");
+			var $serviceTab=$("#serviceTab").find("li");
+			var $dataIdW=$("#serviceTab").find(".service-detail");
+			var $mainList=$(".res-list");
 
-	// 		$serviceTab.on("click",function(event){
-	// 			$(this).addClass('active').siblings('li').removeClass('active');
-	// 			var index=$serviceTab.index(this);
-	// 			$dataIdW.eq(index).show().siblings('.service-detail').hide();
-	// 			$mainList.eq(index).show().siblings('.res-list').hide();
-	// 		})
+			$serviceTab.on("click",function(event){
+				$(this).addClass('active').siblings('li').removeClass('active');
+				var index=$serviceTab.index(this);
+				$dataIdW.eq(index).show().siblings('.service-detail').hide();
+				$mainList.eq(index).show().siblings('.res-list').hide();
+			})
 
 
-	// 		var index=1;
-	// 		var mg=$(".guider-box");
-	// 		var len=mg.length;
-	// 		play(0);
-	// 		function play(n){
-	// 			mg.eq(n).fadeIn(500).siblings(".guider-box").fadeOut(400);
-	// 		}
-	// 		// setInterval(function(){
-	// 		// 	play(index);
-	// 		// 	index++;
-	// 		// 	if(index==len){
-	// 		// 		index=0;
-	// 		// 	}
-	// 		// },3000)
+			var index=1;
+			var mg=$(".guider-box");
+			var len=mg.length;
+			play(0);
+			function play(n){
+				mg.eq(n).fadeIn(500).siblings(".guider-box").fadeOut(400);
+			}
+			// setInterval(function(){
+			// 	play(index);
+			// 	index++;
+			// 	if(index==len){
+			// 		index=0;
+			// 	}
+			// },3000)
 
-	// 		var bannerSku=$(".sku-banner");
-	// 		var bannerWrap=$(".banner-wrap")
-	// 		var btnN=$(".btn-next"),
-	// 			btnP=$(".btn-prev");
-	// 		var m=0;
-	// 		var circle=bannerSku.find("ul li span");
-	// 		autoPlay(0);
-	// 		function autoPlay(n){
-	// 			bannerWrap.eq(n).fadeIn(1500).siblings('.banner-wrap').fadeOut(500);
-	// 		}
+			var bannerSku=$(".sku-banner");
+			var bannerWrap=$(".banner-wrap")
+			var btnN=$(".btn-next"),
+				btnP=$(".btn-prev");
+			var m=0;
+			var circle=bannerSku.find("ul li span");
+			autoPlay(0);
+			function autoPlay(n){
+				bannerWrap.eq(n).fadeIn(1500).siblings('.banner-wrap').fadeOut(500);
+			}
 
-	// 		btnN.on("click",function(){
-	// 			m++;
-	// 			autoPlay(m);
-	// 			circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
-	// 			if(m>=bannerWrap.length-1)
-	// 			m= -1;
-	// 		})
+			btnN.on("click",function(){
+				m++;
+				autoPlay(m);
+				circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
+				if(m>=bannerWrap.length-1)
+				m= -1;
+			})
 
-	// 		btnP.on("click",function(){
-	// 			m--;
-	// 			if(m<0)
-	// 			m=bannerWrap.length-1;
-	// 			autoPlay(m);
-	// 			circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
-	// 		})
-	// 		// var time=setInterval(showTime,2000)
-	// 		// function showTime(){
-	// 		// 	autoPlay(m);
-	// 		// 	circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
-	// 		// 	m++;
-	// 		// 	if(m==bannerWrap.length){
-	// 		// 		m=0;
-	// 		// 	}	
-	// 		// }
+			btnP.on("click",function(){
+				m--;
+				if(m<0)
+				m=bannerWrap.length-1;
+				autoPlay(m);
+				circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
+			})
+			// var time=setInterval(showTime,2000)
+			// function showTime(){
+			// 	autoPlay(m);
+			// 	circle.eq(m).addClass('active').parent().siblings('li').find('span').removeClass('active');
+			// 	m++;
+			// 	if(m==bannerWrap.length){
+			// 		m=0;
+			// 	}	
+			// }
 
-	// 		// bannerWrap.mouseover(function(){
-	// 		// 	clearInterval(time);
-	// 		// });
-	// 		// bannerWrap.mouseout(function(){
-	// 		// 	time=setInterval(showTime,2000);
-	// 		// });
+			// bannerWrap.mouseover(function(){
+			// 	clearInterval(time);
+			// });
+			// bannerWrap.mouseout(function(){
+			// 	time=setInterval(showTime,2000);
+			// });
 
-	// 	})
+		})
 </script>
 </head>
 <body>
@@ -530,7 +530,7 @@
 			</div>
 		</div>
 		<!-- 弹窗领取红包成功 -->
-		<div class="popup-wrapper" >
+		<div class="popup-wrapper"  style="display:none">
 			<div class="red-envelope" id="red-envelope" >
 			<div class="popup-inner">
 				<button class="btn-close"></button>

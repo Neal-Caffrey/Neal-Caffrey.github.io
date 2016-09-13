@@ -1,0 +1,290 @@
+.wrapper {
+  width: 7.5rem; }
+
+.head {
+  width: 7.5rem;
+  height: 4.8rem;
+  margin: 0 auto;
+  background: url("images/head.png") no-repeat center;
+  background-size: cover; }
+  .head img {
+    width: 7.5rem;
+    height: 4.8rem; }
+
+.main-wrapper {
+  width: 6.56rem;
+  margin: 0 auto;
+  position: relative; }
+  .main-wrapper .introduce {
+    margin-top: 0.45rem; }
+    .main-wrapper .introduce .info {
+      font-family: 'PingFang SC';
+      font-size: 0.3rem;
+      color: #666666;
+      margin-bottom: 0.4rem; }
+    .main-wrapper .introduce h1 {
+      font-family: 'PingFang SC Medium';
+      font-size: 0.5rem;
+      color: #000; }
+  .main-wrapper p.p-light {
+    font-family: 'PingFang SC Medium';
+    font-size: 0.34rem;
+    color: #d7b377;
+    line-height: 0.48rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01rem; }
+  .main-wrapper p.p-regular {
+    font-family: 'PingFang SC';
+    font-size: 0.34rem;
+    color: #333333;
+    letter-spacing: 0.01rem; }
+  .main-wrapper .img-wrap {
+    width: 6.56rem;
+    height: 3.8rem;
+    margin: 0.8rem 0;
+    background: url("images/head.png") no-repeat center;
+    background-size: cover; }
+    .main-wrapper .img-wrap img {
+      width: 6.56rem;
+      height: 3.8rem; }
+  .main-wrapper .interview .interview-con h2 {
+    font-family: 'PingFang SC Medium';
+    font-size: 0.4rem;
+    color: #000;
+    margin-bottom: 0.58rem; }
+  .main-wrapper .interview .interview-con .tr {
+    font-family: 'PingFang SC';
+    font-size: 0.34rem;
+    color: #000;
+    text-align: right;
+    margin-bottom: 1rem; }
+
+.book {
+  width: 100%;
+  height: 2.9rem;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 0.55rem; }
+  .book .book-text {
+    width: 3.3rem;
+    font-family: 'PingFang SC'; }
+    .book .book-text p:first-child {
+      font-size: 0.36rem;
+      color: #666666;
+      margin-bottom: 0.15rem; }
+    .book .book-text p:last-child {
+      font-size: 0.4rem;
+      color: #000; }
+  .book button {
+    width: 1.8rem;
+    height: 0.86rem;
+    background-color: #fed631;
+    font-size: 0.34rem;
+    font-family: 'PingFang SC';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.1rem; }
+
+.hot-place {
+  margin-top: 1rem; }
+  .hot-place h1 {
+    font-size: 0.48rem;
+    font-family: 'PingFang SC'; }
+  .hot-place .hot-box {
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .hot-place .hot-box .hot-item {
+      text-align: center;
+      font-family: 'PingFang SC';
+      margin-bottom: 0.45rem; }
+      .hot-place .hot-box .hot-item .hot-img {
+        width: 2.1rem;
+        height: 2.1rem;
+        background: url("images/hot.png") no-repeat center;
+        background-size: cover; }
+        .hot-place .hot-box .hot-item .hot-img img {
+          width: 2.1rem;
+          height: 2.1rem; }
+      .hot-place .hot-box .hot-item .city {
+        font-size: 0.36rem;
+        color: #000;
+        margin-top: 0.2rem;
+        margin-bottom: 0.15rem; }
+      .hot-place .hot-box .hot-item .number {
+        font-size: 0.28rem;
+        color: #a7a7a7; }
+        .hot-place .hot-box .hot-item .number span {
+          color: #ff855c; }
+
+.title {
+  text-align: center;
+  overflow: hidden;
+  height: 2.7rem;
+  margin: 0.8rem 0; }
+  .title .quo {
+    color: #fed631;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'PingFang SC Semibold'; }
+  .title p {
+    font-size: 0.45rem;
+    font-family: 'PingFang SC Semibold';
+    margin-top: -0.6rem; }
+
+.intro h2 {
+  font-family: 'PingFang SC Medium';
+  font-size: 0.42rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem; }
+.intro p {
+  font-family: 'PingFang SC';
+  font-size: 0.34rem; }
+.intro .img-wrap {
+  height: 4rem; }
+  .intro .img-wrap img {
+    height: 4rem; }
+
+.guider p {
+  font-family: 'PingFang SC Medium';
+  font-size: 0.34rem;
+  margin: 0.8rem 0; }
+.guider .train {
+  height: 2.7rem;
+  background: #f5f5f5;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; }
+  .guider .train .train-item {
+    text-align: center; }
+    .guider .train .train-item span {
+      width: 0.94rem;
+      height: 0.94rem;
+      margin-top: 0.4rem;
+      border: 1px solid #a8a8ac;
+      border-radius: 50%;
+      position: relative;
+      display: inline-block; }
+      .guider .train .train-item span i {
+        font-style: normal;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%; }
+    .guider .train .train-item p {
+      font-family: 'PingFang SC';
+      font-size: 0.26rem;
+      margin: 0; }
+    .guider .train .train-item .icon1 {
+      width: 0.72rem;
+      height: 0.24rem;
+      background: url("images/icon_1.png") no-repeat center;
+      background-size: cover;
+      margin-left: -0.36rem;
+      margin-top: -0.12rem; }
+    .guider .train .train-item .icon2 {
+      width: 0.64rem;
+      height: 0.48rem;
+      margin-left: -0.32rem;
+      margin-top: -0.24rem;
+      background: url("images/icon_2.png") no-repeat center;
+      background-size: cover; }
+    .guider .train .train-item .icon3 {
+      width: 0.45rem;
+      height: 0.37rem;
+      margin-left: -0.225rem;
+      margin-top: -0.185rem;
+      background: url("images/icon_3.png") no-repeat center;
+      background-size: cover; }
+
+.price {
+  margin: 1rem 0; }
+  .price .fee {
+    width: 100%;
+    height: 2.6rem;
+    margin-top: 0.8rem;
+    background: #f5f5f5;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    align-content: flex-start; }
+    .price .fee .fee-item {
+      font-size: 0.26rem;
+      font-family: 'PingFang SC';
+      width: 33.3%;
+      text-align: center;
+      margin-top: 0.35rem; }
+      .price .fee .fee-item span {
+        display: inline-block;
+        width: 0.3rem;
+        height: 0.3rem;
+        margin-right: 0.25rem; }
+      .price .fee .fee-item .fee1 {
+        background: url("images/icon_4.png") center;
+        background-size: cover; }
+      .price .fee .fee-item .fee2 {
+        background: url("images/icon_5.png") center;
+        background-size: cover; }
+      .price .fee .fee-item .fee3 {
+        background: url("images/icon_6.png") center;
+        background-size: cover; }
+      .price .fee .fee-item .fee4 {
+        background: url("images/icon_7.png") center;
+        background-size: cover; }
+      .price .fee .fee-item .fee5 {
+        background: url("images/icon_8.png") center;
+        background-size: cover; }
+      .price .fee .fee-item .fee6 {
+        background: url("images/icon_9.png") center;
+        background-size: cover; }
+      .price .fee .fee-item .fee7 {
+        background: url("images/icon_10.png") center;
+        background-size: cover; }
+      .price .fee .fee-item .fee8 {
+        background: url("images/icon_11.png") center;
+        background-size: cover; }
+
+.process {
+  margin: 0.8rem 0; }
+  .process .process-img {
+    width: 6.48rem;
+    height: 0.93rem;
+    margin: 0 auto;
+    background: url("images/process.png") no-repeat center;
+    background-size: cover; }
+  .process ul {
+    overflow: hidden;
+    margin-top: 0.35rem; }
+    .process ul li {
+      width: 1rem;
+      font-family: 'PingFang SC Light';
+      font-size: 0.24rem;
+      float: left;
+      margin-right: 0.85rem; }
+      .process ul li:last-child {
+        margin-right: 0; }
+
+.foot-btn {
+  height: 1.4rem;
+  border-top: 1px solid #dcdcdc;
+  position: relative; }
+  .foot-btn button {
+    width: 7rem;
+    height: 1rem;
+    font-family: 'PingFang SC';
+    font-size: 0.36rem;
+    background-color: #fed631;
+    border-radius: 0.1rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+    left: 50%;
+    margin-left: -3.5rem; }
+
+/*# sourceMappingURL=style.css.map */
