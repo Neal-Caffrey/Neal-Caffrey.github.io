@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>邀请好友来砍价</title>
+    <script>
+        !function(n,e){
+            var t=n.documentElement,
+            i="orientationchange"in window?"orientationchange":"resize",
+            d=function(){
+                var n=t.clientWidth;
+                n&&(t.style.fontSize=50*(n/375)>100?"100px":50*(n/375)+"px")};
+                n.addEventListener&&(e.addEventListener(i,d,!1),n.addEventListener("DOMContentLoaded",d,!1))
+                    }(document,window)
+    </script>
+    <style rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            background-color: #fbf4e0;
+            padding-bottom: 0.8rem;
+            width: 7.5rem;
+            overflow: hidden;
+        }
+
+        .page-top {
+            height: 6.8rem;
+        }
+
+        .page-top .img-wrap {
+            width: 7.5rem;
+            height: 5.6rem;
+            background: url('images/publicity.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .page-top .text {
+            text-align: center;
+            margin-top: 0.3rem;
+            color: #340004;
+        }
+
+        .page-top .text p:first-child {
+            font-size: 0.36rem;
+            font-family: 'PingFang SC Medium';
+            margin-bottom: 0.2rem;
+        }
+
+        .page-top .text p:last-child {
+            font-size: 0.26rem;
+            font-family: 'PingFang SC';
+        }
+
+        .order {
+            width: 7.1rem;
+            height: 4.12rem;
+            margin: 0 auto;
+            margin-top: 1.4rem;
+            background-color: #fff;
+            padding-top: 0.6rem;
+            box-sizing: border-box;
+        }
+
+        .order .o-title {
+            width: 2.5rem;
+            height: 0.47rem;
+            background: url('images/c_title1.png') no-repeat center;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        .order .o-con, .more-city .m-con {
+            margin: 0 auto;
+            width: 6.7rem;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        .order .o-con ul li {
+            list-style: none;
+            width: 1.9rem;
+            height: 2rem;
+            float: left;
+            background-color: #fff3d0;
+            font-size: 0.38rem;
+            font-family: 'PingFang SC';
+            text-align: center;
+            border-radius: 0.06rem;
+        }
+
+        .order .o-con ul li:nth-child(2) {
+            margin: 0 0.5rem;
+        }
+
+        .order .o-con ul li i {
+            display: block;
+            font-style: normal;
+        }
+
+        .order .o-con ul li .icon1 {
+            width: 0.55rem;
+            height: 0.56rem;
+            margin: 0.3rem auto;
+            background: url('images/plane.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .order .o-con ul li .icon2 {
+            width: 0.71rem;
+            height: 0.56rem;
+            margin: 0.3rem auto;
+            background: url('images/car.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .order .o-con ul li .icon3 {
+            width: 0.61rem;
+            height: 0.56rem;
+            margin: 0.3rem auto;
+            background: url('images/single.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .more-city {
+            width: 7.1rem;
+            margin: 0 auto;
+            margin-top: 0.4rem;
+            background-color: #fff;
+            padding-top: 0.6rem;
+            box-sizing: border-box;
+        }
+
+        .more-city .m-title {
+            width: 4.2rem;
+            height: 0.47rem;
+            background: url('images/c_title2.png') no-repeat center;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        .more-city .m-con ul li {
+            list-style: none;
+            width: 2rem;
+            height: 0.7rem;
+            line-height: 0.7rem;
+            float: left;
+            background-color: #fff3d0;
+            font-size: 0.3rem;
+            font-family: 'PingFang SC';
+            text-align: center;
+            margin-bottom: 0.35rem;
+            border-radius: 0.06rem;
+        }
+
+        .more-city .m-con ul li:nth-child(3n+2) {
+            margin-left: 0.32rem;
+            margin-right: 0.32rem;
+        }
+
+        .rules-wrap {
+            padding-left: 0.40rem;
+            padding-right: 0.50rem;
+            padding-bottom: 0.4rem;
+        }
+
+        .rules-wrap h1 {
+            font-size: 0.30rem;
+            text-align: center;
+            margin-top: 0.8rem;
+            margin-bottom: 0.58rem;
+            font-family: 'PingFang SC Medium';
+        }
+
+        .rules-wrap ul {
+            margin-left: 0.3rem;
+        }
+
+        .rules-wrap ul li {
+            font-size: 0.26rem;
+            margin-bottom: 0.45rem;
+            font-family: 'PingFang SC Light';
+        }
+
+        .bottom-logo {
+            width: 1.6rem;
+            height: 0.55rem;
+            margin: 0 auto;
+            background: url('images/hbc-logo.png') no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="page-top">
+        <div class="img-wrap"></div>
+        <div class="text">
+            <p>邀好友帮你砍价，砍价金额直接返现！</p>
+            <p>帮你砍价的好友也可获得100元优惠券哦</p>
+        </div>
+    </div>
+    <div class="order">
+        <div class="o-title"></div>
+        <div class="o-con">
+            <ul>
+                <li id="airBtn">
+                    <i class='icon1'></i>
+                    <p>接送机</p>
+                </li>
+                <li id="dailyBtn">
+                    <i class='icon2'></i>
+                    <p>包车游</p>
+                </li>
+                <li id="onceBtn">
+                    <i class='icon3'></i>
+                    <p>单次接送</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="more-city">
+        <div class="m-title"></div>
+        <div class="m-con">
+            <ul>
+                <li data-city="217">东京</li>
+                <li data-city="276">台北</li>
+                <li data-city="205">济州岛</li>
+                <li data-city="218">大阪</li>
+                <li data-city="204">首尔</li>
+                <li data-city="43">纽约</li>
+                <li data-city="138">巴黎</li>
+                <li data-city="42">洛杉矶</li>
+                <li data-city="230">曼谷</li>
+                <li data-city="248">巴厘岛</li>
+                <li data-city="239">新加坡</li>
+                <li data-city="3">墨尔本</li>
+                <li data-city="187">伦敦</li>
+                <li data-city="44">旧金山</li>
+                <li data-city="1269">香港</li>
+                <li data-city="211">吉隆坡</li>
+                <li data-city="181">罗马</li>
+                <li data-city="154">布拉格</li>
+            </ul>
+        </div>
+    </div>
+    <div class="rules-wrap">
+        <h1>活动规则</h1>
+        <ul>
+            <li>下单支付完成后邀请好友砍价，上不封顶
+            <li>发起砍价后48小时内，累计的砍价金额，将在订单服务结束后，以微信红包形式返现</li>
+            <li>关注皇包车公众号：servicehbc，提交返现申请，验证通过立即发微信红包
+            </li>
+            <li>砍价优惠不能与其他优惠同时使用</li>
+            <li>取消订单后，已减免的砍价金额将失效</li>
+            <li>本活动仅限手机APP内预订</li>
+            <li>帮忙砍价的好友还可得100元优惠卷，输入手机号即可领取</li>
+            <li>砍价活动最终解释权归皇包车所有</li>
+        </ul>
+    </div>
+    <div class="bottom-logo"></div>
+</div>
+<script>
+    var airBtn = document.querySelector('#airBtn'),
+            dailyBtn = document.querySelector('#dailyBtn'),
+            onceBtn = document.querySelector('#onceBtn'),
+            cityList = document.querySelectorAll('.more-city li');
+
+    airBtn.addEventListener('click', function () {
+        try {
+            window.javaObj.pushToAirportOrder();
+        } catch (e) {
+        }
+    });
+
+    dailyBtn.addEventListener('click', function () {
+        try {
+            window.javaObj.pushToDailyOrder();
+        } catch (e) {
+        }
+    });
+    onceBtn.addEventListener('click', function () {
+        try {
+            window.javaObj.pushToSingleOrder();
+        } catch (e) {
+        }
+    });
+
+
+    for(var i=0,len=cityList.length;i<len;i++){
+        cityList[i].addEventListener('click', function () {
+            var cityId = this.getAttribute('data-city');
+            try {
+                window.javaObj.pushToGoodsOrder(cityId);
+            } catch (e) {
+            }
+        });
+    }
+
+
+
+</script>
+</body>
+</html>
