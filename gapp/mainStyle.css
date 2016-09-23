@@ -82,11 +82,10 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
-    justify-content: space-around;
     -moz-justify-content: space-around;
-    -webkit-justify-content: space-around; }
+    -webkit-justify-content: space-around;
+    justify-content: space-around; }
     .order .order-wrap .order-item {
-      display: block;
       text-align: center;
       width: 1.15rem;
       border-bottom: 2px solid #ffcf00;
@@ -218,6 +217,8 @@
     width: 5.4rem;
     height: 3rem;
     margin: 0 auto;
+    padding-top: 0.4rem;
+    padding-bottom: 0.65rem;
     background: #fff;
     border-radius: 0.1rem;
     position: relative; }
@@ -229,15 +230,33 @@
       position: absolute;
       right: 0;
       top: -0.6rem; }
+    .popup-wrapper .popup-inner .title-wrap {
+      width: 3.36rem;
+      height: 0.56rem;
+      line-height: 0.56rem;
+      margin: 0 auto;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      text-align: center;
+      font-size: 0.3rem;
+      background: url(images/bg.png) no-repeat center;
+      background-size: cover; }
+    .popup-wrapper .popup-inner .inner-text {
+      font-size: 0.26rem;
+      color: #727272;
+      padding: 0 0.34rem; }
+      .popup-wrapper .popup-inner .inner-text span {
+        color: #111;
+        font-weight: Bold; }
 
 /*this is the detail.html*/
 .detail-con .user {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
   -moz-justify-content: space-between;
   -webkit-justify-content: space-between;
+  justify-content: space-between;
   padding: 0.25rem 0;
   font-family: "PingFang SC Medium";
   border-bottom: 1px solid #e4e4e4;
