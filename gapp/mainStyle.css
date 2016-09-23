@@ -81,7 +81,9 @@
   .order .order-wrap {
     display: flex;
     display: -webkit-flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    -moz-justify-content: sspace-around;
+    -webkit-justify-content: space-around; }
     .order .order-wrap .order-item {
       text-align: center;
       width: 1.15rem;
@@ -207,6 +209,8 @@
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   padding: 0.25rem 0;
   font-family: "PingFang SC Medium";
   border-bottom: 1px solid #e4e4e4;
