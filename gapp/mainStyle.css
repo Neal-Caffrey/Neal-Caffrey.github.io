@@ -83,9 +83,10 @@
     display: -webkit-flex;
     display: flex;
     justify-content: space-around;
-    -moz-justify-content: sspace-around;
+    -moz-justify-content: space-around;
     -webkit-justify-content: space-around; }
     .order .order-wrap .order-item {
+      display: block;
       text-align: center;
       width: 1.15rem;
       border-bottom: 2px solid #ffcf00;
