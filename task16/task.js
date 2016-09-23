@@ -25,6 +25,7 @@ function addAqiData() {
 	    return;
 	    }
 	aqiData[city]=values;
+  console.log(aqiData);
 }
 
 /**
@@ -32,11 +33,11 @@ function addAqiData() {
  */
 function renderAqiList() {
 	var items="<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>";
-	for(var city in aqiData){
-        items += "<tr><td>"+city+"</td><td>"+aqiData[city]+
-        "</td><td><button onclick='delBtnHandle(\""+ city + "\")' >删除</button></td></tr>";
+	for(var m in aqiData){
+        items += "<tr><td>"+m+"</td><td>"+aqiData[m]+
+        "</td><td><button onclick='delBtnHandle(\""+ m + "\")' >删除</button></td></tr>";
 }
-    document.getElementById('aqi-table').innerHTML=city ? items : "";
+    document.getElementById('aqi-table').innerHTML=m ? items : "";
 }
 
 /**

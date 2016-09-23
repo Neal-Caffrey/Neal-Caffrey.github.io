@@ -1,0 +1,221 @@
+/*this is the index.html*/
+.wrapper {
+  font-family: "PingFang SC";
+  width: 7.5rem; }
+
+.topbar {
+  width: 100%;
+  height: 0.9rem;
+  background: #000;
+  color: #fff;
+  font-size: 0;
+  text-align: center;
+  position: relative; }
+  .topbar div {
+    display: inline-block; }
+  .topbar .back {
+    width: 0.18rem;
+    height: 0.31rem;
+    background: url("images/back.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem; }
+  .topbar .top-title {
+    font-size: 0.34rem;
+    font-weight: Bold;
+    line-height: 0.9rem; }
+  .topbar .history {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("images/history.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.2rem; }
+
+.detail {
+  height: 2.4rem;
+  width: 100%;
+  margin-top: -1px;
+  background: black;
+  display: box;
+  display: -moz-box;
+  display: -webkit-box; }
+  .detail .detail-item {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: table; }
+  .detail .inner {
+    display: table-cell;
+    vertical-align: middle; }
+    .detail .inner .inner-num {
+      font-size: 0.6rem;
+      font-weight: Bold; }
+      .detail .inner .inner-num span {
+        font-size: 0.28rem; }
+    .detail .inner .inner-info {
+      font-size: 0.3rem;
+      color: #cecece; }
+      .detail .inner .inner-info span {
+        display: inline-block;
+        height: 0.26rem;
+        width: 0.26rem;
+        background: url("images/que.png") no-repeat center;
+        background-size: cover; }
+
+.main-wrapper {
+  width: 7.1rem;
+  margin: 0 auto;
+  position: relative; }
+
+.order {
+  margin-top: 0.36rem; }
+  .order .order-title {
+    font-size: 0.26rem;
+    color: #adadad;
+    margin-bottom: 0.15rem;
+    margin-left: 0.2rem; }
+  .order .order-wrap {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around; }
+    .order .order-wrap .order-item {
+      text-align: center;
+      width: 1.15rem;
+      border-bottom: 2px solid #ffcf00;
+      position: relative; }
+      .order .order-wrap .order-item span {
+        display: block;
+        width: 1rem;
+        height: 0.8rem;
+        margin: 0.1rem auto; }
+      .order .order-wrap .order-item .air {
+        background: url("images/jsj.png") no-repeat center;
+        background-size: cover; }
+      .order .order-wrap .order-item .once {
+        background: url("images/dc.png") no-repeat center;
+        background-size: cover; }
+      .order .order-wrap .order-item .daily {
+        background: url("images/bc.png") no-repeat center;
+        background-size: cover; }
+      .order .order-wrap .order-item .define {
+        background: url("images/zdy.png") no-repeat center;
+        background-size: cover; }
+      .order .order-wrap .order-item .new {
+        width: 0.44rem;
+        height: 0.2rem;
+        background: url("images/new.png") no-repeat center;
+        background-size: cover;
+        position: absolute;
+        top: 0.1rem;
+        left: 0; }
+      .order .order-wrap .order-item p {
+        font-size: 0.28rem;
+        font-weight: Bold;
+        color: #111111; }
+        .order .order-wrap .order-item p .icon {
+          display: inline-block;
+          font-style: normal;
+          height: 0.22rem;
+          width: 0.22rem;
+          background: url("images/que.png") no-repeat center;
+          background-size: cover;
+          position: absolute;
+          right: -0.25rem;
+          bottom: 0.1rem; }
+
+.res-wrap {
+  margin-top: 0.76rem; }
+  .res-wrap .res-list {
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 0.6rem; }
+    .res-wrap .res-list:last-child {
+      border-bottom: none; }
+    .res-wrap .res-list a {
+      display: block;
+      overflow: hidden; }
+      .res-wrap .res-list a .img-wrap {
+        width: 2.75rem;
+        height: 1.78rem;
+        background: url("images/res.png") no-repeat center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .res-wrap .res-list a .cont-wrap {
+        height: 1.78rem;
+        margin-left: 3.05rem;
+        font-weight: Bold;
+        position: relative; }
+        .res-wrap .res-list a .cont-wrap .list-title {
+          font-size: 0.28rem;
+          color: #000; }
+        .res-wrap .res-list a .cont-wrap .list-price {
+          font-size: 0.34rem;
+          color: #111111;
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+          .res-wrap .res-list a .cont-wrap .list-price span {
+            font-size: 0.26rem; }
+      .res-wrap .res-list a .opt-title {
+        font-size: 0.24rem;
+        color: #adadad;
+        margin-top: 0.26rem;
+        margin-bottom: 0.56rem; }
+        .res-wrap .res-list a .opt-title p {
+          display: inline-block; }
+        .res-wrap .res-list a .opt-title span {
+          display: inline-block;
+          width: 0.8rem;
+          height: 0.35rem;
+          line-height: 0.35rem;
+          border-radius: 0.05rem;
+          color: #fff;
+          margin-right: 0.16rem;
+          box-sizing: content-box;
+          padding: 0 0.1rem;
+          text-align: center;
+          white-space: nowrap; }
+        .res-wrap .res-list a .opt-title .type-z {
+          background: #7ec15f; }
+        .res-wrap .res-list a .opt-title .type-s {
+          background: #ef984b; }
+
+.bottom {
+  margin: 0.04rem 0.72rem 0.6rem;
+  text-align: center;
+  position: relative; }
+  .bottom .line {
+    border-bottom: 1px solid #cecece;
+    width: 1.1rem;
+    position: absolute;
+    top: 0.3rem; }
+    .bottom .line:first-child {
+      left: 0; }
+    .bottom .line:last-child {
+      right: 0; }
+  .bottom p {
+    font-size: 0.26rem;
+    color: #cecece; }
+
+/*this is the detail.html*/
+.detail-con .user {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  font-family: "PingFang SC Medium";
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 0.3rem;
+  color: #111111; }
+  .detail-con .user .con-l > p.in-type, .detail-con .user .con-l > p.time {
+    font-size: 0.24rem;
+    color: #adadad; }
+  .detail-con .user .con-l > p.time {
+    font-family: "PingFang SC"; }
+
+/*# sourceMappingURL=mainStyle.css.map */
