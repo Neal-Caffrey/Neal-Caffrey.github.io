@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>包车游</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script>
+		!function(n,e){
+			var t=n.documentElement,
+			i="orientationchange"in window?"orientationchange":"resize",
+			d=function(){
+				var n=t.clientWidth;
+				n&&(t.style.fontSize=50*(n/375)>100?"100px":50*(n/375)+"px")};
+				n.addEventListener&&(e.addEventListener(i,d,!1),n.addEventListener("DOMContentLoaded",d,!1))
+					}(document,window)
+	</script>
+	<script>
+		$(function(){
+			var $dailyTab = $("#dailyTab").find(".check-box span"),
+				$formItem = $("#dailyTab").find(".form-item");
+			$dailyTab.on("click",function(){
+				var index = $dailyTab.index(this);
+				$(this).addClass("current").siblings("span").removeClass("current");
+				$formItem.eq(index).show().siblings(".form-item").hide();
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topbar">
+			<div class="back"></div>
+			<div class="top-title">包车游</div>
+		</div>
+		<!-- 主体内容区 -->
+		<div class="main-content">
+			<div class="daily-wrap">
+				<div class="form-item">
+					<span class="label">开始城市</span>
+					<input type="text" class="content" placeholder="请选择用车城市">
+					<i class="arrow-r"></i>
+				</div>
+			</div>
+			
+			<div class="daily-wrap" id="dailyTab">
+				<div class="check-box" >
+					<span class="current">按天包车游</span>
+					<div class="hr" style="width: 1px;height: 0.55rem;background: #e0e0e0;top: 0.2rem;position:relative;"></div>
+					<span>半日包车游</span>
+				</div>
+				<!-- 按天包车 -->
+				<div class="form-item date-box">
+					<span class="label">游玩日期</span>
+					<input type="text" class="content start" placeholder="请选择开始日期">
+					<span class="total">共包车2天</span>
+					<input type="text" class="content end" placeholder="请选择结束日期">
+					<i class="arrow-r"></i>
+				</div>
+				<!-- 半日包车游 -->
+				<div class="form-item date-box" style="display: none;">
+					<span class="label">游玩日期</span>
+					<input type="text" class="content" placeholder="请选择游玩日期">
+					<i class="arrow-r"></i>
+				</div>
+			</div>
+			<!-- 按天包车行程 -->
+			<div class="daily-wrap">
+				<div class="form-item">
+					<span class="label">第1天</span>
+					<input type="text" class="content" placeholder="选择包车游玩范围">
+					<i class="arrow-r"></i>
+				</div>
+			</div>
+			<div class="daily-wrap">
+				<div class="form-item">
+					<span class="label">第2天</span>
+					<input type="text" class="content" placeholder="选择包车游玩范围">
+					<i class="arrow-r"></i>
+				</div>
+			</div>
+			
+			<button class="serach-btn btn-disabled" style="margin-top: 1.85rem; ">查询</button>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

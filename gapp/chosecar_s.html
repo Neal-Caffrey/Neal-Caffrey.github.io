@@ -1,0 +1,115 @@
+
+
+<!-- 系统发单 -->
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>车型选择</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script>
+		!function(n,e){
+			var t=n.documentElement,
+			i="orientationchange"in window?"orientationchange":"resize",
+			d=function(){
+				var n=t.clientWidth;
+				n&&(t.style.fontSize=50*(n/375)>100?"100px":50*(n/375)+"px")};
+				n.addEventListener&&(e.addEventListener(i,d,!1),n.addEventListener("DOMContentLoaded",d,!1))
+					}(document,window)
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<!-- 顶部栏 -->
+		<div class="topbar">
+			<div class="back"></div>
+			<div class="top-title">车型选择</div>
+		</div>
+		<!-- 主体内容区 -->
+		<div class="define-cont">
+			<div class="form-row">
+				<h2>选择服务对象</h2>
+				<div class="order-type clearfix">
+					<span >自己服务</span>
+					<span >朋友服务</span>
+					<span class="current">系统发单</span>
+				</div>
+			</div>
+			<div class="form-row">
+				<h2>选择车型</h2>
+				<div class="car-wrap">
+					<div class="car-item minor">
+						<div class="img-wrap small"></div>
+						<p class="car-type">商务7座</p>
+					</div>
+					<div class="car-item">
+						<div class="img-wrap"></div>
+						<p class="car-type">商务5座</p>
+						<p class="car-detail">凯迪拉克 ATS</p>
+					</div>
+					<div class="car-item minor">
+						<div class="img-wrap small"></div>
+						<p class="car-type">商务7座</p>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<h2>价格调整</h2>
+				<div class="row-item c-height">
+					<span>调整客人接单价</span>
+					<input type="text" required="required" placeholder="选择价格浮动比例" class="time">
+					<i class="arrow-r"></i>
+				</div>
+				<div class="grey" style="height: 1rem; background: #f4f4f4;    border-bottom: 1px solid #e0e0e0;">
+				</div>
+				<div class="row-item">
+					<span class="income">您此单提成</span>
+					<span class="price">70元</span>
+				</div>
+				<div class="row-item">
+					<span>接单司导预估收入</span>
+					<span>970元</span>
+				</div>
+				<div class="message">
+					<span></span>接单司导收入会因为等级不同、时间不同等多种因素而波动
+				</div>
+				<div class="row-item">
+					<span>平台服务费</span>
+					<span>30元</span>
+				</div>
+				<div class="row-bottom">
+					<div class="price-box">
+						<span>客人支付</span>
+						<span>500<i>元</i></span>
+					</div>
+					<button class="active">确认行程</button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

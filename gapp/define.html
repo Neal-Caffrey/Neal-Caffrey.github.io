@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>自主定价</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script>
+		!function(n,e){
+			var t=n.documentElement,
+			i="orientationchange"in window?"orientationchange":"resize",
+			d=function(){
+				var n=t.clientWidth;
+				n&&(t.style.fontSize=50*(n/375)>100?"100px":50*(n/375)+"px")};
+				n.addEventListener&&(e.addEventListener(i,d,!1),n.addEventListener("DOMContentLoaded",d,!1))
+					}(document,window)
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topbar">
+			<div class="back"></div>
+			<div class="top-title">自主定价</div>
+		</div>
+		<!-- 主体内容区 -->
+		<div class="define-cont">
+			<div class="form-row">
+				<h2>选择下单类型</h2>
+				<div class="order-type clearfix">
+					<span>接机</span>
+					<span>送机</span>
+					<span class="current">包车游</span>
+					<span>单次接送</span>
+				</div>
+			</div>
+			<div class="form-row">
+				<h2>填写客人信息</h2>
+				<div class="row-item">
+					<span>* 乘车人</span>
+					<input type="text" required="required" placeholder="请填写用车人姓名">
+				</div>
+				<div class="row-item">
+					<span>* 联系方式</span>
+					<span class="area-code">区号</span>
+					<input type="text" required="required" placeholder="请填写手机号码" class="contact">
+					
+				</div>
+				<div class="row-item">
+					<span>* 出发时间</span>
+					<input type="text" required="required" placeholder="请选择出发时间(当地时间)" class="time">
+					<i class="arrow-r"></i>
+				</div>
+				<div class="row-item">
+					<span>* 结束时间</span>
+					<input type="text" required="required" placeholder="请选择结束时间(当地时间)" class="time">
+					<i class="arrow-r"></i>
+				</div>
+				<div class="row-item">
+					<span>备注</span>
+					<input type="text" placeholder="如有其它需求，请写下备注信息" >
+				</div>
+			</div>
+			<div class="form-row">
+				<h2>填写客人支付价</h2>
+				<div class="row-item">
+					<span>* 价格</span>
+					<span class="yuan">元</span>
+					<input type="text" required="required" placeholder="请填写1-1000000之间的整数" style="padding-right: 0.7rem">
+				</div>
+				<div class="message">
+					<span></span>重要提醒：该类商品只能自己服务，并且不可转让订单
+				</div>
+				<div class="row-item">
+					<span class="income">您此单收入</span>
+					<span class="price">970元</span>
+				</div>
+				<div class="row-item">
+					<span>平台服务费</span>
+					<span>30元</span>
+				</div>
+				<div class="row-bottom">
+					<div class="price-box">
+						<span>客人支付</span>
+						<span>1000<i>元</i></span>
+					</div>
+					<button class="active">确认行程</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
