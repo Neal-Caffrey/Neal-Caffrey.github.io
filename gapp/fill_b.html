@@ -1,8 +1,11 @@
+
+<!-- 半日包填写信息，确认行程 -->
+
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
-	<title>自主定价</title>
+	<title>包车游</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 	<meta name="apple-touch-fullscreen" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -24,68 +27,60 @@
 	<div class="wrapper">
 		<div class="topbar">
 			<div class="back"></div>
-			<div class="top-title">自主定价</div>
+			<div class="top-title">包车游</div>
 		</div>
 		<!-- 主体内容区 -->
-		<div class="define-cont">
-			<div class="form-row">
-				<h2>选择下单类型</h2>
-				<div class="order-type clearfix">
-					<span>接机</span>
-					<span>送机</span>
-					<span class="current">包车游</span>
-					<span>单次接送</span>
+		<div class="order-cont">
+			<div class="order-info">
+				<h2>行程单</h2>
+				<div class="info-item">
+					<i class="icon-time"></i>
+					东京-0.5天包车：<br>
+					<small>当地时间 04月21日（周五）</small>
+				</div>
+				<div class="trip-detail" style="padding-bottom: 0;">
+					<div class="days-wrap">
+						<div class="day-wrap" >
+							<span class="meta-tag"></span>
+							<p>半天：东京市内游玩</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="info-item">
+					<i class="icon-car-type"></i>
+					经济5座<br>
 				</div>
 			</div>
 			<div class="form-row">
-				<h2>填写客人信息</h2>
 				<div class="row-item">
-					<span>* 乘车人</span>
-					<input type="text" required="required" placeholder="请填写用车人姓名">
+					<span>* 联系人</span>
+					<input type="text" placeholder="请填写用车人姓名" required="required">
 				</div>
 				<div class="row-item">
-					<span>* 联系方式</span>
+					<span>* 手机号</span>
 					<span class="area-code">区号</span>
 					<input type="text" required="required" placeholder="请填写手机号码" class="contact">
-					
 				</div>
 				<div class="row-item">
-					<span>* 出发时间</span>
-					<input type="text" required="required" placeholder="请选择出发时间(当地时间)" class="time">
+					<span>* 上车时间</span>
+					<input type="text" required="required" placeholder="09:00(当地时间)" style="padding-right: 0.35rem;">
 					<i class="arrow-r"></i>
 				</div>
 				<div class="row-item">
-					<span>* 结束时间</span>
-					<input type="text" required="required" placeholder="请选择结束时间(当地时间)" class="time">
+					<span>* 上车地点</span>
+					<input type="text" required="required" placeholder="请输入上车地点" style="padding-right: 0.35rem;">
 					<i class="arrow-r"></i>
 				</div>
 				<div class="row-item">
 					<span>备注</span>
-					<input type="text" placeholder="如有其它需求，请写下备注信息" >
+					<input type="text" placeholder="如有其它需求，请写下备注信息">
 				</div>
-			</div>
-			<div class="form-row">
-				<h2>填写客人支付价</h2>
-				<div class="row-item">
-					<span>* 价格</span>
-					<span class="yuan">元</span>
-					<input type="text" required="required" placeholder="请填写1-1000000之间的整数" style="padding-right: 0.7rem">
-				</div>
-				<div class="message">
-					<span></span>重要提醒：该类商品只能自己服务，并且不可转让订单
-				</div>
-				<div class="row-item">
-					<span class="income">您此单收入</span>
-					<span class="price">970元</span>
-				</div>
-				<div class="row-item">
-					<span>平台服务费</span>
-					<span>30元</span>
-				</div>
+				<div class="grey" style="height: 1.4rem; background: #f4f4f4;    border-bottom: 1px solid #e0e0e0;"></div>
 				<div class="row-bottom">
 					<div class="price-box">
 						<span>客人支付</span>
-						<span>1000<i>元</i></span>
+						<span>500<i>元</i></span>
 					</div>
 					<button class="active">确认行程</button>
 				</div>

@@ -1,0 +1,103 @@
+<!-- SKU商品订单 -->
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>包车游订单</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<script>
+		!function(n,e){
+			var t=n.documentElement,
+			i="orientationchange"in window?"orientationchange":"resize",
+			d=function(){
+				var n=t.clientWidth;
+				n&&(t.style.fontSize=50*(n/375)>100?"100px":50*(n/375)+"px")};
+				n.addEventListener&&(e.addEventListener(i,d,!1),n.addEventListener("DOMContentLoaded",d,!1))
+					}(document,window)
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topbar">
+			<div class="back"></div>
+			<div class="top-title">包车游订单</div>
+		</div>
+		<!-- 主体内容区 -->
+		<div class="order-cont">
+			<div class="order-info" style="padding-bottom: 0;">
+				<div class="list-wrap">
+					<div class="type-box">
+						<span class="type-s">超省心</span>
+					</div>
+					<div class="res-title">
+						<p>【乐享假期】富士山五合目+河口湖+忍野八海+温泉包车一日游</p>
+					</div>
+					<p class="order-detail">
+						<span>包车天数：1天</span><span>起止：东京-富士山-东京</span>
+					</p>
+				</div>	
+				<div class="info-item">
+					<i class="icon-time"></i>
+					当地时间  09月30日 （周五）
+				</div>
+				<div class="info-item">
+					<i class="icon-car-type"></i>
+					经济5座<br>
+				</div>
+				<div class="order-number">
+					<span>订单号&nbsp;&nbsp;&nbsp;KM983729847</span>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="row-item">
+					<span>联系人</span>
+					<input type="text" placeholder="请填写用车人姓名" required="required" value="王大锤" readonly="true">
+				</div>
+				<div class="row-item">
+					<span>手机号</span>
+					<span class="area-code filled" >+86</span>
+					<input type="tel" required="required" placeholder="请填写手机号码" class="contact" value="13288888888" readonly="true">
+				</div>
+				<div class="row-item">
+					<span>备注</span>
+					<input type="text" placeholder="如有其它需求，请写下备注信息" value="千万不要迟到，客人很赶时间" readonly="true">
+				</div>
+				<div class="grey" style="height: 0.2rem; background: #f4f4f4;    border-bottom: 1px solid #e0e0e0;"></div>
+				<div class="qr-box">
+					<div class="qr-wrap"></div>
+					<p>推荐客人扫码完成支付</p>
+				</div>
+				<div class="row-bottom">
+					<div class="price-box">
+						<span>客人支付</span>
+						<span>500<i>元</i></span>
+					</div>
+					<button class="active">分享给客人支付</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

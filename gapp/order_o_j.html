@@ -1,0 +1,93 @@
+<!-- 自己服务接机订单 -->
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>中文接机订单</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<script>
+		!function(n,e){
+			var t=n.documentElement,
+			i="orientationchange"in window?"orientationchange":"resize",
+			d=function(){
+				var n=t.clientWidth;
+				n&&(t.style.fontSize=50*(n/375)>100?"100px":50*(n/375)+"px")};
+				n.addEventListener&&(e.addEventListener(i,d,!1),n.addEventListener("DOMContentLoaded",d,!1))
+					}(document,window)
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topbar">
+			<div class="back"></div>
+			<div class="top-title">中文接机订单</div>
+		</div>
+		<!-- 主体内容区 -->
+		<div class="order-cont">
+			<div class="order-info" style="padding-bottom: 0;">
+				<h2>行程单</h2>
+				<div class="info-item">
+					<i class="icon-time"></i>
+					2016-08-30  周三  9: 00<br>
+				</div>
+				<div class="info-item">
+					<i class="icon-range"></i>
+					<div style="display: inline-table;">
+						<p>开始时间： 08-30 09:00</p>
+						<p>结束时间： 08-30 11:00</p>
+					</div> 
+					
+				</div>
+				<div class="order-number">
+					<span>订单号&nbsp;&nbsp;&nbsp;KM983729847</span>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="row-item">
+					<span>联系人</span>
+					<input type="text" placeholder="请填写用车人姓名" required="required" value="王大锤" readonly="true">
+				</div>
+				<div class="row-item">
+					<span>手机号</span>
+					<span class="area-code filled" >+86</span>
+					<input type="text" required="required" placeholder="请填写手机号码" class="contact" value="13288888888" readonly="true">
+				</div>
+				<div class="grey" style="height: 0.2rem; background: #f4f4f4;    border-bottom: 1px solid #e0e0e0;"></div>
+				<div class="qr-box">
+					<div class="qr-wrap"></div>
+					<p>推荐客人扫码完成支付</p>
+				</div>
+				<div class="row-bottom">
+					<div class="price-box">
+						<span>总额</span>
+						<span>500<i>元</i></span>
+					</div>
+					<button class="active">分享给客人支付</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

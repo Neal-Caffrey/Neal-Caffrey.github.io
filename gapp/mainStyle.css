@@ -35,6 +35,12 @@ html, body {
     font-size: 0.34rem;
     font-weight: bold;
     line-height: 0.9rem; }
+  .topbar .right-btn {
+    font-size: 0.3rem;
+    color: #fff;
+    height: 0.9rem;
+    position: absolute;
+    right: 0.2rem; }
   .topbar .history {
     width: 0.5rem;
     height: 0.5rem;
@@ -95,9 +101,14 @@ html, body {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -moz-justify-content: space-around;
-    -webkit-justify-content: space-around;
-    justify-content: space-around; }
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    padding: 0 0.4rem; }
     .order .order-wrap .order-item {
       text-align: center;
       width: 1.15rem;
@@ -497,6 +508,7 @@ input::-ms-input-placeholder {
           background: #e0e0e0; }
     .define-cont .form-row .row-item {
       height: 1rem;
+      line-height: 1rem;
       padding-left: 0.3rem;
       padding-right: 0.3rem;
       position: relative;
@@ -508,12 +520,15 @@ input::-ms-input-placeholder {
       display: flex;
       -moz-justify-content: space-between;
       -webkit-justify-content: space-between;
-      justify-content: space-between; }
+      justify-content: space-between;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal; }
       .define-cont .form-row .row-item:last-child {
         border-bottom: none; }
       .define-cont .form-row .row-item span {
         font-size: 0.28rem;
-        line-height: 1rem;
         color: #727272;
         white-space: nowrap; }
         .define-cont .form-row .row-item span.area-code {
@@ -586,12 +601,7 @@ input::-ms-input-placeholder {
   position: relative; }
   .form-row .row-bottom .price-box {
     padding-left: 0.3rem;
-    padding-left: 0.3rem;
     height: 1.2rem;
-    position: absolute;
-    left: 0;
-    top: 0.6rem;
-    margin-top: -0.6rem;
     display: table; }
     .form-row .row-bottom .price-box span:first-child {
       font-size: 0.28rem;
@@ -609,8 +619,8 @@ input::-ms-input-placeholder {
         font-style: normal;
         font-size: 0.3rem; }
   .form-row .row-bottom button {
-    width: 1.88rem;
     height: 0.8rem;
+    padding: 0 0.3rem;
     background: #e0e0e0;
     font-size: 0.32rem;
     color: #cecece;
@@ -623,18 +633,18 @@ input::-ms-input-placeholder {
       background: #ffcf03; }
 
 /*this is the confirm.html*/
-.main-content .list-wrap {
+.list-wrap {
   padding: 0.3rem;
   margin-bottom: 0.2rem;
   position: relative;
   font-family: "PingFang SC Thin";
   background: #fff;
   border-bottom: 1px solid #e0e0e0; }
-  .main-content .list-wrap .type-box {
+  .list-wrap .type-box {
     position: absolute;
     left: 0.3rem;
     top: 0.37rem; }
-    .main-content .list-wrap .type-box .type-s {
+    .list-wrap .type-box .type-s {
       display: block;
       width: 0.85rem;
       height: 0.4rem;
@@ -645,18 +655,19 @@ input::-ms-input-placeholder {
       background: #44d435;
       border-radius: 0.05rem;
       white-space: nowrap; }
-  .main-content .list-wrap .res-title {
+  .list-wrap .res-title {
     margin-left: 1rem; }
-    .main-content .list-wrap .res-title p {
+    .list-wrap .res-title p {
       font-size: 0.32rem;
       color: #333;
       line-height: 0.48rem; }
-  .main-content .list-wrap .order-detail {
+  .list-wrap .order-detail {
     font-size: 0.26rem;
     color: #999999;
     margin-top: 0.2rem; }
-    .main-content .list-wrap .order-detail span:first-child {
+    .list-wrap .order-detail span:first-child {
       margin-right: 0.6rem; }
+
 .main-content .date-chose {
   height: 1rem;
   padding-left: 0.3rem;
@@ -723,7 +734,7 @@ input::-ms-input-placeholder {
   .form-row .item-s .btn {
     float: right;
     height: 0.35rem;
-    line-height: 0.3rem;
+    line-height: 0.35rem;
     font-size: 0.22rem;
     color: #cecece;
     border: 1px solid #cecece;
@@ -778,5 +789,333 @@ input::-ms-input-placeholder {
       font-size: 0.3rem; }
       .popup-wrapper .popup-cont .cont-btn button.btn-hr {
         border-right: 1px solid #cecece; }
+
+/*this is the chosecar.html*/
+.order-cont {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4; }
+  .order-cont .order-info {
+    padding: 0.4rem 0.3rem;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0.2rem; }
+    .order-cont .order-info h2 {
+      font-size: 0.32rem;
+      color: #111;
+      font-weight: bold; }
+    .order-cont .order-info .list-wrap {
+      padding: 0;
+      margin-bottom: 0;
+      border-bottom: 0; }
+      .order-cont .order-info .list-wrap .type-box {
+        left: 0;
+        top: 0.1rem; }
+    .order-cont .order-info .info-item {
+      margin-top: 0.35rem;
+      font-size: 0.3rem;
+      font-family: "PingFang SC Medium";
+      color: #727272;
+      line-height: 1.5; }
+      .order-cont .order-info .info-item i {
+        display: inline-block;
+        width: 0.3rem;
+        height: 0.3rem;
+        margin-right: 0.3rem;
+        vertical-align: middle; }
+      .order-cont .order-info .info-item .icon-time {
+        background: url("images/icon-time.png") no-repeat center;
+        background-size: contain; }
+      .order-cont .order-info .info-item .icon-start {
+        background: url("images/icon-start.png") no-repeat center;
+        background-size: contain; }
+      .order-cont .order-info .info-item .icon-end {
+        background: url("images/icon-end.png") no-repeat center;
+        background-size: contain; }
+      .order-cont .order-info .info-item .icon-car-type {
+        background: url("images/icon-car-type.png") no-repeat center;
+        background-size: contain; }
+      .order-cont .order-info .info-item .icon-dis {
+        background: url("images/icon-dis.png") no-repeat center;
+        background-size: contain; }
+      .order-cont .order-info .info-item .icon-range {
+        background: url("images/icon-range.png") no-repeat center;
+        background-size: contain; }
+      .order-cont .order-info .info-item small {
+        font-family: "PingFang SC";
+        font-size: 0.26rem;
+        color: #adadad;
+        padding-left: 0.7rem;
+        display: inherit; }
+    .order-cont .order-info .order-number {
+      height: 0.6rem;
+      line-height: 0.6rem;
+      font-family: "PingFang SC Medium";
+      font-size: 0.24rem;
+      color: #737373;
+      border-top: 1px solid #e0e0e0;
+      margin: 0 -0.3rem;
+      margin-top: 0.35rem;
+      padding-left: 0.3rem; }
+    .order-cont .order-info .trip-detail {
+      background-color: #fffde0;
+      border-top: 1px dotted #f4e28e;
+      border-bottom: 1px dotted #f4e28e;
+      margin-top: 0.35rem;
+      padding-bottom: 0.7rem;
+      position: relative; }
+      .order-cont .order-info .trip-detail .days-wrap {
+        overflow: hidden; }
+        .order-cont .order-info .trip-detail .days-wrap .day-wrap {
+          position: relative;
+          padding: 0.2rem 0.6rem; }
+          .order-cont .order-info .trip-detail .days-wrap .day-wrap:before {
+            content: '';
+            position: absolute;
+            top: -0.3rem;
+            left: 0.34rem;
+            height: 0.6rem;
+            width: 1px;
+            background: #3c3830;
+            z-index: 1; }
+          .order-cont .order-info .trip-detail .days-wrap .day-wrap:last-of-type:after {
+            content: '';
+            position: absolute;
+            left: 0.32rem;
+            top: 0.4rem;
+            height: 0.5rem;
+            background-color: #fffde0;
+            width: 3px;
+            z-index: 2; }
+          .order-cont .order-info .trip-detail .days-wrap .day-wrap:first-of-type:after {
+            content: '';
+            position: absolute;
+            left: 0.32rem;
+            top: -0.1rem;
+            height: 0.4rem;
+            background-color: #fffde0;
+            width: 3px;
+            z-index: 2; }
+          .order-cont .order-info .trip-detail .days-wrap .day-wrap .meta-tag {
+            position: absolute;
+            left: 0.25rem;
+            top: 0.3rem;
+            background-color: #3c3830;
+            border: 1px solid #fffde0;
+            width: 0.2rem;
+            height: 0.2rem;
+            border-radius: 50%;
+            z-index: 3; }
+          .order-cont .order-info .trip-detail .days-wrap .day-wrap p {
+            font-size: 0.26rem;
+            color: #333333; }
+      .order-cont .order-info .trip-detail .trip-detail-ctrl {
+        position: absolute;
+        left: 50%;
+        bottom: 0.3rem;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 0.24rem;
+        color: #333;
+        font-family: "PingFang SC Thin"; }
+        .order-cont .order-info .trip-detail .trip-detail-ctrl i {
+          display: inline-block;
+          width: 0.24rem;
+          height: 0.13rem;
+          background: url("images/arrow_b.png") no-repeat center;
+          background-size: cover; }
+  .order-cont .form-row {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff; }
+    .order-cont .form-row .row-item {
+      height: 1rem;
+      line-height: 1rem;
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+      position: relative;
+      border-bottom: 1px solid #e0e0e0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -moz-justify-content: space-between;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal; }
+      .order-cont .form-row .row-item span {
+        flex: 1;
+        font-size: 0.32rem;
+        font-weight: bold;
+        color: #111;
+        white-space: nowrap;
+    	/*/*&.area-code {
+		    position: absolute;
+		    right: 2.5rem;
+		    border-right: 1px solid #ccc;
+		    height: 0.3rem;
+		    line-height: 0.3rem;
+		    top: 0.34rem;
+		    padding-right: 0.2rem;
+		    font-family: "PingFang SC Medium";
+		    font-size: 0.3rem;
+		    font-weight: normal;
+		    color: #cecece;
+		}*/ }
+        .order-cont .form-row .row-item span.aaaaa {
+          flex: 1; }
+        .order-cont .form-row .row-item span.filled {
+          color: #727272; }
+      .order-cont .form-row .row-item input {
+        font-family: "PingFang SC Medium";
+        font-size: 0.3rem;
+        color: #727272;
+        text-align: right;
+        width: 5rem; }
+        .order-cont .form-row .row-item input.contact {
+          width: 2.3rem; }
+      .order-cont .form-row .row-item .arrow-r {
+        display: inline-block;
+        font-style: normal;
+        width: 0.16rem;
+        height: 0.28rem;
+        background: url("images/arrow_r.png") center no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0.3rem;
+        top: 50%;
+        margin-top: -0.14rem; }
+
+.qr-box {
+  height: 5.4rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  padding-top: 0.4rem; }
+  .qr-box .qr-wrap {
+    width: 4.45rem;
+    height: 4.45rem;
+    margin: auto;
+    background: url("images/qr.png") no-repeat center;
+    background-size: cover; }
+  .qr-box p {
+    font-family: "PingFang SC Medium";
+    font-size: 0.3rem;
+    color: #cecece; }
+
+/*this is the serviceDest.html*/
+.main-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  .main-page .top-nav ul li {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    width: 2.5rem;
+    text-align: center;
+    font-family: "PingFang SC Thin";
+    font-size: 0.32rem;
+    color: #6c6c6c;
+    float: left;
+    position: relative; }
+    .main-page .top-nav ul li.active {
+      color: #50575e;
+      border-bottom: 1px solid #848b93; }
+      .main-page .top-nav ul li.active:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 0.1rem solid transparent;
+        border-right: 0.1rem solid transparent;
+        border-bottom: 0.1rem solid #848b93;
+        content: " ";
+        width: 0;
+        height: 0; }
+  .main-page .page-content {
+    background-color: #f4f4f4;
+    flex: 1; }
+    .main-page .page-content .order-item {
+      width: 7.1rem;
+      margin: 0 auto;
+      margin-top: 0.2rem;
+      background: #fff; }
+      .main-page .page-content .order-item .item-title {
+        height: 0.75rem;
+        line-height: 0.75rem;
+        font-size: 0.32rem;
+        font-family: "PingFang SC Medium"; }
+        .main-page .page-content .order-item .item-title .sj {
+          color: #0dc1ac; }
+        .main-page .page-content .order-item .item-title .dc {
+          color: #e9666f; }
+        .main-page .page-content .order-item .item-title .bc {
+          color: #fbb200; }
+        .main-page .page-content .order-item .item-title .jj {
+          color: #45b4ed; }
+        .main-page .page-content .order-item .item-title i {
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.55rem;
+          vertical-align: middle; }
+        .main-page .page-content .order-item .item-title .icon-sj {
+          background: url("images/icon-sj.png") no-repeat center;
+          background-size: contain; }
+        .main-page .page-content .order-item .item-title .icon-dc {
+          background: url("images/icon-dc.png") no-repeat center;
+          background-size: contain; }
+        .main-page .page-content .order-item .item-title .icon-bc {
+          background: url("images/icon-bc.png") no-repeat center;
+          background-size: contain; }
+        .main-page .page-content .order-item .item-title .icon-jj {
+          background: url("images/icon-jj.png") no-repeat center;
+          background-size: contain; }
+      .main-page .page-content .order-item .time-box {
+        height: 1.2rem;
+        padding-left: 0.2rem;
+        padding-top: 0.15rem;
+        border-top: 1px dotted #e1e1e1;
+        border-bottom: 1px dotted #e1e1e1; }
+        .main-page .page-content .order-item .time-box p {
+          font-size: 0.32rem;
+          color: #242424; }
+          .main-page .page-content .order-item .time-box p i {
+            display: inline-block;
+            width: 0.2rem;
+            height: 0.2rem;
+            vertical-align: middle; }
+          .main-page .page-content .order-item .time-box p span {
+            vertical-align: middle; }
+          .main-page .page-content .order-item .time-box p .icon-time-s {
+            background: url("images/icon-time-s.png") no-repeat center;
+            background-size: contain; }
+          .main-page .page-content .order-item .time-box p .icon-time-e {
+            background: url("images/icon-time-e.png") no-repeat center;
+            background-size: contain; }
+      .main-page .page-content .order-item .item-tips {
+        font-family: "PingFang SC Thin";
+        font-size: 0.28rem;
+        text-align: center;
+        height: 0.75rem;
+        line-height: 0.75rem; }
+        .main-page .page-content .order-item .item-tips .ing {
+          color: #c5984b; }
+        .main-page .page-content .order-item .item-tips .overtime {
+          color: #e1656d; }
+  .main-page .bottom-nav {
+    height: 1.1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around; }
+    .main-page .bottom-nav span {
+      display: block; }
 
 /*# sourceMappingURL=mainStyle.css.map */

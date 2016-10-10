@@ -1,12 +1,10 @@
-
-
-<!-- 自己服务 -->
+<!-- 接机填写信息，确认行程 -->
 
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
-	<title>车型选择</title>
+	<title>中文接机</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 	<meta name="apple-touch-fullscreen" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,56 +24,48 @@
 </head>
 <body>
 	<div class="wrapper">
-	<!-- 顶部栏 -->
 		<div class="topbar">
 			<div class="back"></div>
-			<div class="top-title">车型选择</div>
+			<div class="top-title">中文接机</div>
 		</div>
 		<!-- 主体内容区 -->
-		<div class="define-cont">
-			<div class="form-row">
-				<h2>选择服务对象</h2>
-				<div class="order-type clearfix">
-					<span class="current">自己服务</span>
-					<span >朋友服务</span>
-					<span >系统发单</span>
+		<div class="order-cont">
+			<div class="order-info">
+				<h2>行程单</h2>
+				<div class="info-item">
+					<i class="icon-time"></i>
+					当地时间 04月21日（周五） 10:05<br>
+					<small>航班TG687 北京-曼谷</small>
+				</div>
+				<div class="info-item">
+					<i class="icon-start"></i>
+					素万那普国际机场<br>
+				</div>
+				<div class="info-item">
+					<i class="icon-end"></i>
+					曼谷亚洲酒店<br>
+					<small>14, 16 Sukhumvit 11, Wattana, 10110 Bangkok, Thailand</small>
+				</div>
+				<div class="info-item">
+					<i class="icon-car-type"></i>
+					经济5座<br>
 				</div>
 			</div>
 			<div class="form-row">
-				<h2>选择车型</h2>
-				<div class="car-wrap">
-					<div class="car-item minor">
-						<div class="img-wrap small"></div>
-						<p class="car-type">商务7座</p>
-					</div>
-					<div class="car-item">
-						<div class="img-wrap"></div>
-						<p class="car-type">商务5座</p>
-						<p class="car-detail">凯迪拉克 ATS</p>
-					</div>
-					<div class="car-item minor">
-						<div class="img-wrap small"></div>
-						<p class="car-type">商务7座</p>
-					</div>
-				</div>
-			</div>
-			<div class="form-row">
-				<h2>价格调整</h2>
-				<div class="row-item c-height">
-					<span>调整自己接单价</span>
-					<input type="text" required="required" placeholder="选择价格浮动比例" class="time">
-					<i class="arrow-r"></i>
-				</div>
-				<div class="grey" style="height: 1rem; background: #f4f4f4;    border-bottom: 1px solid #e0e0e0;">
+				<div class="row-item">
+					<span>* 联系人</span>
+					<input type="text" placeholder="请填写用车人姓名" required="required">
 				</div>
 				<div class="row-item">
-					<span class="income">您此单预估收入</span>
-					<span class="price">970元</span>
+					<span>* 手机号</span>
+					<span class="area-code">区号</span>
+					<input type="text" required="required" placeholder="请填写手机号码" class="contact">
 				</div>
 				<div class="row-item">
-					<span>平台服务费</span>
-					<span>30元</span>
+					<span>备注</span>
+					<input type="text" placeholder="如有其它需求，请写下备注信息">
 				</div>
+				<div class="grey" style="height: 2.65rem; background: #f4f4f4;    border-bottom: 1px solid #e0e0e0;"></div>
 				<div class="row-bottom">
 					<div class="price-box">
 						<span>客人支付</span>
@@ -85,7 +75,6 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
 </body>
 </html>
