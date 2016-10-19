@@ -1,0 +1,247 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>派单规则</title>
+    <style type="text/css">
+        body, div, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form,
+        iframe, input, textarea, select, label, article, aside, footer, header,
+        menu, nav, section, time, audio, video {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+            color: #242424;
+        }
+
+        .alls {
+            font-size: 16px;
+            line-height: 22px;
+            padding: 20px 16px;
+        }
+
+        .s_con p a {
+            color: #ebb102;
+        }
+
+        .s_tit {
+            border-bottom: 2px solid #ebb102;
+            position: relative;
+            height: 24px;
+            margin: 10px 0;
+        }
+
+        .tit_l, .tit_r {
+            background: url(images/tit_icon.png) no-repeat;
+            background-size: 412px 750px;
+            height: 24px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .tit_l {
+            width: 192px;
+            left: 0;
+        }
+
+        .tit_r {
+            width: 130px;
+            right: 0;
+            background-position: -282px 0;
+        }
+
+        .tit_l.l02 {
+            background-position: 0 -37px;
+        }
+
+        .tit_l.l03 {
+            background-position: 0 -76px;
+        }
+
+        .tit_l.l04 {
+            background-position: 0 -118px;
+        }
+
+        .tit_l.l05 {
+            background-position: 0 -158px;
+        }
+
+        .tit_l.l06 {
+            background-position: 0 -201px;
+        }
+
+        .tit_l.l07 {
+            background-position: 0 -244px;
+        }
+
+        .tit_l.l08 {
+            background-position: 0 -288px;
+        }
+
+        .tit_l.l09 {
+            background-position: 0 -334px;
+        }
+
+        .tit_l.l010 {
+            background-position: 0 -377px;
+        }
+
+        .tit_l.l011 {
+            background-position: 0 -420px;
+        }
+
+        .tit_l.l012 {
+            background-position: 0 -466px;
+        }
+
+        .tit_r.r02 {
+            background-position: -282px -37px;
+        }
+
+        .tit_r.r03 {
+            background-position: -282px -76px;
+        }
+
+        .tit_r.r04 {
+            background-position: -282px -118px;
+        }
+
+        .tit_r.r05 {
+            background-position: -282px -158px;
+        }
+
+        .tit_r.r06 {
+            background-position: -282px -201px;
+        }
+
+        .tit_r.r07 {
+            background-position: -282px -244px;
+        }
+
+        .tit_r.r08 {
+            background-position: -282px -288px;
+        }
+
+        .tit_r.r09 {
+            background-position: -282px -334px;
+        }
+
+        .tit_r.r010 {
+            background-position: -282px -377px;
+        }
+
+        .tit_r.r011 {
+            background-position: -282px -420px;
+        }
+
+        .tit_r.r012 {
+            background-position: -282px -466px;
+        }
+
+        .tit_l.l013 {
+            background: url(images/g_jddd.png) no-repeat 0 0;
+            background-size: 412px;
+        }
+        .tit_r.r013 {
+            background: url(images/g_jddd.png) no-repeat -282px 0;
+            background-size: 412px;
+        }
+
+        .titlebg {
+            height: 24px;
+            width: 192px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .titlebg_pdgz {
+            background: url(images/g_pdgz.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_pdlc {
+            background: url(images/g_pdlc.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_txfs {
+            background: url(images/g_txfs.png) no-repeat left center/412px 25px;;
+        }
+
+        .title_rightbg {
+            width: 130px;
+            right: 0;
+            height: 24px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .title_rightbg_pdgz {
+            background: url(images/g_pdgz.png) no-repeat left center/412px 25px;
+            background-position: -282px 0;
+        }
+
+        .title_rightbg_pdlc {
+            background: url(images/g_pdlc.png) no-repeat left center/412px 25px;
+            background-position: -282px 0;
+        }
+
+        .title_rightbg_txfs {
+            background: url(images/g_txfs.png) no-repeat left center/412px 25px;
+            background-position: -282px 0;
+        }
+
+        a {
+            color: #ebb102;
+        }
+
+        a:link, a:visited, a:active {
+            color: #ebb102;
+        }
+    </style>
+</head>
+
+<body>
+<div class="alls">
+    <div class="s_con">
+        <div class="s_tit">
+            <i class="tit_l l07"></i><s class="tit_r r07"></s>
+        </div>
+        <p>
+            系统根据订单类型，车型要求，将订单发送给相应级别并符合车型要求的司导。<br/>
+            <br/>
+        </p>
+    </div>
+    <div class="s_con">
+        <div class="s_tit">
+            <i class="tit_l l013"></i><s class="tit_r r013"></s>
+        </div>
+        <p>
+            系统会在表态愿意接单的司导中，根据客户评价星级，皇粮等因素PK并派发订单。<br/>
+            <br/>
+        </p>
+    </div>
+    <div class="s_con">
+        <div class="s_tit">
+            <i class="tit_l l010"></i><s class="tit_r r010"></s>
+        </div>
+        <p>
+            1.急单订单：实时发送<br/>
+            2.非急单订单：定时发送（统一在司导所在地时间8-22点派发）<br/>
+            （注：当有新订单时，皇包车推送APP消息提醒。收到订单提醒—查看订单详情—点击“我能接单”—等待系统派单）<br/>
+            <br/>
+        </p>
+        <p>
+        系统后台有一套公平公正的派单算法，认真服务是司导的最基本要求。<br/>
+        <br/>
+        </p>
+        
+<script>
+    // 初始化_顶部返回按钮
+    if(window.javaObj){
+        window.javaObj.setBackBtn(1);
+    }
+</script>
+</body>
+</html>

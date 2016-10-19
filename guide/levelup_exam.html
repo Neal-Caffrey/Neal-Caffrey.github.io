@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>升级考试须知</title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                    };
+
+            // Abort if browser does not support addEventListener
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body,section,ul,ol,li,div,p,h1,h2,h3,h5{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        li{
+            list-style: none;
+        }
+        .wrap{
+            width: 3.2rem;
+            background: #f7f7f7;
+            overflow: hidden;
+        }
+        h3{
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        h5{
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .item1{
+            position: relative;
+            width: 3.2rem;
+            height: 4.065rem;
+            background: url(images/levelup_exam_bg.jpg) no-repeat center;
+            background-size: cover;
+        }
+        .item1 .desc{
+            position: absolute;
+            top:2.72rem;
+            left: 0;
+            width: 100%;
+            padding: .15rem;
+        }
+        .item2{
+            padding-bottom: .2rem;
+        }
+        .item2 .content{
+            position: relative;
+            margin-top: .35rem;
+            padding: .35rem .1rem 0;
+            border-top:2px solid #DDD;
+        }
+        .item2 .content h3{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background: #f7f7f7;
+            white-space: nowrap;
+        }
+        .item2 ol li{
+            position: relative;
+            width: 2.67rem;
+            height:.55rem;
+            margin-left: .3rem;
+            border: 2px solid #DDD;
+            border-radius: 10px;
+            padding: .1rem;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .item2 ol li:nth-child(n+2){
+            margin-top: .23rem;
+        }
+        .item2 ol li span{
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .item2 ol li .no{
+            position: absolute;
+            left: -.3rem;
+            top:50%;
+            width: .225rem;
+            height: .225rem;
+            background: #000;
+            color: #ffea00;
+            font-size: 14px;
+            line-height: .225rem;
+            text-align: center;
+            border-radius: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .item2 .panel{
+            border: 2px solid #DDD;
+            border-radius: 10px;
+            padding: .2rem;
+            background: #FFF;
+        }
+        .tips{
+            color: #999;
+            font-size: 12px;
+            text-align: center;
+        }
+        .ui-table{
+            border: 2px solid #DDD;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .ui-table table{
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        .ui-table th,
+        .ui-table td{
+            padding: .06rem 0;
+        }
+        .ui-table thead tr{
+            border-bottom: 2px solid #DDD;
+        }
+        .ui-table tr th:first-child,
+        .ui-table tr td:first-child{
+            border-right:1px solid #DDD;
+        }
+        .ui-table tbody tr:nth-child(n-1){
+            border-bottom: 1px solid #DDD;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <section class="item1">
+        <div class="desc">
+            <h3>如何进行升级考试</h3>
+            <p>当您的各项升级条件都达标之后即可进行预约升级考试。升级只可逐级升级，不可跨等级进行预约升级考试</p>
+        </div>
+    </section>
+    <section class="item2">
+        <div class="content">
+            <h3>如何参加升级考试</h3>
+            <ol>
+                <li>
+                    <span class="no">01</span>
+                    <span>当您的升级条件都满足后，在【我的级别】页中点击【预约升级考试】</span>
+                </li>
+                <li>
+                    <span class="no">02</span>
+                    <span>在预约的时间当天及前一天请保持手机畅通，等待城市经理与您取得联系</span>
+                </li>
+                <li>
+                    <span class="no">03</span>
+                    <span>电话进行升级考试</span>
+                </li>
+            </ol>
+        </div>
+        
+<div class="content">
+    <h3>升级考试范围</h3>
+    <div class="panel">
+        <ul>
+            <li>
+                <h5>·城市概况</h5>
+                <p>城市简介、历史、交通、人文宗教</p>
+            <li>
+                <h5>·经典线路</h5>
+                <p>跨城市途径线路问题、线路概况</p>
+            </li>
+            <li>
+                <h5>·经典景点</h5>
+                <p>景点门票、开放时间、景点内容（故事）、景点位置</p>
+            </li>
+            <li>
+                <h5>·线路设计</h5>
+                <p>场景线路设计（含吃住行游购娱）</p>
+            </li>
+            <li>
+                <h5>·餐饮</h5>
+                <p>特色餐饮、典故、地理位置</p>
+            </li>
+            <li>
+                <h5>·酒店</h5>
+                <p>著名酒店及位置、景区附近酒店</p>
+            </li>
+            <li>
+                <h5>·购物</h5>
+                <p>商场位置、特色、知名特产</p>
+            </li>
+            <li>
+                <h5>·娱乐场所</h5>
+                <p>特色娱乐场所、特色娱乐项目</p>
+            </li>
+            <li>
+                <h5>·应急能力</h5>
+                <p>应急事件处理</p>
+            </li>
+            
+        </ul>
+    </div>
+    
+</div>
+
+<div class="content">
+    <h3>各级别能力要求</h3>
+    <div class="panel">
+        <ul>
+                <li>
+                    <h5>·D级司导</h5>
+                    <p>区域范围：市内及周边</p>
+                    <p>能力要求：能够根据产品线路为客人安排好行程</p>
+                </li>
+                <li>
+                    <h5>·C级司导</h5>
+                    <p>区域范围：市内及周边</p>
+                    <p>能力要求：能准确把握客人需求，根据客人需求设计线市内及周边线路，个性化讲解，有效转化潜在客户二次购买皇包车产品</p>
+                </li>
+                <li>
+                    <h5>·B级司导</h5>
+                    <p>区域范围：3天以内可往返长途城市</p>
+                    <p>能力要求：能通过自己的专业知识主导客人的短线长途行程，掌握客人所需求的酒店、餐厅等资源</p>
+                </li>
+                <li>
+                    <h5>·A级司导</h5>
+                    <p>区域范围：3天以内不可往返长途城市</p>
+                    <p>能力要求：能为客人安排长线包车的吃住行游购娱的一体化需求方案、灵活快速处理紧急问题</p>
+                </li>
+                </ul>
+    </div>
+    
+</div>
+
+
+
+</section>
+</div>
+</body>
+</html>

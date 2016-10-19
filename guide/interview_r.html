@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>级别考试准备</title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                    };
+
+            // Abort if browser does not support addEventListener
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body,section,ul,ol,li,div,p,h1,h2,h3,h5{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        li{
+            list-style: none;
+        }
+        .wrap{
+            width: 3.2rem;
+            background: #f7f7f7;
+            overflow: hidden;
+        }
+        h3{
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        h5{
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .item1{
+            position: relative;
+            width: 3.2rem;
+            height: 4.065rem;
+            background: url(images/interview_r_title_bg.jpg) no-repeat center;
+            background-size: cover;
+        }
+        .item1 .desc{
+            position: absolute;
+            top:2.72rem;
+            left: 0;
+            width: 100%;
+            padding: .15rem;
+        }
+        .item2{
+            padding-bottom: .2rem;
+        }
+        .item2 .content{
+            position: relative;
+            margin-top: .35rem;
+            padding: .35rem .1rem 0;
+            border-top:2px solid #DDD;
+        }
+        .item2 .content h3{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background: #f7f7f7;
+            white-space: nowrap;
+        }
+        .item2 ol li{
+            position: relative;
+            width: 2.67rem;
+            height:.55rem;
+            margin-left: .3rem;
+            border: 2px solid #DDD;
+            border-radius: 10px;
+            padding: .1rem;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .item2 ol li:nth-child(n+2){
+            margin-top: .23rem;
+        }
+        .item2 ol li span{
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .item2 ol li .no{
+            position: absolute;
+            left: -.3rem;
+            top:50%;
+            width: .225rem;
+            height: .225rem;
+            background: #000;
+            color: #ffea00;
+            font-size: 14px;
+            line-height: .225rem;
+            text-align: center;
+            border-radius: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .item2 .panel{
+            border: 2px solid #DDD;
+            border-radius: 10px;
+            padding: .2rem;
+            background: #FFF;
+        }
+        .tips{
+            color: #999;
+            font-size: 12px;
+            text-align: center;
+        }
+        .ui-table{
+            border: 2px solid #DDD;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .ui-table table{
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        .ui-table th,
+        .ui-table td{
+            padding: .06rem 0;
+        }
+        .ui-table thead tr{
+            border-bottom: 2px solid #DDD;
+        }
+        .ui-table tr th:first-child,
+        .ui-table tr td:first-child{
+            border-right:1px solid #DDD;
+        }
+        .ui-table tbody tr:nth-child(n-1){
+            border-bottom: 1px solid #DDD;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <section class="item1">
+        <div class="desc">
+            <h3>为什么参加级别考试</h3>
+            <p>级别考试的目的是为了对新司导的技能知识和服务意识进行评测，而级别考试的结果将直接决定新司导们的司导级别。级别越高的司导之后可以服务的订单类型将会更加丰富，预期的收入也将更高。</p>
+        </div>
+    </section>
+    <section class="item2">
+        <div class="content">
+            <h3>如何参加级别考试</h3>
+            <ol>
+                <li>
+                    <span class="no">01</span>
+                    <span>在您的司导APP上点击【预约级别考试】，在日历上预约您可参加级别考试的日期（北京时间）</span>
+                </li>
+                <li>
+                    <span class="no">02</span>
+                    <span>在预约的时间当天及前一天请保持手机畅通，等待城市经理与您取得联系</span>
+                </li>
+                <li>
+                    <span class="no">03</span>
+                    <span>参加微信视频级别考试（级别考试官会在级别考试前添加您的微信，如您未添加微信，请主动添加城市经理）</span>
+                </li>
+            </ol>
+        </div>
+        <div class="content">
+            <h3>级别考试内容</h3>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <h5>·基础级别考试</h5>
+                        <p>仪容仪表、表达沟通能力、服务意识</p>
+                    </li>
+                    <li>
+                        <h5>·车辆视频验证</h5>
+                        <p>级别考试时需现场拍摄车辆视频</p>
+                    </li>
+                    <li>
+                        <h5>·技能知识考试范围</h5>
+                        <p>机场概况：航站楼、停车位、举牌接机点、送机check in流程</p>
+                        <p>机场退税：退税地点、流程、退税注意事项</p>
+                        <p>机场线路：路线路况</p>
+                        <p>航班信息：航班概况、注意事项</p>
+                        <p>酒店入住：酒店入住注意事项</p>
+                        <p>城市概况：城市简介、历史、交通、人文宗教</p>
+                        <p>经典线路：跨城市途径线路问题、线路概况</p>
+                        <p>经典景点：景点门票、开放时间、景点内容（故事）、景点位置</p>
+                        <p>餐饮：特色餐饮、典故、地理位置</p>
+                        <p>酒店：著名酒店及位置、景区附近酒店</p>
+                        <p>购物：商场位置（特色）、知名特产</p>
+                        <p>娱乐场所：特色娱乐场所、特色娱乐项目</p>
+                        <p>线路设计：场景线路设计（含吃住行游购娱）</p>
+                        <p>应急能力：应急事件处理</p>
+                    </li>
+                </ul>
+                <p class="tips">注:技能知识考试结果决定了您的司导级别，级别越高的司导可以服务的订单类型将会更加丰富</p>
+            </div>
+
+        </div>
+        <div class="content">
+            <h3>区域负责人联系方式</h3>
+            <div class="ui-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>国家</th>
+                            <th>微信号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>韩国/印尼/菲律宾</td>
+                            <td>cclxvip1</td>
+                        </tr>
+                        <tr>
+                            <td>台湾/老挝/缅甸/印度/越南</td>
+                            <td>hbc0701</td>
+                        </tr>
+                        <tr>
+                            <td>新加坡/柬埔寨/尼泊尔</td>
+                            <td>hbc13811869293</td>
+                        </tr>
+                        <tr>
+                            <td>马来西亚/阿联酋/卡塔尔</td>
+                            <td>hbc011</td>
+                        </tr>
+                        <tr>
+                            <td>东京/札幌/旭川/函馆/箱根</td>
+                            <td>hbc9966</td>
+                        </tr>
+                        <tr>
+                            <td>成田/富士山/静冈/富山/仙台</td>
+                            <td>hbc9966</td>
+                        </tr>
+                        <tr>
+                            <td>孟加拉/哈萨克斯坦/斯里兰卡</td>
+                            <td>hbc9966</td>
+                        </tr>
+                        <tr>
+                            <td>大阪/冲绳/名古屋/福冈/京都/马尔代夫/奈良/神户</td>
+                            <td>hbc13811937870</td>
+                        </tr>
+                        <tr>
+                            <td>亚洲其他区域</td>
+                            <td>hbc99988</td>
+                        </tr>
+                        <tr>
+                            <td>曼谷/清迈</td>
+                            <td>hbc0907209777</td>
+                        </tr>
+                        <tr>
+                            <td>普吉/苏梅/甲米</td>
+                            <td>hbc017</td>
+                        </tr>
+                        <tr>
+                            <td>澳大利亚/新西兰/斐济</td>
+                            <td>hbc120</td>
+                        </tr>
+                        <tr>
+                            <td>大洋洲其他区域</td>
+                            <td>hbc0019</td>
+                        </tr>
+                        <tr>
+                            <td>法国/意大利/荷兰/比利时/卢森堡/瑞士</td>
+                            <td>hbc0066</td>
+                        </tr>
+                        <tr>
+                            <td>英国/爱尔兰/西班牙/葡萄牙/挪威/瑞典/芬兰/冰岛/丹麦</td>
+                            <td>huangbaochexin</td>
+                        </tr>
+                        <tr>
+                            <td>德国/奥地利/波兰/捷克/斯洛伐克/斯洛文尼亚/土耳其/克罗地亚/俄罗斯</td>
+                            <td>hbc13810937871</td>
+                        </tr>
+                        <tr>
+                            <td>希腊/土耳其/保加利亚/塞尔维亚/罗马尼亚/立陶宛/拉脱维亚/爱沙尼亚/黑山/马其顿</td>
+                            <td>hbc088</td>
+                        </tr>
+                        <tr>
+                            <td>欧洲其他区域</td>
+                            <td>cclxvip3</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>南非/南美/香港/澳门</td>
+                            <td>hbc0099</td>
+                        </tr>
+                        <tr>
+                            <td>旧金山/西雅图/布法罗/塞班</td>
+                            <td>hugboga2014</td>
+                        </tr>
+                        <tr>
+                            <td>纽约/波士顿/华盛顿/费城/芝加哥/底特律/迈阿密/奥兰多/亚特兰大</td>
+                            <td>hbc020</td>
+                        </tr>
+                        <tr>
+                            <td>洛杉矶/拉斯维加斯/休斯顿/达拉斯/丹佛/盐湖城/夏威夷/圣地亚哥/墨西哥/埃及</td>
+                            <td>hbc016</td>
+                        </tr>
+                        <tr>
+                            <td>北美/南美/非洲其他区域</td>
+                            <td>hbc019</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <title>司导12分</title>
+    <style rel="stylesheet">
+    @charset "utf-8";
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%
+    }
+    
+    body {
+        font-family: 'microsoft yahei', '\534E\6587\7EC6\9ED1', Verdana, Arial, Helvetica, sans-serif;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background: transparent;
+        line-height: 1;
+    }
+    
+    img {
+        border: 0 none;
+        vertical-align: bottom;
+        -ms-interpolation-mode: bicubic
+    }
+    
+    dl dd {
+        list-style: none;
+    }
+    
+    .bg-light-grey {
+        background: #eeeeee;
+    }
+    
+    .bg-xlight-grey {
+        background: #F9F9F9;
+    }
+    
+    .bg-transparent {
+        background: transparent;
+    }
+    /* 全页面壳子 */
+    
+    .deswraper {
+        margin: 32px 20px 40px 20px;
+        padding-bottom: 20px;
+    }
+    /* notice 提示信息 */
+    
+    .notice-block {
+        padding: 10px;
+        line-height: 1.8em;
+        color: grey;
+    }
+    
+    .notice-block img {
+        width: 100%;
+    }
+    
+    .notice-block dt {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    /* 用于弹出窗口嵌入 */
+    
+    .pop-block {
+        padding: 0;
+    }
+    
+    .pop-block dl {
+        padding: 10px;
+    }
+    /* 带圆点的列表 */
+    
+    .with-dot dd::before {
+        content: "•";
+        padding-right: 0.5em;
+    }
+    
+    .with-dot dd {
+        margin-left: 1em;
+        text-indent: -1em;
+    }
+    /* 底部有按钮遮挡 */
+    
+    .with-bottom-btn {
+        padding-bottom: 100px;
+    }
+    /* rules 规则说明 */
+    
+    .rules-block {
+        line-height: 1.8em;
+        color: grey;
+        font-size: 100%;
+    }
+    
+    .rules-block dt {
+        background-image: url(images/xx_ques_01.png);
+        background-size: 20px 20px;
+        background-position: 0 5px;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        padding-left: 26px;
+        padding-bottom: 10px;
+        font-size: larger;
+        font-weight: bold;
+    }
+    
+    .rules-block dd {
+        padding-bottom: 15px;
+        padding-left: 26px;
+        border-bottom: 1px dashed lightgrey;
+    }
+    
+    .rules-block > dd:last-child {
+        border-bottom: 0 none;
+    }
+    
+    .rules-chapter {}
+    
+    .rules-chapter .title-line {
+        position: relative;
+        border-bottom: 1px solid grey;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    .rules-chapter .title-line div {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        line-height: 2em;
+        margin: -1em auto 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .rules-chapter .title-line span {
+        margin: auto;
+        padding: 0 5px;
+        background: #F9F9F9;
+    }
+    
+    .rules-chapter .rules-section {
+        line-height: 1.8em;
+        text-align: left;
+    }
+    
+    .rules-chapter .rules-section .section-title {
+        position: relative;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        background: url(images/p_title_bg.png);
+        background-size: 8em 1.8em;
+        background-repeat: no-repeat;
+    }
+    
+    .rules-chapter .rules-section .section-title span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 50%;
+        text-align: right;
+        color: #BE0E0E;
+    }
+    
+    .rules-chapter .rules-section dl {
+        margin-bottom: 15px;
+    }
+    
+    .rules-chapter .rules-section dt {
+        margin-left: 10px;
+        padding-left: 10px;
+        background: url(images/shu_pic.png);
+        background-size: auto 1em;
+        background-position: 0 0.4em;
+        background-repeat: no-repeat;
+    }
+    
+    .rules-chapter .rules-section dt span {
+        color: #cc0000;
+        padding-left: 10px;
+    }
+    
+    .rules-chapter .rules-section dd {
+        color: #7F7F7F;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .rules-chapter .rules-section dt.subtitles {
+        background: none;
+        font-size: small;
+    }
+    
+    .rules-chapter .rules-section dt.subtitles:before {
+        content: "*";
+    }
+    /* 表格 */
+    
+    .deswraper table {
+        width: 100%;
+        border-collapse: collapse;
+        border: solid 1px #ffc600;
+        text-align: center;
+        color: #1b1b1b;
+    }
+    
+    .deswraper table caption {
+        height: 30px;
+        padding: 5px 1px;
+        border-top: solid 1px #ffc600;
+        border-right: solid 1px #ffc600;
+        border-left: solid 1px #ffc600;
+        line-height: 30px;
+        color: white;
+        background-color: #ffc600;
+    }
+    
+    .deswraper table td,
+    .deswraper table th {
+        height: 26px;
+        padding: 5px 1px;
+        vertical-align: middle;
+        border-bottom: dashed 1px #ffc600;
+    }
+    
+    .deswraper table th {
+        font-weight: bold;
+    }
+    
+    .deswraper .col-half {
+        width: 50%;
+    }
+    </style>
+</head>
+
+<body class="bg-xlight-grey">
+    <div class="deswraper">
+        <dl class="rules-block">
+            <dt>什么是司导12分？</dt>
+            <dd>司导12分是司导违约行为的扣罚分数，司导每年仅12分，只扣不加。</dd>
+            <dt>司导12分处罚规则</dt>
+            <dd>
+                <p>6＜分数≤9分时，禁止接单1周</p>
+                <p>0＜分数≤6分时，禁止接单2周</p>
+                <p>分数≤ 0，永远解除合作</p>
+                <p>分数大于0的，第二自然年(1月1日)重置为12分</p>
+            </dd>
+        </dl>
+        <div class="rules-chapter">
+            <div class="title-line">
+                <div><span>司导违约处理细则</span></div>
+            </div>
+            <div class="rules-section">
+                <h4 class="section-title">未服务</h4>
+                <dl>
+                    <dt>拒绝/放弃服务<span>（扣除分数12，扣除订单金200%）</span></dt>
+                    <dd>主观意愿恶意不服务订单</dd>
+                </dl>
+                
+                <dl>
+                    <dt>司导原因导致未服务<span>（扣除分数6，扣除订单金额200%）</span></dt>
+                    <dd>因司导非主观原因造成的未服务。如：司导忘记/记错订单服务时间、擅自更换服务司导、乱收费、强制购物等原因等</dd>
+                </dl>
+                        
+                        <dt>皇粮扣罚规则</dt>
+                        <table style="width: 99%">
+                            <tr>
+                                <td style="background:#44A4FA;color:white">投诉场景</td>
+                                <td style="background:#44A4FA;color:white">接机</td>
+                                <td style="background:#44A4FA;color:white">送机</td>
+                                <td style="background:#44A4FA;color:white">单次接送</td>
+                                <td style="background:#44A4FA;color:white">市内及周边包车</td>
+                                <td style="background:#44A4FA;color:white">3天以内跨城市包车</td>
+                                <td style="background:#44A4FA;color:white">3天以上跨城市包车</td>
+                                <td style="background:#44A4FA;color:white">固定线路包车</td>
+                            </tr>
+                            <tr>
+                                <td>拒绝/放弃服务</td>
+                                <td>48</td>
+                                <td>48</td>
+                                <td>48</td>
+                                <td>96</td>
+                                <td>96</td>
+                                <td>144</td>
+                                <td>96</td>
+                            </tr>
+                            <tr>
+                                <td>司导原因导致未服务</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>48</td>
+                                <td>48</td>
+                                <td>72</td>
+                                <td>48</td>
+                        </table>
+                        <dl></dl>
+                        
+                        
+                    <h4 class="section-title">未完成服务</h4>
+                <dl>
+                    <dt>中途拒载<span>（扣除分数12，扣除订单金额200%）</span></dt>
+                    <dd>服务中突发情况未与客服报备擅自终止服务</dd>
+                </dl>
+                <dl>
+                    <dt>未按时等待<span>（扣除分数3，扣除订单金额200%）</span></dt>
+                    <dd>未按规定时间进行等待导致未完成服务</dd>
+                </dl>
+                <dl>
+                    <dt>地址错误<span>（扣除分数3，扣除订单金额100%）</span></dt>
+                    <dd>因司导原因送错目的地</dd>
+                </dl>
+                <dl>
+                    <dt>拼车订单漏服务<span>(扣除分数3，扣除订单金额70%)</span></dt>
+                    <dd>只服务了拼车订单里的部分客人</dd>
+                </dl>
+                <dt>皇粮扣罚规则</dt>
+                <table style="width: 99%">
+                    <tr>
+                        <td style="background:#44A4FA;color:white">投诉场景</td>
+                        <td style="background:#44A4FA;color:white">接机</td>
+                        <td style="background:#44A4FA;color:white">送机</td>
+                        <td style="background:#44A4FA;color:white">单次接送</td>
+                        <td style="background:#44A4FA;color:white">市内及周边包车</td>
+                        <td style="background:#44A4FA;color:white">3天以内跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">3天以上跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">固定线路包车</td>
+                    </tr>
+                    <tr>
+                        <td>中途拒载</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>96</td>
+                        <td>96</td>
+                        <td>144</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>未按时等待</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>地址错误</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>拼车订单漏服务</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>24</td>
+                    </tr>
+                </table>
+                 <dl></dl>
+                
+                
+                <h4 class="section-title">违规服务</h4>
+                <dl>
+                    <dt>私揽客人<span>（扣除分数12）</span></dt>
+                    <dd>要求客人将订单从平台取消，线下走单,将平台订单转卖给他人</dd>
+                </dl>
+                <dl>
+                    <dt>恶意造谣诋毁平台<span>（扣除分数6，扣除订单金额100%）</span></dt>
+                    <dd>恶意向客人以及同行散布诋毁平台谣言</dd>
+                </dl>
+                <dl>
+                    <dt>强制购物<span>（扣除订单金额70%）</span></dt>
+                    <dd>未经客人同意强制要求客人购物</dd>
+                </dl>
+                <dl>
+                    <dt>乱收费<span>（扣除分数6，扣除多收部分费用×3）</span></dt>
+                    <dd>收取订单中已包含费用/未按收费标准多收增项费用但服务完成</dd>
+                </dl>
+                <dl>
+                    <dt>骚扰客人<span>（扣除分数6，扣除订单金额100%）</span></dt>
+                    <dd>服务前后对客人进行骚扰，强迫客人更改差评（电话/短信/微信等）</dd>
+                </dl>
+                <dl>
+                    <dt>擅自变更服务</dt>
+                    <dd>擅自更换服务司导/更换低于服务标准车型的车辆（服务已完成）<span style="color:#cc0000">（扣除分数6，扣除订单金额100%）</span></dd>
+                    <dd>擅自拼车/带他人服务（服务已完成）<span style="color:#cc0000">（扣除分数6，扣除订单金额50%）</span></dd>
+                    <dd>擅自更换车辆（服务已完成）<span style="color:#cc0000">（扣除分数3，扣除订单金额50%）</span></dd>
+                </dl>
+                <dl>
+                    <dt>违规报价<span style="color:#cc0000">（扣除分数3，扣除订单金额20%）</span></dt>
+                    <dd>向客人收取订单中已包含费用或按高于《费用说明》的收费标准报价，但并未实际收取</dd>
+                </dl>
+                
+                <dt>皇粮扣罚规则</dt>
+                <table style="width: 99%">
+                    <tr>
+                        <td style="background:#44A4FA;color:white">投诉场景</td>
+                        <td style="background:#44A4FA;color:white">接机</td>
+                        <td style="background:#44A4FA;color:white">送机</td>
+                        <td style="background:#44A4FA;color:white">单次接送</td>
+                        <td style="background:#44A4FA;color:white">市内及周边包车</td>
+                        <td style="background:#44A4FA;color:white">3天以内跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">3天以上跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">固定线路包车</td>
+                    </tr>
+                    <tr>
+                        <td>私揽客人</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>96</td>
+                        <td>96</td>
+                        <td>144</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>恶意造谣诋毁平台</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>96</td>
+                        <td>96</td>
+                        <td>144</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>强制购物</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>72</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>乱收费</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>72</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>骚扰客人</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>72</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>擅自更换服务司导/更换低于服务标准车型的车辆</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>72</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>擅自拼车/带他人服务（服务已完成）</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>72</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>擅自更换车辆</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>违规报价</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>24</td>
+                    </tr>
+                </table>
+                <dl></dl>
+                
+                <h4 class="section-title">服务质量</h4>
+                <dl>
+                    <dt>安全驾驶</dt>
+                    <dd>司导驾车存在不安全行为：酒驾/疲劳驾驶（情节较为严重）</dd>
+                </dl>
+                <dl>
+                    <dt>服务态度</dt>
+                    <dd>在服务中有威胁，辱骂等行为，与客人发生肢体冲突<span style="color:#cc0000">（扣除分数12，扣除订单金额100%）</span></dd>
+                    <dd>在服务中未使用文明用语，与客人交流言谈举止存在明显不礼貌行为，解答客人问题不耐烦，语气生硬，向客人抱怨／透露司导接单价格<span style="color:#cc0000">（扣除分数3，扣除订单金额50%）</span></dd>
+                </dl>
+                <dl>
+                    <dt>司导迟到</dt>
+                    <dd>司导迟到60分之以上，服务已完成<span style="color:#cc0000">（扣除分数2，扣除订单金额50%）</span></dd>
+                    <dd>司导迟到30-60分钟，服务已完成<span style="color:#cc0000">（扣除分数1，扣除订单金额40%）</span></dd>
+                    <dd>司导迟到30分钟以内，服务已完成<span style="color:#cc0000">（扣除订单金额30%）</span></dd>
+                </dl>
+                <dl>
+                    <dt>额外要求<span>（扣除订单金额20%）</span></dt>
+                    <dd>主动要求客人解决食宿问题</dd>
+                    <dd>要求客人提供证件信息谋取私利<span style="color:#cc0000">（扣除分数1）</span></dd>
+                </dl>
+                <dl>
+                    <dt>未满足客人合理要求<span>（扣除订单金额20%）</span></dt>
+                    <dd>未能满足客人在服务规则内的合理要求（例如进景区讲解/推荐当地特色等）</dd>
+                </dl>
+                <dl>
+                    <dt>路线不熟<span>（扣除订单金额20%）</span></dt>
+                    <dd>服务中走错路/绕路拖延服务时间</dd>
+                </dl>
+                <dl>
+                    <dt>缺乏主动服务意识<span>（扣除订单金额20%）</span></dt>
+                    <dd>接单成功后24小时内，服务时间前24小时内未主动联系客人；未主动帮客人提行李等；不主动讲解</dd>
+                </dl>
+                <dl>
+                    <dt>未按服务标准规范服务</dt>
+                    <dd>未举牌接机、协助办理机场check in、退税及酒店入住（订单内有标明）<span style="color:#cc0000">（扣除分数2，扣除订单金额20%）</span></dd>
+                    <dd>未按服务标准提前联系客人,客人发消息之后未在24小时内回复,拼车订单接单后未在服务前一天22：00前联系客人<span style="color:#cc0000">（扣除分数1，扣除订单金额20%）</span></dd>
+                    <dd>车辆配置不全不整洁/司导仪表不佳/讲解不到位/司导车内吸烟/不遵守交通规则/开车打电话<span style="color:#cc0000">（扣除订单金额10%）</span></dd>
+                    <dd>如果因堵车或观光需求等原因不走高速公路需要与客户提前说明，如造成行程影响未获客户谅解，需扣除服务当天订单金额10%及其他损失。<span style="color:#cc0000">（扣除订单金额10%）</span></dd>
+                </dl>
+                <dt>皇粮扣罚规则</dt>
+                <table style="width: 99%">
+                    <tr>
+                        <td style="background:#44A4FA;color:white">投诉场景</td>
+                        <td style="background:#44A4FA;color:white">接机</td>
+                        <td style="background:#44A4FA;color:white">送机</td>
+                        <td style="background:#44A4FA;color:white">单次接送</td>
+                        <td style="background:#44A4FA;color:white">市内及周边包车</td>
+                        <td style="background:#44A4FA;color:white">3天以内跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">3天以上跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">固定线路包车</td>
+                    </tr>
+                    <tr>
+                        <td>安全驾驶</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>96</td>
+                        <td>96</td>
+                        <td>144</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>在服务中有威胁，辱骂等行为，与客人发生肢体冲突</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>96</td>
+                        <td>96</td>
+                        <td>144</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>在服务中未使用文明用语，与客人交流言谈举止存在明显不礼貌行为，解答客人问题不耐烦，语气生硬等</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>司导迟到60分之以上，服务已完成</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>24</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>司导迟到30-60分钟，服务已完成</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>司导迟到30分钟以内，服务已完成</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>主动要求客人解决食宿问题</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>要求客人提供证件信息谋取私利</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>未满足客人合理要求</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>路线不熟</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>缺乏主动服务意识</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>未举牌接机、协助办理机场check in、退税及酒店入住</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>24</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>未按服务标准提前联系客人,客人发消息之后未在24小时内回复,拼车订单接单后未在服务前一天22：00前联系客人</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>车辆配置不全不整洁/司导仪表不佳/讲解不到位/司导车内吸烟/不遵守交通规则/开车打电话</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>如果因堵车或观光需求等原因不走高速公路需要与客户提前说明，如造成行程影响未获客户谅解，需扣除服务当天订单金额10%及其他损失。</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>24</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+                <dl></dl>
+                
+                
+                <h4 class="section-title">取消订单</h4>
+                <dl>
+                    <dt>司导取消订单</dt>
+                    <dd>订单服务时间开始24小时以内，司导因个人原因取消<span style="color:#cc0000">（扣除分数2，扣除订单金额100%）</span></dd>
+                    <dd>订单服务时间开始24小时以外，司导因个人原因取消<span style="color:#cc0000">（扣除分数1）</span></dd>
+                </dl>
+                <dt>皇粮扣罚规则</dt>
+                <table style="width: 99%">
+                    <tr>
+                        <td style="background:#44A4FA;color:white">投诉场景</td>
+                        <td style="background:#44A4FA;color:white">接机</td>
+                        <td style="background:#44A4FA;color:white">送机</td>
+                        <td style="background:#44A4FA;color:white">单次接送</td>
+                        <td style="background:#44A4FA;color:white">市内及周边包车</td>
+                        <td style="background:#44A4FA;color:white">3天以内跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">3天以上跨城市包车</td>
+                        <td style="background:#44A4FA;color:white">固定线路包车</td>
+                    </tr>
+                    <tr>
+                        <td>订单服务时间开始24小时以外，司导因个人原因取消</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>订单服务时间开始24小时以外，司导因个人原因取消</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>8</td>
+                    </tr>
+                </table>
+                <dt class="subtitles">1、如因司导原因造成客人重大损失由司导承担</dd>
+                <dt class="subtitles">2、如因不可抗力因素（遇恶劣天气、交通事故、司导身体原因、社会暴乱）导致未服务、未完成服务、取消订单、服务质量、违规服务，可向客服提出申诉</dd>
+                <dt class="subtitles">司导申诉流程：1、在APP“私聊”页向客服提出申诉，并提交申诉证明（提供气象证明，事故现场照片，医院开具病例的证明）；2、客服在24小时内回复申诉结果。</dd>
+                </div>
+        </div>
+    </div>
+    <script>
+    // 初始化_顶部返回按钮
+    if (window.javaObj) {
+        window.javaObj.setBackBtn(1);
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>费用说明</title>
+    <style type="text/css">
+        body, div, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form,
+        iframe, input, textarea, select, label, article, aside, footer, header,
+        menu, nav, section, time, audio, video {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+            color: #242424;
+        }
+
+        .alls {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 20px 16px;
+        }
+
+        .txt {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .txt p {
+            padding-bottom: 5px;
+        }
+
+        .txt_con {
+            background: #ececec;
+            padding: 10px;
+            margin: 10px 0 20px;
+        }
+
+        .txt_con p {
+            padding-bottom: 5px;
+        }
+
+        .num_div {
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .num_div i {
+            width: 14px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-style: normal;
+        }
+
+        .s_con {
+
+        }
+
+        .s_tit_a {
+            border-bottom: 2px solid #ebb102;
+            position: relative;
+            height: 24px;
+            margin: 10px 0;
+        }
+
+        .tit_l_a, .tit_r_a {
+            background: url(images/tit_icon01.png) no-repeat;
+            background-size: 412px 25px;
+            height: 24px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .tit_l_a {
+            width: 192px;
+            left: 0;
+        }
+
+        .tit_r_a {
+            width: 130px;
+            right: 0;
+            background-position: -282px 0;
+        }
+
+        .s_tit_b {
+            border-bottom: 2px solid #ebb102;
+            position: relative;
+            height: 24px;
+            margin: 10px 0;
+        }
+
+        .tit_l_b, .tit_r_b {
+            background: url(images/tit_icon02.png) no-repeat;
+            background-size: 345px 25px;
+            height: 24px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .tit_l_b {
+            width: 192px;
+            left: 0;
+        }
+
+        .tit_r_b {
+            width: 130px;
+            right: 0;
+            background-position: -282px 0;
+        }
+
+        .s_tit {
+            position: relative;
+            height: 24px;
+            margin: 10px 0;
+            border-bottom: 1px solid #EBB102;
+        }
+
+        .s_tit_no_bb {
+            border-bottom:none;
+        }
+
+        .tit_l, .tit_r {
+            background: url(images/tit_icon.png) no-repeat;
+            background-size: 412px 750px;
+            height: 24px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .tit_l {
+            width: 192px;
+            left: 0;
+        }
+
+        .tit_r {
+            width: 130px;
+            right: 0;
+            background-position: -282px 0;
+        }
+
+        .tit_l.l02 {
+            background-position: 0 -37px;
+        }
+
+        .tit_l.l03 {
+            background-position: 0 -76px;
+        }
+
+        .tit_l.l04 {
+            background-position: 0 -118px;
+        }
+
+        .tit_l.l05 {
+            background-position: 0 -158px;
+        }
+
+        .tit_l.l06 {
+            background-position: 0 -201px;
+        }
+
+        .tit_r.r02 {
+            background-position: -282px -37px;
+        }
+
+        .tit_r.r03 {
+            background-position: -282px -76px;
+        }
+
+        .tit_r.r04 {
+            background-position: -282px -118px;
+        }
+
+        .tit_r.r05 {
+            background-position: -282px -158px;
+        }
+
+        .tit_r.r06 {
+            background-position: -282px -201px;
+        }
+
+        .s_con h2 {
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+
+        .s_con p {
+            padding-bottom: 6px;
+        }
+
+        .s_con p.ps {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .s_con p.ps i {
+            width: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-style: normal;
+        }
+
+        .s_con p.ps2 {
+            position: relative;
+            padding-left: 38px;
+        }
+
+        .s_con p.ps2 i {
+            width: 14px;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            font-style: normal;
+        }
+
+        .s_detail {
+            padding: 20px 0;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 26px;
+        }
+
+        .s_txt {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        table td {
+            border: 1px solid #393939;
+            padding: 0 2px;
+            text-align: center;
+            line-height: 18px;
+        }
+
+        .tab_tit {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .titlebg {
+            height: 25px;
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .titlebg_cpdy {
+            background: url(images/g_cpdy.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_mcdy {
+            background: url(images/g_mcdy.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_sfgz {
+            background: url(images/g_fydy.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_fydy {
+            background: url(images/g_fydy.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_fytx {
+            background: url(images/g_fytx.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_bcgz {
+            background: url(images/g_bcgz.png) no-repeat left center/412px 25px;;
+        }
+
+        .titlebg_sflc {
+            background: url(images/g_sflc.png) no-repeat left center/412px 25px;;
+        }
+
+        .title_rightbg {
+            width: 50%;
+            right: 0;
+            height: 24px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .title_rightbg_cpdy {
+            background: url(images/g_cpdy.png) no-repeat left center/412px 25px;
+            background-position: -282px 0;
+        }
+
+        .title_rightbg_mcdy {
+            background: url(images/g_mcdy.png) no-repeat left center/412px 25px;
+            background-position: -282px 0;
+        }
+
+        .title_rightbg_sfgz {
+            background: url(images/g_fydy.png) no-repeat center right/472px 24px;
+        }
+
+        .title_rightbg_fytx {
+            background: url(images/g_fytx.png) no-repeat right center/412px 25px;
+        }
+
+        .title_rightbg_bcgz {
+            background: url(images/g_bcgz.png) no-repeat right center/412px 25px;
+        }
+
+        .title_rightbg_sflc {
+            background: url(images/g_sflc.png) no-repeat right center/412px 25px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="alls">
+
+    <div class="s_con">
+        <div class="s_tit s_tit_no_bb">
+            <i class="titlebg titlebg_fydy"></i><s
+                class="title_rightbg title_rightbg_sfgz"></s>
+        </div>
+        <p>1.订单价格说明</p>
+
+        <p class="ps">订单价格已包含基础服务费。后付费用需另行提交。</p>
+        
+        <p>2.基础服务费</p>
+
+        <p class="ps">基础服务费包含司导服务费、小费，餐补、住宿补助，油费、停车费、过路费、高速费、进城费、拥堵费，举牌接机费用、接送机夜间费（包车不含）、空驶费等。</p>
+        
+        <p>【特别说明】</p>
+        
+        <p class="ps">A、订单费用仅包含此订单的基础服务费，表态接单前需仔细确认好订单价格,一旦选择愿意接单即默认您已接受此价格。</p>
+        
+        <p class="ps">B、在服务中司导不允许以任何理由，向客人索要基础服务费中已包含的费用。</p>
+        
+        <p>3.后付费用</p>
+        
+        <p class="ps"> 后付费用包括：超时等待费，包车订单每天的超时、超公里费用、增加包车天数的费用，为客人垫付的游览费用、门票和其它杂费。</p>
+        
+        <p>(1)超时等待费用</p>
+        
+        <p>免费等待时长：</p>
+        
+        <table style="width: 99%">
+            <tr>
+                <td>商品类型</td>
+                <td>免费等待时长</td>
+            </tr>
+            <tr>
+                <td>接机</td>
+                <td>航班实际落地后90分钟</td>
+            </tr>
+            <tr>
+                <td>送机、单次接送</td>
+                <td>订单服务时间后30分钟</td>
+            </tr>
+            <tr>
+                <td>拼车线路包车</td>
+                <td>约定时间后10分钟</td>
+            </tr>
+            </table>
+        
+        <p>等待费收费标准（按小时收费的不满1小时按1小时收取）</p>
+        
+        <table style="width: 99%">
+            <tr>
+                <td>NO</td>
+                <td>大洲/国家</td>
+                <td>超时费用（人民币）</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>美洲（北美洲、南美洲）</td>
+                <td>120元／小时</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>大洋洲（澳大利亚、新西兰）</td>
+                <td>100元／小时</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>欧洲</td>
+                <td>150元／小时</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>日本、新加坡、港澳</td>
+                <td>2元/分钟</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>韩国</td>
+                <td>1.5元/分钟</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>亚洲（除韩国、日本、新加坡、港澳）、非洲</td>
+                <td>1元/分钟</td>
+            </tr>
+        </table>
+        
+        <p>(2)包车产品服务公里服务时间标准：</p>
+        
+        <table style="width: 99%">
+            <tr>
+                <td>NO</td>
+                <td>包车类型</td>
+                <td>服务公里</td>
+                <td>服务时间</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>市内／周边包车</td>
+                <td>300公里/天</td>
+                <td>10小时/天</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>长途包车</td>
+                <td>600公里/天</td>
+                <td>10小时/天</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>市内包车（半日包）</td>
+                <td>150公里/天</td>
+                <td>5小时/天</td>
+            </tr>
+        </table>
+        <p class="ps" style="padding-left: 0;"><span style="color:blue">注：固定线路包车无服务公里数和服务时长限制，以保证订单行程及景点游览时间按要求服务完成为准，如因客人原因造成景点游览时间超过规定时长可收超时费。</span></p>
+        <p>包车超时费收费标准：</p>
+        
+        <table style="width: 99%">
+            <tr>
+                <td>NO</td>
+                <td>大洲/国家</td>
+                <td>超时费用（人民币）</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>欧洲（不含意大利和西班牙）、南美洲</td>
+                <td>300元/小时</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>大洋洲、意大利、西班牙、非洲、新加坡、北美洲、日本</td>
+                <td>200元/小时</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>亚洲（不含日本、新加坡）</td>
+                <td>100元/小时</td>
+            </tr>
+        </table>
+        
+        <p class="ps" style="padding-left: 0;"><span style="color:blue">注：1、以上收费标准适用于全球的5座-8座车型， 9座-14座车型统一在以上标准上加50元，北美洲的9座-12座车为350元/小时。</span></p>
+        
+        <p class="ps" style="padding-left: 0;">（注：当日服务小时与里程不累加，当日服务当日有效。）</p>
+        
+        <p class="ps" style="padding-left: 0;">* 超出30分钟以内不收费用，超出30分钟以上，按小时为单位收取，不满1小时以1小时计算</p>
+        
+        <p>包车超公里收费标准：每公里2元人民币</p>
+        
+        <p>* 一天内，超时与超里程同时生效时，只收取一项，收取规则选超出费用高的一项。</p>
+        
+        <p>(3)包车夜间服务费的收费标准</p>
+        
+        <p>*常规服务时间说明：</p>
+        
+        <p>常规服务时间段为08:00－－22:00，如需非常规服务时间段服务，可按以下标准要求客人支付夜间服务费。</p>
+        
+        <p>A、接送机:</p>
+        
+        <p>接送机订单金额已含夜间服务费，如原订单服务开始时间不属于夜间，但因航班延误导致航班实际落地时间进入了夜间服务时间，司导可电话皇包车客服，皇包车承担司导接单价的20%（此规则只适用于航班延误之后司导等待并服务完成）。</p>
+        
+        <p>B、包车：</p>
+        
+        
+        <table style="width: 99%">
+            <tr>
+                <td>NO</td>
+                <td>大洲/国家</td>
+                <td>超时费用（人民币）</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>欧洲、美洲（北美＋南美）、日本</td>
+                <td>200元/天</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>大洋洲、亚洲（除日本、台湾、印度尼西亚）、非洲</td>
+                <td>100元/天</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>台湾</td>
+                <td>50元/天</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>印度尼西亚</td>
+                <td>不收取</td>
+            </tr>
+        </table>
+        
+        <div class="s_tit">
+            <i class="titlebg titlebg_sflc"></i><s
+                class="title_rightbg title_rightbg_sflc"></s>
+        </div>
+        <!--<h2>四、 收费流程</h2>-->
+
+        <p class="ps">1、服务过程中，后付费用发生前，请告知客人将产生后付费用及收费标准。</p>
+        <p class="ps">2、在服务结束时，立即通过导游端APP提交后付费用。您只需输入超出的小时数、公里数、天数和垫付的金额，系统帮您自动计算完成。</p>
+        <p class="ps">3、当场与客人确认后付费用并线下收取。</p>
+        <p class="ps">注：皇包车不承担对后付费用的追缴责任。</p>
+
+        <div class="s_tit">
+            <i class="titlebg titlebg_fytx"></i><s
+                class="title_rightbg title_rightbg_fytx"></s>
+        </div>
+        <!--<h2>四、 费用提现</h2>-->
+
+        <p class="ps">1、在服务完成3天后即可提现，每个自然周内（北京时间周一到周日）可以申请一次提现，1 个工作日到账。</p>
+     
+        <p class="ps"> 2.通过payneer账户按当地货币提现服务费用。</p>
+
+        <div class="s_tit">
+            <i class="titlebg titlebg_bcgz"></i><s
+                class="title_rightbg title_rightbg_bcgz"></s>
+        </div>
+        <!--<h2>五、 退改补偿规则</h2>-->
+
+
+        <p class="ps">1、接机/送机/单次接送</p>
+        <p class="ps">距离服务开始时间24小时前取消，不予司导补偿；</p>
+        <p class="ps">距离服务开始时间24小时内取消，补偿司导100%接单价格</p>
+        <p class="ps">2、市内及周边包车（含半日包）/三日及三日以内长途包车订单</p>
+        <p class="ps">距离取消部分的服务开始时间48小时前取消，不予司导补偿；</p>
+        <p class="ps">距离取消部分的服务开始时间48小时内24 小时前取消，补偿司导取消部分的30%接单价格；</p>
+        <p class="ps">距离取消部分的服务开始时间24 小时内取消，补偿司导取消部分的50%接单价格。</p>
+        <p class="ps">3、三天以上长途包车订单</p>
+        <p class="ps">距离取消部分的服务开始时间7天前取消，不予司导补偿；</p>
+        <p class="ps">距离取消部分的服务开始时间7天-2天（不含第2天）内取消，补偿司导取消部分的20%接单价格；</p>
+        <p class="ps">距离取消部分的服务开始时间48小时内取消，补偿司导取消部分的40%接单价格。</p>
+        
+        <p class="ps">注意事项：</p>
+        <p class="ps">1、如因不可抗力因素造成的订单取消，不予司导补偿。（不可抗力指：1．自然灾害、如台风、洪水、冰雹；2．社会异常事件，如罢工、骚乱；3.航空事故；4、出入境政策变更）</p>
+        <p class="ps">2、如接单后请在有偿取消时间范围外跟客人沟通行程合理性，如因司导在有偿取消时间范围内才跟客人沟通，造成客人退单的，不予司导补偿。（有偿取消时间范围内下的订单除外）.</p>
+        <p class="ps">3、如因司导违反《司导12分》造成的订单取消，不予司导补偿。</p>
+        <p class="ps">4、如客人因为特殊原因（身故、住院、怀孕、骨折不宜出行且出示相应机构证明的），则补偿司导原有补偿款的50%。</p>
+        <p class="ps">5、如因航班取消、前程航延导致的订单取消，则补偿司导原有补偿款的50%。</p>
+        
+    </div>
+    <div class="s_txt">
+        皇包车运营中心<br/>2016年5月
+    </div>
+</div>
+</div>
+<script>
+    // 初始化_顶部返回按钮
+    if(window.javaObj){
+        window.javaObj.setBackBtn(1);
+    }
+</script>
+</body>
+</html>

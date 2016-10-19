@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link href="css/wxc2.css" rel="stylesheet" type="text/css"/>
+
+    <title>后付费用说明</title>
+</head>
+<body class="bgf9">
+<div class="deswraper">
+    <ul style="color:grey;">
+        <li style="margin-top: 10px">• 后付费用包括：每天的超时、超公里、为客户垫付游览费用和其他杂费，以及超出服务天数。</li>
+        <li style="margin-top: 10px">• 一天内，超时与超里程同时生效时，只收取一项，收取规则选超出费用高的一项。</li>
+        <li style="margin-top: 10px">• 超时以小时为单位计费（超出约定时间30分钟后，按1小时计费）。</li>
+    </ul>
+    <table class="mbt15 mt15">
+        <tr>
+            <td>NO.</td>
+            <td>大洲/国家</td>
+            <td>超时费用（人民币）</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>欧洲（不含意大利和西班牙）、南美洲、日本</td>
+            <td>300元/小时</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>大洋洲、意大利、西班牙、非洲、新加坡、北美洲</td>
+            <td>200元/小时</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>亚洲（不含日本、新加坡）</td>
+            <td>100元/小时</td>
+        </tr>
+    </table>
+</div>
+<script>
+    // 初始化_顶部返回按钮
+    window.javaObj.setBackBtn(1);
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="css/guide.css" rel="stylesheet" type="text/css"/>
+
+    <title>后付费用说明</title>
+</head>
+<body class="bg-light-grey">
+<div class="notice-block with-bottom-btn">
+    <dl class="with-dot with-top-line">
+        <dd>后付费用包括每天为客户垫付的门票，餐费和其它杂费，以及超时，超公里费用。</dd>
+        <dd>超时超公里收取规则请查看费用说明，后付费用发生前需明确告知客人，与客人确认后方可提交。</dd>
+    </dl>
+</div>
+</body>

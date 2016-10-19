@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="#ffffff" name="msapplication-TileColor">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <link href="css/guide.css" rel="stylesheet" type="text/css"/>
+  <title>皇粮说明</title>
+</head>
+<body class="bgf9">
+<div class="deswraper">
+  <dl class="rules-block">
+    <dt>什么是皇粮？</dt>
+    <dd>皇粮主要是根据司导的活跃度、为皇包车平台做的贡献以及客人评价综合计算得出。</dd>
+    <dt>皇粮有什么作用？</dt>
+    <dd>皇粮可以用于司导的技能升级考试以及参与优质订单的pk等。</dd>
+    <dt>如何获得皇粮？</dt>
+    <table>
+      <caption>皇粮奖罚标准</caption>
+      <tr>
+        <th>奖励项</th>
+        <th>奖励皇粮数</th>
+      </tr>
+      <tr>
+        <td>使用【推荐有礼】推荐司导并签约成功</td>
+        <td>6担/人</td>
+      </tr>
+      <tr>
+        <td>帮客人在导游端APP内下三天以上长途包车订单</td>
+        <td>18担/单</td>
+      </tr>
+      <tr>
+        <td>帮客人在导游端APP内下市内及周边、三天以内长途包车订单</td>
+        <td>12担/单</td>
+      </tr>
+      <tr>
+        <td>获得三天以上跨城市长途包车订单5星好评</td>
+        <td>12担/单</td>
+      </tr>
+      <tr>
+        <td>获得市内及周边、三天以内长途包车、线路包车订单5星好评</td>
+        <td>8担/单</td>
+      </tr>
+      <tr>
+        <td>帮客人在导游端APP内下接机、送机、单次接送订单</td>
+        <td>6担/单</td>
+      </tr>
+      <tr>
+        <td>获得接机、送机、单次接送订单5星好评</td>
+        <td>4担/单</td>
+      </tr>
+      <td>参与各种活动</td>
+      <td>以活动规则为准</td>
+      </tr>
+      <tr>
+        <td>订单PK</td>
+        <td>以订单为准</td>
+      </tr>
+    </table>
+  </dl>
+</div>
+<script>
+  // 初始化_顶部返回按钮
+  window.javaObj.setBackBtn(1);
+</script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <title>云地接服务事项</title>
+    <style rel="stylesheet">
+    @charset "utf-8";
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%
+    }
+    
+    body {
+        font-family: 'microsoft yahei', '\534E\6587\7EC6\9ED1', Verdana, Arial, Helvetica, sans-serif;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background: transparent;
+        line-height: 1;
+    }
+    
+    img {
+        border: 0 none;
+        vertical-align: bottom;
+        -ms-interpolation-mode: bicubic
+    }
+    
+    dl dd {
+        list-style: none;
+    }
+    
+    .bg-light-grey {
+        background: #eeeeee;
+    }
+    
+    .bg-xlight-grey {
+        background: #F9F9F9;
+    }
+    
+    .bg-transparent {
+        background: transparent;
+    }
+    /* 全页面壳子 */
+    
+    .deswraper {
+        margin: 32px 20px 40px 20px;
+        padding-bottom: 20px;
+    }
+    /* notice 提示信息 */
+    
+    .notice-block {
+        padding: 10px;
+        line-height: 1.8em;
+        color: grey;
+    }
+    
+    .notice-block img {
+        width: 100%;
+    }
+    
+    .notice-block dt {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    /* 用于弹出窗口嵌入 */
+    
+    .pop-block {
+        padding: 0;
+    }
+    
+    .pop-block dl {
+        padding: 10px;
+    }
+    /* 带圆点的列表 */
+    
+    .with-dot dd::before {
+        content: "•";
+        padding-right: 0.5em;
+    }
+    
+    .with-dot dd {
+        margin-left: 1em;
+        text-indent: -1em;
+    }
+    /* 底部有按钮遮挡 */
+    
+    .with-bottom-btn {
+        padding-bottom: 100px;
+    }
+    /* rules 规则说明 */
+    
+    .rules-block {
+        line-height: 1.8em;
+        color: grey;
+        font-size: 100%;
+    }
+    
+    .rules-block dt {
+        background-image: url(images/xx_ques_01.png);
+        background-size: 20px 20px;
+        background-position: 0 5px;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        padding-left: 26px;
+        padding-bottom: 10px;
+        font-size: larger;
+        font-weight: bold;
+    }
+    
+    .rules-block dd {
+        padding-bottom: 15px;
+        padding-left: 26px;
+        border-bottom: 1px dashed lightgrey;
+    }
+    
+    .rules-block > dd:last-child {
+        border-bottom: 0 none;
+    }
+    
+    .rules-chapter {}
+    
+    .rules-chapter .title-line {
+        position: relative;
+        border-bottom: 1px solid grey;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    .rules-chapter .title-line div {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        line-height: 2em;
+        margin: -1em auto 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .rules-chapter .title-line span {
+        margin: auto;
+        padding: 0 5px;
+        background: #F9F9F9;
+    }
+    
+    .rules-chapter .rules-section {
+        line-height: 1.8em;
+        text-align: left;
+    }
+    
+    .rules-chapter .rules-section .section-title {
+        position: relative;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        background: url(images/p_title_bg.png);
+        background-size: 8em 1.8em;
+        background-repeat: no-repeat;
+    }
+    
+    .rules-chapter .rules-section .section-title span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 50%;
+        text-align: right;
+        color: #BE0E0E;
+    }
+    
+    .rules-chapter .rules-section dl {
+        margin-bottom: 15px;
+    }
+    
+    .rules-chapter .rules-section dt {
+        margin-left: 10px;
+        padding-left: 10px;
+        background: url(images/shu_pic.png);
+        background-size: auto 1em;
+        background-position: 0 0.4em;
+        background-repeat: no-repeat;
+    }
+    
+    .rules-chapter .rules-section dt span {
+        color: #BE0E0E;
+        padding-left: 10px;
+    }
+    
+    .rules-chapter .rules-section dd {
+        color: #7F7F7F;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .rules-chapter .rules-section dt.subtitles {
+        background: none;
+        font-size: small;
+    }
+    
+    .rules-chapter .rules-section dt.subtitles:before {
+        content: "*";
+    }
+    /* 表格 */
+    
+    .deswraper table {
+        width: 100%;
+        border-collapse: collapse;
+        border: solid 1px #ffc600;
+        text-align: center;
+        color: #1b1b1b;
+    }
+    
+    .deswraper table caption {
+        height: 30px;
+        padding: 5px 1px;
+        border-top: solid 1px #ffc600;
+        border-right: solid 1px #ffc600;
+        border-left: solid 1px #ffc600;
+        line-height: 30px;
+        color: white;
+        background-color: #ffc600;
+    }
+    
+    .deswraper table td,
+    .deswraper table th {
+        height: 26px;
+        padding: 5px 1px;
+        vertical-align: middle;
+        border-bottom: dashed 1px #ffc600;
+    }
+    
+    .deswraper table th {
+        font-weight: bold;
+    }
+    
+    .deswraper .col-half {
+        width: 50%;
+    }
+    </style>
+</head>
+
+<body class="bg-xlight-grey">
+    <div class="deswraper">
+        <dl class="rules-block">
+            <dt>什么是云地接？</dt>
+            <dd>云地接与皇包车同为北京纯粹旅行有限公司的两个独立品牌。</dd>
+            <dd>皇包车专注服务公民出境游散客用户。</dd>
+            <dd>云地接专注于服务旅游业业内的组团社、批发商等同业客户，承接境外地接接待的相关业务。</dd>
+        
+        </dl>
+        <div class="rules-chapter">
+            <div class="title-line">
+                <div><span>云地接服务注意事项：</span></div>
+            </div>
+            <div class="rules-section">
+                
+                <dl>
+                    <dt>1、切勿提及任何委托服务的公司（皇包车、云地接、司导所属车行或地接社名称）如有特殊案例，会另行告知。</dt>
+                    <dd>联系订单内的客人先判定是商家还是实际需要服务的客人，且不要提及皇包车或云地接，以个人名义跟客人沟通。</dd>
+                    <dd>话术：您好，请问您是**吗？我是*月*日为您的巴黎行程提供接送机服务的司导**。</dd>
+                </dl>
+                
+                <dl>
+                    <dt>2、行前及服务过程中\后，不要提醒客人下载皇包车客户端APP</dt>
+                    <dd>云地接的订单不允许做二转订单，如有二转需求，请直接告知客人自行联系报名的国内旅行社补下订单，否则无法接待，一经发现未按照此规则执行则按《司导12分》里的私揽客人处理。</dd>
+                    <dd>司导严禁向客人要好评。皇包车会回访商家，根据商家反馈，决定是否给好评奖励。</dd>
+                </dl>
+                
+                <dl>
+                    <dt>3、协助办理酒店入住</dt>
+                    <dd>在酒店大堂等待客人10分钟，提醒客人进入房间检查物品是否完好无损，客人检查房间没有问题后，导游再离开前往自己的酒店入住或者进行其他活动安排；</dd>
+                </dl>
+                
+                <dl>
+                    <dt>4、讲解服务</dt>
+                    <dd>沿途为客人提供风土人情及景点讲解的服务。如行程过程中，考虑安全因素，无法长时间为客人提供讲解，则向客人讲清楚原因后在抵达景点附近或者陪同如内时提供讲解服务。如特殊景点不允许非官导讲解，也请事先告知客人。</dd>
+                </dl>
+                
+                <dl>
+                    <dt>5、垫付费用</dt>
+                    <dd>垫付费用即是基础服务费用之外商家需要司导在境外垫付的客人的费用。</dd>
+                    <dd>垫付项目：门票、正餐、酒店城市税、超时费用、超公里费用等。</dd>
+                </dl>
+                
+                <dl>
+                    <dt>a)行前垫付费用流程：</dt>
+                    <dd>①接单后服务前，司导跟云地接OP确认垫付费用内容（在微信群内确认）</dd>
+                    <dd>②确认后，云地接OP发送上团说明书跟司导确认。</dd>
+                    <dd>③云地接客服在3个工作日内打款给司导。</dd>
+                </dl>
+                
+                <dl>
+                    <dt>b)行中垫付/后付费用流程：</dt>
+                    <dd>①司导跟云地接OP沟通哪些费用是跟皇包车结算，哪些费用是跟客人结算。</dd>
+                    <dd>②如跟客人结算的需跟客人明确费用收取标准，如客人同意，则发生垫付后付费用。</dd>
+                    <dd>③如跟商家结算的，需在服务结束后，司导将垫付费用凭证发予云地接OP，确认无误后，3个工作日内打款给司导。</dd>
+                </dl>
+                
+                
+                
+        </div>
+    </div>
+    <script>
+    // 初始化_顶部返回按钮
+    if (window.javaObj) {
+        window.javaObj.setBackBtn(1);
+    }
+    </script>
+</body>
+
+</html>

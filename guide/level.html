@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>司导级别</title>
+	<style rel="stylesheet">
+		@charset "utf-8";
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+
+		article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+			display: block;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+
+		html {
+			-webkit-text-size-adjust: none;
+			-ms-text-size-adjust: 100%
+		}
+
+		body {
+			font-family: 'microsoft yahei', '\534E\6587\7EC6\9ED1', Verdana, Arial, Helvetica, sans-serif;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			background: transparent;
+			line-height: 1;
+		}
+
+		img {
+			border: 0 none;
+			vertical-align: bottom;
+			-ms-interpolation-mode: bicubic
+		}
+
+		dl dd {
+			list-style: none;
+		}
+
+		.bg-light-grey {
+			background: #eeeeee;
+		}
+
+		.bg-xlight-grey {
+			background: #F9F9F9;
+		}
+
+		.bg-transparent {
+			background: transparent;
+		}
+
+		/* 全页面壳子 */
+		.deswraper {
+			margin: 32px 20px 40px 20px;
+			padding-bottom: 20px;
+		}
+
+		/* notice 提示信息 */
+		.notice-block {
+			padding: 10px;
+			line-height: 1.8em;
+			color: grey;
+		}
+
+		.notice-block img {
+			width: 100%;
+		}
+
+		.notice-block dt {
+			margin-top: 10px;
+			font-weight: bold;
+		}
+
+		/* 用于弹出窗口嵌入 */
+		.pop-block {
+			padding: 0;
+		}
+
+		.pop-block dl {
+			padding: 10px;
+		}
+
+		/* 带圆点的列表 */
+		.with-dot dd::before {
+			content: "•";
+			padding-right: 0.5em;
+		}
+
+		.with-dot dd {
+			margin-left: 1em;
+			text-indent: -1em;
+		}
+
+		/* 底部有按钮遮挡 */
+		.with-bottom-btn {
+			padding-bottom: 100px;
+		}
+
+		/* rules 规则说明 */
+		.rules-block {
+			line-height: 1.8em;
+			color: grey;
+			font-size: 100%;
+		}
+
+		.rules-block dt {
+			background-image: url(images/xx_ques_01.png);
+			background-size: 20px 20px;
+			background-position: 0 5px;
+			background-repeat: no-repeat;
+			margin-top: 10px;
+			padding-left: 26px;
+			padding-bottom: 10px;
+			font-size: larger;
+			font-weight: bold;
+		}
+
+		.rules-block dd {
+			padding-bottom: 15px;
+			padding-left: 26px;
+			border-bottom: 1px dashed lightgrey;
+		}
+
+		.rules-block > dd:last-child {
+			border-bottom: 0 none;
+		}
+
+		.rules-chapter {
+		}
+
+		.rules-chapter .title-line {
+			position: relative;
+			border-bottom: 1px solid grey;
+			margin-bottom: 20px;
+			padding-top: 20px;
+		}
+
+		.rules-chapter .title-line div {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			line-height: 2em;
+			margin: -1em auto 0;
+			text-align: center;
+			width: 100%;
+		}
+
+		.rules-chapter .title-line span {
+			margin: auto;
+			padding: 0 5px;
+			background: #F9F9F9;
+		}
+
+		.rules-chapter .rules-section {
+			line-height: 1.8em;
+			text-align: left;
+		}
+
+		.rules-chapter .rules-section .section-title {
+			position: relative;
+			padding-left: 10px;
+			margin-bottom: 10px;
+			background: url(images/p_title_bg.png);
+			background-size: 8em 1.8em;
+			background-repeat: no-repeat;
+		}
+
+		.rules-chapter .rules-section .section-title span {
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: block;
+			width: 50%;
+			text-align: right;
+			color: #BE0E0E;
+		}
+		.rules-chapter .rules-section dl {
+			margin-bottom: 15px;
+		}
+
+		.rules-chapter .rules-section dt {
+			margin-left: 10px;
+			padding-left: 10px;
+			background: url(images/shu_pic.png);
+			background-size: auto 1em;
+			background-position: 0 0.4em;
+			background-repeat: no-repeat;
+		}
+
+		.rules-chapter .rules-section dt span {
+			color: #BE0E0E;
+			padding-left: 10px;
+		}
+		.rules-chapter .rules-section dd {
+			color: #7F7F7F;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		/* 表格 */
+		.deswraper table {
+			width: 100%;
+			border-collapse: collapse;
+			border: solid 1px #ffc600;
+			text-align: center;
+			color: #1b1b1b;
+		}
+
+		.deswraper table caption {
+			height: 30px;
+			padding: 5px 1px;
+			border-top: solid 1px #ffc600;
+			border-right: solid 1px #ffc600;
+			border-left: solid 1px #ffc600;
+			line-height: 30px;
+			color: white;
+			background-color: #ffc600;
+		}
+
+		.deswraper table td,
+		.deswraper table th {
+			height: 26px;
+			padding: 5px 1px;
+			vertical-align: middle;
+			border-bottom: dashed 1px #ffc600;
+		}
+
+		.deswraper table th {
+			font-weight: bold;
+		}
+
+		.deswraper .col-half {
+			width: 50%;
+		}
+	</style>
+
+</head>
+<body class="bgf9">
+
+<div class="deswraper">
+	<dl class="rules-block">
+		<dt>什么是司导级别？</dt>
+		<dd>司导级别是皇包车根据司导的服务能力、服务意识、旅游相关知识了解程度所做的司导级别划分。</dd>
+		<dt>司导级别的作用是什么？</dt>
+		<dd>司导级别将决定司导的接单类型。</dd>
+
+		<dt>哪些司导可以参加分级？</dt>
+		<dd>审核通过、活跃度高、高度认可皇包车运营理念的司导。</dd>
+		<dt>技能级别可以升级吗？</dt>
+		<dd>司导级别可以通过升级考试逐级上升。</dd>
+		<dt>如何升级？</dt>
+		<dd>当皇粮达到升级要求时，可以提交升级考试申请。具体升级皇粮要求、考试内容及考试时间等信息以紫禁城里的公告为准。</dd>
+	</dl>
+	<table width="100%">
+		<caption>技能级别及订单匹配</caption>
+		<col width="25%"/>
+		<col/>
+		<col/>
+		<tr>
+			<th class="">技能级别</th>
+			<th class="">类型说明</th>
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>三日以上长途包车及A级以下订单</td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td>三日及三日以内长途包车及B级以下订单</td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>市内／周边推荐线路包车及C级以下订单</td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td>市内／周边固定线路包车及D级以下订单</td>
+		</tr>
+		<tr>
+			<td>E</td>
+			<td>接机/送机/景点接送</td>
+		</tr>
+
+	</table>
+</div>
+<script>
+	// 初始化_顶部返回按钮
+	if(window.javaObj){
+		window.javaObj.setBackBtn(1);
+	}
+</script>
+</body>
+</html>

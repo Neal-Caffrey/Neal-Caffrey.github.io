@@ -1,0 +1,262 @@
+@charset "utf-8";
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'microsoft yahei', '\534E\6587\7EC6\9ED1', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+/* train_des */
+.wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper * {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.train-des {
+    padding-bottom: 4rem;
+    color: #02433f;
+}
+
+.train-des .banner div {
+    padding: 1rem;
+}
+
+.train-des .content h4,
+.train-des .content dl,
+.train-des .content ul {
+    margin: 0 5px;
+}
+
+.train-des .banner {
+    background: #32d0a1 url(img/rules/radiation_bg.png) no-repeat 50% -25%;
+    background-size: 100% 80%;
+}
+
+.train-des .banner h2 {
+    height: 18rem;
+    text-indent: -9999px;
+    background: url(img/rules/train_banner.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.train-des .banner div {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background: #84e3c7 url(img/rules/cloud_bg.png) no-repeat 50% 0;
+    background-size: 100% 100%;
+    color: #023734;
+}
+
+.train-des .banner h3 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.train-des .block {
+    padding: 5px;
+    border: 2px solid #32d0a1;
+    border-radius: 6px;
+}
+
+.train-des p {
+    text-align: left;
+    text-indent: 2rem;
+}
+
+.train-des .content {
+    padding-top: 2rem;
+    background: #f7f7f7;
+}
+
+.train-des .content h4 {
+    text-align: center;
+}
+
+.train-des .content h4::before {
+    content: "";
+    background-color: #000033;
+}
+
+.train-des .content {
+    background: #f7f7f7;
+}
+
+.train-des .contacts {
+    font-size: 0.8rem;
+}
+
+.train-des .note {
+    color: #b9b9b9;
+}
+
+.title-block {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 1.5rem;
+}
+
+.title-block div:first-child {
+    background: #f7f7f7;
+    width: 12rem;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title-block div:last-child {
+    z-index: -1;
+    width: 100%;
+    border-bottom: 1px solid #b9b9b9;
+    position: absolute;
+    top: 50%;
+}
+
+.with-dot-seq {
+    position: relative;
+    min-height: 4rem;
+    padding-bottom: 2rem;
+    clear: both;
+    z-index: 2;
+    background: transparent;
+}
+
+.with-dot-seq dt {
+    display: block;
+    float: left;
+    width: 18%;
+    color: #ffffff;
+}
+
+.with-dot-seq dt span {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    background: #32d0a1;
+    color: #ffffff;
+}
+
+.left-line {
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    width: 1rem;
+    height: 100%;
+    border-left: 1px dotted #b9b9b9;
+    z-index: -1;
+}
+
+.left-arrow {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    text-align: center;
+    width: 3rem;
+}
+
+.left-arrow span {
+    position: relative;
+    margin: auto;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: #b9b9b9 transparent transparent;
+}
+
+.with-dot-seq dd {
+    display: block;
+    float: right;
+    width: 65%;
+}
+
+.with-dot-title li:nth-child(2n+1) {
+    list-style: disc inside;
+    font-weight: bold;
+}
+
+.with-dot-title li:nth-child(2n+2) {
+    padding-left: 1rem;
+}
+
+.with-dot-title li:nth-child(2n+3) {
+    margin-top: 1rem;
+}
+
+.with-dot-title li:last-child {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    list-style: none;
+    font-weight: normal;
+}
+
+.with-solid-btm li {
+    width: 50%;
+    border-bottom: 1px solid #32d0a1;
+}
+
+.with-solid-btm li:nth-child(2n+1) {
+    float: left;
+}
+
+.with-solid-btm li:nth-child(2n+0) {
+    float: right;
+}
+
+
+/* @update: 20160204 songshijie */
+.ui-table{
+    margin: 10px 5px;
+    border: 2px solid #32d0a1;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.ui-table table{
+    width: 96%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.ui-table table tr td{
+    padding: 5px;
+    font-size: 12px;
+}
+.ui-table table tr{
+    border-bottom:1px solid #32d0a1;
+}
+.ui-table table tr:last-child{
+    border-bottom: none;
+}

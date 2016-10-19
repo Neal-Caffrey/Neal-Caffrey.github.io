@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link href="css/guide.css" rel="stylesheet" type="text/css"/>
+
+    <title>服务星级</title>
+</head>
+<body class="bgf9">
+<div class="deswraper">
+    <dl class="rules-block">
+        <dt>1、什么是服务星级？</dt>
+        <dd>服务星级是客户在服务结束时对司导各项服务指标进行的星级评价。</dd>
+        <dt>2、服务星级有什么作用？</dt>
+        <dd>服务星级越高抢单成功率就越高。</dd>
+        <dt>3、服务星级明细:</dt>
+        <table class="with-border">
+            <tr>
+                <th class="text-one-col">产品</th>
+                <th class="text-two-col">评价项</th>
+                <th>评价<br/>详情</th>
+                <th class="text-four-col">分数</th>
+                <th class="text-two-col">最终<br/>得分</th>
+            </tr>
+            <tr>
+                <td rowspan="3" class="text-one-col">按天包车<br/>、<br/>线路包车评价</td>
+                <td>景点<br/>讲解</td>
+                <td>是否有做城市介绍、景点讲解等</td>
+                <td>0-5分</td>
+                <td rowspan="3" class="text-one-col">三项平均分</td>
+            </tr>
+            <tr>
+                <td>服务<br/>态度</td>
+                <td>司导服务态度是否良好</td>
+                <td>0-5分</td>
+            </tr>
+            <tr>
+                <td>熟悉<br/>路线</td>
+                <td>是否了解途经路况、周边环境等</td>
+                <td>0-5分</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="text-one-col">接机<br/>、<br/>送机<br/>、<br/>单次接送</td>
+                <td>准时<br/>程度</td>
+                <td>司导是否准时到达接送地点</td>
+                <td>0-5分</td>
+                <td rowspan="3" class="text-one-col">三项平均分</td>
+            </tr>
+            <tr>
+                <td>服务<br/>态度</td>
+                <td>司导服务态度是否良好</td>
+                <td>0-5分</td>
+            </tr>
+            <tr>
+                <td>熟悉<br/>路线</td>
+                <td>是否了解途经路况、周边环境等</td>
+                <td>0-5分</td>
+            </tr>
+        </table>
+    </dl>
+</div>
+<script>
+    // 初始化_顶部返回按钮
+    window.javaObj.setBackBtn(1);
+</script>
+</body>
+</html>

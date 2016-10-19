@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>司导培训流程</title>
+    <link rel="stylesheet" href="css/guide_new.css"/>
+</head>
+<body>
+<div class="wrapper train-des">
+    <div class="container banner">
+        <h2>司导培训流程</h2>
+
+        <div>
+            <h3>为什么要参加分级培训</h3>
+
+            <p>
+                皇包车愿与全球的司导朋友共同成长，一起为华人中高端用户提供优质的出境旅行服务；同时皇包车致力于为司导朋友提供一个充分展现服务价值的平台，让服务好的优秀司导能够接到更多优质的订单。千里之行，始于足下，现在开始报名参加培训吧！</p>
+        </div>
+    </div>
+    <div class="content">
+        <h4 class="title-block">
+            <div>报名步骤</div>
+            <div></div>
+        </h4>
+        <ul class="block"><li>微信联系您的区域负责人提出培训申请提交格式“所在城市+导游编号+名字”</li></ul>
+
+    </div>
+    <div class="content">
+        <h4 class="title-block">
+            <div>培训及考试内容</div>
+            <div></div>
+        </h4>
+        <ul class="with-dot-title block">
+            <li>皇包车基础知识培训</li>
+            <li>服务标准，皇粮规则，客户评价，司导级别， 司导12分，常见问题处理等</li>
+            <li>技能知识补充</li>
+            <li>当地及周边地区旅游基础知识：概况、餐饮、 住宿、交通、景点、娱乐、购物、应急等</li>
+            <li class="note">注：根据级别不同培训考试深度不同</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h4 class="title-block">
+            <div>区域负责人联系方式</div>
+            <div></div>
+        </h4>
+        <div class="ui-table">
+            <table>
+                <tr>
+                    <td width="50%">国家</td>
+                    <td>微信号</td>
+                </tr>
+                <tr>
+                    <td>曼谷</td>
+                    <td>HBC0907209777</td>
+                </tr>
+                <tr>
+                    <td>普吉/苏梅</td>
+                    <td>hbc017</td>
+                </tr>
+                <tr>
+                    <td>清迈</td>
+                    <td>hbc0027</td>
+                </tr>
+                <tr>
+                    <td>韩国/印尼/菲律宾</td>
+                    <td>cclxvip1</td>
+                </tr>
+                <tr>
+                    <td>台湾</td>
+                    <td>hbc019</td>
+                </tr>
+                <tr>
+                    <td>澳大利亚/新西兰</td>
+                    <td>cclxvip3/hbc120</td>
+                </tr>
+                <tr>
+                    <td>新加坡/马来西亚/柬埔寨/迪拜</td>
+                    <td>hbc011</td>
+                </tr>
+                <tr>
+                    <td>东京/札幌</td>
+                    <td>HBC9966</td>
+                </tr>
+                <tr>
+                    <td>大阪/京都/名古屋/冲绳</td>
+                    <td>hbc99988</td>
+                </tr>
+                <tr>
+                    <td>东欧/德国/土耳其/希腊</td>
+                    <td>hbc13810937871</td>
+                </tr>
+                <tr>
+                    <td>英国/西葡</td>
+                    <td>254933770</td>
+                </tr>
+                <tr>
+                    <td>西欧/北欧</td>
+                    <td>13811519636</td>
+                </tr>
+                <tr>
+                    <td>美东</td>
+                    <td>guxiang628662</td>
+                </tr>
+                <tr>
+                    <td>美西南/夏威夷</td>
+                    <td>hbc016</td>
+                </tr>
+                <tr>
+                    <td>加拿大/旧金山/西雅图</td>
+                    <td>hugboga2014</td>
+                </tr>
+                <tr>
+                    <td>非洲/南美/香港/澳门</td>
+                    <td>hbc0099</td>
+                </tr>
+                <tr>
+                    <td>意大利/荷兰/比利时</td>
+                    <td>cclxvip3/hbc0019</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

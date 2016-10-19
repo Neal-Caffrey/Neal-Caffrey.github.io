@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <script src="../hostCfg.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jq_common_utils.js"></script>
+    <script>
+    // 是否强制阅读, 兼容ios9.1一下系统弹框滚动条
+    var oMeta = document.createElement('meta');
+    oMeta.name = 'viewport';
+
+    var ua = navigator.userAgent;
+    var isIos = (/iphone|ipad|ipod/i).test(ua);
+    var widthStr = 'width=device-width';
+
+    if (isIos) {
+        widthStr = 'width=' + window.innerWidth + 'px';
+    }
+    oMeta.content = widthStr + ", initial-scale=1.0";
+    document.getElementsByTagName('head')[0].appendChild(oMeta);
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>公告</title>
+    <style type="text/css">
+    body,
+    div,
+    ol,
+    ul,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    th,
+    td,
+    dl,
+    dd,
+    form,
+    iframe,
+    input,
+    textarea,
+    select,
+    label,
+    article,
+    aside,
+    footer,
+    header,
+    menu,
+    nav,
+    section,
+    time,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        font-family: '微软雅黑';
+        color: #393939;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .title {
+        padding: 10px 0;
+        margin-bottom: 8px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 22px;
+        background: #ffea00;
+    }
+    .title div {
+    	width: 95%;
+    	margin: auto;
+ 		overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+    
+    .time {
+        margin-bottom: 8px;
+        text-align: center;
+        font-size: 16px;
+        color: #999;
+    }
+    
+    .article {
+        padding: 0 10px;
+    }
+    
+    .article p {
+        line-height: 30px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    
+    .images {
+        margin-bottom: 8px;
+    }
+    
+    .images img {
+        margin: 0 auto;
+        width: 100%;
+        vertical-align: middle;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+</body>
+<script type="text/javascript">
+var data = window.hostCfg;
+init(data);
+
+function init(data) {
+    var MESSAGE_LIST_URL = data.host + "/communication/v1.0/g/common/content?";
+    var MESSAGE_LIST_OPEN_API = data.open + "/communication/v1.0/callback/message/content?";
+
+    var message_id = $.getUrlParam("messageId");
+    var guide_id = $.getUrlParam("guideId");
+    var content = $("#content");
+    if ($.isNotNull(message_id)) {
+        var reqUrl = MESSAGE_LIST_OPEN_API + "messageId=" + message_id;
+
+        if ($.isNotNull(guide_id)) {
+            reqUrl = reqUrl + "&guideId=" + guide_id;
+        }
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: reqUrl,
+            success: function(retData) {
+                if (retData.status == "200" && $.isNotNull(retData.data.content)) {
+                    var dataContent = retData.data;
+                    content.empty();
+                    content.append('<h1 class="title">' + dataContent.title + '</h1>');
+                    content.append('<div class="time">' + dataContent.pub_date + '</div>');
+                    content.append('<div class="article">' + dataContent.content + '</div>');
+                } else {
+                    content.append('<h1 class="time" style="text-align: center;">新内容即将公布，尽请期待！！</h1>')
+                }
+            },
+            error: function(error, message) {
+
+            }
+        });
+    } else {
+        content.append('<h1 class="time" style="text-align: center;">新内容即将公布，尽请期待！</h1>')
+    }
+}
+
+function message_callback(retData) {
+    if (retData != "" && retData != undefined && retData != null) {
+        var dataContent = $.parseJSON(retData);
+        var content = $("#content");
+        content.empty();
+        content.append('<h1 class="title">dataContent.title</h1>');
+        content.append('<div class="time">dataContent.pub_date</div>');
+        content.append('<div class="article">dataContent.content</div>');
+    }
+}
+</script>
+
+</html>
