@@ -285,6 +285,7 @@ dl dd {
 .wrap .content h3{
     color: #727272;
     font-size: 17px;
+    font-weight: bold;
 }
 .wrap .content ol{
     padding: 10px 10px 17.5px 0;
