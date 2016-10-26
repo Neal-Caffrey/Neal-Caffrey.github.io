@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ezh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>error</title>
+	<link href="../../css/lib/glob.css" rel="stylesheet">
+	<link href="../../css/lib/error.css" rel="stylesheet">
+	<script src="../../js/lib/jquery.js"></script>
+	<script src="../../js/lib/juicer.js"></script>
+</head>
+<body>
+	
+	<script src="../../js/widgets/error/index.js"></script>
+	<script>
+		$(function(){
+			var error = new window.ErrorPrompt({
+				msg: {							//msg 代表需要显示的文字
+					title: '查询价格失败',
+					sub: '无日租报价'
+				},
+				type: '0', //表示图标状态，0:错误，1:警告
+				mode: '1'  //0或者不传表示自动隐藏，默认2秒，其它数值代表永久不隐藏
+			})
+
+			$(document).on('click',function(){
+				error.hide();
+			})
+		})
+	</script>
+</body>
+</html>

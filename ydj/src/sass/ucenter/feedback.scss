@@ -1,0 +1,108 @@
+.main-wrap{
+  .ucenter{
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    padding-left: 0;
+    padding-right: 0;
+    .y-left{
+      width: 200px;
+      height: 250px;
+      padding: 0;
+      border-radius: 4px;
+      .user-nav{
+        h2{
+          margin: 0;
+          padding: 0;
+          height: 60px;
+          line-height: 60px;
+          font-size: 18px;
+          color: #0E1A27;
+          padding-left: 18px;
+          font-weight: bold;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+              list-style-type: none;
+              height: 50px;
+              border-left: 3px solid #fff;
+              border-top: 1px solid  rgba(226,226,227,0.60);;
+              &:last-child{
+                height: 40px;
+                &:hover{
+                  background: #fff;
+                  border-left: 0;
+                }
+              }
+              &:hover{
+                background: #FEFAF4;
+                border-left: 3px solid #F49F1F;
+              }
+              a{
+                font-size: 16px;
+                color: #0E1A27;
+                line-height: 52px;
+                display: block;
+                padding-left: 42px;
+                &:hover{
+                  color: #F49F1F;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+      }
+    }
+    .y-right{
+      margin-left: 200px;
+      margin-right: 0;
+      border-radius: 4px;
+      .suggestion{
+        h1{
+          font-size: 24px;
+          color: #0E1A27;
+          margin: 0;
+        }
+        .area-box{
+          position: relative;
+          .sug-area{
+          font-size: 14px;
+          width: 696px;
+          height: 280px;
+          margin-top: 28px;
+          margin-bottom: 28px;
+          padding: 10px 15px;
+          background: #FFFFFF;
+          border: 1px solid #DDDEDF;
+          border-radius: 4px;
+          resize: none;
+        }
+          .count{
+            position: absolute;
+            right: 25px;
+            bottom: 45px;
+            font-size: 12px;
+            color: #6D767C;
+          }
+        }
+        
+        .submit-box{
+          text-align: center;
+          .submit{
+            width: 180px;
+            height: 36px;
+            background: #F49F1F;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            box-shadow: 0px 5px 10px rgba(244, 159, 31, 0.5)
+          }
+        }
+        
+      }
+    }
+  }
+}

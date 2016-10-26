@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.error-box {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff; }
+  .error-box i {
+    width: 32px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle; }
+    .error-box i.error {
+      background: url("../../imgs/warning.png") no-repeat center; }
+  .error-box .title {
+    font-size: 16px;
+    margin: 0 20px; }
+  .error-box .sub {
+    font-size: 14px; }
+
+.error {
+  background: #FA573D; }
+
+.warning {
+  background: yellow; }
+
+/*# sourceMappingURL=error.css.map */

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>服务中心</title>
+    <link href="../../css/lib/bootstrap.css" rel="stylesheet">
+    <link href="../../css/lib/glob.css" rel="stylesheet">
+    <link href="../../css/ucenter/feedback.css" rel="stylesheet">
+    <script src="../../js/lib/jquery.js"></script>
+    <script src="../../js/lib/bootstrap.js"></script>
+</head>
+<body>
+
+<div class="main-wrap">
+    <div class="y-header">
+    <!-- 如果是未登录状态，header的class加上unlisted即可， 如果是已登录，则去掉，自动显示已登录-->
+        <header class="unlisted">
+            <div class="logo"></div>
+            <!-- 以下是未登录状态 -->
+            <div class="login-box">
+                <button class="sign-in">登录</button>
+                <button class="register">即刻入驻云地接</button>
+            </div>
+            <!-- 以下是已登陆状态，现在已经隐藏 -->
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">司兼导包车</a></li>
+                    <li><a href="#">线路包车</a></li>
+                    <li><a href="#">接机</a></li>
+                    <li><a href="#">送机</a></li>
+                    <li><a href="#">单次接送</a></li>
+                </ul>
+            </div>
+            <div class="user-nav">
+                <div class="remind">
+                    <i class="icon-notice" style="font-size: 30px;"></i>
+                    <span class="remind-num">3</span>
+                    <!-- 消息提示框下拉菜单 -->
+                    <div class="drop-box">
+                        <ul>
+                            <!-- 消息未读时加unread -->
+                            <li class="unread">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <!-- 消息已读时加have-read -->
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more">+  查看所有通知</div>
+                    </div>
+                </div>
+                <div class="J-logged">
+                    <img src="../../imgs/user-img.png" alt="头像">
+                    <ul class="profile">
+                        <li class="my-order current">
+                            <i class="icon-order" style="font-size: 20px;"></i>
+                            我的订单
+                        </li>
+                        <li class="fund-account">
+                            <i class="icon-card" style="font-size: 15px;"></i>
+                            资金账户
+                        </li>
+                        <li class="my-account">
+                            <i class="icon-account" style="font-size: 19px;"></i>
+                            我的帐户
+                        </li>
+                        <li class="change-password">
+                            <i class="icon-lock" style="font-size: 18px;"></i>
+                            更改密码
+                        </li>
+                        <li class="log-off">
+                            <i class="icon-quit" style="font-size: 15px;"></i>
+                            退出登录
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- ucenter包括服务中心，关于我们、消息中心页面 -->
+    <div class="y-main hasBottom ucenter">
+        <div class="y-left">
+            <div class="user-nav">
+                <h2>服务中心</h2>
+                <ul>
+                    <li class=""><a href="#">内容定制</a></li>
+                    <li class=""><a href="#">常见问题</a></li>
+                    <li class=""><a href="#">意见反馈</a></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="y-right">
+            <div class="suggestion">
+                <h1>意见反馈</h1>
+                <div class="area-box">
+                    <textarea class="sug-area" id="J-textarea" placeholder="请留下您的意见和建议，帮助我们不断的完善服务"></textarea>
+                    <span class="count" id="J-textcount">0/1000</span>
+                </div>
+                
+                <div class="submit-box">
+                     <input type="submit" class="submit" value="提交">
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="y-footer">
+        <div class="footer">
+        <!-- footer的另一种状态，class去掉type1即可 -->
+            <div class="footer-inner type1">
+                <ul class="clearfix rest-ul">
+                    <li class="list-unstyled"><a href="#">关于云地接</a></li>
+                    <li class="list-unstyled"><a href="#">合作伙伴</a></li>
+                    <li class="list-unstyled"><a href="#">服务中心</a></li>
+                    <li class="list-unstyled"><a href="#">联系我们</a></li>
+                    <li class="list-unstyled"><a href="#">法律声明</a></li>
+                </ul>
+                <p class="copyright">Copyright &copy; 2016 纯粹旅行 版权所有&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14020952号-4</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        // 传入三个参数，1，要检测的输入区域，2，字数显示区域，3，最大限制字数
+        var checkLength = function(obj,objShow,num){
+            $(obj).on("keyup",function(){
+                var $val = $.trim($(obj).val()),
+                    $len = $val.length;
+                
+                $(objShow).text($len+'/'+num);
+                if($len>=num){
+                    $(obj).val($val.substring(0,num));
+                    $(objShow).text(num+'/'+num);
+                }
+
+            })
+        }
+        checkLength("#J-textarea","#J-textcount",10000);
+    })
+</script>
+</body>
+</html>

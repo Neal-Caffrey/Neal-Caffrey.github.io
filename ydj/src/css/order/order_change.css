@@ -1,0 +1,278 @@
+.main-page .y-header {
+  position: relative; }
+
+.main-page .y-footer .footer {
+  position: relative; }
+
+.page-content {
+  background: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  .page-content .content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px 30px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px; }
+    .page-content .content-wrapper * {
+      margin: 0;
+      padding: 0; }
+    .page-content .content-wrapper i {
+      font-style: normal; }
+    .page-content .content-wrapper li {
+      list-style-type: none; }
+    .page-content .content-wrapper .order-status {
+      height: 50px;
+      line-height: 50px;
+      background: rgba(15, 186, 200, 0.1);
+      -webkit-border-radius: 4px;
+         -moz-border-radius: 4px;
+              border-radius: 4px;
+      padding-left: 20px; }
+      .page-content .content-wrapper .order-status p {
+        font-size: 12px;
+        color: #0E1A27; }
+        .page-content .content-wrapper .order-status p b {
+          font-size: 16px;
+          color: #10BAC8;
+          margin-right: 20px; }
+    .page-content .content-wrapper .order-detail {
+      margin-top: 30px; }
+      .page-content .content-wrapper .order-detail .detail-title {
+        border-bottom: 1px solid rgba(158, 165, 170, 0.5);
+        padding-bottom: 20px; }
+        .page-content .content-wrapper .order-detail .detail-title h1 {
+          font-size: 24px;
+          color: #0E1A27;
+          float: left;
+          margin-top: 10px; }
+        .page-content .content-wrapper .order-detail .detail-title .title-r {
+          float: right; }
+          .page-content .content-wrapper .order-detail .detail-title .title-r span {
+            font-size: 14px;
+            color: #0E1A27; }
+            .page-content .content-wrapper .order-detail .detail-title .title-r span:nth-child(2) {
+              margin: 0 40px; }
+            .page-content .content-wrapper .order-detail .detail-title .title-r span b {
+              font-family: "ArialMT"; }
+            .page-content .content-wrapper .order-detail .detail-title .title-r span i {
+              font-family: "Arial-BoldMT";
+              font-size: 20px;
+              color: #FA573D;
+              font-style: normal; }
+      .page-content .content-wrapper .order-detail button {
+        width: 110px;
+        height: 36px;
+        -webkit-border-radius: 4px;
+           -moz-border-radius: 4px;
+                border-radius: 4px;
+        font-size: 14px;
+        vertical-align: bottom; }
+        .page-content .content-wrapper .order-detail button.cancel-btn {
+          border: 1px solid #F49F1F;
+          color: #F49F1F;
+          margin-right: 12px;
+          background: #fff; }
+        .page-content .content-wrapper .order-detail button.confirm-btn {
+          color: #fff;
+          background: #F49F1F;
+          border: none; }
+      .page-content .content-wrapper .order-detail .detail-form {
+        border-bottom: 1px solid rgba(158, 165, 170, 0.2); }
+        .page-content .content-wrapper .order-detail .detail-form:last-child {
+          border-bottom: none; }
+        .page-content .content-wrapper .order-detail .detail-form h2 {
+          font-size: 18px;
+          color: #0E1A27;
+          margin: 25px 0; }
+          .page-content .content-wrapper .order-detail .detail-form h2 a {
+            color: #006CE1;
+            font-size: 14px;
+            text-decoration: underline;
+            padding-left: 20px; }
+        .page-content .content-wrapper .order-detail .detail-form ul.info {
+          padding-bottom: 20px; }
+          .page-content .content-wrapper .order-detail .detail-form ul.info li {
+            float: left;
+            font-size: 14px;
+            color: #0E1A27;
+            line-height: 30px; }
+            .page-content .content-wrapper .order-detail .detail-form ul.info li span.bold {
+              font-family: "Arial-BoldMT"; }
+            .page-content .content-wrapper .order-detail .detail-form ul.info li.md {
+              width: 310px; }
+            .page-content .content-wrapper .order-detail .detail-form ul.info li.lg {
+              width: 350px; }
+            .page-content .content-wrapper .order-detail .detail-form ul.info li.bg {
+              width: 100%; }
+        .page-content .content-wrapper .order-detail .detail-form .user-info .form-item {
+          margin-bottom: 20px;
+          font-size: 14px; }
+          .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .items {
+            font-size: 14px;
+            color: #0E1A27;
+            width: 90px;
+            display: inline-block;
+            position: relative;
+            text-align: right; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .items i {
+              color: #FA573D;
+              position: absolute;
+              right: -10px;
+              top: 3px; }
+          .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .form-num-box {
+            width: 142px;
+            height: 42px;
+            border: 1px solid #DDDEDF;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+                    border-radius: 4px;
+            font-size: 0;
+            display: inline-block;
+            vertical-align: middle; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .form-num-box i {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              text-align: center;
+              line-height: 40px;
+              font-size: 25px;
+              vertical-align: middle;
+              cursor: pointer; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .form-num-box i.num-box-sub {
+                background: #DDDEDF; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .form-num-box i.num-box-add {
+                background: #D3DDE6; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .form-num-box .adult {
+              width: 60px;
+              text-align: center;
+              height: 40px;
+              border: none;
+              padding: 0;
+              font-size: 14px;
+              vertical-align: middle; }
+          .page-content .content-wrapper .order-detail .detail-form .user-info .form-item span.tag-p {
+            font-size: 12px;
+            color: #6D767C;
+            margin-left: 5px; }
+          .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .text-top {
+            vertical-align: top; }
+          .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content {
+            display: inline-block;
+            margin-left: 20px; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .form-num-wrap {
+              margin-right: 30px;
+              display: inline-block; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content b.red {
+              font-family: "Arial-BoldMT";
+              font-size: 14px;
+              color: #FA573D; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .child-chair span {
+              color: #0E1A27;
+              font-size: 14px;
+              margin-right: 20px; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .luggage > li {
+              list-style-type: disc;
+              color: #6D767C;
+              font-size: 14px;
+              line-height: 26px;
+              margin-left: 18px; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .luggage > li:first-child {
+                list-style-type: none;
+                margin-left: 0; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content input {
+              background: #FFFFFF;
+              border: 1px solid #DDDEDF;
+              -webkit-border-radius: 4px;
+                 -moz-border-radius: 4px;
+                      border-radius: 4px;
+              height: 40px;
+              padding-left: 15px; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content input.lg {
+                width: 400px; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content input.phone-area {
+                width: 100px;
+                margin-right: 5px; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content input.phone-num {
+                width: 290px; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content input.phone-num-md {
+                width: 186px;
+                margin-right: 10px; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .add-phone {
+              color: #026AE1;
+              cursor: pointer; }
+            .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .message-box {
+              position: relative; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .message-box .message {
+                width: 400px;
+                height: 110px;
+                padding: 10px 15px;
+                background: #FFFFFF;
+                border: 1px solid #DDDEDF;
+                -webkit-border-radius: 4px;
+                   -moz-border-radius: 4px;
+                        border-radius: 4px;
+                resize: none; }
+              .page-content .content-wrapper .order-detail .detail-form .user-info .form-item .item-content .message-box .count {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                font-size: 12px;
+                color: #6D767C; }
+        .page-content .content-wrapper .order-detail .detail-form .user-info .tips {
+          font-size: 12px;
+          color: #6D767C;
+          margin-left: 115px;
+          margin-top: -10px;
+          margin-bottom: 10px; }
+        .page-content .content-wrapper .order-detail .detail-form .user-info .save-btn {
+          margin-left: 115px;
+          margin-bottom: 50px; }
+        .page-content .content-wrapper .order-detail .detail-form .remark-box {
+          min-height: 240px;
+          background: #f5f5f5;
+          -webkit-border-radius: 4px;
+             -moz-border-radius: 4px;
+                  border-radius: 4px;
+          padding: 0 30px 30px 30px; }
+          .page-content .content-wrapper .order-detail .detail-form .remark-box .remark-cont-box {
+            border-bottom: 1px solid rgba(158, 165, 170, 0.2);
+            padding: 20px 0; }
+            .page-content .content-wrapper .order-detail .detail-form .remark-box .remark-cont-box .remark-cont {
+              color: #0E1A27;
+              font-size: 14px; }
+            .page-content .content-wrapper .order-detail .detail-form .remark-box .remark-cont-box .remark-cont-detail {
+              font-size: 12px;
+              color: #6E767D;
+              margin-top: 5px; }
+              .page-content .content-wrapper .order-detail .detail-form .remark-box .remark-cont-box .remark-cont-detail span {
+                margin-left: 20px; }
+          .page-content .content-wrapper .order-detail .detail-form .remark-box .add-remark {
+            text-align: center;
+            margin-top: 20px; }
+            .page-content .content-wrapper .order-detail .detail-form .remark-box .add-remark p {
+              color: #006CE1;
+              cursor: pointer;
+              text-decoration: underline; }
+        .page-content .content-wrapper .order-detail .detail-form .btn-box {
+          margin-top: 30px;
+          margin-bottom: 70px;
+          float: right; }
+          .page-content .content-wrapper .order-detail .detail-form .btn-box button {
+            width: 140px;
+            height: 36px;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+                    border-radius: 4px;
+            font-size: 18px; }
+            .page-content .content-wrapper .order-detail .detail-form .btn-box button.continue-btn {
+              color: #fff;
+              background: #F49F1F;
+              border: none;
+              margin-right: 20px; }
+            .page-content .content-wrapper .order-detail .detail-form .btn-box button.check-btn {
+              border: 1px solid #F49F1F;
+              color: #F49F1F;
+              background: #fff; }

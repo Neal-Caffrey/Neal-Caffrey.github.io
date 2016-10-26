@@ -1,0 +1,32 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: #0E1A27;
+  display: flex;
+  align-items: center; }
+  .footer .type1 {
+    margin-left: -500px;
+    position: relative;
+    left: 50%;
+    width: 500px; }
+  .footer .footer-inner ul li {
+    font-size: 14px;
+    padding: 0 20px;
+    float: left;
+    border-right: 1px solid #CFD1D4;
+    cursor: pointer; }
+    .footer .footer-inner ul li a {
+      color: #CFD1D4; }
+      .footer .footer-inner ul li a:hover {
+        text-decoration: underline; }
+    .footer .footer-inner ul li:last-child {
+      border-right: 0; }
+  .footer .footer-inner .copyright {
+    font-size: 12px;
+    color: #6E767D;
+    margin-top: 10px;
+    text-indent: 18px; }
+
+/*# sourceMappingURL=footer.css.map */

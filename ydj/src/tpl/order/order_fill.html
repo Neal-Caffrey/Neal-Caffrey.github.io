@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>填写订单</title>
+    <link href="../../css/lib/bootstrap.css" rel="stylesheet">
+    <link href="../../css/lib/glob.css" rel="stylesheet">
+    <link href="../../css/order/order.css" rel="stylesheet">
+    <script src="../../js/lib/jquery.js"></script>
+    <script src="../../js/lib/bootstrap.js"></script>
+</head>
+<body>
+
+<div class="main-page">
+    <div class="y-header">
+    <!-- 如果是未登录状态，header的class加上unlisted即可， 如果是已登录，则去掉，自动显示已登录-->
+        <header>
+            <div class="logo"></div>
+            <!-- 以下是已登陆状态 -->
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">司兼导包车</a></li>
+                    <li><a href="#">线路包车</a></li>
+                    <li><a href="#">接机</a></li>
+                    <li><a href="#">送机</a></li>
+                    <li><a href="#">单次接送</a></li>
+                </ul>
+            </div>
+            <div class="user-nav">
+                <div class="remind">
+                    <i class="icon-notice" style="font-size: 30px;"></i>
+                    <span class="remind-num">3</span>
+                    <!-- 消息提示框下拉菜单 -->
+                    <div class="drop-box">
+                        <ul>
+                            <!-- 消息未读时加unread -->
+                            <li class="unread">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <!-- 消息已读时加have-read -->
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more">+  查看所有通知</div>
+                    </div>
+                </div>
+                <div class="J-logged">
+                    <img src="../../imgs/user-img.png" alt="头像">
+                    <ul class="profile">
+                        <li class="my-order current">
+                            <i class="icon-order" style="font-size: 20px;"></i>
+                            我的订单
+                        </li>
+                        <li class="fund-account">
+                            <i class="icon-card" style="font-size: 15px;"></i>
+                            资金账户
+                        </li>
+                        <li class="my-account">
+                            <i class="icon-account" style="font-size: 19px;"></i>
+                            我的帐户
+                        </li>
+                        <li class="change-password">
+                            <i class="icon-lock" style="font-size: 18px;"></i>
+                            更改密码
+                        </li>
+                        <li class="log-off">
+                            <i class="icon-quit" style="font-size: 15px;"></i>
+                            退出登录
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="page-content">
+    <!-- 订单页面 -->
+        <div class="layout">
+            <div class="layout-left">
+                <div class="travel">
+                    <div class="order-title">
+                        <p class="car-type">
+                            <b>经济5座</b>
+                            <span class="mr"><i class="yellow">4</i>人／<i class="yellow">2</i>行李</span>
+                            <span>参考车型：雪铁龙C4,大众途安同级别</span>
+                        </p>
+                        <p class="local">
+                            <span class="mr"><i class="icon_place"></i>法兰克福</span>
+                            <span>当地时间 2016-05-20 10:00  至  2016-05-24（共 <i class="yellow">5</i> 天）</span>
+                        </p>
+                    </div>
+                    <div class="made-travel">
+                       <div class="made-travel-title">
+                           <p>定制包车行程</p>
+                           <div class="book-box">
+                               <span>＋代订</span>
+                               <span>＋代付</span>
+                               <span>＋代办</span>
+                           </div>
+                       </div> 
+                       <div class="travel-days">
+                           <div class="date">
+                                <span class="day-box">D1</span>
+                                <p>2016-08-17</p>
+                           </div>
+                           <div class="date-content clearfix">
+                               <div class="content-l">
+                                   <div class="trip-wrap">
+                                       <span class="tag">接机</span>
+                                        <div class="days-wrap">
+                                            <p>CA965<span class="marg">预计</span>2016-08-17 18:50抵达</p>
+                                            <p><i class="icon_place2"></i>法兰克福机场</p>
+                                            <p class="ari">
+                                                <i class="icon_place3"></i>Sheraton Syracuse University Hotel<br>
+                                                <small>Berliner Str. 111, 63065 Offenbach am Main, 德国</small>
+                                            </p>
+                                        </div>
+                                   </div>
+                                   <div class="trip-wrap">
+                                       <span class="tag">送机</span>
+                                        <div class="days-wrap">
+                                            <p>2016-08-17 08:00用车</p>
+                                            <p class="ari">
+                                                <i class="icon_place2"></i>Sheraton Syracuse University Hotel<br>
+                                                <small>Berliner Str. 111, 63065 Offenbach am Main, 德国</small>
+                                            </p>
+                                            <p><i class="icon_place3"></i>法兰克福机场</p>
+                                        </div>
+                                   </div>
+                                    <button class="fill-btn">填写行程</button>
+                               </div>
+                               <div class="content-r">
+                                   <div class="example">
+                                       <p>示列：</p>
+                                       <div class="book-item"><span>酒</span>
+                                            <p>代订，酒店，法兰克福喜来登酒店，1间，双标，2000，EUR
+                                            </p>
+                                       </div>
+                                   </div>
+                                   <div class="add-book">
+                                       <p>本日无代订、代付或代办项</p>
+                                       <p class="add-book-jump">点击添加？</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="travel-days">
+                           <div class="date">
+                                <span class="day-box">D2</span>
+                                <p>2016-08-18</p>
+                           </div>
+                           <div class="date-content clearfix">
+                               <div class="content-l">
+                                  <p class="travel-item-title">住在法兰克福，市内游玩<small >本日行程约300km</small></p>
+                                  <!-- 行程填写框 -->
+                                  <div class="fill-box">
+                                    <i class="plane">行程安排：</i>
+                                    <textarea class="message" id="message1"></textarea>
+                                    <span class="count" id="count1">0/300</span>
+                                    <div class="option-box">
+                                      <span><i class="icon-cancel"></i></span>
+                                      <span><i class="icon-save"></i></span>
+                                    </div>
+                                  </div>
+                                  <!-- 点击填写行程后，按钮隐藏 -->
+                                  <button class="fill-btn" style="display: none;">填写行程</button>
+                               </div>
+                               <div class="content-r">
+                                   <div class="add-book">
+                                       <p>本日无代订、代付或代办项</p>
+                                       <p class="add-book-jump">点击添加？</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="travel-days">
+                           <div class="date">
+                                <span class="day-box">D3</span>
+                                <p>2016-08-19</p>
+                           </div>
+                           <div class="date-content clearfix">
+                               <div class="content-l">
+                                  <p class="travel-item-title">法兰克福－慕尼黑，住在慕尼黑<br><small style="margin-left: 0;">本日行程约650km，可能产生超时超里程费用</small></p>
+                                  <div class="form">
+                                    <span class="items">出发时间</span>
+                                    <input type="text" class="time" placeholder="请选择出发时间">
+                                    <i></i>
+                                  </div>
+                                  <div class="form">
+                                    <span class="items">上车地点</span>
+                                    <input type="text" class="place" placeholder="请选择上车地点">
+                                  </div>
+                                  <!-- 行程填写框 ,如果已经保存，给fill-box加上saved-->
+                                  <div class="fill-box saved">
+                                    <i class="plane">行程安排：</i>
+                                    <textarea class="message " disabled="disabled">巴特洪堡、达姆施塔特、哈瑙、美因茨、威斯巴登等
+                                    </textarea>
+                                    <div class="option-box">
+                                      <span><i class="icon-delete"></i></span>
+                                      <span><i class="icon-edit"></i></span>
+                                    </div>
+                                  </div>
+                                  <!-- 点击填写行程后，按钮隐藏 -->
+                                  <button class="fill-btn" style="display: none;">填写行程</button>
+                               </div>
+                               <div class="content-r">
+                                   <div class="add-book">
+                                       <p>本日无代订、代付或代办项</p>
+                                       <p class="add-book-jump">点击添加？</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="travel-days">
+                           <div class="date">
+                                <span class="day-box">D4</span>
+                                <p>2016-08-20</p>
+                           </div>
+                           <div class="date-content clearfix">
+                               <div class="content-l">
+                                  <p class="travel-item-title">本日未预定用车</p>
+                               </div>
+                               <div class="content-r">
+                                   <div class="add-book">
+                                       <p>本日无代订、代付或代办项</p>
+                                       <p class="add-book-jump">点击添加？</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="travel-days">
+                           <div class="date">
+                                <span class="day-box">D5</span>
+                                <p>2016-08-21</p>
+                           </div>
+                           <div class="date-content clearfix">
+                               <div class="content-l">
+                               <p class="travel-item-title">慕尼黑市内半日包车<small>5小时150km一价全包</small></p>
+                                   <div class="trip-wrap">
+                                       <span class="tag">接机</span>
+                                        <div class="days-wrap">
+                                            <p>CA965<span class="marg">预计</span>2016-08-17 18:50抵达</p>
+                                            <p><i class="icon_place2"></i>法兰克福机场</p>
+                                            <p class="ari">
+                                                <i class="icon_place3"></i>Sheraton Syracuse University Hotel<br>
+                                                <small>Berliner Str. 111, 63065 Offenbach am Main, 德国</small>
+                                            </p>
+                                        </div>
+                                   </div>
+                                   <div class="trip-wrap">
+                                       <span class="tag">送机</span>
+                                        <div class="days-wrap">
+                                            <p>2016-08-17 08:00用车</p>
+                                            <p class="ari">
+                                                <i class="icon_place2"></i>Sheraton Syracuse University Hotel<br>
+                                                <small>Berliner Str. 111, 63065 Offenbach am Main, 德国</small>
+                                            </p>
+                                            <p><i class="icon_place3"></i>法兰克福机场</p>
+                                        </div>
+                                   </div>
+                                    <button class="fill-btn">填写行程</button>
+                               </div>
+                               <div class="content-r">
+                                   <div class="book-wrapper">
+                                     <div class="book-item">
+                                       <span class="tag">酒</span>
+                                       <p>代订，酒店，法兰克福喜来登酒店，1间，双标，2000，EUR</p>
+                                       <div class="editor">
+                                         <span><i class='icon-edit'></i></span>
+                                         <span><i class='icon-delete'></i></span>
+                                       </div>
+                                     </div>
+                                     <div class="book-item">
+                                       <span class="tag">票</span>
+                                       <p>代订，门票，德国皇家城堡新天鹅堡门票，2张，200，EUR</p>
+                                       <div class="editor">
+                                         <span><i class='icon-edit'></i></span>
+                                         <span><i class='icon-delete'></i></span>
+                                       </div>
+                                     </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="upload-wrapper">
+                         <div class="upload-box">
+                           <div class="upload-inner">
+                             <span class="icon-upload"></span>
+                             <p>点击上传行程<br><small>当前支持word、PDF格式文档</small></p>
+                           </div>
+                         </div>
+                         <div class="demand-box">
+                           <p>帮我安排这样的司导<small>（我们会尽力满足您的需求）</small></p>
+                           <div class="tags-box">
+                           <!-- 选中的span加上selected -->
+                             <span class="selected">中年大叔</span>
+                             <span>青年才俊</span>
+                             <span class="selected">成熟稳重</span>
+                             <span>女性导游</span>
+                             <span>不抽烟</span>
+                           </div>
+                           <div class="msg-box">
+                             <textarea class="message" id="message2" placeholder="给司导捎句话：例如：客人有小孩，勿吸烟"></textarea>
+                             <span class="count" id="count2">0/300</span>
+                           </div>
+                         </div>
+                       </div>
+                    </div>
+                    <div class="guest-info">
+                      <h2>填写客人信息</h2>
+                      <div class="form-item">
+                          <span class="items">乘坐人数<i>*</i></span>
+                          <div class="item-content">
+                              <div class="form-num-wrap">
+                                  <div class="form-num-box">
+                                      <i class="num-box-sub">-</i>
+                                      <input id="J-adultNum" class="adult" type="tel" value="1" required="required">
+                                      <i class="num-box-add">+</i>
+                                  </div>
+                                  <span class="tag-p">成人</span>
+                              </div>
+                          
+                              <div class="form-num-wrap">
+                                  <div class="form-num-box">
+                                      <i class="num-box-sub">-</i>
+                                      <input id="J-adultNum" class="adult" type="tel" value="0" required="required">
+                                      <i class="num-box-add">+</i>
+                                  </div>
+                                  <span class="tag-p">儿童</span>
+                              </div>
+                          </div>   
+                      </div>
+                      <div class="form-item">
+                          <span class="items">儿童座椅</span>
+                          <div class="item-content">
+                              <div class="form-num-wrap">
+                                  <div class="form-num-box">
+                                      <i class="num-box-sub">-</i>
+                                      <input id="J-adultNum" class="adult" type="tel" value="1" required="required">
+                                      <i class="num-box-add">+</i>
+                                  </div>
+                              </div>
+                          </div>   
+                      </div>
+                      <div class="form-item">
+                          <span class="items">可携带行李数</span>
+                          <div class="item-content text-top">
+                              <ul class="luggage">
+                                  <li>
+                                      <p><b class="red">5件</b><small>(按24寸计)</small></p>
+                                  </li>
+                                  <li>
+                                      <p>出行前请与司导联系，需要何种年龄段的儿童安全座椅</p>
+                                  </li>
+                                  <li>
+                                      <p>实际行李数如果超出限制，请更换更大车型</p>
+                                  </li>
+                              </ul>
+                             
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">票面价<i>*</i></span>
+                          <div class="item-content">
+                            <span class="ticket-wrap">
+                              <input type="text" class="ticket" required="required" value="880">
+                            </span>
+                            <span class="tip">用于显示给客人，建议修改为实付金额</span>  
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">第三方订单号</span>
+                          <div class="item-content">
+                              <input type="text" class="lg" required="required" placeholder="记录您在其它平台的订单号，多个以“，”间隔">   
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">旅行社OP<i>*</i></span>
+                          <div class="item-content">
+                              <input type="text" class="lg" placeholder="请填写旅行社OP姓名">   
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">OP手机号<i>*</i></span>
+                          <div class="item-content">
+                              <input type="text" class="phone-area" value="86-中国">
+                              <input type="tel" class="phone-num" placeholder="请输入手机号">   
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">微信号</span>
+                          <div class="item-content">
+                              <input type="text" class="lg" required="required" placeholder="请填写联系人微信号">   
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">乘车人</span>
+                          <div class="item-content">
+                              <input type="text" class="lg" placeholder="请填写客人姓名" >   
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">手机号 </span>
+                          <div class="item-content">
+                              <input type="text" class="phone-area" value="86-中国">
+                              <input type="tel" class="phone-num-md" placeholder="请输入手机号"> 
+                              <span class="add-phone">+备用手机号</span> 
+                              
+                          </div>
+                      </div>
+                      <p class="tips">为确保司导联系到客人，请填写可以联系到客人的电话</p>
+                      <div class="form-item">
+                          <span class="items">微信号</span>
+                          <div class="item-content">
+                              <input type="text" class="lg" placeholder="请填写客人微信号">   
+                          </div>
+                      </div>
+                      <div class="form-item">
+                          <span class="items">客人留言</span>
+                          <div class="item-content text-top">
+                              <div class="message-box">
+                                  <textarea class="message" id="message3" placeholder="客人留言将发送给司导"></textarea>
+                                  <span class="count" id="count3">0/1000</span>
+                              </div>
+                              
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-right">
+                <div class="cost-details">
+                  <p class="title">费用详情</p>
+                  <div class="travel-detail">
+                    <div class="detail-item">
+                      <span class="day">D1</span>
+                      <div class="item-content">
+                        <p>伦敦送机<span>EUR 100</span></p>
+                        <p>法兰克福接机<span>EUR 100</span></p>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="day">D2</span>
+                      <div class="item-content">
+                        <p>住法兰克福，市内<span>EUR 160</span></p>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="day">D3</span>
+                      <div class="item-content">
+                        <p>住在慕尼黑<span>EUR 220</span></p>
+                      </div>
+                    </div>
+                    <div class="detail-more">
+                      
+                    </div>
+                    <div class="detail-ctrl">
+                      <span>展开</span>
+                      <!-- 收起时的三角样式，在i上添加retract即可,如下 -->
+                      <!-- <i class="retract"></i> -->
+                      <i></i>
+                    </div>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(function(){
+        // 传入三个参数，1，要检测的输入区域，2，字数显示区域，3，最大限制字数
+        var checkLength = function(obj,objShow,num){
+            var $obj = $(obj),
+                $objShow = $(objShow);
+            $obj.on("keyup",function(){
+                var $val = $.trim($obj.val()),
+                    $len = $val.length;
+                
+                $objShow.text($len+'/'+num);
+                if($len>=num){
+                    $obj.val($val.substring(0,num));
+                    $objShow.text(num+'/'+num);
+                }
+
+            })
+        }
+        checkLength("#message1","#count1",300);
+        checkLength("#message2","#count2",300);
+        checkLength("#message3","#count3",1000);
+
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

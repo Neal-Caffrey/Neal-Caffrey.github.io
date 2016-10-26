@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>申请入驻</title>
+    <link href="../../css/lib/bootstrap.css" rel="stylesheet">
+    <link href="../../css/lib/glob.css" rel="stylesheet">
+    <link href="../../css/join/join.css" rel="stylesheet">
+    <script src="../../js/lib/jquery.js"></script>
+</head>
+	<div class="main-page"> <!-- 公共 -->
+		<div class="y-header"> <!-- 公共 -->
+	        <header class="unlisted">
+	            <div class="logo"></div>
+	            <!-- 以下是未登录状态 -->
+	            <div class="login-box">
+	                <button class="sign-in" style="margin-right: 0;">登录</button>
+	                <!-- <button class="register">即刻入驻云地接</button> -->
+	            </div>            
+	        </header>
+		</div>
+		<div class="page-content">   <!-- 公共 -->
+			<div class="content-wrapper">   <!-- 公共 -->
+				<div class="join-wrapper">
+					<div class="join-title">
+						<p class="apply">申请入驻</p>
+						<p class="join-help"><i class="icon-q"></i><a href="#">入驻帮助</a></p>
+					</div>
+					<div class="join-content">
+						<div class="progress-Bar">
+						<!-- 给bar-item 加class 可以控制进度条阶段样式，当前为now,已完成为done -->
+							<div class="bar-item done">
+								<p>查询入驻条件</p>
+								<div></div>
+							</div>
+							<div class="bar-item done">
+								<p>设置用户名</p>
+								<div ></div>
+							</div>
+							<div class="bar-item now">
+								<p>企业信息填写，<br>签署协议</p>
+								<div></div>
+							</div>
+							<div class="bar-item">
+								<p>提交等待审核</p>
+								<div></div>
+							</div>
+						</div>
+						<div class="company-ifo">
+							<div class="attention">
+								<ul>
+									<li>信息提交前，请务必先了解<a href="#">云地接分销商入驻资质标准细则</a>；</li>
+									<li>公司类信息需填项较多，建议先查看<a href="#">公司信息注意事项</a>再进行填写；</li>
+									<li>以下所需要上传电子版资质仅支持JPG、GIF、PNG格式的图片，大小不超过1M，且必须加盖企业色彩公章。</li>
+								</ul>
+							</div>
+							<div class="form-content">
+								<h2>联系人信息</h2>
+								<div class="form-item">
+		                            <span class="items">联系人姓名<i>*</i></span>
+		                            <div class="item-content">
+		                                <input type="text" class="lg" placeholder="请填写联系人姓名">   
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+								    <span class="items">联系电话<i>*</i></span>
+								    <div class="item-content">
+								        <input type="tel" class="lg" placeholder="请填写联系电话">   
+								    </div>
+								</div>
+								<div class="form-item">
+								    <span class="items">电子邮箱<i>*</i></span>
+								    <div class="item-content">
+								        <input type="email" class="lg" placeholder="请填写电子邮箱">   
+								    </div>
+								</div>
+							</div>
+							<div class="form-content">
+								<h2>营业信息</h2>
+								<div class="form-item">
+		                            <span class="items">公司名称<i>*</i></span>
+		                            <div class="item-content">
+		                                <input type="text" class="lg" placeholder="请填写公司名称">  
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+		                            <span class="items">营业执照注册号<i>*</i></span>
+		                            <div class="item-content">
+		                                <input type="text" class="lg" placeholder="请填写营业执照注册号">   
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+		                            <span class="items">上传电子证件</span>
+		                            <div class="item-content text-top"> 
+		                            	<p class="info">说明文案1</p>
+		                            	<div class="upload">
+		                            		<p>营业执照（三证合一）</p>
+		                            		<div class="add-file"></div>
+		                            	</div>
+		                            	<div class="upload">
+		                            		<p>组织机构代码证</p>
+		                            		<div class="add-file"></div>
+		                            	</div>     
+		                            </div>
+		                        </div>
+							</div>
+							<div class="form-content">
+								<h2>财务信息</h2>
+								<div class="form-item">
+		                            <span class="items">纳税人识别号</span>
+		                            <div class="item-content">
+		                                <input type="text" class="lg" placeholder="请填写纳税人识别号">  
+		                            </div>
+		                        </div>
+		                        <div class="form-item ">
+		                            <span class="items">纳税人类型</span>
+		                            <div class="item-content ">
+			                            <span class="drop-down"> 
+			                            	<input type="text" class="lg " placeholder="请选择纳税人类型"> 
+			                            </span>
+		                                 
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+		                            <span class="items">纳税人税码</span>
+		                            <div class="item-content ">
+		                            <!-- drop-down是为了加右侧小三角 -->
+		                            	<span class="drop-down">
+		                            		<input type="text" class="lg" placeholder="请选择纳税人税码"> 
+		                            	</span>
+		                                 
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+		                            <span class="items">银行开户名</span>
+		                            <div class="item-content">
+		                                <input type="text" class="lg" placeholder="请填写银行开户名">  
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+		                            <span class="items">开户行所在地</span>
+		                            <div class="item-content">
+		                            	<span class="drop-down">
+		                            		<input type="text" class="local" placeholder="省"> </span>
+		                            	<span class="drop-down">
+		                            		<input type="text" class="local" placeholder="市">
+		                            	</span>
+		                            	<span class="drop-down">
+		                            		<input type="text" class="local-l" placeholder="区／县">
+		                            	</span>
+		                                
+		                                 
+		                                  
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+		                            <span class="items">公司银行账号</span>
+		                            <div class="item-content">
+		                                <input type="text" class="lg" placeholder="请填写公司银行账号">  
+		                            </div>
+		                        </div>
+		                        <div class="form-item">
+		                            <span class="items">开户银行名称</span>
+		                            <div class="item-content">
+		                                <input type="text" class="lg" placeholder="请填写开户银行名称">  
+		                            </div>
+		                        </div>
+		                         <div class="form-item">
+		                            <span class="items">上传电子证件</span>
+		                            <div class="item-content text-top"> 
+		                            	<p class="info">说明文案1</p>
+		                            	<div class="upload">
+		                            		<p>税务登记证</p>
+		                            		<div class="add-file"></div>
+		                            	</div>
+		                            	<div class="upload">
+		                            		<p>一般纳税人资格证（可选项）</p>
+		                            		<div class="add-file"></div>
+		                            	</div>
+		                            	<div class="upload">
+		                            		<p>银行开户许可证</p>
+		                            		<div class="add-file"></div>
+		                            	</div>     
+		                            </div>
+		                        </div>
+							</div>
+
+	                        <!-- button激活状态class加上active -->
+	                        <input type="submit" class="btn-submit " value="下一步">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="y-footer">
+	        <div class="footer">
+	        <!-- footer的另一种状态，class去掉type1即可 -->
+	            <div class="footer-inner type1">
+	                <ul class="clearfix rest-ul">
+	                    <li class="list-unstyled"><a href="#">关于云地接</a></li>
+	                    <li class="list-unstyled"><a href="#">合作伙伴</a></li>
+	                    <li class="list-unstyled"><a href="#">服务中心</a></li>
+	                    <li class="list-unstyled"><a href="#">联系我们</a></li>
+	                    <li class="list-unstyled"><a href="#">法律声明</a></li>
+	                </ul>
+	                <p class="copyright">Copyright &copy; 2016 纯粹旅行 版权所有&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14020952号-4</p>
+	            </div>
+        	</div>
+    	</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

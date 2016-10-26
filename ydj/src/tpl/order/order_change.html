@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>修改订单</title>
+    <link href="../../css/lib/bootstrap.css" rel="stylesheet">
+    <link href="../../css/lib/glob.css" rel="stylesheet">
+    <link href="../../css/order/order_change.css" rel="stylesheet">
+    <script src="../../js/lib/jquery.js"></script>
+    <script src="../../js/lib/bootstrap.js"></script>
+</head>
+<body>
+
+<div class="main-page">
+    <div class="y-header">
+    <!-- 如果是未登录状态，header的class加上unlisted即可， 如果是已登录，则去掉，自动显示已登录-->
+        <header>
+            <div class="logo"></div>
+            <!-- 以下是未登录状态 -->
+            <div class="login-box">
+                <button class="sign-in">登录</button>
+                <button class="register">即刻入驻云地接</button>
+            </div>
+            <!-- 以下是已登陆状态，现在已经隐藏 -->
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">司兼导包车</a></li>
+                    <li><a href="#">线路包车</a></li>
+                    <li><a href="#">接机</a></li>
+                    <li><a href="#">送机</a></li>
+                    <li><a href="#">单次接送</a></li>
+                </ul>
+            </div>
+            <div class="user-nav">
+                <div class="remind">
+                    <i class="icon-notice" style="font-size: 30px;"></i>
+                    <span class="remind-num">3</span>
+                    <!-- 消息提示框下拉菜单 -->
+                    <div class="drop-box">
+                        <ul>
+                            <!-- 消息未读时加unread -->
+                            <li class="unread">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <!-- 消息已读时加have-read -->
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more">+  查看所有通知</div>
+                    </div>
+                </div>
+                <div class="J-logged">
+                    <img src="../../imgs/user-img.png" alt="头像">
+                    <ul class="profile">
+                        <li class="my-order current">
+                            <i class="icon-order" style="font-size: 20px;"></i>
+                            我的订单
+                        </li>
+                        <li class="fund-account">
+                            <i class="icon-card" style="font-size: 15px;"></i>
+                            资金账户
+                        </li>
+                        <li class="my-account">
+                            <i class="icon-account" style="font-size: 19px;"></i>
+                            我的帐户
+                        </li>
+                        <li class="change-password">
+                            <i class="icon-lock" style="font-size: 18px;"></i>
+                            更改密码
+                        </li>
+                        <li class="log-off">
+                            <i class="icon-quit" style="font-size: 15px;"></i>
+                            退出登录
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="page-content">
+    <!-- 订单页面 -->
+        <div class="content-wrapper">
+        <!-- 订单状态 -->
+            <div class="order-status">
+                <p><b>订单已支付</b>上次操作：2016-09-29 10:51:39（当地 2016-09-29 11:51:39）  接下订单</p>
+            </div>
+            <!-- 订单详情 -->
+            <div class="order-detail">
+                <div class="detail-title clearfix">
+                    <h1>订单详情</h1>
+                    <div class="title-r">
+                        <span>票面价<b>&nbsp;RMB&nbsp;64</b></span>
+                        <span>订单金额<b>&nbsp;RMB&nbsp;</b><i>64</i></span>
+                        <button class="cancel-btn">取消订单</button>
+                        <button class="confirm-btn">服务确认单</button>
+                    </div>
+                </div>
+                <!-- 每一块内容 -->
+                <div class="detail-form">
+                    <h2>基础信息</h2>
+                    <ul class="clearfix info">
+                        <li class="md">订单号：<span>LX112609465409</span></li>
+                        <li class="lg">三方订单号：<span>123456,456789</span></li>
+                        <li>销售：盖氏太保</li>
+                        <li class="md">下单时间：<span>2016-03-20 21:12:22</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-form">
+                    <h2>用车信息<a href="#">预览线路</a></h2>
+                    <ul class="clearfix info">
+                        <li class="md">订单类型：单次接送</li>
+                        <li class="lg">服务城市：法兰克福</li>
+                        <li> 车型：经济5座（4人/2行李）</li>
+                        <li class="md">出发地点：法兰克福机场</li>
+                        <li class="lg">  送达地点：Sheraton Offenbach Hotel</li>
+                        <li class="bg">上车时间（当地时间）：2016-03-24 周四 08:10</li>
+                        <li class="md">预计里程：23.86公里 </li>
+                        <li class="lg"> 预计时间：31分钟</li>
+                    </ul>
+                </div>
+
+                <div class="detail-form">
+                    <h2>乘客信息</h2>
+                    <div class="user-info">
+                        <div class="form-item">
+                            <span class="items">乘坐人数<i>*</i></span>
+                            <div class="item-content">
+                                <div class="form-num-wrap">
+                                    <div class="form-num-box">
+                                        <i class="num-box-sub">-</i>
+                                        <input id="J-adultNum" class="adult" type="tel" value="1" required="required">
+                                        <i class="num-box-add">+</i>
+                                    
+                                    </div>
+                                    <span class="tag-p">成人</span>
+                                </div>
+                            
+                                <div class="form-num-wrap">
+                                    <div class="form-num-box">
+                                        <i class="num-box-sub">-</i>
+                                        <input id="J-adultNum" class="adult" type="tel" value="0" required="required">
+                                        <i class="num-box-add">+</i>
+                                    
+                                    </div>
+                                    <span class="tag-p">儿童</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="form-item">
+                            <span class="items">儿童座椅</span>
+                            <div class="item-content">
+                                <p class="child-chair">
+                                    <span><b class="red">免费</b>x1</span>
+                                    <span><b class="red">¥100/次</b>x1</span>
+                                </p>
+                            </div>   
+                        </div>
+                        <div class="form-item">
+                            <span class="items">可携带行李数</span>
+                            <div class="item-content text-top">
+                                <ul class="luggage">
+                                    <li>
+                                        <p><b class="red">5件</b><small>(按24寸计)</small></p>
+                                    </li>
+                                    <li>
+                                        <p>出行前请与司导联系，需要何种年龄段的儿童安全座椅</p>
+                                    </li>
+                                    <li>
+                                        <p>实际行李数如果超出限制，请更换更大车型</p>
+                                    </li>
+                                </ul>
+                               
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <span class="items">旅行社OP<i>*</i></span>
+                            <div class="item-content">
+                                <input type="text" class="lg" >   
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <span class="items">OP手机号 <i>*</i></span>
+                            <div class="item-content">
+                                <input type="text" class="phone-area" value="86-中国">
+                                <input type="tel" class="phone-num" placeholder="请输入手机号">   
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <span class="items">微信号</span>
+                            <div class="item-content">
+                                <input type="text" class="lg" required="required">   
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <span class="items">乘车人</span>
+                            <div class="item-content">
+                                <input type="text" class="lg" required="required">   
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <span class="items">手机号 </span>
+                            <div class="item-content">
+                                <input type="text" class="phone-area" value="86-中国">
+                                <input type="tel" class="phone-num-md" placeholder="请输入手机号"> 
+                                <span class="add-phone">+备用手机号</span> 
+                                
+                            </div>
+                        </div>
+                        <p class="tips">为确保司导联系到客人，请填写可以联系到客人的电话</p>
+                        <div class="form-item">
+                            <span class="items">微信号</span>
+                            <div class="item-content">
+                                <input type="text" class="lg" required="required">   
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <span class="items">客人留言</span>
+                            <div class="item-content text-top">
+                                <div class="message-box">
+                                    <textarea class="message"></textarea>
+                                    <span class="count">0/1000</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+            
+                        <button class="save-btn confirm-btn">保存修改</button>
+                    </div>
+                </div>
+
+                <div class="detail-form clearfix">
+                    <h2>备注信息</h2>
+                    <div class="remark-box">
+                        <div class="remark-cont-box">
+                            <p class="remark-cont">留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容</p>
+                            <p class="remark-cont-detail">2016-09-29 11:17:32<span>操作员：销售管理test</span></p>
+                        </div>
+                        <div class="remark-cont-box">
+                            <p class="remark-cont">留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容</p>
+                            <p class="remark-cont-detail">2016-09-29 11:17:32<span>操作员：销售管理test</span></p>
+                        </div>
+                        <div class="remark-cont-box">
+                            <p class="remark-cont">留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容</p>
+                            <p class="remark-cont-detail">2016-09-29 11:17:32<span>操作员：销售管理test</span></p>
+                        </div>
+                        <div class="remark-cont-box">
+                            <p class="remark-cont">留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容留言内容</p>
+                            <p class="remark-cont-detail">2016-09-29 11:17:32<span>操作员：销售管理test</span></p>
+                        </div>
+                        <div class="add-remark">
+                            <p>+添加备注</p>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="continue-btn">继续下单</button>
+                        <button class="check-btn">查看我的订单</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="y-footer">
+        <div class="footer">
+        <!-- footer的另一种状态，class去掉type1即可 -->
+            <div class="footer-inner type1">
+                <ul class="clearfix rest-ul">
+                    <li class="list-unstyled"><a href="#">关于云地接</a></li>
+                    <li class="list-unstyled"><a href="#">合作伙伴</a></li>
+                    <li class="list-unstyled"><a href="#">服务中心</a></li>
+                    <li class="list-unstyled"><a href="#">联系我们</a></li>
+                    <li class="list-unstyled"><a href="#">法律声明</a></li>
+                </ul>
+                <p class="copyright">Copyright &copy; 2016 纯粹旅行 版权所有&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14020952号-4</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        // 传入三个参数，1，要检测的输入区域，2，字数显示区域，3，最大限制字数
+        var checkLength = function(target,show,num){
+            var obj = $(target),
+                objShow = $(show);
+            obj.on("keyup",function(){
+                var $val = $.trim(obj.val()),
+                    $len = $val.length;
+                
+                objShow.text($len+'/'+num);
+                if($len>=num){
+                    obj.val($val.substring(0,num));
+                    objShow.text(num+'/'+num);
+                }
+
+            })
+            
+        }
+        checkLength(".message",".count",1000);
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

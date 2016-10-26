@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>日租包车</title>
+    <link href="../../css/lib/bootstrap.css" rel="stylesheet">
+    <link href="../../css/lib/glob.css" rel="stylesheet">
+    <link href="../../css/daily/daily.css" rel="stylesheet">
+    <link href="../../css/widgets/daterangepicker/index.css" rel="stylesheet">
+    <link href="../../css/widgets/citySearch/index.css" rel="stylesheet">
+    <link href="../../css/widgets/hsSelect/index.css" rel="stylesheet">
+    <script src="../../js/lib/jquery.js"></script>
+    <script src="../../js/lib/bootstrap.js"></script>
+    <script src="../../js/lib/moment.js"></script>
+    <script src="../../js/lib/juicer.js"></script>
+
+
+</head>
+<body>
+
+<div class="main-wrap">
+    <div class="y-header">
+        <header>
+            <div class="logo"></div>
+            <!-- 以下是未登录状态 -->
+            <!--<div class="login-box">-->
+                <!--<button class="sign-in">登录</button>-->
+                <!--<button class="register">即刻入驻云地接</button>-->
+            <!--</div>-->
+            <!-- 以下是已登陆状态，现在已经隐藏 -->
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">司兼导包车</a></li>
+                    <li><a href="#">线路包车</a></li>
+                    <li><a href="#">接机</a></li>
+                    <li><a href="#">送机</a></li>
+                    <li><a href="#">单次接送</a></li>
+                </ul>
+            </div>
+            <div class="user-nav">
+                <div class="remind">
+                    <i class="icon-notice" style="font-size: 30px;"></i>
+                    <span class="remind-num">3</span>
+                    <!-- 消息提示框下拉菜单 -->
+                    <div class="drop-box">
+                        <ul>
+                            <!-- 消息未读时加unread -->
+                            <li class="unread">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <!-- 消息已读时加have-read -->
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                            <li class="have-read">
+                                <i class="icon-smile">
+                                    <span class="red-circle"></span>
+                                </i>
+                                <div class="notice-content">
+                                    <p><b>系统通知</b><small>2016-12-12   22:22:30</small></p>
+                                    <p>您有一笔待支付订单请尽快支付。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more">+  查看所有通知</div>
+                    </div>
+                </div>
+                <div class="J-logged">
+                    <img src="../../imgs/user-img.png" alt="头像">
+                    <ul class="profile">
+                        <li class="my-order current">
+                            <i class="icon-order" style="font-size: 20px;"></i>
+                            我的订单
+                        </li>
+                        <li class="fund-account">
+                            <i class="icon-card" style="font-size: 15px;"></i>
+                            资金账户
+                        </li>
+                        <li class="my-account">
+                            <i class="icon-account" style="font-size: 19px;"></i>
+                            我的帐户
+                        </li>
+                        <li class="change-password">
+                            <i class="icon-lock" style="font-size: 18px;"></i>
+                            更改密码
+                        </li>
+                        <li class="log-off">
+                            <i class="icon-quit" style="font-size: 15px;"></i>
+                            退出登录
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+    </div>
+    <div class="y-main hasBottom">
+        <div class="y-left">
+            <div class="form-origin">
+                <form role="form">
+                    <div class="form-group y-downIcon">
+                        <label for="J-City">上车地点</label>
+                        <input type="text"  class="form-control y-form-control" id="J-City" placeholder="请选择开始城市">
+                    </div>
+                    <div class="form-group y-downIcon">
+                        <label for="J-Date">行程起止日期</label>
+                        <input type="text" readonly class="form-control y-form-control y-reset-readonly" id="J-Date" placeholder="请选择行程起止日期">
+                    </div>
+                </form>
+                <p class="J-toHide">收起<i></i></p>
+            </div>
+            <div class="form-sel">
+                <p class="J-city-des"><i class="icon-place"></i>法兰客服</p>
+                <p class="J-time-des">2016-09-28 至 2016-09-28</p>
+                <p class="J-toShow">展开<i></i></p>
+            </div>
+            <div class="left-main J-left-main">
+                <p class="main-title J-days-count">
+                    <span>包车行程共<i>8</i>天</span>
+                    <span>生成行程列表</span>
+                </p>
+                <div class="main-center">
+                    <div class="cen-left-bottom">
+                        <button class="btn">+ 增加一天</button>
+                    </div>
+                    <div class="cen-left J-cen-days">
+                        <div class="cen-tag active">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag com">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                        <div class="cen-tag">D1</div>
+                    </div>
+                    <div class="cen-right">
+                        <div class="cen-inner">
+                            <div class="cen-title">
+                                <h4>2016-08-18</h4>
+                                <p>5小时150km包车一价全包</p>
+                            </div>
+                            <div class="cen-form">
+                                <form role="form" id="J-sel-form">
+                                    <div class="form-group">
+                                        <!--<label for="J-City">上车地点</label>-->
+                                        <!--<select  class="form-control y-form-control">-->
+                                            <!--<option>半日包车</option>-->
+                                            <!--<option>按天包车</option>-->
+                                            <!--<option>仅接送机</option>-->
+                                        <!--</select>-->
+                                        <input data-name="orderType" type="text" class="form-control y-form-control y-reset-readonly" readonly id="J-cen-type"  value="按天包车">
+
+                                        <ul class="ul-list J-ul-list" target="#J-cen-type">
+                                            <li>按天包车</li>
+                                            <li>半日包车</li>
+                                            <li>仅接送机</li>
+                                            <li>本日无包车</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="J-Jur-Wrap">
+                                        <div class="form-group y-downIcon small-icon">
+                                            <label for="J-cen-time">出发时间</label>
+                                            <input data-name="serverceDate" type="text" readonly data-require="true" class="form-control y-form-control y-reset-readonly" id="J-cen-time" placeholder="请选择行程起止日期">
+                                            <div id="J-cen-time-wrap"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="J-City">包车行程</label>
+                                            <input data-name="bcxc" type="text" data-require="true" class="form-control y-form-control y-reset-readonly" readonly id="J-bao-type"  placeholder="请选择包车游玩范围">
+
+                                            <ul class="ul-list J-ul-list" target="#J-bao-type">
+                                                <li>
+                                                    <h4>在法兰克福市内结束行程,市内游玩</h4>
+                                                    <p>市内范围包括：塔科马、贝尔维尤、伦敦、西塔克、雷德蒙德、林伍德、埃弗里特、斯诺夸尔米、Premium Outlets</p>
+                                                </li>
+                                                <li>
+                                                    <h4>在法兰克福市内结束行程,市内游玩</h4>
+                                                    <p>市内范围包括：塔科马、贝尔维尤、伦敦、西塔克、雷德蒙德、林伍德、埃弗里特、斯诺夸尔米、Premium Outlets</p>
+                                                </li>
+                                                <li>
+                                                    <h4>在法兰克福市内结束行程,市内游玩</h4>
+                                                    <p>市内范围包括：塔科马、贝尔维尤、伦敦、西塔克、雷德蒙德、林伍德、埃弗里特、斯诺夸尔米、Premium Outlets</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="J-cen-city">出发城市</label>-->
+                                            <!--<input type="text"  class="form-control y-form-control" id="J-cen-city"  placeholder="请选择开始城市">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group y-downIcon small-icon">-->
+                                            <!--<label for="J-cen-date">行程起止日期</label>-->
+                                            <!--<input type="text" readonly class="form-control y-form-control y-reset-readonly" id="J-cen-date" placeholder="请选择行程起止日期">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group y-downIcon small-icon">-->
+                                            <!--<label for="J-cen-time">出发时间</label>-->
+                                            <!--<input type="text" readonly class="form-control y-form-control y-reset-readonly" id="J-cen-time" placeholder="请选择行程起止日期">-->
+                                        <!--</div>-->
+                                    </div>
+
+
+                                </form>
+                            </div>
+                            <!--<div class="cen-des">-->
+                                <!--<p>包车行程</p>-->
+                                <!--<p>本日行程约240公里。</p>-->
+                            <!--</div>-->
+                            <!--<div class="cen-rout-wrap">-->
+                                <!--<h4>在法兰克福市内游玩，半日包车</h4>-->
+                                <!--<p>市内范围包括：塔科马、贝尔维尤、伦敦、西塔克、雷德蒙德、林伍德、埃弗里特、斯诺夸尔米、Premium Outlets</p>-->
+                            <!--</div>-->
+                            <!--<div class="cen-rout-wrap">-->
+                                <!--<h4>在法兰克福市内游玩，半日包车</h4>-->
+                                <!--<p>市内范围包括：塔科马、贝尔维尤、伦敦、西塔克、雷德蒙德、林伍德、埃弗里特、斯诺夸尔米、Premium Outlets</p>-->
+                            <!--</div>-->
+                            <!--<div class="cen-rout-wrap">-->
+                                <!--<h4>在法兰克福市内游玩，半日包车</h4>-->
+                                <!--<p>市内范围包括：塔科马、贝尔维尤、伦敦、西塔克、雷德蒙德、林伍德、埃弗里特、斯诺夸尔米、Premium Outlets</p>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="main-bottom">
+                    <button class="btn">搜索</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="y-right">
+
+            <div class="d-right-top">
+                <div class="container-fluid d-right-banner clearfix">
+                    <p class="d-banner-title">
+                        您好，“法兰克福接机”共有 <span>4</span> 种车型可提供服务
+                    </p>
+                    <div class="d-banner-nav">
+                        <ul class="rest-ul clearfix">
+                            <li class="list-unstyled text-center active"><p>全部车型</p></li>
+                            <li class="list-unstyled text-center"><p>5座</p></li>
+                            <li class="list-unstyled text-center"><p>7座及以上</p></li>
+                            <li class="list-unstyled text-center"><p>9座及以上</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="y-car-list">
+                <ul class="rest-ul">
+                    <li class="list-unstyled">
+                        <div class="car-img">
+                            <img src="http://yundijie.com/img/1_5.png">
+                        </div>
+                        <div class="car-des">
+                            <div class="center-block">
+                                <div class="car-title">
+                                    <span class="car-name">经济五座</span>
+                                <span class="car-cap">
+                                    <span>4</span>人/<span>2</span>行李
+                                </span>
+                                </div>
+                                <div class="car-subs">
+                                    雪铁龙C4、大众途安、丰田普锐斯、现代圣达菲、马自达、CX-5、起亚K5、5座同级别
+                                </div>
+                                <div class="car-tags">
+                                    <span>中文司导</span>
+                                    <span>举牌接机</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-price">
+                            <b>￥839</b>
+                            <p>
+                                该价格有效期至
+                            </p>
+                            <p>
+                                2016-03-25 18:00
+                            </p>
+                        </div>
+                        <div class="car-button">
+                            预订
+                        </div>
+                    </li>
+                    <li class="list-unstyled">
+                        <div class="car-img">
+                            <img src="http://yundijie.com/img/1_5.png">
+                        </div>
+                        <div class="car-des">
+                            <div class="center-block">
+                                <div class="car-title">
+                                    <span class="car-name">经济五座</span>
+                                <span class="car-cap">
+                                    <span>4</span>人/<span>2</span>行李
+                                </span>
+                                </div>
+                                <div class="car-subs">
+                                    雪铁龙C4、大众途安、丰田普锐斯、现代圣达菲、马自达、CX-5、起亚K5、5座同级别
+                                </div>
+                                <div class="car-tags">
+                                    <span>中文司导</span>
+                                    <span>举牌接机</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-price">
+                            <b>￥839</b>
+                            <p>
+                                该价格有效期至
+                            </p>
+                            <p>
+                                2016-03-25 18:00
+                            </p>
+                        </div>
+                        <div class="car-button">
+                            预订
+                        </div>
+                    </li>
+
+                    <li class="list-unstyled">
+                        <div class="car-img">
+                            <img src="http://yundijie.com/img/1_5.png">
+                        </div>
+                        <div class="car-des">
+                            <div class="center-block">
+                                <div class="car-title">
+                                    <span class="car-name">经济五座</span>
+                                <span class="car-cap">
+                                    <span>4</span>人/<span>2</span>行李
+                                </span>
+                                </div>
+                                <div class="car-subs">
+                                    雪铁龙C4、大众途安、丰田普锐斯、现代圣达菲、马自达、CX-5、起亚K5、5座同级别
+                                </div>
+                                <div class="car-tags">
+                                    <span>中文司导</span>
+                                    <span>举牌接机</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-price">
+                            <b>￥839</b>
+                            <p>
+                                该价格有效期至
+                            </p>
+                            <p>
+                                2016-03-25 18:00
+                            </p>
+                        </div>
+                        <div class="car-button">
+                            预订
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="y-footer">
+        <div class="footer">
+            <div class="footer-inner">
+                <ul class="clearfix rest-ul">
+                    <li class="list-unstyled"><a href="#">关于云地接</a></li>
+                    <li class="list-unstyled"><a href="#">合作伙伴</a></li>
+                    <li class="list-unstyled"><a href="#">服务中心</a></li>
+                    <li class="list-unstyled"><a href="#">联系我们</a></li>
+                    <li class="list-unstyled"><a href="#">法律声明</a></li>
+                </ul>
+                <p class="copyright">Copyright &copy; 2016 纯粹旅行 版权所有&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14020952号-4</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/template" id="J-CityTpl">
+    <div class="J-city-wrap">
+        <p class="city-title">热门城市</p>
+        <ul class="city-list ">
+            {@each data as item , index}
+            {@if index < 20}
+            <li>
+                ${item.cityName}
+            </li>
+            {@/if}
+            {@/each}
+        </ul>
+    </div>
+</script>
+<script type="text/template" id="dailyloc">
+    {@if ifFirst}
+    <div class="form-group y-downIcon small-icon">
+        <label for="J-cen-time">出发时间</label>
+        <input data-name="serviceDate" type="text" readonly class="form-control y-form-control y-reset-readonly" id="J-cen-time" placeholder="请选择行程起止日期">
+        <div id="J-cen-time-wrap"></div>
+    </div>
+    {@/if}
+    <div class="form-group">
+        <label for="J-City">包车行程</label>
+        <input data-name="bcxx" type="text" data-require="true" class="form-control y-form-control y-reset-readonly" readonly id="J-bao-type"  placeholder="请选择包车游玩范围">
+        {@if cityVo && cityVo.cityName}
+        <ul class="ul-list J-ul-list" target="#J-bao-type">
+            <li>
+                <h4>在${cityVo.cityName}市内结束行程,市内游玩</h4>
+                <p>${cityVo.intownTip}</p>
+            </li>
+            <li>
+                <h4>在${cityVo.cityName}市内结束行程,市内游玩</h4>
+                <p>${cityVo.neighbourTip}</p>
+            </li>
+            <li>
+                <h4>xxxxxx</h4>
+                <p>市内范围包括：塔科马、贝尔维尤、伦敦、西塔克、雷德蒙德、林伍德、埃弗里特、斯诺夸尔米、Premium Outlets</p>
+            </li>
+        </ul>
+        {@/if}
+    </div>
+</script>
+<script src="../../js/lib/util.js"></script>
+<script src="../../js/widgets/daterangpicker/index.js"></script>
+<script src="../../js/widgets/citySearch/index.js"></script>
+<script src="../../js/widgets/dailyLoc/index.js"></script>
+<script src="../../js/widgets/hsSelect/index.js"></script>
+<script src="../../js/daily/index.js"></script>
+
+</body>
+</html>

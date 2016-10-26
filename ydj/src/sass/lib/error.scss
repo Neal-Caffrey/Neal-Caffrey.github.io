@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.error-box{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	i{
+		width: 32px;
+		height: 28px;
+		display: inline-block;
+		vertical-align: middle;
+		&.error{
+			background: url("../../imgs/warning.png")no-repeat center;
+			background-size: cover;
+
+		}
+		&.warning{
+			background: url("../../imgs/user-img.png")no-repeat center;
+			background-size: cover;
+		}
+	}
+	.title{
+		font-size: 16px;
+		margin: 0 20px;
+	}
+	.sub{
+		font-size: 14px;
+	}
+}
+.error{
+	background: #FA573D;
+}
+.warning{
+	background: yellow;
+}
