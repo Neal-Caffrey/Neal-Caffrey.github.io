@@ -285,15 +285,17 @@ dl dd {
 .wrap .content h3{
     color: #727272;
     font-size: 17px;
+    font-weight: bold;
 }
 .wrap .content ol{
-    padding: 10px 10px 17.5px 20px;
+    padding: 10px 10px 17.5px 0;
 }
 .wrap .content ol li{
     font-size: 15px;
     color: #727272;
     line-height: 20px;
     font-weight: 300;
+    margin-left: 18px;
 }
 .wrap .content ol li .red{
     color:#f44437;
