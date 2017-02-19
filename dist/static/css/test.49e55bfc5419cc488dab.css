@@ -1,0 +1,7 @@
+body {
+  color: red;
+  background: red url(https://fr-static.huangbaoche.com/ydj/static/img/123.6efcba2c3494c9d3.png) no-repeat center top; }
+  body div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }

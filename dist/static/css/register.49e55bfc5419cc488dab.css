@@ -1,0 +1,153 @@
+/*
+* need to edit this scss
+*/
+.J-layer-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2000; }
+  .J-layer-wrap .layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: .2rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    font-size: .3rem;
+    z-index: 10;
+    border-radius: .1rem;
+    text-align: center;
+    color: #fff;
+    width: 60%; }
+#loading {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  z-index: 99999;
+  background: transparent; }
+
+#loading .loading-content {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -45px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 0px !important;
+  box-shadow: none !important;
+  display: block;
+  background-color: rgba(47, 34, 33, 0.9);
+  background-image: url(https://fr-static.huangbaoche.com/ydj/static/img/loading_new.788a1e112b6f0351.gif);
+  background-size: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  line-height: 0px;
+  text-indent: -999em; }
+body {
+  font-family: "Microsoft YaHei"; }
+
+ul, p, li, span, input, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+input, button, textarea {
+  outline: none; }
+
+li {
+  list-style-type: none; }
+
+i {
+  font-style: normal; }
+
+* {
+  box-sizing: border-box; }
+
+*:before, *:after {
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.register-wrap {
+  width: 7.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(https://fr-static.huangbaoche.com/ydj/static/img/wx-bg2.edf6a2f230ae07bb.png) no-repeat center;
+  background-size: cover; }
+  .register-wrap .logo {
+    width: 1.92rem;
+    height: 0.56rem;
+    background: url(https://fr-static.huangbaoche.com/ydj/static/img/new-logo.99859d8b788be496.png) no-repeat center;
+    background-size: cover;
+    margin-left: 0.4rem;
+    margin-top: 0.35rem; }
+  .register-wrap .slogan {
+    width: 5.66rem;
+    height: 1.52rem;
+    background: url(https://fr-static.huangbaoche.com/ydj/static/img/slogen.06440785017e78f1.png) no-repeat center;
+    background-size: cover;
+    margin-top: 0.5rem;
+    margin-bottom: 0.9rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .register-wrap .form-tips {
+    font-size: 0.24rem;
+    color: #141428;
+    text-align: center;
+    margin-bottom: 0.1rem; }
+  .register-wrap .form {
+    width: 6.3rem;
+    margin: 0 auto;
+    border: 1px solid #edeff2;
+    font-size: 0.3rem;
+    color: #141428;
+    border-radius: 0.08rem;
+    background: #fff; }
+    .register-wrap .form .form-item {
+      position: relative;
+      height: 1.1rem;
+      line-height: 1.1rem;
+      padding-left: 0.5rem;
+      border-bottom: 1px solid #f7f8f9; }
+      .register-wrap .form .form-item:last-of-type {
+        border-bottom: none; }
+      .register-wrap .form .form-item input {
+        width: 100%;
+        font-size: 0.3rem;
+        border: none; }
+    .register-wrap .form .require:before {
+      content: '*';
+      color: #fb745f;
+      position: absolute;
+      left: 0.25rem;
+      top: 0.05rem; }
+  .register-wrap .btn-box {
+    text-align: center; }
+    .register-wrap .btn-box .submit-btn {
+      width: 6.3rem;
+      height: 0.9rem;
+      border-radius: 0.08rem;
+      border: none;
+      background-color: #ffae00;
+      color: #fff;
+      font-size: 0.36rem;
+      box-shadow: 0px 5px 10px rgba(244, 159, 31, 0.5); }

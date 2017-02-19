@@ -1,0 +1,154 @@
+/*
+* need to edit this scss
+*/
+.J-layer-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2000; }
+  .J-layer-wrap .layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: .2rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    font-size: .3rem;
+    z-index: 10;
+    border-radius: .1rem;
+    text-align: center;
+    color: #fff;
+    width: 60%; }
+#loading {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  z-index: 99999;
+  background: transparent; }
+
+#loading .loading-content {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -45px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 0px !important;
+  box-shadow: none !important;
+  display: block;
+  background-color: rgba(47, 34, 33, 0.9);
+  background-image: url(https://fr-static.huangbaoche.com/ydj/static/img/loading_new.788a1e112b6f0351.gif);
+  background-size: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  line-height: 0px;
+  text-indent: -999em; }
+body {
+  font-family: "Microsoft YaHei"; }
+
+ul, p, li, span, input, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+input, button, textarea {
+  outline: none; }
+
+li {
+  list-style-type: none; }
+
+i {
+  font-style: normal; }
+
+* {
+  box-sizing: border-box; }
+
+*:before, *:after {
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.login-wrap {
+  width: 7.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(https://fr-static.huangbaoche.com/ydj/static/img/wx-bg.785e02602dac9883.png) no-repeat center;
+  background-size: cover; }
+  .login-wrap .logo {
+    width: 3.5rem;
+    height: 1rem;
+    background: url(https://fr-static.huangbaoche.com/ydj/static/img/new-logo.99859d8b788be496.png) no-repeat center;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-bottom: 0.8rem;
+    margin-left: auto; }
+  .login-wrap .form {
+    width: 6.3rem;
+    margin: 0 auto;
+    border: 1px solid #edeff2;
+    font-size: 0.3rem;
+    color: #141428;
+    border-radius: 0.08rem;
+    background: #fff; }
+    .login-wrap .form .form-item {
+      height: 1.1rem;
+      line-height: 1.1rem;
+      padding-left: 0.4rem;
+      border-bottom: 1px solid #f7f8f9; }
+      .login-wrap .form .form-item:last-of-type {
+        border-bottom: none;
+        line-height: inherit; }
+      .login-wrap .form .form-item input {
+        width: 100%;
+        font-size: 0.3rem;
+        border: none; }
+      .login-wrap .form .form-item .identify {
+        float: left; }
+        .login-wrap .form .form-item .identify input {
+          width: 3.5rem;
+          line-height: 1.1rem; }
+      .login-wrap .form .form-item .identify-code-pic {
+        float: right; }
+        .login-wrap .form .form-item .identify-code-pic img {
+          height: 1.1rem;
+          width: 2rem; }
+  .login-wrap .btn-box {
+    text-align: center;
+    font-size: 0;
+    margin-top: 0.6rem; }
+    .login-wrap .btn-box button {
+      width: 6.3rem;
+      height: 0.9rem;
+      border-radius: 0.08rem;
+      border: none; }
+    .login-wrap .btn-box .login-btn {
+      background-color: #ffae00;
+      color: #fff;
+      font-size: 0.36rem;
+      box-shadow: 0px 5px 10px rgba(244, 159, 31, 0.5); }
+    .login-wrap .btn-box .register-btn {
+      margin-top: 0.3rem;
+      border: 1px solid #ffae00;
+      background-color: transparent;
+      color: #ffae00;
+      font-size: 0.3rem; }
