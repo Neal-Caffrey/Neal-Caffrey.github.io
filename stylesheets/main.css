@@ -1,4 +1,4 @@
-﻿.clearfix:after /*清除浮动*/
+.clearfix:after /*清除浮动*/
 {
 	content: '';
 	display: block;
@@ -49,12 +49,12 @@ nav ul
 nav ul li, nav .logo 
 {
 	display: inline-block;
-	line-height: 50px;
+	line-height: 55px;
 	margin: 0px 20px;
 }
 nav ul li a:link,a:visited
 {
-	line-height: 50px;
+	line-height: 55px;
 	text-decoration: none;
 	display: inline-block;
 	height: inherit;
@@ -254,43 +254,109 @@ button
 	float: left;
 	width: 25%;
 	height: 200px;
-	padding: 0 30px 20px 30px;
+	/*padding: 0 30px 20px 30px;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	/*border: 1px solid white;*/
 	text-align: center;
+	overflow: hidden;
 	
 }
-.card p{
-	margin-top: 80px;
+.card p.inner{
+	/*margin-top: 80px;*/
 	border: 1px solid #ccc;
 	font-size: 16px;
+	padding: 10px;
+	color: #FCFCFC;
 }
-.card p a{
+.card .model{
+	font-size: 12px;
+	color: #dcd9d9;
+	position: absolute;
+	left: 10px;
+	bottom: 5px;
+	padding-right: 10px;
+	
+}
+.card .tips{
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	color: #FCFCFC;
+	box-sizing: border-box;
+	background-color: rgba(12, 23, 37, 0.7);
+	position: absolute;
+	text-align: left; 
+	/*display: none;*/
+	z-index: 2;
+	bottom: -100%;
+	left: 0;
+}
+.card .tips p{
+	border: none;
+	margin: 0;
+	font-size: 12px;
+}
+.card .tips h4{
+	margin-bottom: 5px;
+}
+/*.card p a{
 	color: #fff;
 }
 .card p a:hover{
 	color: #D8D3D3;
-}
-.card:first-child/*背景颜色渐变*/
+}*/
+
+.card-group .card:nth-of-type(1)/*背景颜色渐变*/
 {
 	background: rgba(128,128,128,0.3);
 }
-.card:nth-child(2)
+.card-group .card:nth-of-type(2)
 {
 	background: rgba(128,128,128,0.1);
 }
-.card:nth-child(3)
+.card-group .card:nth-child(3)
 {
 	background: rgba(128,128,128,0.3);
 }
-.card:nth-child(4)
+.card-group .card:nth-child(4)
 {
 	background: rgba(128,128,128,0.1);
 }
-.card:hover{
-	background: rgba(128,128,128,0.5);
+.card:hover .tips{
+	/*display: block;*/
+	bottom: 0;
+	transition: 0.5s all ease;
+}
+
+/*实习经历*/
+.internship-content{
+	width: 80%;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.internship-content h4{
+	font-size: 20px;
+}
+.internship-content h4 span{
+	padding-left: 30px;
+	font-size: 14px;
+	color: #545252;
+}
+.internship-content p{
+	font-size: 16px;
 }
 footer
 {
@@ -322,3 +388,73 @@ ul.share-group
 	font-size: 13px;
 	text-indent: 40px;
 }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-200%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+}
+.zoomInUp {
+  animation-name: zoomInUp;
+}
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+
+
+

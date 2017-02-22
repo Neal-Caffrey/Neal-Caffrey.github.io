@@ -1,9 +1,24 @@
-﻿
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
-	<title>刘克鹏主页</title>
+	<title>刘克鹏在线简历</title>
+ <!--  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+  <!-- UC强制全屏 -->
+  <!-- <meta name="full-screen" content="yes"> -->
+  <!-- QQ强制全屏 -->
+  <!-- <meta name="x5-fullscreen" content="true"> -->
+  <!-- UC应用模式 -->
+  <!-- <meta name="browsermode" content="application"> -->
+  <!-- QQ应用模式 -->
+  <!-- <meta name="x5-page-mode" content="app"> -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 	<link rel="stylesheet" type="text/css"  href="stylesheets/main.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/jquery.pagepiling.css" />
@@ -12,128 +27,179 @@
 </head>
 <body>
 
-    <div class="main-wrapper" id="pagepiling"> <!--添加背景图片容器-->
+  <div class="main-wrapper" id="pagepiling">
     <header class="section">
     	<nav>
     		<div class="logo"><a href="#">刘克鹏</a></div>
     		<ul>    		
-    			<li><a href="#" class="active">首页</a></li>
-    			<li><a href="#" class="tips">随笔</a></li>
-    			<li><a href="#" class="tips">关于</a></li>
-    			<li><a href="#" class="tips">联系</a></li>
-
+    			<li><a href="#" id="index" class="active">首页</a></li>
+    			<li><a href="#" id="demo" class="tips">线上作品</a></li>
+    			<li><a href="#" id="skill" class="tips">相关技能</a></li>
+          <li><a href="#" id="internship" class="tips">实习经历</a></li>
+    			<li><a href="#" id="about" class="tips">关于我</a></li>
     		</ul>
     	</nav>
     	<div id="banner"  >
     		<div class="inner">
-          <img src="index-img/logo.jpg">
-    			<hr>
+          <img src="index-img/logo.jpg" class="zoomIn animated">
+    			<hr class="slideInLeft animated">
     			<h1>刘克鹏</h1>
-    			<hr>
-    			<p class="sub-heading">
-    				不安于现状 不甘于平庸</p>
-            <p class="sub-heading">前端开发实习生</p>
-            <p class="sub-mail">liukepeng1994@163.com</p>
-    			<button id="btn"><a>了解我</a></button>
-                
+    			<hr class="slideInRight animated">
+    			<p class="sub-heading">不安于现状 不甘于平庸</p>
+          <p class="sub-heading">前端开发工程师</p>
+          <p class="sub-mail">1020891529@qq.com</p>
+    			<button id="btn" class="zoomInUp animated"><a>了解我</a></button>
     		</div>
     	</div>
     </header>
-	
-	<!-- <div class="content"> -->
-      <section class="about section" id="aboutMe">
-        <div class="wrapper">
-          <h1 class="wrap-title">关于我</h1>
-          <div class="hr1"></div>
-          <div class="about-content">
-            <p>22岁</p>
-            <p>北京信息科技大学</p>
-            <div class="about-content-me">
-            <p>大三学生，非常喜爱设计简洁，优美的网站。
-            2015年8月开始接触到Web前端，学习了HTML,CSS相关技术，仿佛打开了新世界大门，之后陆续学习了JavaScript和jQuery等技术，接触到一些框架，之前迷茫的我找到了方向，决定为此继续奋斗！</p>
+    <!-- 线上作品 -->
+    <section class="demo section">
+      <div class="wrapper">
+        <h1 class="wrap-title">线上作品</h1>
+        <div class="hr1"></div>
+        
+         <div class="card-group clearfix">
+            <div class="card">
+              <a href="https://www.huangbaoche.com/app/lineList.html" target="_blank">
+                <p class="inner">皇包车PC端官网</p>
+                <p class="model">注：这是PC端页面，请用电脑查看</p>
+                <div class="tips">
+                  <h4>包含内容：</h4>
+                  <p>线路包车游、定制包车游选择商品到下单结束，包含订单等所有页面切图</p>
+                  <h4>所用技术：</h4>
+                  <p>HTML5,SCSS</p>
+                </div>
+              </a>
             </div>
-          </div>
-        </div>
-      </section>
-        <section class="skill section" >
-        <div class="wrapper">
-          <h1 class="wrap-title">相关技能</h1>
-          <div class="hr1"></div>
-          <div class="skill-content">
-            <div class="skill-show">
-              <div class="show-part"><div>HTML</div></div>
-              <div class="show-part"><div>CSS</div></div>
-              <div class="show-part"><div>JavaScript</div></div>
-              <div class="show-part"><div>jQuery</div></div>
+            <div class="card">
+              <a href="https://www.yundijie.com" target="_blank" class="clearfix">
+                <p class="inner">云地接官网</p>
+                <p class="model">注：这是PC端页面，请用电脑查看</p>
+                <div class="tips">
+                  <h4>包含内容：</h4>
+                  <p>云地接新版首页、入驻、司兼导包车、下单等所有页面切图以及相关效果编写</p>
+                  <h4>所用技术：</h4>
+                  <p>HTML5,SCSS,jQuery</p>
+                </div>
+              </a>
             </div>
-            <div class="skill-text">
-              <p>深刻理解Web标准，能熟练的运用HTML,CSS编写页面</p>
-              <p>熟悉JavaScript和jQuery，正在继续学习。</p>
-              <p>对前端技术兴趣浓厚</p>
+             
+            
+            <div class="card">
+              <a href="https://m.huangbaoche.com/app/pickup.html" target="_blank" class="clearfix">
+                <p class="inner">皇包车移动端接送机，<br/>下单流程单页面实现</p>
+                <p class="model">注：这是移动端页面，请用电脑浏览器手机模拟器查看</p>
+                <div class="tips">
+                  <h4>包含内容：</h4>
+                  <p>移动端官网接送机，单页面实现整个下单流程，交互逻辑编写</p>
+                  <h4>所用技术：</h4>
+                  <p>HTML5,SCSS,ES6,Zepto,Juicer</p>
+                </div>
+              </a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="demo section">
-        <div class="wrapper">
-          <h1 class="wrap-title">我的作品</h1>
-          <div class="hr1"></div>
-          
-           <div class="card-group clearfix">
-               <div class="card">                 
-                   <P><a href="task7/index.html" target="_blank">常见的公司网站1<br/>
-                    新世界</a></P>
-                   
-               </div> 
-               <div class="card">
+            
+            
+            <div class="card">
+              <a href="https://act.huangbaoche.com/h5/cactivity/blackCard/index.html" target="_blank" class="clearfix">
+                <p class="inner">黑卡管家活动宣传H5</p>
+                <p class="model">注：这是移动端页面，请用电脑浏览器手机模拟器查看</p>
+                <div class="tips">
+                  <h4>包含内容：</h4>
+                  <p>皇包车黑卡管家活动宣传所有页面完整实现</p>
+                  <h4>所用技术：</h4>
+                  <p>HTML5,SCSS,ES6,Zepto,Juicer</p>
+                </div>
+              </a>
+            </div>
               
-                   <P><a href="task9/index.html" target="_blank">常见的公司网站2<br/>
-                    Caffrey
-                   </a></P>
-                
-               </div> 
-                <div class="card">
-                     <P><a href="imooc/index.html" target="_blank">常见的公司网站3<br/>
-                    慕课网</a></P>
-               </div> 
-               <div class="card">
-                     <P><a href="jQuery-message/message.html" target="_blank">基于jQuery的<br/>留言板</a></P>
-               </div> 
-           </div>
-            <div class="demo-text"><p>这里是一部分demo，了解更多请点击<a href="https://github.com/Neal-Caffrey" target="_blank">&nbsp;这里</a></p>
-           </div>
-        </div>
-        <footer>
-          <ul class="share-group">
-            <li><a href="http://www.qq.com" target="_blank"><img src="index-img/qq.jpg"></a></li>
-            <li><a href="http://www.sina.com.cn/" target="_blank"><img src="index-img/weibo.jpg"></a></li>
-            <li><a href="http://www.twitter.com" target="_blank"><img src="index-img/twitter.jpg"></a></li>
-            <li><a href="http://www.baidu.com" target="_blank"><img src="index-img/net.jpg"></a></li>
-          </ul>
+         </div>
+          <div class="demo-text"><p>这是一部分线上作品，查看更多demo请点击<a href="https://github.com/Neal-Caffrey" target="_blank" >&nbsp;这里</a></p>
+         </div>
+      </div>
+      <!-- <footer>
+        <ul class="share-group">
+          <li><a href="http://www.qq.com" target="_blank"><img src="index-img/qq.jpg"></a></li>
+          <li><a href="http://www.sina.com.cn/" target="_blank"><img src="index-img/weibo.jpg"></a></li>
+          <li><a href="http://www.twitter.com" target="_blank"><img src="index-img/twitter.jpg"></a></li>
+          <li><a href="http://www.baidu.com" target="_blank"><img src="index-img/net.jpg"></a></li>
+        </ul>
     
-          <div class="coppy">
-          <p>Copyright&copy;2016 刘克鹏</p>
+        <div class="coppy">
+        <p>Copyright&copy;2016 刘克鹏</p>
+        </div>
+      </footer> -->
+    </section>
+    <!-- 相关技能 -->
+    <section class="skill section" >
+      <div class="wrapper">
+        <h1 class="wrap-title">相关技能</h1>
+        <div class="hr1"></div>
+        <div class="skill-content">
+          <div class="skill-show">
+            <div class="show-part"><div>HTML5</div></div>
+            <div class="show-part"><div>CSS/SCSS</div></div>
+            <div class="show-part"><div>JavaScript</div></div>
+            <div class="show-part"><div>jQuery</div></div>
           </div>
-        </footer>
-       </section>
-
+          <div class="skill-text">
+            <p>熟练的运用HTML,CSS高度还原设计稿，像素级的追求</p>
+            <p>熟练运用JavaScript和jQuery，对原型，继承，作用域，闭包等概念有一定了解</p>
+            <p>熟练运用git常用命令，前端模板引擎Juicer等，熟悉webpack,es6开发模式，了解vue.js</p>
+            <p>拥有满腔的激情，对技术的狂热追求，但，路还很长，坑还很深，还需加倍努力</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 实习经历 -->
+    <section class="internship section" >
+      <div class="wrapper">
+        <h1 class="wrap-title">实习经历</h1>
+        <div class="hr1"></div>
+        <div class="internship-content">
+          <div class="internship-item">
+            <h4>中交第四公路工程局技术实习生<span>2014. 7．6—2014.10.6</span></h4>
+            <p>负责利用CAD绘制一些施工图纸。过程中学到了很多CAD的知识。</p>
+          </div>
+          <div class="internship-item">
+            <h4>北京纯粹旅行有限公司前端实习生<span>2016.7.21--至今</span></h4>
+            <p>从刚开始的切图开始，完成了皇包车PC端，移动端，云地接大部分页面的切图，熟练进行页面布局，高度还原设计稿。</p>
+            <p>进一步参与实际项目的开发，完成了移动端接送机下单所有流程，黑卡管家宣传H5，圣诞砍价活动等并成功上线。熟悉了webpack,es6,juicer,git等技术，对MVC,MVVM模式有了一定了解。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 关于我 -->
+    <section class="about section" id="aboutMe">
+      <div class="wrapper">
+        <h1 class="wrap-title">关于我</h1>
+        <div class="hr1"></div>
+        <div class="about-content">
+          <p>23岁</p>
+          <p>北京信息科技大学</p>
+          <p>电子信息工程专业</p>
+          <div class="about-content-me">
+          <p>大四学生，偶然的机会接触前端，仿佛打开了新世界的大门，从此便义无反顾的入坑。酷爱前端技术，喜欢不断探索新东西，写出高性能的代码和页面是我的追求，不断的学习是一个令人非常愉悦的过程。世界很大，路还很长，带上我一起走吧～</p>
+          </div>
+        </div>
+      </div>
+    </section>
 	</div>
-	<!-- </div> -->
   <script type="text/javascript">
-  $(function(){
-  var tips=$(".tips");
-  tips.bind("click",function(){
-    alert("网站正在建设中，谢谢访问！")
-  })
-  })
+  // $(function(){
+  // var tips=$(".tips");
+  // tips.bind("click",function(){
+  //   alert("网站正在建设中，谢谢访问！")
+  // })
+  // })
 //   $(document).ready(function() {
 //     $('#pagepiling').pagepiling();
 // });
   $(document).ready(function() {
+    var wrap = $('.main-wrapper');
     $('#pagepiling').pagepiling({
         menu: null,
         verticalCentered: true,
-        sectionsColor: ["#F2F2F2","#D8E4E8","#B5D6E2"," #93BFCA"],
+        sectionsColor: ["#F2F2F2","#81babf","#81babf","#81babf","#81babf"],
         anchors: [],
         scrollingSpeed: 700,
         easing: 'swing',
@@ -144,7 +210,7 @@
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['首页', '关于我', '相关技能', '我的作品']
+            'tooltips': ['首页', '线上作品', '相关技能', '实习经历','关于我']
         },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -158,11 +224,22 @@
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
     });
-    var btn=$("#btn");
-    btn.bind("click",function(){
+
+    wrap.on("click","#btn",function(){
       $.fn.pagepiling.moveTo('2');
     })
-    
+    .on('click','#demo',function(){
+      $.fn.pagepiling.moveTo('2');
+    })
+    .on('click','#skill',function(){
+      $.fn.pagepiling.moveTo('3');
+    })
+    .on('click','#internship',function(){
+      $.fn.pagepiling.moveTo('4');
+    })
+    .on('click','#about',function(){
+      $.fn.pagepiling.moveTo('5');
+    })
 });
   </script>
 </body>
