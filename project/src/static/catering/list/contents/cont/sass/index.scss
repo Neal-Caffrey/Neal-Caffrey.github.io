@@ -1,0 +1,156 @@
+.c-list-bar{
+	position:relative;
+	padding:0 20px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 44px;
+	color: #0E1A27;
+	span{
+		margin-right: 30px;
+	}
+	
+	.select{
+		color: #F49F1F;
+	}
+	.ui-simple-page{
+		position: absolute;
+		display: inline-block;
+		height: 44px;
+		right:20px;
+		top:0;
+
+	}
+}
+.c-list-cont{
+	min-height: 460px;
+	.list-empty{
+		background: #fff;
+		padding:220px 20px;
+		text-align: center;
+		p{
+			font-size: 18px;
+			color:#9EA5AA;
+		}
+	}
+	ul{
+		margin-top: 20px;
+		li{
+			display: inline-block;
+			margin-right: 30px;
+			background: #FFFFFF;
+			border-radius: 4px;
+			width: 300px;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			vertical-align: top;
+			&:nth-child(3n){
+				margin-right:0;
+			}
+			.list-img{
+				height: 180px;
+				background-color: #efefef;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				&:hover{
+					transform:scale(1.02,1.02);
+					transition:transform .1s ease;
+				}
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.list-con{
+				padding:5px 20px;
+				h5{
+					font-size: 16px;
+					color: #0E1A27;
+					line-height: 30px;
+					a{
+						display: block;
+						width: 100%;
+						height: 100%;
+						white-space: nowrap;
+						text-overflow:ellipsis;
+						overflow: hidden;
+						color: #0E1A27;
+					}
+				}
+				p{
+					position: relative;
+				    display: -webkit-box;
+				    overflow: hidden;
+					margin-top: 10px;
+					color: #6E767D;
+					line-height: 20px;
+					width: 100%;
+					height: 40px;
+					word-break:break-all;
+					overflow: hidden;
+					padding-right: 10px;
+					
+				}
+				.clamp{
+					&:after{
+						content:"...";
+						position:absolute;
+						bottom:0;
+						right:0;
+						background:#fff;
+						height:20px;
+					}
+				}
+
+			}
+			.list-sign{
+				font-size: 12px;
+				color: #9EA5AA;
+				line-height:1.6;
+			}
+			.icon-place{
+				&:before{
+					margin-right: 5px;
+				}
+			}
+			.list-price{
+				padding:0 20px;
+				color: #0E1A27;
+				del,s{
+					text-decoration: none;
+				}
+				s{
+					margin-left: 5px;
+				}
+				span{
+					float:right;
+					font-size: 14px;
+					color: #FA573D;
+					font-weight: bold;
+				}
+			}
+			.list-type{
+				margin-top: 5px;
+				span{
+					background: #FFFFFF;
+					border: 1px solid #F49F1F;
+					border-radius: 10px;
+					color: #F49F1F;
+					padding:0 10px;
+					margin-right: 5px;
+					margin-top: 5px;
+					display: inline-block;
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.ui-page{
+	width: 100%;
+	text-align: center;
+}

@@ -1,0 +1,232 @@
+.ui-user-nav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ui-message {
+        position: relative;
+        width: 85px;
+        height: 68px;
+        border-left: 1px solid #e4e3e3;
+        border-right: 1px solid #e4e3e3;
+        text-align: center;
+        cursor: pointer;
+        span {
+            font-size: 14px;
+            line-height: 68px;
+            display: block;
+            user-select: none;
+            i {
+                font-size: 18px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            code {
+                display: none;
+                position: absolute;
+                top: 8px;
+                right: 10px;
+                width: 18px;
+                height: 18px;
+                background: #FA573D;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 50%;
+                line-height: 18px;
+            }
+            .msg-more {
+                letter-spacing: -1px;
+            }
+        }
+    }
+    .ui-message-cont {
+        display: none;
+        position: absolute;
+        top: 69px;
+        right: 0;
+        width: 320px;
+        background: #fff;
+        min-height: 100px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.13);
+        z-index: 1;
+        padding: 10px 0;
+        font-size: 14px;
+        .ui-message-more {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            color: #0E1A27;
+        }
+        p {
+            padding: 10px 0;
+            text-align: center;
+            color: #585858;
+        }
+        ul {
+            li {
+                position: relative;
+                padding: 10px 20px 0 50px;
+                text-align: left;
+                &:nth-child(2) {
+                    border-bottom: 1px solid #ccc;
+                    padding-bottom: 10px;
+                }
+                i {
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    margin-top: -5px;
+                    font-size: 20px;
+                    &:after {
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        background: #FA573D;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -2px;
+                        right: -2px;
+                    }
+                }
+                div {
+                    display: inline-block;
+                    p {
+                        padding: 0;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .show {
+        display: block!important;
+    }
+    .ui-user {
+        position: relative;
+        width: 115px;
+        height: 68px;
+        cursor: pointer;
+        span {
+            display: inline-block;
+            width: 100%;
+            padding: 13px 0;
+            text-align: center;
+            i,
+            code {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            i {
+                background: url('../images/user-img.png') no-repeat 50% 50%;
+                width: 42px;
+                height: 42px;
+                background-size: cover;
+            }
+            code {
+                position: relative;
+                margin-left: 10px;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    height: 0;
+                    width: 0;
+                    border: 8px solid transparent;
+                    border-top: 10px solid #C9D1DA;
+                }
+            }
+            .change {
+                border-bottom: 10px solid #C9D1DA;
+            }
+        }
+    }
+    .ui-user-cont {
+        display: none;
+        position: absolute;
+        top: 69px;
+        right: 0;
+        background: #fff;
+        width: 156px;
+        font-size: 14px;
+        ol {
+            li {
+                a {
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #585858;
+                    display: block;
+                    &:hover,
+                    &:focus {
+                        background: #F5F7F9;
+                    }
+                    i {
+                        font-size: 18px;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                    .icon-card,
+                    .icon-quit {
+                        font-size: 15px;
+                    }
+                    .icon-account {
+                        font-size: 19px;
+                    }
+                    .icon-fan {
+                        font-size: 17px;
+                    }
+                }
+                .foucs {
+                    background: #F5F7F9;
+                }
+            }
+        }
+    }
+}
+
+.msg-content {
+    dl {
+        display: table;
+        display: flex;
+        width: 100%;
+        font-size: 14px;
+        &:first-child {
+            margin-bottom: 20px;
+        }
+        dt,
+        dd {
+            display: table-cell;
+        }
+
+        dt {
+            width: 30%;
+            text-align: right;
+            padding-right: 20px;
+            line-height: 36px;
+            i {
+                color: red;
+                margin-right: 3px;
+            }
+        }
+        dd {
+            width: 70%;
+            input,
+            textarea {
+                width: 100%;
+                border: 1px solid #DDDEDF;
+                border-radius: 4px;
+                font-size: 14px;
+                padding: 10px;
+                &:hover,
+                &:focus {
+                    border-color: rgba(243, 159, 30, 0.5)!important;
+                    outline: 0;
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(243, 159, 30, 0.5);
+                }
+            }
+        }
+    }
+}

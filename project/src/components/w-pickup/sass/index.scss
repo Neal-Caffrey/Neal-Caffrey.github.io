@@ -1,0 +1,29 @@
+.ant-modal-body{
+  .w-pickup-wrap{
+    width : 300px;
+    margin:auto;
+    .ant-calendar-picker{
+      width : 100%;
+    }
+    .w-pickup-switch{
+      margin : 10px 0;
+      span{
+        font-size: 14px;
+        color: #006CE1;
+        letter-spacing: 0.63px;
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 5px;
+      }
+      span.switch-btn{
+        text-decoration: none;
+        color: #fff;
+        background: #006CE1;
+        border-radius: 4px;
+        padding: 5px 8px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+        .photo-graph{
+             //display:none;
+            .photo-overlay{
+                    background-color: rgba(0, 0, 0, 0.5);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index:110;
+            }
+            .map-wrap{
+             left: 50%;
+             top:132px;
+            position: fixed;
+            width: 700px;
+            z-index:120;
+            background: #FFFFFF;
+            border-radius: 4px;
+            bottom:15%;
+            margin-left:-350px;
+            .map-header{
+                position: relative;
+                height: 74px;
+                font-family: MicrosoftYaHei;
+                text-align: center;
+                .position{
+                    font-size: 22px;
+                    color: #0E1A27;
+                    letter-spacing: 1px;
+                    text-align:center;
+                    line-height:74px;
+
+                    //position: absolute;
+                    // top: 50%;
+                    //  margin-top: -15px;
+                }
+                .close{
+                    position: absolute;
+                    top: 50%;
+                    right: 26px;
+                    margin-top: -15px;
+                    cursor: pointer;
+                    &::before{
+                        content: "\E633";
+                         font-size: 24px;
+                             height: 24px;
+                            line-height: 24px;
+                                display: block;
+                    }
+                }
+            }
+            .map-container{
+                .WG-MapFullScreen{
+                    display:none;
+                    }
+                &>div{
+                    position:absolute;
+                    top:74px!important;
+                    right:0!important;
+                    bottom:0!important;
+                    left:0!important;
+                     }
+                .WG-Map{
+                      width: 700px!important;
+                }
+            }
+
+        }
+        }

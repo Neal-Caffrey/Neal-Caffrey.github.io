@@ -1,0 +1,15 @@
+{
+  "name": "ydj-m",
+  "desc": "ydj-m",
+  "type": "clam",
+  "port": "80",
+  "proxyPort": "8090",
+  "group": "",
+  "src": "true",
+  "combohtml": "true",
+  "env": "daily",
+  "author": {
+    "name": "wangshiqing"
+  },
+  "version": "1.0.19"
+}

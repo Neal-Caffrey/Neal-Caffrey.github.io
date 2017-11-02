@@ -1,0 +1,94 @@
+.routeList{
+  width: 316px;
+  background-color:#ffffff;
+  position:absolute;
+  right:20px;
+  top:0;
+  bottom:0;
+  border-radius:4px;
+  .title{
+    width: 100%;
+    height: 68.6px;
+    background-color:white;
+    padding-top:17px;
+    padding-left:21px;
+    font-size: 18px;
+    color: #0E1A27;
+    letter-spacing: 0;
+  }
+  .routeListBox{
+    width: 316px;
+    padding-left: 22.8px;
+    padding-right: 12px;
+    position: absolute;
+    top: 68.6px;
+    bottom: 0px;
+    padding-bottom: 20px;
+    overflow: auto;
+    //background-color: pink;
+    .none-plan{
+      text-align: center;
+      margin-top: 40%;
+      color: #9EA5AA;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .lists{
+      .list{
+        .listTitle{
+          width: 100%;
+          height: 30.8px;
+          line-height:30.8px;
+          i{
+            color:#0E1A27;
+            font-size:14.5px;
+          }
+          span{
+            margin-left:15.2px;
+            font-size: 14px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            em{
+              font-family: ArialMT;
+              font-size: 12px;
+              color: #6E767D;
+              letter-spacing: 0;
+              margin-left:15px;
+            }
+          }
+        }
+        .content{
+          margin-left:4px;
+          padding-left:20.4px;
+          position:relative;
+          border-left:2px solid rgba(151,151,151,0.2);
+          .baochemsg{
+            padding-bottom:10px;
+            font-size: 12px;
+            color: #0E1A27;
+            letter-spacing: 0;
+          }
+          .jieji,.songji{
+            padding-bottom:10px;
+            max-width: 233px;
+            font-size: 12px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            .jichang{
+              font-size: 12px;
+              color: #F49F1F;
+              letter-spacing: 0;
+              line-height: 16px;
+            }
+          }
+          .tishimsg{
+            padding-bottom:10px;
+            font-size: 12px;
+            color: #6E767D;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+  }
+}

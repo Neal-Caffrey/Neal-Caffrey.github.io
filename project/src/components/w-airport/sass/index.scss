@@ -1,0 +1,185 @@
+.J-airport-wrap {
+  position: absolute;
+  z-index: 3001;
+  background: #fff;
+  width: 500px;
+  height:260px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.16);
+
+  .airport-nav-wrap{
+    overflow: hidden;
+    font-size: 12px;
+    color: #6e767d;
+    letter-spacing: 0px;
+    line-height : 30px;
+    border-bottom : 1px solid rgba(0,0,0,0.16);
+    padding: 0 12px;
+    li.active{
+      border-bottom : 2px solid #F49F1F;
+    }
+    li{
+      float : left;
+      margin : auto 10px;
+      text-align: center;
+      cursor : pointer;
+      min-width: 20px;
+    }
+  }
+  .airport-loading{
+    position: absolute;
+    div.ant-spin.ant-spin-spinning{
+      position: absolute;
+      top: 90px;
+      left: 240px;
+    }
+  }
+  .airport-title {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.63px;
+  }
+  .airport-tips-wrap{
+    background: #f5f7f9;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-left: 12px;
+    font-size : 12px;
+  }
+  .airport-list{
+    padding: 12px 12px;
+    overflow-y: auto;
+    height : 195px;
+    &>li {
+      // width : 25%;
+      // float : left;
+      // height: 30px;
+      // line-height: 30px;
+      // padding-left: 10px;
+      // font-size: 12px;
+      // color: #6e767d;
+      // letter-spacing: 0.63px;
+      // cursor: pointer;
+      align-items: flex-start;
+      margin-bottom : 10px;
+      &>span{
+        width : 7em;
+        color: #F49F1F;
+        letter-spacing: 0.63px;
+        margin-top : 5px;
+        word-break: break-all;
+        white-space: normal;
+      }
+      ul{
+        margin-left : 15px;
+        overflow: hidden;
+        li{
+          width : 50%;
+          float : left;
+          padding: 5px 10px;
+          margin-bottom: 5px;
+          cursor: pointer;
+          &:hover {
+            background: #F5F7F9;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    li.long-item{
+      height : 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    li.filter-wrap{
+      width : 100%;
+      float : none;
+      height : auto;
+      overflow: hidden;
+      position: relative;
+      &:hover{
+        background: transparent;
+        border-radius: 0px;
+      }
+      &>span{
+        position: absolute;
+        color: #F49F1F;
+      }
+      &>div.filter-ul{
+        float : left;
+        overflow: hidden;
+        width: 100%;
+        padding-left: 50px;
+        &>div{
+          float : left;
+          width : 25%;
+          padding : 0 10px;
+
+          &:hover{
+            background: #F5F7F9;
+            border-radius: 4px;
+          }
+        }
+        &>div.long-item{
+          height : 30px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          //&:hover{
+          //  background: #F5F7F9;
+          //  border-radius: 4px;
+          //  height : auto;
+          //  white-space: normal;
+          //  line-height: 1.3rem;
+          //}
+        }
+      }
+    }
+
+  }
+
+}
+.J-airport-wrap.J-search-mode{
+  width: 296px;
+  .airport-title{
+    display: none;
+  }
+  ul.airport-nav-wrap{
+    display: none;
+  }
+  .airport-list{
+    height : 220px;
+    li {
+      width : 100%;
+      padding : 10px;
+      margin-bottom : 0;
+      cursor: pointer;
+      i{
+        font-size: 12px;
+        color: #F49F1F;
+        letter-spacing: 0.63px;
+        font-style: normal;
+      }
+      &:hover{
+        background: #F5F7F9;
+        border-radius: 4px;
+      }
+    }
+    li.airport-dis{
+      font-size: 12px;
+      color: #6e767d;
+      letter-spacing: 0.63px;
+      line-height: 40px;
+    }
+
+  }
+  .airport-loading{
+    position: absolute;
+    div.ant-spin.ant-spin-spinning{
+      position: absolute;
+      top: 90px;
+      left: 150px;
+    }
+  }
+}

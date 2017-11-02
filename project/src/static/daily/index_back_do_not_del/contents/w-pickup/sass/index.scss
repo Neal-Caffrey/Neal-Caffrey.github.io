@@ -1,0 +1,66 @@
+.ant-modal-body{
+  .w-pickup-wrap{
+    margin:auto;
+    .pickup-tab{
+      text-align: center;
+      height: 50px;
+      line-height: 48px;
+      border-bottom: 1px solid #F5F7F9;
+      .pickup-tab-item{
+        display: inline-block;
+        width : 8em;
+        text-align: center;
+        font-size: 14px;
+        color: #0E1A27;
+        letter-spacing: 0;
+        cursor: pointer;
+      }
+      .pickup-tab-item.sel{
+        font-size: 14px;
+        color: #F49F1F;
+        letter-spacing: 0;
+        border-bottom : 2px solid #F49F1F;
+      }
+    }
+    .pickup-model-input{
+      width: 350px;
+      margin : 25px auto;
+      .form-input-wrap{
+        .w-air-code-ul{
+          z-index: 2;
+          ul{
+            li {
+              align-items:flex-start;
+              }
+          }
+        }
+      }
+      .w-searchplace-wrap{
+        width:250px;
+      }
+    }
+    .ant-calendar-picker{
+      width : 100%;
+    }
+    .w-pickup-switch{
+      margin : 10px 0;
+      span{
+        font-size: 14px;
+        color: #006CE1;
+        letter-spacing: 0.63px;
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 5px;
+      }
+      span.switch-btn{
+        text-decoration: none;
+        color: #fff;
+        background: #006CE1;
+        border-radius: 4px;
+        padding: 5px 8px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

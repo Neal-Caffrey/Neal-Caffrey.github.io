@@ -1,12 +1,15 @@
-*.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+**/.DS_Store
+**/validate.xml
+./project/node_modules
+**/sftp-config.json*
+**/*.xlsx
+**/**.iml
+**/public/*/*
+./project/npm-debug.log
+./project/.DS_Store
+./project/.idea
+./project/.idea/*
+./project/.cache
+./project
 
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*

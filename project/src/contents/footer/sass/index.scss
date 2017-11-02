@@ -1,0 +1,53 @@
+$baseColor : #cfd1d4;
+.ui-footer{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width: 100%;
+	height:100px;
+	min-width: 1280px;
+	padding-left: 240px;
+	background: #0E1A27;
+	font-size: 14px;
+	color: $baseColor;
+	ul{
+		padding-top: 30px;
+		li{
+			float:left;
+			display: inline;
+			
+			&:after{
+				content: "|";
+				font-style: normal;
+				color: $baseColor;
+				font-family: MicrosoftYaHeiLight;
+				font-weight: 100;
+			}
+			&:last-child{
+				&:after{
+					display: none;
+				}
+			}
+			&:first-child{
+				a{
+					padding-left: 0;
+				}
+			}
+			a{
+				font-family: MicrosoftYaHeiLight;
+				font-weight: 100;
+				color: $baseColor;
+				padding:0 20px;
+				font-size: 14px;
+			}
+		}
+	}
+	p{
+		padding-top: 5px;
+		font-size: 12px;
+		color:#6E767D;
+		em{
+			padding-left: 30px;
+		}
+	}
+}

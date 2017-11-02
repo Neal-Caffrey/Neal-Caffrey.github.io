@@ -1,0 +1,113 @@
+/* 清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+    /* for ie6 & ie7 */
+    /* display: block; */
+}
+
+.clear {
+    clear: both;
+    overflow: hidden;
+}
+
+body {
+    background: #f5f7f9
+}
+@media only screen and (min-height: 700px) {
+    #ui-wrap .main{
+        min-height: 890px;
+    }
+}
+#ui-wrap {
+    .main{
+        width: 1000px;
+        margin: 0 auto;
+        padding: 88px 0 120px;
+        color: #6E767D;
+        font-size: 14px;
+
+    }
+
+    div.ui-header {
+        top: 0;
+        left: 0;
+    }
+    .ui-footer{
+        position: static;
+    }
+    .left-side {
+        width: 300px;
+        float: left;
+    }
+    .right-side {
+        width: 680px;
+        float: right;
+        .nav-bar {
+            height: 60px;
+            line-height: 60px;
+            background: #fff;
+            border-radius: 4px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            li {
+                float: left;
+                width: 100px;
+                text-align: center;
+                cursor: pointer;
+                position: relative;
+                margin-right: 25px;
+                &.active {
+                    color: #F49F1F;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 4px;
+                        background-color: #F49F1F;
+                    }
+                }
+            }
+        }
+        .tab-con {
+            background: #fff;
+            border-radius: 4px;
+            .comment-loading {
+                text-align: center;
+                padding: 100px;
+            }
+        }
+        .tab-empty{
+            text-align: center;
+            padding: 0 0 200px;
+            background: url(../images/empty.png) no-repeat center 110px;
+            background-size: 110px 97px;
+            p{
+                padding-top: 230px;
+                color: #9EA5AA;
+            }
+        }
+    }
+    .ant-spin {
+        color: #F49F1F;
+        .ant-spin-dot {
+            i {
+                background-color: #F49F1F;
+            }
+        }
+    }
+
+}

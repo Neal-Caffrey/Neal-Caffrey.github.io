@@ -1,0 +1,35 @@
+.ui-input{
+	position: relative;
+	&:hover,&:focus{
+		border-color: rgba(243, 159, 30, 0.5) !important;
+    	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	}
+	span{
+		position: absolute;
+		left:0;
+		top:29px;
+		display: none;
+		background: #fdecd2;
+		border-bottom-left-radius:4px;
+		border-bottom-right-radius : 4px;
+		font-family: MicrosoftYaHeiLight;
+		font-size: 12px;
+		color: #FA573D;
+		padding-top:1px;
+		padding-bottom:1px;
+		text-indent: 10px;
+		width: 100%;
+	}
+	.focus{
+		border-color: #F49F1F!important;
+	}
+	input{
+		border:none;
+		width: 100%;
+		outline: none;
+		height: 100%;
+	}
+	.show{
+		display: inline-block;
+	}
+}

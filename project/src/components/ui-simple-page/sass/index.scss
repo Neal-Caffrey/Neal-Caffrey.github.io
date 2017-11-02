@@ -1,0 +1,19 @@
+.ui-simple-page{
+	s,a{
+		color: #0E1A27;
+		margin-left:10px;
+		user-select:none;
+	}
+	s{
+		text-decoration: none;
+	}
+	a{
+		padding:4px 10px;
+		border: 1px solid #0E1A27;
+		border-radius: 4px;
+	}
+	.no-next-page{
+		border-color:#efefef;
+		color:#ccc;
+	}
+}

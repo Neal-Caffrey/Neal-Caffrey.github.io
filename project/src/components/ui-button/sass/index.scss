@@ -1,0 +1,16 @@
+.ui-btn-wrap{
+  background: #F49F1F;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(244, 159, 31, 0.5);
+  text-align: center;
+  padding : 10px 0;
+  &.ui-btn-wrap:hover{
+    background : rgba(244, 159, 31,.8);
+  }
+  &.ui-btn-wrap:active{
+    background : rgba(244, 159, 31,.9);
+  }
+}
