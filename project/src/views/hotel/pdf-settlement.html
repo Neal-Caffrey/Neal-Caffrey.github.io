@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .order-detail-main {
+            width: 700px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .order-detail-wrap {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .order-detail-header {
+            padding: 15px 0 15px 10px;
+            display: -webkit-box;
+            display: flex;
+            border-bottom: 1px solid #9ea5aa;
+        }
+
+        .order-detail-header table {
+            width: 100%;
+        }
+
+        .order-detail-header td:first-of-type {
+            text-align: left;
+        }
+
+        .order-detail-header td:last-of-type {
+            text-align: right;
+        }
+
+        .yuding-msg {
+            font-size: 12px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            line-height: 20px;
+        }
+
+        .yuding-msg .yuding-head {
+            margin-top: 30.5px;
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 16px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            line-height: 30px;
+        }
+
+        .yuding-msg .yuding-table1 {
+            margin-top: 9px;
+            width: 660px;
+            border-collapse: collapse;
+        }
+
+        .yuding-msg .yuding-table1 tr {
+            width: 100%;
+        }
+
+        .yuding-msg .yuding-table1 tr td {
+            width: 100%;
+            word-break: break-all;
+            text-align: left;
+            line-height: 30px;
+        }
+
+        .yuding-table2 {
+            margin-top: 25.5px;
+            width: 660px;
+            border: 1px solid #D3DDE6;
+            border-collapse: collapse;
+        }
+
+        .yuding-detail-table td{
+            padding:5px 7.5px 5px 7.5px;
+        }
+        .yuding-table2 .table2-msgs {
+            width: 100%;
+        }
+
+        .yuding-table2 .table2-msgs td {
+            text-align: center;
+            font-size: 12px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            line-height: 20px;
+        }
+        .yuding-table2 .table2-msgs .price{
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 16px;
+            color: #FA573D;
+            letter-spacing: 0;
+            line-height: 20px;
+        }
+        .table2-column {
+            heigth: 50px;
+            background-color: #F5F7F9;
+        }
+
+        .table2-column tr td {
+            font-family: PingFangSC-Semibold;
+            line-height: 17px;
+        }
+        .table2-content{
+            border-bottom: 1px solid #D3DDE6;
+        }
+
+        .table2-content td {
+            border-bottom:1px solid #D3DDE6;
+            border-right: 1px solid #D3DDE6;
+            word-break: break-all;
+            max-width: 163px;
+        }
+
+        .hotel-msg {
+            font-size: 12px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            line-height: 30px;
+        }
+
+        .hotel-msg .hotel-msg-head {
+            margin-top: 20px;
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 16px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            line-height: 30px;
+        }
+
+        .hotel-msg .hotel-msg-head table {
+            width: 100%;
+            margin-top: 9px;
+            border-collapse: collapse;
+        }
+        .hotel-msg .hotel-msg-head table tr {
+            width: 100%;
+        }
+        .hotel-msg .hotel-msg-head table tr td {
+            width: 100%;
+            font-size: 12px;
+            color: #0E1A27;
+            letter-spacing: 0;
+            line-height: 30px;
+        }
+        .attention .attention-msgs p {
+            margin: 0;
+        }
+        .canceling-rules-detail {
+            width: 524px;
+            height: 99px;
+            margin-bottom: 66px;
+        }
+        .canceling-rules-detail td{
+            width: 164px;
+            height: 49.5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="order-detail-main">
+    <div class='order-detail-wrap'>
+        <div class="order-detail-header">
+            <table>
+                <tbody>
+                <tr>
+                    <td width="40%"><p>INVOICE  酒店结算单</p></td>
+                    <td width="60%"><p></p>
+                        <p></p></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="yuding-msg">
+            <div class="yuding-head">Booking Information 预订信息</div>
+            <table class="yuding-table1">
+                <tbody>
+                <tr>
+                    <td>Hotel Name（酒店名称）：B&B Hôtel Paris Est Bondy  巴黎东邦迪民宿酒店</td>
+                </tr>
+                <tr>
+                    <td>Hotel address（酒店地址）：36-40, avenue de Paris</td>
+                </tr>
+                <tr>
+                    <td>Hotel Tel:（酒店电话）：33-1-42110809</td>
+                </tr>
+                <tr>
+                    <td>Booking No（订单号）：H21145116911</td>
+                </tr>
+                <tr>
+                    <td>Booking Date（下单时间）：2017-06-19 16:37:10</td>
+                </tr>
+                <tr>
+                    <td>City（预订城市）：巴黎</td>
+                </tr>
+                <tr>
+                    <td>Guest Name（入住人）：LI/ANG，ZHANG/SAN</td>
+                </tr>
+                <tr>
+                    <td>Travel Dates（入住日期）：(2017-03-29 -- 2017-03-31)</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="yuding-table2 yuding-detail-table">
+                <tbody>
+                <tr class="table2-msgs table2-column">
+                    <td class="room-type  first-td">Room Type <br/>(房型)</td>
+                    <td class="guests">No. of Night(s) <br/>（入住晚数）</td>
+                    <td class="room-type">No. of Room(s) <br/>（房间数）</td>
+                    <td class="bed-type">Breakfast <br/>（早餐）</td>
+                    <td class="breakfast">Pax <br/>（住客人数）</td>
+                    <td class="pax  last-td">Price <br/>(价格)</td>
+                </tr>
+                <tr class="table2-msgs table2-content">
+                    <td class="room-type">City View, <br/>双人双床房 - 含早餐</td>
+                    <td class="num-of-nights">2</td>
+                    <td class="num-of-rooms"><p>2</p></td>
+                    <td class="breakfast">Not Include(不含早餐)</td>
+                    <td class="pax">2 Adult(成人)<br/>1 Child(儿童)</td>
+                    <td class="price">￥408</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="hotel-msg">
+            <div class="hotel-msg-head">Canceling Rule  取消规则</div>
+            <table>
+                <tbody>
+                <tr>
+                    <td>2017年07月18日00:00:00 之前免费取消</td>
+                </tr>
+                <tr>
+                    <td> 2017年07月18日00:00:00   -   2017年07月19日00:00:00取消订单，需要扣除金额￥259</td>
+                </tr>
+                <tr>
+                    <td>2017年07月19日00:00:00 之后不可取消</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="yuding-msg">
+            <table class="yuding-table2 canceling-rules-detail">
+                <tr class="table2-msgs table2-column">
+                    <td class="reservation first-td">Reservation<br/>(预订费用)</td>
+                    <td class="canceling-fee">Cancel Fee <br/>（取消费用）</td>
+                    <td class="total  last-td">Total <br/>（总计）</td>
+                </tr>
+                <tr class="table2-msgs table2-content">
+                    <td class="reservation first-td">￥408</td>
+                    <td class="canceling-fee">——</td>
+                    <td class="total last-td">￥408</td>
+                </tr>
+            </table>
+        </div>
+        <div class="attention">
+            <div class="noshow">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

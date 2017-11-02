@@ -1,0 +1,70 @@
+.search-group{
+	position: relative;
+	.showView{
+		display: block;
+	}
+	input{
+		cursor: pointer;
+	}
+}
+.search-keyword{
+	display: none;
+	position: absolute;
+	left:0;
+	top:36px;
+	z-index: 200;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.16);
+	width: 560px;
+	min-height: 56px;
+	.empty{
+		width: 100%;
+		text-align: center;
+		color:#6e767d;
+		line-height: 56px;
+	}
+	.loading{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 20px;
+		height:20px;
+		margin-left:-10px;
+		margin-top:-10px;
+		display: inline-block;
+		text-align: center;
+	}
+	.search-keyword-main{
+		.keyword-small{
+			background-size: 25px!important;
+    		background-position-y: 8px!important;
+		}
+		.search-keyword-view{
+			background:#fff url('../images/icon-hotel.png') no-repeat 30px 20px;
+			padding : 10px 10px 10px 94px;
+			a{
+				display: block;
+				font-size: 14px;
+				color: #6E767D;
+				padding:5px 10px;
+				&:hover,&:focus{
+					background: #F5F7F9;
+					border-radius: 4px;
+					color:#0E1A27;
+				}
+				.fl-left{
+					float:left;
+				}
+				.fl-right{
+					float:right;
+				}
+			}
+			.select{
+				background: #F5F7F9;
+				border-radius: 4px;
+				color:#0E1A27;
+			}
+		}
+
+	}
+}

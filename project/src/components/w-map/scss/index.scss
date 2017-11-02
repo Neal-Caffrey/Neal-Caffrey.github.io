@@ -1,0 +1,78 @@
+/*
+* need to edit this scss
+*/
+.WG-MapFullScreen{
+	position : absolute;
+	right : 10px;
+	top : 10px;
+	z-index : 10;
+	background-color : rgba(0,0,0,0.5);
+	background-position : 10px center;
+	background-repeat : no-repeat;
+	cursor :pointer;
+	color : #fff;
+	font-size : 16px;
+	padding : 6px 8px 6px 30px;
+}
+.WG-MapFullScreenBtn{
+	position : absolute;
+	right: -36px;
+	top: 0px;
+	z-index: 10;
+	width: 36px;
+	height: 36px;
+	background : url('../img/close.png');
+	background-size: contain;
+	background-color : rgba(0,0,0,0.5);
+	background-position : center;
+	background-repeat : no-repeat;
+	cursor :pointer;
+	text-indent : -9999em;
+
+}
+.WG-Map{
+	width : 500px;
+	height : 500px;
+	position: relative;
+	overflow: hidden;
+	.WG-Position{
+		width : 500px;
+		height : 500px;
+		position: relative;
+	}
+
+}
+.WG-MapFull{
+	width : 100%;
+	height : 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	.WG-MapOverLay{
+		position: absolute;
+		left : 50%;
+		top : 50%;
+		transform: translate(-50%,-50%);
+		width : 900px;
+		height : 540px;
+	}
+}
+.WG-FlightIco{
+	background-image: url('../img/flight.png');
+	background-position: center;
+	background-size : 18px 10px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height : 25px;
+}
+.map-desc{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 37px;
+	line-height: 1.5em;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	p{
+		padding: 10px;
+	}
+}

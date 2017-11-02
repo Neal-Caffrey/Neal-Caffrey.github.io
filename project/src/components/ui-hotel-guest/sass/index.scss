@@ -1,0 +1,97 @@
+$input_height:36px;
+$line_height:34px;
+$button_height:42px;
+$input_border:1px solid #DDDEDF;
+$input_border-radius:4px;
+$input_border-radius:4px;
+$icon_scale: scale(0.75) rotate(0deg);
+$icon_open_scale: scale(0.75) rotate(180deg);
+$active_color: #F49F1F;
+$select_menu_bg:#F5F7F9;
+.button_common {
+	box-sizing: border-box;
+	height: $input_height;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: $line_height;
+	border: $input_border;
+	border-radius: $input_border-radius;
+}
+.ui-guest-select-wrap {
+    display: inline-block;
+	width: 160px;
+	height: 36px;
+	> .ant-btn {
+        width: 100%;
+		font-size:14px;
+		color: #0E1A27;
+		&:hover {
+			color: #0E1A27;
+		}
+		@extend .button_common;
+		.anticon {
+			font-size:16px;
+			transform: $icon_scale;
+		}
+		&.open {
+			border-color: $active_color;
+			.anticon { 
+				transform: $icon_open_scale;
+			}
+		}
+	}
+}
+/*dropdown*/
+.dropdown-guest-panel {
+	position: absolute;
+	width: 430px;
+	padding: 10px 20px 36px;
+	border: 1px solid #DDDEDF;
+	background: #fff;
+	z-index: 600;
+    .submit-btn {
+    	width: 150px;
+    	height: $input_height;
+    	font-size: 16px;
+    	color: #fff;
+    	border-color: #F49F1F;
+    	background: #F49F1F;
+    }
+    .room-adult-select,
+    .room-child-select,
+    .room-child-age  {
+    	width: 142px;
+    }
+    .title {
+    	font-size: 14px;
+    	line-height: 36px;
+    	margin-bottom: 10px;
+    }
+    label {
+    	width: 37px;
+    	display: inline-block;
+    	font-size: 12px;
+    }
+    .row {
+    	margin-bottom: 10px;
+    }
+    .adult-col {
+    	width: 50%;
+    	float: left;
+    }
+    .child-col {
+    	width: 50%;
+    	float: right;
+    }
+    .age-col {
+    	&:nth-child(2n){
+			width: 50%;
+    		float: right;
+    	}
+    	&:nth-child(2n + 1){
+			width: 50%;
+    		float: left;
+    	}
+    }
+
+}

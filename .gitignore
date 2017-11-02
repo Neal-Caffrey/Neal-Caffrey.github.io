@@ -1,15 +1,14 @@
 
 **/.DS_Store
 **/validate.xml
-./project/node_modules
+project/node_modules
 **/sftp-config.json*
 **/*.xlsx
 **/**.iml
 **/public/*/*
-./project/npm-debug.log
-./project/.DS_Store
-./project/.idea
-./project/.idea/*
-./project/.cache
-./project
+project/npm-debug.log
+project/.DS_Store
+project/.idea
+project/.idea/*
+project/.cache
 

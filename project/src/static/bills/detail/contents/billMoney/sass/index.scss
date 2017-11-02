@@ -1,0 +1,93 @@
+ .bill-Money{
+                // width:1080px;
+
+                position:relative;
+                padding:20px 26px 100px;
+                margin-top:20px;
+                background: #F5F7F9;
+                border-radius: 4px;
+                overflow:hidden;
+                // display:block;
+                // clear:both;
+                // content:'';
+                >div{
+                   &.Money{
+                    float:left;
+                    max-width: 400px;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                    margin-right:233px;
+                   }
+                   &.message-left{
+                    // float:left;
+                     position:absolute;
+                     left:500px;
+                   }
+                   &.message-right{
+                    float:right
+                   }
+                    span{
+                        font-family: MicrosoftYaHei;
+                        font-size: 12px;
+                        color: #6E767D;
+                        letter-spacing: 0;
+                        line-height: 26px;
+                        &.content{
+                            font-family: MicrosoftYaHei;
+                            font-size: 16px;
+                            color: #0E1A27;
+                            letter-spacing: 0;
+                        }
+                        &.title-money{
+                            font-family: MicrosoftYaHei-Bold;
+                            font-size: 16px;
+                            color: #FA573D;
+                            letter-spacing: 0;
+                            margin-left:10px;
+                        }
+                    }
+                    &.message-left{
+                        // margin-left:233px;
+                        padding-left:34px;
+                        border-left: 1px solid #D3DDE6;
+                    }
+                    &.message-right{
+                        margin-left:60px;
+                    }
+                    &.load{
+                        position:absolute;
+                        left:26px;
+                        bottom:23px;
+                        .finished{
+                            font-family: MicrosoftYaHei;
+                            font-size: 14px;
+                            color: #006CE1;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            text-decoration:underline
+                        }
+                        .excel{
+                            background: #F49F1F;
+                            border-radius: 4px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 14px;
+                            color: #FFFFFF;
+                            letter-spacing: 0;
+                            padding:9px 16px;
+                            margin-left:30px;
+                            margin-right:10px;
+                        }
+                        .pdf{
+                            background: #FFFFFF;
+                            border: 1px solid #F49F1F;
+                            border-radius: 4px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 14px;
+                            color: #F49F1F;
+                            letter-spacing: 0;
+                            padding:9px 18px;
+                        }
+                    }
+                }
+
+            }

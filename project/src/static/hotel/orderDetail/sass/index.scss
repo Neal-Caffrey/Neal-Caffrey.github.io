@@ -1,0 +1,241 @@
+.btn-full, a.btn-full{
+  background: #F49F1F;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #F49F1F;
+}
+.btn-fill{
+  color: #F49F1F;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #F49F1F;
+}
+.ant-btn.btn-fill:hover,.ant-btn.btn-fill:focus{
+  color: #F49F1F;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #F49F1F;
+}
+.ant-btn.btn-full:hover, .ant-btn.btn-full:focus, a.btn-full:hover, a.btn-full:focus{
+  background: #F49F1F;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #F49F1F;
+}
+a.btn-full {
+  height: 28px;
+  display: inline-block;
+  line-height: 28px;
+  padding: 0 15px;
+}
+.order-detail-main{
+  padding : 20px;
+  background: #fff;
+  margin-bottom : 80px;
+}
+.flex{
+  display: flex;
+}
+.flex1{
+  flex:1;
+}
+.flex2{
+  flex:2;
+  padding-left: 30px;
+  word-break: break-all;
+}
+div.flex1{
+  word-break: break-all;
+}
+.order-detail-wrap{
+  .order-detail-header{
+    padding : 15px 0 15px 10px;
+    display: flex;
+    border-bottom:1px solid rgba(158,165,170,0.5);
+    p{
+      flex : 1;
+      font-family: MicrosoftYaHei;
+      font-size: 16px;
+      color: #0E1A27;
+      letter-spacing: 0px;
+      position: relative;
+      span{
+        position: absolute;
+        right:20px;
+        font-size: 14px;
+        em{
+          padding-left: 5px;
+          color: #FA573D;
+          code{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .order-detail-btns{
+      button, a{
+        vertical-align: middle;
+      }
+    }
+  }
+  .order-detail-goods{
+    display: flex;
+    padding : 20px 0;
+    .order-detail-img{
+      width : 200px;
+      height : 150px;
+      background-size : cover;
+      background-position: center;
+      background-color: rgba(211, 221, 230, 0.4);
+    }
+    .order-detail-goods-des{
+      flex : 1;
+      margin-left : 25px;
+      .order-detail-goods-title{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 18px;
+        color: #0E1A27;
+        letter-spacing: 0px;
+        line-height: 24px;
+        p{
+          margin-bottom : 8px;
+        }
+      }
+      .order-detail-goods-rate{
+
+      }
+      .order-detail-goods-add{
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        color: #0E1A27;
+        letter-spacing: 0px;
+        line-height: 22px;
+      }
+    }
+  }
+  .pass-info{
+    span{
+      display: inline-block;
+      width: 80px;
+    }
+    .nationality {
+      margin-left: 7em;
+    }
+  }
+  .order-detail-pass{
+    padding : 25px 0;
+    border-bottom : 1px solid rgba(158,165,170,0.2);
+    /*table span{
+      display: inline-block;
+      max-width: 800px;
+      word-break:break-all;
+      vertical-align: top;
+    }*/
+    
+    .edit{
+      margin-left:10px;
+      font-size: 12px;
+      font-family: MicrosoftYaHei;
+      font-size: 14px;
+      color: #006CE1;
+      text-decoration: underline;
+    }
+    p{
+      font-family: MicrosoftYaHei;
+      font-size: 18px;
+      color: #0E1A27;
+      letter-spacing: 0px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    table{
+      width : 100%;
+      font-family: MicrosoftYaHei;
+      font-size: 14px;
+      color: #0E1A27;
+      letter-spacing: 0px;
+      line-height: 30px;
+      table-layout: fixed;
+      .service{
+        b{
+          font-size: 16px;
+          font-weight: bold;
+        }
+        span{
+          padding-left: 30px;
+          a{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    td {
+      padding: 0 10px;
+      word-break: break-all;
+      vertical-align: top;
+      word-wrap: break-word;
+    }
+  }
+  .order-detail-reorder{
+    padding: 30px 0;
+    text-align: right;
+  }
+  .WG-Paywrap{
+    margin-bottom : 80px;
+  }
+}
+
+#ui-wrap{
+  .ui-main.ui-fixed-footer{
+    position: relative;
+    margin : auto;
+    min-height: 100%;
+  }
+  .ui-hotel-main{
+    padding-bottom:0;
+    min-height: 100%;
+  }
+  .ui-hotel-content .ui-hotel-empty{
+    padding : 235px 0;
+  }
+  .ui-footer{
+    position : static;
+  }
+}
+.ui-mark{
+  textarea{
+    border: 1px solid #dddedf;
+    border-radius: 4px;
+  }
+}
+.numColor{
+  color:red;
+}
+.ui-order-detail-status-wrap.hotel-1001 .WG-OrderStaTip span{
+  display: inline-block;
+  width: auto;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+}
+.ui-order-detail-status-wrap{
+  background: rgba(243, 159, 30, 0.1);
+  color: #F49F1F;
+}
+.ant-modal-title{
+  font-size: 20px;
+}
+.cancelTxt{
+  margin-bottom: 10px;
+  i{
+    font-size: 20px;
+    color: #FA573D;
+    font-weight: bold;
+  }
+}

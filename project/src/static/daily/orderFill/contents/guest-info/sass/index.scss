@@ -1,0 +1,177 @@
+.guest-info {
+    margin-top: 30px;
+    h2 {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+	
+    .info-item{
+    	padding-left: 30px;
+    	.hr{
+    		width: 530px;
+    		border-bottom: 1px dashed rgba(158, 165, 170, 0.2);
+			margin: 20px 0;
+    	}
+    	.copyUserInfo{
+    		position: absolute;
+    		right: 0;
+    		top: -40px;
+    		z-index: 1;
+    		.ant-checkbox{
+    			vertical-align: bottom;
+    		}
+    		.ant-checkbox-inner{
+    			width: 20px;
+    			height: 20px;
+    			border-radius: 4px;
+    			&:after{
+    				left: 6px;
+				    top: 2px;
+				    width: 7px;
+				    height: 10px;
+    			}
+    		}
+    	}
+    }
+    .info-title{
+    	font-size: 14px;
+    	font-weight: bold;
+    	line-height: 30px;
+    	margin-bottom: 20px;
+    }   
+    .info-content{
+    	width: 530px;
+    	position: relative;
+    }
+    .form-row{
+		position: relative;
+		padding-left: 130px;
+	    line-height: 34px;
+	    margin-bottom: 10px;
+	    input,textarea{
+			padding: 4px 7px;
+		    border: 1px solid #DDDEDF;
+		    border-radius: 4px;
+		    font-size: 12px;
+		    resize: none;
+		    &:hover,&:focus{
+		    	border-color: rgba(243, 159, 30, 0.5) !important;
+    	        outline: 0;
+    	        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(243, 159, 30, 0.5); 
+		    }
+		}
+	    .ui-input .show{
+			z-index: 1;
+	    }
+	    &.normalInput{
+	    	.ui-input{
+				width: 400px;
+	    	}
+	    }
+	    label{
+	    	margin-bottom: 0;
+	    }
+		input{
+			display: inline-block;
+			// width: 400px;
+			height: 34px;
+			background: #FFFFFF;
+			border: 1px solid #DDDEDF;
+			border-radius: 4px;
+			padding-left: 10px;
+			// margin-left: 15px;
+		}
+		.row-name{
+			width: 110px;
+			color: #0E1A27;
+			position: absolute;
+			left: 0;
+			text-align: right;
+			&.required{
+				&:after{
+					content: '*';
+					color:  #FA573D;
+					position: absolute;
+					right: -10px;
+					top: 3px;
+				}
+			}
+		}
+		.priceBox{
+			.ui-input{
+				display: inline-block;
+				width: 164px;
+				input{
+					padding-left: 25px;
+					text-align: right;
+					padding-right: 15px;
+				}
+				span{
+					z-index: 1;
+				}
+				&:before{
+					content: '￥';
+					color: #0E1A27;
+					font-size: 16px;
+					position:absolute;
+					left: 10px;
+					top: 50%;
+				    transform: translateY(-50%);
+				}
+			}
+			.price-tips{
+				font-size: 12px;
+				color: #6D767C;
+				margin-left: 12px;
+			}
+		}
+
+		.mobile{
+			.area-code input{
+				width: 100px;
+			}
+			.ui-input{
+				width: 290px;
+				display: inline-block;
+				margin-left: 10px;
+			}
+			&.hasOther{
+				.ui-input{
+					width: 210px;
+				}
+			}
+			.addMobile{
+				font-size: 12px;
+				color: #006CE1;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+		}
+		.tips{
+			font-size: 12px;
+			color: #6D767C;
+			margin-top: 10px;
+		    line-height: 1.5;
+		}
+		.ui-mark{
+			width: 400px;
+			height: 110px;
+			// border: 1px solid #DDDEDF;
+			border-radius: 4px;
+			textarea{
+				height: 110px;
+				resize: none;
+			}
+			span{
+				bottom: 0px;
+			}
+		}
+    }       
+}
+
+
+
+
+

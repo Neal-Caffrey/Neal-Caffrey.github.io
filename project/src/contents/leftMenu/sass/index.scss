@@ -1,0 +1,41 @@
+.left-menu-wrap {
+    position: fixed;
+    top: 85px;
+    left: 30px;
+    box-sizing: border-box;
+    width: 200px;
+    background: transparent;
+    padding-top: 10px;
+    background: #fff;
+    border-radius: 4px;
+    dl {
+        width: 100%;
+
+        &:last-of-type{
+        	padding-bottom: 20px;
+        }
+        dt {
+            color: #0E1A27;
+            padding-left: 18px;
+            line-height: 45px;
+            font-size: 14px;
+        }
+        dd {
+            padding-left: 32px;
+            line-height: 30px;
+            font-size: 12px;
+            a {
+		    	color: #1C1C1C;
+		    }
+            &.active {
+                background: #FEFAF4;
+                a {
+			    	color: #F49F1F;
+			    }
+            }
+            &:hover a {
+                color: #F49F1F;
+            }
+        }
+    }
+}

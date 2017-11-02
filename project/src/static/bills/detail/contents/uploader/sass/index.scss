@@ -1,0 +1,27 @@
+.upload-img-wrap {
+	display: inline-block;
+	.upload-img {
+		vertical-align: middle;
+		display: inline-block;
+		cursor: pointer;
+		 .ant-upload-text,{
+			font-size: 14px;
+			height: 36px;
+			line-height: 36px;
+			color: #006CE1;
+			text-decoration: underline;
+		}
+	}
+	.send-img {
+		display: inline-block;
+		cursor: pointer;
+		height: 36px;
+		margin-left: 10px;
+		line-height: 36px;
+		vertical-align: middle;
+		font-size: 14px;
+		border: 1px solid #F49F1F;
+		border-radius: 4px;
+		color: #F49F1F;
+	}
+}

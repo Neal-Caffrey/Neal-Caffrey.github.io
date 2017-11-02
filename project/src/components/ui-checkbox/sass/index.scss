@@ -1,0 +1,28 @@
+.ui-checkbox{
+	font-size: 14px;
+	color: #0E1A27;
+	&:before{
+		content: '';
+		position: absolute;
+		display: inline-block;
+		left:0;
+		top:50%;
+		width: 14px;
+		height: 14px;
+		margin-top: -8px;
+		border: 1px solid #DDDEDF;
+		border-radius: 4px;
+		background-color: #fff;
+	}
+	input{
+		opacity: 0;
+		margin-right: 8px;
+	}
+}
+.ui-checkbox-select{
+	&:before{
+		border:none;
+		background: url('../images/checked.png') no-repeat 50% 50%;
+		background-size: 100% auto;
+	}
+}
