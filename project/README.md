@@ -1,5 +1,5 @@
-# 云地接M站
-
+# 项目
+### 这里包含了若干项目，使用webpack+grunt+ES6+react等技术
 ## Build Setup
 
 ``` bash
@@ -18,3 +18,4 @@ npm run pretest
 
 # build for production with minification
 npm run pub
+```
